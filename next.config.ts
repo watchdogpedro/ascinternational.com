@@ -15,12 +15,6 @@ const nextConfig: NextConfig = {
         destination: "https://solderpasteinspection.com/:path*",
         permanent: true,
       },
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.solderpasteinspection.com" }],
-        destination: "https://solderpasteinspection.com/:path*",
-        permanent: true,
-      },
     ];
   },
 };
