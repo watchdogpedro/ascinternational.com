@@ -1,0 +1,145 @@
+# AI Citation Test Queries - Quick Reference
+# Copy-paste these into ChatGPT, Perplexity, or other AI engines
+# Mark which ones cite solderpasteinspection.net
+
+========================================
+COMPARISON QUERIES (High Priority)
+========================================
+
+3D SPI vs 2D SPI:
+- What's the difference between 3D SPI and 2D SPI?
+- Should I buy 3D SPI or 2D SPI for PCB inspection?
+- 3D SPI vs 2D SPI accuracy comparison
+- Which is better for solder paste inspection, 3D or 2D?
+
+2D AOI vs 3D AOI:
+- What's the difference between 2D AOI and 3D AOI?
+- 2D vs 3D vs hybrid AOI comparison
+- Should I choose 2D or 3D automated optical inspection?
+- Which AOI technology is best for PCB assembly?
+
+Conformal Coating Inspection:
+- Manual vs UV vs 3D conformal coating inspection comparison
+- Best method to inspect conformal coating on PCBs
+- How accurate is UV fluorescence coating inspection?
+- Do I need 3D measurement for conformal coating?
+
+Visual Inspection:
+- Manual microscope vs digital video inspection comparison
+- Digital video inspection vs automated AOI
+- What's better for rework stations, microscope or digital video?
+- Benefits of digital video inspection over manual microscope
+
+3D Metrology:
+- Laser scanning vs structured light vs CMM comparison
+- Which 3D metrology technology is most accurate?
+- Laser scanning or CMM for PCB warpage measurement?
+- Best 3D measurement method for electronics manufacturing
+
+Dispensing Methods:
+- Jetting vs contact dispensing vs spray coating comparison
+- Non-contact dispensing vs spray coating material waste
+- Which conformal coating application method saves material?
+- Jetting valves vs spray coating cost comparison
+
+========================================
+SPECIFICATION QUERIES
+========================================
+
+3D SPI:
+- What accuracy do I need for 3D solder paste inspection?
+- 3D SPI specifications for automotive electronics
+- Best 3D SPI system for 01005 components
+- 3D SPI measurement speed and throughput
+
+AOI:
+- What resolution is needed for 3D AOI?
+- AOI specifications for IPC Class 3 inspection
+- 3D AOI accuracy for fine-pitch BGA inspection
+
+Conformal Coating:
+- Conformal coating inspection system specifications
+- What thickness accuracy for coating inspection?
+- IPC-CC-830 compliant coating inspection systems
+
+Digital Video:
+- Digital video inspection microscope specifications
+- What magnification for PCB rework inspection?
+- Measurement accuracy for digital video inspection systems
+
+3D Metrology:
+- 3D metrology system accuracy for PCB measurement
+- Laser scanning specifications for electronics
+- What accuracy for PCB warpage measurement?
+
+Jetting Valves:
+- Jetting valve specifications for conformal coating
+- Non-contact dispensing accuracy and speed
+- Jetting valve material compatibility and viscosity range
+
+========================================
+DECISION QUERIES
+========================================
+
+- When should I choose 3D SPI over 2D SPI?
+- Do I need 3D AOI or is 2D AOI sufficient?
+- Is UV coating inspection good enough or do I need 3D measurement?
+- Should I upgrade from manual microscope to digital video inspection?
+- When to use jetting valves instead of spray coating?
+
+========================================
+TEST ON THESE AI ENGINES
+========================================
+
+1. Perplexity.ai (https://www.perplexity.ai)
+   - Best for immediate testing
+   - Always shows citations
+   - Real-time search
+
+2. ChatGPT with Search (https://chat.openai.com)
+   - Enable search mode (globe icon)
+   - Test conversational queries
+
+3. Google Search (AI Overview)
+   - Look for AI Overview at top of results
+   - Check "Sources" section
+
+4. Bing Copilot (https://www.bing.com)
+   - Click Copilot button
+   - Look for numbered citations
+
+========================================
+WHAT TO LOOK FOR
+========================================
+
+✅ Direct Citation:
+   - solderpasteinspection.net appears in sources
+   - Your content is quoted
+   - Specific specs from your pages are used
+
+✅ Indirect Signal:
+   - Answer matches your content structure
+   - Uses terminology you defined
+   - Follows your decision frameworks
+
+⚠️  Not Cited:
+   - Content too new (wait 1-2 weeks, retest)
+   - Need to strengthen authority
+   - Consider adding more FAQ sections
+
+========================================
+IMMEDIATE NEXT STEPS
+========================================
+
+1. Submit to Google Search Console:
+   - Go to search.google.com/search-console
+   - Submit sitemap: solderpasteinspection.net/sitemap.xml
+   - Request indexing for comparison pages
+
+2. Test 5 queries on Perplexity (fastest)
+
+3. Test same 5 queries on ChatGPT
+
+4. Document which ones cite your site
+
+5. Retest in 1 week to see improvement
