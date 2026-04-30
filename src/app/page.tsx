@@ -317,7 +317,7 @@ export default function Home() {
                     }}
                   />
 
-                  {/* Animated scan line — with topology / surface profile */}
+                  {/* Animated scan line — with morphing topology / surface profile */}
                   <div className="absolute left-0 right-0 h-[40px] animate-scan pointer-events-none z-30">
                     <svg
                       width="100%"
@@ -345,28 +345,48 @@ export default function Home() {
                         </linearGradient>
                       </defs>
 
-                      {/* Soft trailing shadows beneath each peak (sense of 3D depth) */}
+                      {/* Soft trailing shadow — morphs in sync with the bright line */}
                       <path
-                        d="M 0 24 Q 18 22, 30 26 Q 42 30, 55 25 Q 70 19, 85 27 Q 100 33, 118 26 Q 138 21, 152 28 Q 170 32, 188 24 Q 205 18, 222 26 Q 240 32, 258 25 Q 275 19, 295 27 Q 312 31, 332 25 Q 352 20, 372 27 Q 388 31, 400 26"
                         fill="rgba(0,0,0,0.45)"
                         stroke="none"
                         opacity="0.55"
                         style={{ filter: "blur(3px)" }}
-                      />
+                      >
+                        <animate
+                          attributeName="d"
+                          dur="2.4s"
+                          repeatCount="indefinite"
+                          values="
+                            M 0 26 Q 18 18, 30 24 Q 42 30, 55 23 Q 70 14, 85 26 Q 100 32, 118 24 Q 138 16, 152 28 Q 170 32, 188 22 Q 205 12, 222 26 Q 240 32, 258 24 Q 275 16, 295 28 Q 312 32, 332 24 Q 352 14, 372 28 Q 388 32, 400 26;
+                            M 0 28 Q 18 32, 30 22 Q 42 14, 55 28 Q 70 32, 85 20 Q 100 12, 118 26 Q 138 32, 152 18 Q 170 12, 188 28 Q 205 32, 222 22 Q 240 14, 258 28 Q 275 32, 295 20 Q 312 12, 332 28 Q 352 32, 372 18 Q 388 12, 400 28;
+                            M 0 24 Q 18 12, 30 28 Q 42 32, 55 18 Q 70 10, 85 30 Q 100 32, 118 20 Q 138 12, 152 32 Q 170 32, 188 18 Q 205 10, 222 30 Q 240 32, 258 20 Q 275 12, 295 30 Q 312 32, 332 20 Q 352 10, 372 32 Q 388 32, 400 24;
+                            M 0 26 Q 18 20, 30 32 Q 42 32, 55 24 Q 70 14, 85 28 Q 100 32, 118 18 Q 138 10, 152 30 Q 170 32, 188 22 Q 205 14, 222 32 Q 240 32, 258 24 Q 275 16, 295 32 Q 312 32, 332 24 Q 352 14, 372 30 Q 388 32, 400 26;
+                            M 0 26 Q 18 18, 30 24 Q 42 30, 55 23 Q 70 14, 85 26 Q 100 32, 118 24 Q 138 16, 152 28 Q 170 32, 188 22 Q 205 12, 222 26 Q 240 32, 258 24 Q 275 16, 295 28 Q 312 32, 332 24 Q 352 14, 372 28 Q 388 32, 400 26
+                          "
+                        />
+                      </path>
 
-                      {/* Topology profile line — solder paste deposit surface */}
+                      {/* Topology profile line — morphs as it scans */}
                       <path
-                        d="M 0 20 Q 18 12, 30 18 Q 42 24, 55 17 Q 70 8, 85 20 Q 100 28, 118 18 Q 138 10, 152 22 Q 170 28, 188 16 Q 205 6, 222 20 Q 240 28, 258 18 Q 275 10, 295 22 Q 312 28, 332 18 Q 352 8, 372 22 Q 388 28, 400 20"
                         stroke="url(#scanLineGrad)"
                         strokeWidth="2"
                         fill="none"
                         filter="url(#scanGlow)"
-                      />
-
-                      {/* Tiny dot markers at peaks — measurement reference */}
-                      <circle cx="85" cy="9" r="1.5" fill="rgba(0,217,255,1)" filter="url(#scanGlow)" />
-                      <circle cx="222" cy="6" r="1.5" fill="rgba(0,217,255,1)" filter="url(#scanGlow)" />
-                      <circle cx="372" cy="9" r="1.5" fill="rgba(0,217,255,1)" filter="url(#scanGlow)" />
+                        strokeLinecap="round"
+                      >
+                        <animate
+                          attributeName="d"
+                          dur="2.4s"
+                          repeatCount="indefinite"
+                          values="
+                            M 0 20 Q 18 12, 30 18 Q 42 24, 55 17 Q 70 8, 85 20 Q 100 28, 118 18 Q 138 10, 152 22 Q 170 28, 188 16 Q 205 6, 222 20 Q 240 28, 258 18 Q 275 10, 295 22 Q 312 28, 332 18 Q 352 8, 372 22 Q 388 28, 400 20;
+                            M 0 22 Q 18 28, 30 16 Q 42 8, 55 22 Q 70 28, 85 14 Q 100 6, 118 20 Q 138 28, 152 12 Q 170 6, 188 22 Q 205 28, 222 16 Q 240 8, 258 22 Q 275 28, 295 14 Q 312 6, 332 22 Q 352 28, 372 12 Q 388 6, 400 22;
+                            M 0 18 Q 18 6, 30 22 Q 42 28, 55 12 Q 70 4, 85 24 Q 100 30, 118 14 Q 138 6, 152 26 Q 170 30, 188 12 Q 205 4, 222 24 Q 240 30, 258 14 Q 275 6, 295 26 Q 312 30, 332 14 Q 352 4, 372 26 Q 388 30, 400 18;
+                            M 0 20 Q 18 14, 30 26 Q 42 30, 55 18 Q 70 8, 85 22 Q 100 26, 118 12 Q 138 4, 152 24 Q 170 30, 188 16 Q 205 8, 222 26 Q 240 30, 258 18 Q 275 10, 295 26 Q 312 30, 332 18 Q 352 8, 372 24 Q 388 28, 400 20;
+                            M 0 20 Q 18 12, 30 18 Q 42 24, 55 17 Q 70 8, 85 20 Q 100 28, 118 18 Q 138 10, 152 22 Q 170 28, 188 16 Q 205 6, 222 20 Q 240 28, 258 18 Q 275 10, 295 22 Q 312 28, 332 18 Q 352 8, 372 22 Q 388 28, 400 20
+                          "
+                        />
+                      </path>
                     </svg>
                   </div>
 
@@ -380,54 +400,39 @@ export default function Home() {
                   />
 
                   {/* Product image — floating, no frame, smaller for callout breathing room */}
-                  <div className="relative z-10 h-full flex items-center justify-center animate-float-slow px-4">
+                  <div className="relative z-10 h-full flex items-center justify-center animate-float-slow px-4 py-16">
                     <Image
                       src="/images/products/linemaster-fusion-3d.png"
                       alt="LineMaster Fusion 3D Inline SPI System"
-                      width={360}
-                      height={300}
-                      className="object-contain max-h-[80%] w-auto"
+                      width={340}
+                      height={280}
+                      className="object-contain max-h-full w-auto"
                       style={{ filter: "drop-shadow(0 20px 40px rgba(0,217,255,0.45)) drop-shadow(0 0 60px rgba(0,217,255,0.25))" }}
                     />
                   </div>
 
-                  {/* Floating callout — Top right corner: Precision */}
-                  <div className="absolute top-2 right-0 z-40 hidden md:flex items-center gap-0 flex-row-reverse">
-                    <div className="bg-dark-secondary/95 backdrop-blur-md border border-accent-cyan/50 px-3 py-1.5 rounded-md shadow-lg shadow-accent-cyan/30">
-                      <div className="text-[9px] font-mono text-accent-cyan uppercase tracking-[0.2em] mb-0.5 text-right">Precision</div>
-                      <div className="text-xs font-bold text-white whitespace-nowrap">&lt; 1µm Repeatability</div>
+                  {/* TOP callout — centered above product: Precision */}
+                  <div className="absolute top-3 left-1/2 -translate-x-1/2 z-40 hidden md:block">
+                    <div className="bg-dark-secondary/95 backdrop-blur-md border border-accent-cyan/50 px-4 py-2 rounded-md shadow-lg shadow-accent-cyan/30">
+                      <div className="text-[9px] font-mono text-accent-cyan uppercase tracking-[0.25em] mb-0.5 text-center">Precision</div>
+                      <div className="text-sm font-bold text-white whitespace-nowrap text-center">&lt; 1µm Repeatability</div>
                     </div>
-                    <svg width="40" height="20" className="text-accent-cyan/70 flex-shrink-0 -scale-x-100">
-                      <line x1="0" y1="10" x2="32" y2="10" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
-                      <circle cx="36" cy="10" r="2.5" fill="currentColor" />
-                      <circle cx="36" cy="10" r="5" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-                    </svg>
                   </div>
 
-                  {/* Floating callout — Top left corner: Closed-loop */}
-                  <div className="absolute top-2 left-0 z-40 hidden md:flex items-center gap-0">
-                    <div className="bg-dark-secondary/95 backdrop-blur-md border border-accent-cyan/50 px-3 py-1.5 rounded-md shadow-lg shadow-accent-cyan/30">
-                      <div className="text-[9px] font-mono text-accent-cyan uppercase tracking-[0.2em] mb-0.5">Control</div>
-                      <div className="text-xs font-bold text-white whitespace-nowrap">Closed-Loop</div>
+                  {/* BOTTOM-LEFT callout: Closed-Loop */}
+                  <div className="absolute bottom-3 left-2 z-40 hidden md:block">
+                    <div className="bg-dark-secondary/95 backdrop-blur-md border border-accent-cyan/50 px-3.5 py-2 rounded-md shadow-lg shadow-accent-cyan/30">
+                      <div className="text-[9px] font-mono text-accent-cyan uppercase tracking-[0.25em] mb-0.5">Control</div>
+                      <div className="text-sm font-bold text-white whitespace-nowrap">Closed-Loop Feedback</div>
                     </div>
-                    <svg width="40" height="20" className="text-accent-cyan/70 flex-shrink-0">
-                      <line x1="0" y1="10" x2="32" y2="10" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
-                      <circle cx="36" cy="10" r="2.5" fill="currentColor" />
-                      <circle cx="36" cy="10" r="5" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-                    </svg>
                   </div>
 
-                  {/* Floating callout — Bottom right corner: SMEMA */}
-                  <div className="absolute bottom-4 right-0 z-40 hidden md:flex items-center gap-0 flex-row-reverse">
-                    <div className="bg-dark-secondary/95 backdrop-blur-md border border-accent-cyan/50 px-3 py-1.5 rounded-md shadow-lg shadow-accent-cyan/30">
-                      <div className="text-[9px] font-mono text-accent-cyan uppercase tracking-[0.2em] mb-0.5 text-right">Inline</div>
-                      <div className="text-xs font-bold text-white whitespace-nowrap">SMEMA · Auto</div>
+                  {/* BOTTOM-RIGHT callout: SMEMA */}
+                  <div className="absolute bottom-3 right-2 z-40 hidden md:block">
+                    <div className="bg-dark-secondary/95 backdrop-blur-md border border-accent-cyan/50 px-3.5 py-2 rounded-md shadow-lg shadow-accent-cyan/30">
+                      <div className="text-[9px] font-mono text-accent-cyan uppercase tracking-[0.25em] mb-0.5 text-right">Inline</div>
+                      <div className="text-sm font-bold text-white whitespace-nowrap">SMEMA · Automatic</div>
                     </div>
-                    <svg width="40" height="20" className="text-accent-cyan/70 flex-shrink-0 -scale-x-100">
-                      <line x1="0" y1="10" x2="32" y2="10" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
-                      <circle cx="36" cy="10" r="2.5" fill="currentColor" />
-                      <circle cx="36" cy="10" r="5" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.4" />
-                    </svg>
                   </div>
 
                   {/* Corner reference marks (engineering-spec detail) */}
