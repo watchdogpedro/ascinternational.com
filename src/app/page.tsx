@@ -284,25 +284,121 @@ export default function Home() {
             </div>
 
             <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-              {/* Image Panel */}
+              {/* Image Panel — Live Scan */}
               <div className="lg:col-span-5">
-                <div className="relative overflow-hidden rounded-2xl border border-accent-cyan/30 bg-dark-bg" style={{ height: "440px" }}>
-                  <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(0,217,255,0.1) 1px, transparent 1px)", backgroundSize: "22px 22px" }} />
-                  <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(0,217,255,0.18) 0%, rgba(14,165,233,0.08) 45%, transparent 72%)" }} />
-                  <div className="absolute top-4 left-4 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />
-                  <div className="absolute top-4 right-4 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
-                  <div className="absolute bottom-4 left-4 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
-                  <div className="absolute bottom-4 right-4 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
-                  <div className="relative z-10 h-full flex items-center justify-center p-8">
+                <div className="relative" style={{ height: "520px" }}>
+
+                  {/* Volumetric glow — outer halo */}
+                  <div
+                    className="absolute inset-0 animate-pulse-glow pointer-events-none"
+                    style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(0,217,255,0.45) 0%, rgba(14,165,233,0.15) 35%, transparent 70%)" }}
+                  />
+
+                  {/* Volumetric glow — inner intensity */}
+                  <div
+                    className="absolute inset-0 pointer-events-none"
+                    style={{ background: "radial-gradient(circle at 50% 55%, rgba(0,217,255,0.35) 0%, transparent 38%)" }}
+                  />
+
+                  {/* Floor reflection / measurement aura */}
+                  <div
+                    className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[80%] h-[40px] rounded-[50%] blur-2xl pointer-events-none"
+                    style={{ background: "radial-gradient(ellipse, rgba(0,217,255,0.55) 0%, transparent 70%)" }}
+                  />
+
+                  {/* Subtle dot grid floor */}
+                  <div
+                    className="absolute bottom-0 left-0 right-0 h-[40%] opacity-40 pointer-events-none"
+                    style={{
+                      backgroundImage: "radial-gradient(circle, rgba(0,217,255,0.35) 1px, transparent 1px)",
+                      backgroundSize: "20px 20px",
+                      maskImage: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%)",
+                      WebkitMaskImage: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%)",
+                    }}
+                  />
+
+                  {/* Animated scan line */}
+                  <div
+                    className="absolute left-0 right-0 h-[2px] animate-scan pointer-events-none z-30"
+                    style={{
+                      background: "linear-gradient(90deg, transparent 0%, rgba(0,217,255,0.95) 20%, rgba(0,217,255,1) 50%, rgba(0,217,255,0.95) 80%, transparent 100%)",
+                      boxShadow: "0 0 24px rgba(0,217,255,0.9), 0 0 48px rgba(0,217,255,0.6), 0 0 80px rgba(0,217,255,0.3)",
+                    }}
+                  />
+
+                  {/* Scan line trail (soft glow band) */}
+                  <div
+                    className="absolute left-0 right-0 h-[60px] animate-scan pointer-events-none z-20 -translate-y-[58px]"
+                    style={{
+                      background: "linear-gradient(to bottom, transparent 0%, rgba(0,217,255,0.18) 70%, rgba(0,217,255,0.35) 100%)",
+                      mixBlendMode: "screen",
+                    }}
+                  />
+
+                  {/* Product image — floating, no frame */}
+                  <div className="relative z-10 h-full flex items-center justify-center animate-float-slow">
                     <Image
                       src="/images/products/linemaster-fusion-3d.png"
                       alt="LineMaster Fusion 3D Inline SPI System"
-                      width={420}
-                      height={360}
-                      className="object-contain max-h-full w-auto drop-shadow-2xl"
+                      width={500}
+                      height={420}
+                      className="object-contain max-h-full w-auto"
+                      style={{ filter: "drop-shadow(0 20px 40px rgba(0,217,255,0.45)) drop-shadow(0 0 60px rgba(0,217,255,0.25))" }}
                     />
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(0,217,255,0.6), transparent)" }} />
+
+                  {/* Floating callout — Top left: Precision */}
+                  <div className="absolute top-6 left-0 z-40 hidden md:flex items-center gap-0">
+                    <div className="bg-dark-secondary/90 backdrop-blur-md border border-accent-cyan/50 px-3.5 py-2 rounded-md shadow-lg shadow-accent-cyan/30">
+                      <div className="text-[10px] font-mono text-accent-cyan uppercase tracking-[0.2em] mb-0.5">Precision</div>
+                      <div className="text-sm font-bold text-white whitespace-nowrap">&lt; 1µm Repeatability</div>
+                    </div>
+                    <svg width="60" height="20" className="text-accent-cyan/70 flex-shrink-0">
+                      <line x1="0" y1="10" x2="50" y2="10" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
+                      <circle cx="55" cy="10" r="3" fill="currentColor" />
+                      <circle cx="55" cy="10" r="6" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.4" />
+                    </svg>
+                  </div>
+
+                  {/* Floating callout — Right middle: Closed-loop */}
+                  <div className="absolute top-1/2 -translate-y-1/2 right-0 z-40 hidden md:flex items-center gap-0 flex-row-reverse">
+                    <div className="bg-dark-secondary/90 backdrop-blur-md border border-accent-cyan/50 px-3.5 py-2 rounded-md shadow-lg shadow-accent-cyan/30">
+                      <div className="text-[10px] font-mono text-accent-cyan uppercase tracking-[0.2em] mb-0.5 text-right">Control</div>
+                      <div className="text-sm font-bold text-white whitespace-nowrap">Closed-Loop Feedback</div>
+                    </div>
+                    <svg width="60" height="20" className="text-accent-cyan/70 flex-shrink-0 -scale-x-100">
+                      <line x1="0" y1="10" x2="50" y2="10" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
+                      <circle cx="55" cy="10" r="3" fill="currentColor" />
+                      <circle cx="55" cy="10" r="6" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.4" />
+                    </svg>
+                  </div>
+
+                  {/* Floating callout — Bottom left: SMEMA */}
+                  <div className="absolute bottom-8 left-0 z-40 hidden md:flex items-center gap-0">
+                    <div className="bg-dark-secondary/90 backdrop-blur-md border border-accent-cyan/50 px-3.5 py-2 rounded-md shadow-lg shadow-accent-cyan/30">
+                      <div className="text-[10px] font-mono text-accent-cyan uppercase tracking-[0.2em] mb-0.5">Inline</div>
+                      <div className="text-sm font-bold text-white whitespace-nowrap">SMEMA · Automatic</div>
+                    </div>
+                    <svg width="60" height="20" className="text-accent-cyan/70 flex-shrink-0">
+                      <line x1="0" y1="10" x2="50" y2="10" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
+                      <circle cx="55" cy="10" r="3" fill="currentColor" />
+                      <circle cx="55" cy="10" r="6" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.4" />
+                    </svg>
+                  </div>
+
+                  {/* Corner reference marks (engineering-spec detail) */}
+                  <div className="absolute top-0 left-0 z-30 text-[10px] font-mono text-accent-cyan/50 tracking-wider">
+                    <div>// 3D-SPI</div>
+                    <div className="text-accent-cyan/30">FUSION_3D.MODEL</div>
+                  </div>
+                  <div className="absolute bottom-0 right-0 z-30 text-[10px] font-mono text-accent-cyan/50 tracking-wider text-right">
+                    <div className="text-accent-cyan/30">SCAN_ACTIVE</div>
+                    <div className="flex items-center justify-end gap-1.5">
+                      <div className="w-1.5 h-1.5 rounded-full bg-accent-cyan animate-pulse" />
+                      <span>LIVE</span>
+                    </div>
+                  </div>
+
                 </div>
               </div>
 
