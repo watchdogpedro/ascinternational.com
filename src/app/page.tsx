@@ -271,6 +271,105 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Featured Product: LineMaster Fusion 3D */}
+        <section className="relative py-20 lg:py-24 bg-dark-bg overflow-hidden border-t border-white/5">
+          <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 80% 30%, rgba(0,217,255,0.08) 0%, transparent 60%)" }} />
+          <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(0,217,255,0.06) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+
+          <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-3 mb-10">
+              <div className="h-px flex-1 max-w-[80px] bg-gradient-to-r from-transparent to-accent-cyan/60" />
+              <span className="text-xs font-mono tracking-[0.25em] text-accent-cyan uppercase">Featured / 01</span>
+              <div className="h-px flex-1 bg-gradient-to-r from-accent-cyan/60 to-transparent" />
+            </div>
+
+            <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              {/* Image Panel */}
+              <div className="lg:col-span-5">
+                <div className="relative overflow-hidden rounded-2xl border border-accent-cyan/30 bg-dark-bg" style={{ height: "440px" }}>
+                  <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(0,217,255,0.1) 1px, transparent 1px)", backgroundSize: "22px 22px" }} />
+                  <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(0,217,255,0.18) 0%, rgba(14,165,233,0.08) 45%, transparent 72%)" }} />
+                  <div className="absolute top-4 left-4 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />
+                  <div className="absolute top-4 right-4 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
+                  <div className="absolute bottom-4 left-4 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
+                  <div className="absolute bottom-4 right-4 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
+                  <div className="relative z-10 h-full flex items-center justify-center p-8">
+                    <Image
+                      src="/images/products/linemaster-fusion-3d.png"
+                      alt="LineMaster Fusion 3D Inline SPI System"
+                      width={420}
+                      height={360}
+                      className="object-contain max-h-full w-auto drop-shadow-2xl"
+                    />
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(0,217,255,0.6), transparent)" }} />
+                </div>
+              </div>
+
+              {/* Content Panel */}
+              <div className="lg:col-span-7">
+                <div className="flex flex-wrap gap-2 mb-5">
+                  <span className="bg-accent-cyan/15 text-accent-cyan border border-accent-cyan/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Inline 3D SPI</span>
+                  <span className="bg-white/5 text-gray-400 border border-white/10 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Solder Paste Inspection</span>
+                  <span className="bg-white/5 text-gray-400 border border-white/10 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">SMEMA Compatible</span>
+                </div>
+
+                <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight tracking-tight">
+                  LineMaster <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-accent-blue">Fusion 3D</span>
+                </h2>
+
+                <p className="text-lg text-gray-300 mb-4 leading-relaxed max-w-2xl">
+                  High-speed inline 3D solder paste inspection with fully automatic measurement, closed-loop printer feedback, and outstanding repeatability — at a price point that finally makes inline SPI accessible.
+                </p>
+
+                <p className="text-gray-400 mb-8 leading-relaxed max-w-2xl">
+                  Catches drift before it becomes a defect. Inspects paste pads, BGAs, and PCB features with sub-micron precision, all behind an intuitive Windows interface that runs without operator intervention.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 mb-8">
+                  {[
+                    "High-speed inline 3D measurement",
+                    "Fully automatic — no operator intervention",
+                    "Closed-loop solder paste printer feedback",
+                    "Inspects paste pads, BGAs, and PCB features",
+                    "Outstanding measurement repeatability",
+                    "Intuitive Windows user interface",
+                    "SMEMA conveyor compatible",
+                    "Affordable inline SPI entry point",
+                  ].map((feature, i) => (
+                    <div key={i} className="flex items-start gap-2.5">
+                      <div className="mt-0.5 w-5 h-5 rounded-md bg-accent-cyan/15 border border-accent-cyan/30 flex items-center justify-center flex-shrink-0">
+                        <svg className="w-3 h-3 text-accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="text-sm text-gray-300 leading-snug">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    href="/products/linemaster-fusion-3d"
+                    className="group px-7 py-3.5 bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg font-bold rounded-lg hover:shadow-2xl hover:shadow-accent-cyan/40 transition-all hover:scale-105 inline-flex items-center"
+                  >
+                    Explore the Fusion 3D
+                    <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="px-7 py-3.5 bg-white/5 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-accent-cyan/50 transition-all"
+                  >
+                    Request a Quote
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Products Section */}
         <section id="products" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
