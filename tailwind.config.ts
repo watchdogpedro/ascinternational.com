@@ -24,6 +24,7 @@ const config: Config = {
       },
       animation: {
         'gradient-x': 'gradient-x 3s ease infinite',
+        'bar-pulse': 'bar-pulse 1.8s ease-in-out infinite alternate',
       },
       keyframes: {
         'gradient-x': {
@@ -35,6 +36,10 @@ const config: Config = {
             'background-size': '200% 200%',
             'background-position': 'right center',
           },
+        },
+        'bar-pulse': {
+          '0%': { transform: 'scaleY(1)', opacity: '0.55' },
+          '100%': { transform: 'scaleY(1.4)', opacity: '1' },
         },
       },
     },

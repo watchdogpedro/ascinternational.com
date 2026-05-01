@@ -271,6 +271,150 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ── Featured Product: LineMaster Fusion 3D ── */}
+        <section className="py-20 bg-dark-bg relative overflow-hidden">
+          <div className="absolute inset-0 opacity-40" style={{ backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px)", backgroundSize: "30px 30px" }} />
+          <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 75% 50%, rgba(0,217,255,0.07) 0%, transparent 60%)" }} />
+
+          <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
+
+            {/* Centered label */}
+            <div className="flex items-center gap-4 mb-12">
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-cyan/30 to-transparent" />
+              <div className="flex items-center gap-2 px-5 py-2 bg-accent-cyan/10 border border-accent-cyan/30 rounded-full">
+                <div className="w-2 h-2 bg-accent-cyan rounded-full animate-pulse" />
+                <span className="text-sm font-bold text-accent-cyan tracking-widest uppercase">Featured Product</span>
+              </div>
+              <div className="h-px flex-1 bg-gradient-to-r from-transparent via-accent-cyan/30 to-transparent" />
+            </div>
+
+            <div className="grid lg:grid-cols-5 gap-12 items-center">
+
+              {/* Left: Copy + specs (3 cols) */}
+              <div className="lg:col-span-3">
+                <span className="text-accent-cyan text-xs font-bold uppercase tracking-widest mb-3 block">3D Solder Paste Inspection · Inline System</span>
+
+                <h2 className="font-display text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                  LineMaster<br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-cyan">Fusion 3D</span>
+                </h2>
+
+                <p className="text-xl text-gray-200 mb-5 leading-relaxed">
+                  The most affordable inline 3D SPI system on the market — engineered to deliver
+                  production-line results without the enterprise price tag. Sub-micron accuracy,
+                  5-minute GerberPro® board programming, and closed-loop printer feedback combine
+                  to eliminate defects before they ever reach your reflow oven.
+                </p>
+                <p className="text-gray-400 mb-8 leading-relaxed">
+                  Powered by ASC&apos;s proprietary PSI 1500® 3D sensor, the Fusion 3D measures solder
+                  paste height, area, volume, X-Y registration, and bridging on every single board —
+                  fully automatically. Real-time SPC charts and NIST-traceable calibration give your
+                  quality team the data confidence to act, not guess.
+                </p>
+
+                {/* Key spec tiles */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+                  {[
+                    { value: "1µm", label: "Height Accuracy" },
+                    { value: "0.33s", label: "Per FOV Speed" },
+                    { value: "20″×20″", label: "Inspection Area" },
+                    { value: "3 yr", label: "End-User Warranty" },
+                  ].map(({ value, label }) => (
+                    <div key={label} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center hover:border-accent-cyan/40 transition-colors">
+                      <div className="text-2xl font-bold text-accent-cyan mb-1">{value}</div>
+                      <div className="text-xs text-gray-400">{label}</div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Feature checklist */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-10">
+                  {[
+                    "PSI 1500® 3D Sensor Technology",
+                    "5-Minute GerberPro® Programming",
+                    "Real-Time SPC Run Charts",
+                    "Closed-Loop Printer Feedback",
+                    "Photo-Realistic 3D Profiles",
+                    "NIST Calibration Standard",
+                    "Windows 10/11 Pro OS",
+                    "Expandable to 48″ × 24″ Boards",
+                  ].map((f) => (
+                    <div key={f} className="flex items-center gap-2">
+                      <svg className="w-4 h-4 text-accent-cyan flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-sm text-gray-300">{f}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTAs */}
+                <div className="flex flex-wrap gap-4">
+                  <Link href="/contact" className="group px-8 py-4 bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg font-bold rounded-lg hover:shadow-2xl hover:shadow-accent-cyan/40 transition-all hover:scale-105 inline-flex items-center gap-2">
+                    Request a Quote
+                    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                  <Link href="/products/linemaster-fusion-3d" className="px-8 py-4 bg-white/5 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-accent-cyan/50 transition-all inline-flex items-center gap-2">
+                    Full Product Details
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right: Product image (2 cols) */}
+              <div className="lg:col-span-2 flex justify-center">
+                <div className="relative w-full max-w-md">
+                  {/* Glow */}
+                  <div className="absolute inset-0 rounded-3xl blur-3xl opacity-25" style={{ background: "radial-gradient(ellipse, rgba(0,217,255,0.5) 0%, rgba(14,165,233,0.2) 50%, transparent 70%)" }} />
+
+                  <div className="relative rounded-2xl border border-accent-cyan/20 bg-gradient-to-br from-white/5 to-transparent p-8 overflow-hidden">
+                    {/* Corner brackets */}
+                    <div className="absolute top-3 left-3 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />
+                    <div className="absolute top-3 right-3 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
+                    <div className="absolute bottom-3 left-3 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
+                    <div className="absolute bottom-3 right-3 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
+
+                    <Image
+                      src="/images/products/linemaster-fusion-3d.png"
+                      alt="LineMaster Fusion 3D — Inline 3D SPI System by ASC International"
+                      width={480}
+                      height={420}
+                      className="w-full h-auto object-contain relative z-10"
+                    />
+
+                    {/* Floating badge */}
+                    <div className="absolute -top-4 -right-2 bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg text-xs font-bold px-4 py-2 rounded-full shadow-lg shadow-accent-cyan/40 whitespace-nowrap">
+                      PSI 1500® Technology
+                    </div>
+
+                    {/* Solder paste height profile — live measurement bars */}
+                    <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center gap-px h-10 px-2">
+                      {[38, 54, 70, 76, 62, 48, 60, 78, 84, 68, 52, 44, 59, 73, 80, 66, 50, 40, 56, 71, 82, 72, 58, 45, 62, 75, 64, 50, 42, 58].map((h, i) => (
+                        <div
+                          key={i}
+                          className="flex-1 animate-bar-pulse rounded-t-sm"
+                          style={{
+                            height: `${h}%`,
+                            background: `rgba(0, 217, 255, ${0.3 + (h / 100) * 0.5})`,
+                            animationDelay: `${i * 0.065}s`,
+                            animationDuration: `${1.4 + (i % 5) * 0.18}s`,
+                            transformOrigin: 'bottom',
+                          }}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
         {/* Products Section */}
         <section id="products" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
