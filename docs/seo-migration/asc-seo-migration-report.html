@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ASC International — SEO Migration Strategy</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  :root{
+    --ink:#0e1726;
+    --ink2:#1c2942;
+    --steel:#2f4a6b;
+    --cyan:#16c2c2;
+    --cyan-d:#0e9a9a;
+    --amber:#f5a623;
+    --coral:#ef4f5a;
+    --coral-d:#c8323d;
+    --green:#1faa6e;
+    --paper:#f7f5f1;
+    --paper2:#eeeae2;
+    --line:#d9d3c7;
+    --muted:#5d6b80;
+  }
+
+  html{ font-family:-apple-system,"Helvetica Neue",Arial,sans-serif; color:var(--ink); }
+  body{ background:#fff; }
+
+  .page{
+    width:210mm; min-height:297mm; position:relative;
+    page-break-after:always; overflow:hidden;
+    background:var(--paper);
+  }
+  .page:last-child{ page-break-after:auto; }
+
+  .pad{ padding:18mm 16mm; }
+
+  h1,h2,h3,.serif{ font-family:Georgia,"Times New Roman",serif; }
+
+  /* ---------- COVER ---------- */
+  .cover{
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(22,194,194,.35), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(245,166,35,.25), transparent 55%),
+      linear-gradient(160deg,#0c1422 0%, #14233c 55%, #1b2c4a 100%);
+    color:#fff; height:297mm; display:flex; flex-direction:column;
+  }
+  .cover .grid-overlay{
+    position:absolute; inset:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:26px 26px;
+  }
+  .cover-inner{ position:relative; padding:24mm 20mm; display:flex; flex-direction:column; height:100%; }
+  .kicker{
+    display:inline-block; align-self:flex-start; font-size:11px; letter-spacing:.32em;
+    text-transform:uppercase; color:#0c1422; font-weight:800;
+    background:var(--cyan); padding:7px 14px; border-radius:2px;
+  }
+  .cover h1{ font-size:62px; line-height:1.02; margin-top:26px; letter-spacing:-1.5px; font-weight:700; }
+  .cover h1 .hl{ color:var(--amber); }
+  .cover .sub{ font-size:19px; color:#c9d6e8; margin-top:22px; max-width:150mm; line-height:1.5; font-weight:300; }
+  .cover .spacer{ flex:1; }
+  .badges{ display:flex; gap:10px; margin-top:26px; flex-wrap:wrap; }
+  .badge{ font-size:12px; border:1px solid rgba(255,255,255,.25); color:#dbe6f4; padding:8px 14px; border-radius:40px; }
+  .badge b{ color:var(--cyan); }
+  .cover-foot{ position:relative; border-top:1px solid rgba(255,255,255,.16); padding:18px 20mm 22px; display:flex; justify-content:space-between; font-size:13px; color:#9fb0c8; }
+  .cover-foot .co{ color:#fff; font-weight:700; letter-spacing:.04em; }
+
+  /* ---------- SHARED ---------- */
+  .sec-tag{ font-size:11px; letter-spacing:.28em; text-transform:uppercase; color:var(--cyan-d); font-weight:800; }
+  h2.title{ font-size:34px; letter-spacing:-.8px; margin-top:8px; color:var(--ink); }
+  .lead{ font-size:15px; color:var(--muted); margin-top:10px; line-height:1.6; max-width:165mm; }
+  .rule{ height:4px; width:64px; background:linear-gradient(90deg,var(--cyan),var(--amber)); border-radius:3px; margin:14px 0 26px; }
+
+  .runhead{ position:absolute; top:10mm; left:16mm; right:16mm; display:flex; justify-content:space-between; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#a9a294; border-bottom:1px solid var(--line); padding-bottom:6px; }
+  .pageno{ position:absolute; bottom:10mm; right:16mm; font-size:11px; color:#a9a294; }
+  .pagelbl{ position:absolute; bottom:10mm; left:16mm; font-size:11px; color:#a9a294; letter-spacing:.12em; }
+
+  /* big answer card */
+  .answer{
+    background:linear-gradient(135deg,#102036,#1a3151);
+    color:#fff; border-radius:14px; padding:30px 32px; position:relative; overflow:hidden;
+    box-shadow:0 18px 40px -22px rgba(16,32,54,.6);
+  }
+  .answer::after{ content:""; position:absolute; right:-40px; top:-40px; width:200px; height:200px; border-radius:50%; background:radial-gradient(circle,rgba(22,194,194,.4),transparent 70%); }
+  .answer .q{ font-family:Georgia,serif; font-size:15px; color:var(--cyan); font-style:italic; }
+  .answer .a{ font-family:Georgia,serif; font-size:30px; line-height:1.18; margin-top:10px; letter-spacing:-.4px; }
+  .answer .a b{ color:var(--amber); }
+  .answer p{ font-size:14px; color:#cddaec; margin-top:16px; line-height:1.6; position:relative; }
+
+  /* flow diagram */
+  .flow{ display:flex; align-items:stretch; gap:0; margin:26px 0 6px; }
+  .node{ flex:1; border-radius:10px; padding:18px 14px; text-align:center; color:#fff; }
+  .node small{ display:block; font-size:10px; letter-spacing:.18em; text-transform:uppercase; opacity:.85; margin-bottom:6px; }
+  .node .big{ font-family:Georgia,serif; font-size:16px; line-height:1.25; }
+  .node.old{ background:#3a4a63; }
+  .node.new{ background:linear-gradient(135deg,var(--green),#147a51); }
+  .arrow{ width:88px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--steel); }
+  .arrow .pill{ background:var(--amber); color:#3a2700; font-weight:800; font-size:12px; padding:6px 12px; border-radius:30px; white-space:nowrap; }
+  .arrow .ln{ font-size:22px; color:var(--amber); margin-top:2px; }
+  .flow-note{ font-size:12.5px; color:var(--muted); text-align:center; margin-top:8px; }
+
+  /* risk bars */
+  .risk{ background:#fff; border:1px solid var(--line); border-radius:12px; padding:24px 26px; margin-top:6px; }
+  .risk h3{ font-size:18px; }
+  .bar-row{ display:flex; align-items:center; gap:14px; margin-top:18px; }
+  .bar-lbl{ width:54mm; font-size:13px; font-weight:600; }
+  .bar-lbl small{ display:block; font-weight:400; color:var(--muted); font-size:11px; margin-top:2px; }
+  .bar-track{ flex:1; height:30px; background:var(--paper2); border-radius:6px; overflow:hidden; position:relative; }
+  .bar-fill{ height:100%; border-radius:6px; display:flex; align-items:center; padding-left:12px; color:#fff; font-weight:800; font-size:13px; }
+  .bar-bad{ width:78%; background:linear-gradient(90deg,var(--coral),var(--coral-d)); }
+  .bar-good{ width:6%; min-width:64px; background:linear-gradient(90deg,var(--green),#147a51); }
+  .risk-cite{ font-size:11px; color:#9aa3b2; margin-top:16px; }
+
+  /* numbered recs */
+  .rec{ display:flex; gap:18px; padding:18px 0; border-bottom:1px solid var(--line); break-inside:avoid; }
+  .rec:last-child{ border-bottom:none; }
+  .num{ flex:none; width:42px; height:42px; border-radius:11px; background:linear-gradient(135deg,var(--ink2),var(--steel)); color:#fff; font-family:Georgia,serif; font-size:20px; font-weight:700; display:flex; align-items:center; justify-content:center; }
+  .rec.k1 .num{ background:linear-gradient(135deg,var(--coral),var(--coral-d)); }
+  .rec.k2 .num{ background:linear-gradient(135deg,var(--cyan),var(--cyan-d)); }
+  .rec.k3 .num{ background:linear-gradient(135deg,var(--amber),#d98a08); }
+  .rec h3{ font-size:16.5px; }
+  .rec p{ font-size:13.5px; color:var(--muted); margin-top:5px; line-height:1.55; }
+
+  /* do / dont */
+  .dd{ display:flex; gap:18px; margin-top:8px; }
+  .col{ flex:1; border-radius:12px; padding:20px 20px 8px; }
+  .col.do{ background:#eaf7f0; border:1px solid #bfe6d2; }
+  .col.dont{ background:#fdeceb; border:1px solid #f6c9c6; }
+  .col h3{ font-size:17px; display:flex; align-items:center; gap:9px; }
+  .col.do h3{ color:var(--green); }
+  .col.dont h3{ color:var(--coral-d); }
+  .tick{ width:26px; height:26px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-size:15px; font-weight:800; }
+  .do .tick{ background:var(--green); }
+  .dont .tick{ background:var(--coral); }
+  .col ul{ list-style:none; margin-top:12px; }
+  .col li{ font-size:13px; line-height:1.45; padding:8px 0 8px 24px; position:relative; border-top:1px dashed rgba(0,0,0,.08); color:#2a3344; }
+  .col li:first-child{ border-top:none; }
+  .col li::before{ position:absolute; left:0; top:7px; font-weight:800; }
+  .do li::before{ content:"✓"; color:var(--green); }
+  .dont li::before{ content:"✕"; color:var(--coral); }
+
+  /* two info cards */
+  .cards{ display:flex; gap:16px; margin-top:8px; }
+  .icard{ flex:1; background:#fff; border:1px solid var(--line); border-top:5px solid var(--cyan); border-radius:12px; padding:20px; break-inside:avoid; }
+  .icard.amber{ border-top-color:var(--amber); }
+  .icard .ic{ font-size:24px; }
+  .icard h3{ font-size:16px; margin-top:8px; }
+  .icard p{ font-size:13px; color:var(--muted); margin-top:8px; line-height:1.55; }
+  .icard .tagrow{ margin-top:12px; display:flex; gap:6px; flex-wrap:wrap; }
+  .chip{ font-size:11px; background:var(--paper2); color:var(--steel); padding:5px 10px; border-radius:30px; font-weight:600; }
+
+  .callout{ background:#fff8ec; border-left:5px solid var(--amber); border-radius:8px; padding:16px 18px; margin-top:22px; }
+  .callout b{ color:#9a6800; }
+  .callout p{ font-size:13.5px; line-height:1.55; color:#5a4a2a; }
+
+  /* sources */
+  .src{ font-size:12px; color:var(--muted); padding:9px 0; border-bottom:1px solid var(--line); display:flex; gap:10px; }
+  .src .dot{ color:var(--cyan-d); font-weight:800; }
+  .verified{ display:inline-block; background:#eaf7f0; color:var(--green); font-size:10px; font-weight:800; padding:3px 9px; border-radius:30px; letter-spacing:.08em; }
+
+  .endnote{ margin-top:auto; }
+  .ribbon{ background:linear-gradient(135deg,#102036,#1a3151); color:#fff; border-radius:12px; padding:24px 28px; margin-top:24px; }
+  .ribbon h3{ font-size:20px; color:#fff; }
+  .ribbon h3 .hl{ color:var(--amber); }
+  .ribbon p{ font-size:13.5px; color:#cddaec; margin-top:8px; line-height:1.6; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="page cover">
+  <div class="grid-overlay"></div>
+  <div class="cover-inner">
+    <span class="kicker">SEO &amp; AI-Search Strategy Brief</span>
+    <h1>Moving the Site <span class="hl">Without</span><br>Losing Google.</h1>
+    <p class="sub">Replatforming <b>ascinternational.com</b> from WordPress to a new build — and keeping years of hard-won search rankings, AI-answer visibility, and structured-data value intact.</p>
+    <div class="badges">
+      <span class="badge">Focus: <b>Solder Paste Inspection &amp; AOI</b></span>
+      <span class="badge">Verified against <b>Google Search Central</b></span>
+      <span class="badge"><b>22</b> fact-checked findings</span>
+    </div>
+    <div class="spacer"></div>
+    <p class="sub" style="font-size:15px;max-width:130mm;">The one-line takeaway: <b style="color:#fff;">the page names don't have to match — the redirects do.</b> Do that one thing right and the move is safe.</p>
+  </div>
+  <div class="cover-foot">
+    <span><span class="co">ASC INTERNATIONAL</span> &nbsp;·&nbsp; Prepared strategy document</span>
+    <span>June 2026</span>
+  </div>
+</section>
+
+<!-- ============ PAGE 2 — THE ANSWER ============ -->
+<section class="page">
+  <div class="runhead"><span>ASC International — SEO Migration Strategy</span><span>The Core Question</span></div>
+  <div class="pad">
+    <span class="sec-tag">Start Here</span>
+    <h2 class="title">Do the page names matter?</h2>
+    <div class="rule"></div>
+
+    <div class="answer">
+      <div class="q">"Should we rename the new site's pages to match the old ones?"</div>
+      <div class="a">No — identical page names are <b>not</b> a Google ranking factor. What carries your rankings forward is a <b>301 redirect</b>.</div>
+      <p>Google's own migration documentation states it plainly: <i>"301 and other permanent redirects don't cause a loss in PageRank."</i> A 301 is a permanent "this page moved here" instruction. Set one up for every old address and Google quietly transfers years of ranking power to the new page — whatever you choose to name it.</p>
+    </div>
+
+    <div class="flow">
+      <div class="node old">
+        <small>Old indexed page</small>
+        <div class="big">/smt-inspection/<br>solder-paste-inspection/</div>
+      </div>
+      <div class="arrow">
+        <span class="pill">301 redirect</span>
+        <span class="ln">➜</span>
+      </div>
+      <div class="node new">
+        <small>New page (any name)</small>
+        <div class="big">your new<br>cleaner URL</div>
+      </div>
+    </div>
+    <p class="flow-note">The redirect — not a matching name — is what moves the rankings. Menu wording like "Solutions" vs "Products" is purely a branding choice; Google ranks <b>URLs</b>, not menu labels.</p>
+
+    <div class="callout">
+      <p><b>The one scenario that wrecks it:</b> wiping the old WordPress site with <b>no redirects</b>. Old URLs return "page not found," Google drops them, and the documented result is a <b>20–60% traffic loss within about two weeks</b>. That outcome is the downside of doing it <i>wrong</i> — and it is entirely preventable.</p>
+    </div>
+  </div>
+  <span class="pagelbl">STRATEGY BRIEF</span>
+  <span class="pageno">02</span>
+</section>
+
+<!-- ============ PAGE 3 — RISK ============ -->
+<section class="page">
+  <div class="runhead"><span>ASC International — SEO Migration Strategy</span><span>What's At Stake</span></div>
+  <div class="pad">
+    <span class="sec-tag">The Risk, Visualized</span>
+    <h2 class="title">Two ways to launch. One cliff.</h2>
+    <div class="rule"></div>
+    <p class="lead">Same new site, same domain — the <b>only</b> variable is whether a complete redirect map exists before launch. This is the difference between a smooth move and a traffic emergency.</p>
+
+    <div class="risk">
+      <h3>Projected organic traffic impact after launch</h3>
+      <div class="bar-row">
+        <div class="bar-lbl">Launch with NO redirects<small>Old URLs 404 &amp; get de-indexed</small></div>
+        <div class="bar-track"><div class="bar-fill bar-bad">−20% to −60% &nbsp;⚠</div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-lbl">Launch WITH redirect map<small>Each old URL → closest new page</small></div>
+        <div class="bar-track"><div class="bar-fill bar-good">≈ 0</div></div>
+      </div>
+      <p class="risk-cite">Figures are directional, triangulated from Search Engine Journal, practitioner case studies, and Google Search Central. Recovery from a botched migration can take months; a clean migration typically shows little to no dip.</p>
+    </div>
+
+    <div class="cards" style="margin-top:24px;">
+      <div class="icard">
+        <div class="ic">🗺️</div>
+        <h3>The #1 deliverable</h3>
+        <p>A complete <b>"old URL → new URL" map</b>, built <i>before</i> anything changes. Sourced from the old sitemaps, Google Search Console, and backlink data so no high-value page is missed.</p>
+        <div class="tagrow"><span class="chip">Build first</span><span class="chip">Then launch</span></div>
+      </div>
+      <div class="icard amber">
+        <div class="ic">🎯</div>
+        <h3>Redirect to the closest match</h3>
+        <p>Each old page points to its real equivalent — a product to a product, a guide to a guide. <b>Never</b> blanket-redirect everything to the homepage; Google treats that as a fake "not found" and the rankings are lost.</p>
+        <div class="tagrow"><span class="chip">One hop</span><span class="chip">Relevant target</span></div>
+      </div>
+    </div>
+  </div>
+  <span class="pagelbl">STRATEGY BRIEF</span>
+  <span class="pageno">03</span>
+</section>
+
+<!-- ============ PAGE 4 — RECOMMENDATIONS ============ -->
+<section class="page">
+  <div class="runhead"><span>ASC International — SEO Migration Strategy</span><span>The Plan</span></div>
+  <div class="pad">
+    <span class="sec-tag">Recommendations</span>
+    <h2 class="title">The plan, in priority order</h2>
+    <div class="rule"></div>
+
+    <div class="rec k1">
+      <div class="num">1</div>
+      <div>
+        <h3>Build the redirect map before launch</h3>
+        <p>The single most important step. Pair every old indexed URL with its closest new page. This is the safety net that carries your rankings across.</p>
+      </div>
+    </div>
+    <div class="rec k2">
+      <div class="num">2</div>
+      <div>
+        <h3>Reuse the good old URLs where it's easy</h3>
+        <p>Paths like <i>/smt-inspection/solder-paste-inspection/</i> are already keyword-rich and proven. A URL you keep needs no redirect at all — zero risk. Only change one where there's a real reason.</p>
+      </div>
+    </div>
+    <div class="rec k1">
+      <div class="num">3</div>
+      <div>
+        <h3>Never funnel everything to the homepage</h3>
+        <p>Each old page redirects to its real match. Homepage-dumping old URLs is a top migration mistake that quietly drains ranking power.</p>
+      </div>
+    </div>
+    <div class="rec k3">
+      <div class="num">4</div>
+      <div>
+        <h3>For AI search, skip the gimmicks</h3>
+        <p>Google's official 2026 stance: "optimizing for generative AI search is still SEO." No <i>llms.txt</i>, no special markup. To get cited by ChatGPT &amp; AI Overviews, open each page with a plain-English answer in the first ~150 words, then use clear headings, FAQ Q&amp;A, and spec tables.</p>
+      </div>
+    </div>
+    <div class="rec k2">
+      <div class="num">5</div>
+      <div>
+        <h3>Lean into the single-topic focus</h3>
+        <p>A site that's <i>only</i> about solder paste inspection &amp; AOI builds exactly the "topical authority" Google rewards and gives AI engines clean expert passages to quote. Redirect old off-topic articles into relevant SPI/AOI content rather than carrying them over.</p>
+      </div>
+    </div>
+    <div class="rec k3">
+      <div class="num">6</div>
+      <div>
+        <h3>Keep schema — but right-size it</h3>
+        <p>Organization, Product, FAQPage and BreadcrumbList markup earn rich results in classic Google. They're <i>helpful but not required</i> for AI citation — there, content quality is the real lever.</p>
+      </div>
+    </div>
+  </div>
+  <span class="pagelbl">STRATEGY BRIEF</span>
+  <span class="pageno">04</span>
+</section>
+
+<!-- ============ PAGE 5 — DO / DONT ============ -->
+<section class="page">
+  <div class="runhead"><span>ASC International — SEO Migration Strategy</span><span>Quick Reference</span></div>
+  <div class="pad">
+    <span class="sec-tag">Cheat Sheet</span>
+    <h2 class="title">Do this. Not that.</h2>
+    <div class="rule"></div>
+
+    <div class="dd">
+      <div class="col do">
+        <h3><span class="tick">✓</span> DO</h3>
+        <ul>
+          <li>Build the complete redirect map <b>first</b></li>
+          <li>Reuse proven, keyword-rich old URLs</li>
+          <li>Server-side render so Google sees content without JavaScript</li>
+          <li>Give every page a unique title + meta description</li>
+          <li>Submit the new sitemap in Search Console</li>
+          <li>Keep the old site reachable so redirects can fire</li>
+          <li>Watch for 404 errors for ~30 days after launch</li>
+        </ul>
+      </div>
+      <div class="col dont">
+        <h3><span class="tick">✕</span> DON'T</h3>
+        <ul>
+          <li>Wipe the old site with no redirects in place</li>
+          <li>Redirect everything to the homepage</li>
+          <li>Change URLs with no real reason</li>
+          <li>Rely on <i>llms.txt</i> or AI-specific gimmicks</li>
+          <li>Let pages load only via client-side JavaScript</li>
+          <li>Strip out the page titles &amp; descriptions Rank Math set</li>
+          <li>Take the old domain offline too early</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cards" style="margin-top:26px;">
+      <div class="icard">
+        <div class="ic">🤖</div>
+        <h3>Getting cited by AI</h3>
+        <p>AI engines pull and quote self-contained <b>passages</b>, not whole pages. Front-load the answer, write in clear Q&amp;A blocks, and use your precise industry terms — "SPI," "AOI," "solder paste inspection." Jargon helps here.</p>
+      </div>
+      <div class="icard amber">
+        <div class="ic">⚙️</div>
+        <h3>The Next.js trap to avoid</h3>
+        <p>The classic replatform failure is content that only appears after JavaScript runs — crawlers may miss it. Render pages on the server, and generate a real sitemap.xml and robots.txt.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><b>Bottom line:</b> this move is safe to make — <i>if</i> the redirect map exists before you flip the switch. The risk isn't the new site; it's launching without that map.</p>
+    </div>
+  </div>
+  <span class="pagelbl">STRATEGY BRIEF</span>
+  <span class="pageno">05</span>
+</section>
+
+<!-- ============ PAGE 6 — SOURCES + NEXT ============ -->
+<section class="page">
+  <div class="runhead"><span>ASC International — SEO Migration Strategy</span><span>Evidence &amp; Next Steps</span></div>
+  <div class="pad" style="display:flex;flex-direction:column;min-height:261mm;">
+    <span class="sec-tag">How We Know This</span>
+    <h2 class="title">Sources &amp; verification</h2>
+    <div class="rule"></div>
+    <p class="lead" style="margin-bottom:18px;">Findings were fan-out researched across 20 sources, then adversarially fact-checked — 22 claims confirmed, 3 weak claims discarded. Core conclusions rest on primary Google and Next.js documentation. <span class="verified">✓ FACT-CHECKED</span></p>
+
+    <div>
+      <div class="src"><span class="dot">●</span><span><b>Google Search Central</b> — Site moves with URL changes (primary source for the 301 / PageRank guidance)</span></div>
+      <div class="src"><span class="dot">●</span><span><b>Google Search Central</b> — AI features &amp; your website / AI-optimization guide (May 2026): "optimizing for generative AI search is still SEO"</span></div>
+      <div class="src"><span class="dot">●</span><span><b>Search Engine Journal</b> — Website Migration Guide (checklist, soft-404 &amp; traffic-loss evidence)</span></div>
+      <div class="src"><span class="dot">●</span><span><b>Next.js Official Docs</b> — SEO &amp; Metadata (titles, JSON-LD, server rendering)</span></div>
+      <div class="src"><span class="dot">●</span><span><b>Practitioner case studies</b> — americaneagle, flyn.to, circlesstudio, refact, paralleldevs (redirect-map &amp; recovery-timeline corroboration)</span></div>
+      <div class="src"><span class="dot">●</span><span><b>GEO research</b> — "Generative Engine Optimization" peer-reviewed study + 2026 AI-citation analyses (front-loading, passage retrieval, E-E-A-T)</span></div>
+    </div>
+
+    <p style="font-size:11px;color:#9aa3b2;margin-top:16px;line-height:1.5;">Note: exact percentages (e.g. "20–60% drop") are directional, not precise. AI-search guidance reflects Google's May 2026 documentation and should be re-checked periodically as the landscape evolves.</p>
+
+    <div class="endnote">
+      <div class="ribbon">
+        <h3>The very next step → <span class="hl">build the redirect map</span></h3>
+        <p>Pull the complete old-site URL list from all of ascinternational.com's sitemaps, lay it next to the new site's pages, and mark each one: <b>keep as-is</b>, <b>rename + redirect</b>, or <b>redirect to closest match</b>. That single document is what makes the whole move safe — and it can be built before a single page is touched.</p>
+      </div>
+      <p style="text-align:center;font-size:11px;color:#a9a294;margin-top:18px;letter-spacing:.1em;">ASC INTERNATIONAL · SOLDER PASTE INSPECTION &amp; AOI · STRATEGY DOCUMENT · JUNE 2026</p>
+    </div>
+  </div>
+  <span class="pagelbl">STRATEGY BRIEF</span>
+  <span class="pageno">06</span>
+</section>
+
+</body>
+</html>
