@@ -236,6 +236,12 @@ export default function Header() {
                 <div className="absolute left-0 mt-0 w-72 bg-dark-secondary/95 backdrop-blur-md shadow-2xl rounded-lg border border-white/10 p-4">
                   <ul className="space-y-1">
                     <li>
+                      <Link href="/resources" className="block p-2 rounded hover:bg-white/5 transition-colors group">
+                        <div className="text-sm font-medium text-white group-hover:text-accent-cyan transition-colors">Downloads & Manuals</div>
+                        <div className="text-xs text-gray-400">Manuals, software & troubleshooting</div>
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/blog" className="block p-2 rounded hover:bg-white/5 transition-colors group">
                         <div className="text-sm font-medium text-white group-hover:text-accent-cyan transition-colors">Blog</div>
                         <div className="text-xs text-gray-400">Industry insights & guides</div>
@@ -386,6 +392,7 @@ export default function Header() {
 
             <div className="px-3 py-2">
               <div className="text-xs font-semibold text-accent-cyan uppercase mb-2">Resources</div>
+              <Link href="/resources" className="block text-gray-300 hover:text-accent-cyan py-2 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>Downloads & Manuals</Link>
               <Link href="/blog" className="block text-gray-300 hover:text-accent-cyan py-2 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
               <Link href="/compare" className="block text-gray-300 hover:text-accent-cyan py-2 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>Equipment Comparisons</Link>
               <Link href="/tools/roi-calculator" className="block text-gray-300 hover:text-accent-cyan py-2 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>ROI Calculator</Link>
