@@ -70,6 +70,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/careers" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                  Careers
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="text-gray-400 hover:text-accent-cyan transition-colors">
                   Contact
                 </Link>
@@ -104,8 +109,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-8 text-center text-gray-500 text-sm">
+        <div className="border-t border-white/10 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center text-gray-500 text-sm">
           <p>&copy; {currentYear} ASC International. All rights reserved.</p>
+          <span className="hidden sm:inline">|</span>
+          <Link href="/privacy-policy" className="hover:text-accent-cyan transition-colors">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </footer>

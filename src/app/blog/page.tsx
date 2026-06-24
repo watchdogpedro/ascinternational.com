@@ -18,6 +18,42 @@ export const metadata: Metadata = {
 export default function Blog() {
   const blogPosts = [
     {
+      title: "Solder Paste Measurement Justification: Building the ROI Case for SPI",
+      slug: "solder-paste-measurement-justification",
+      excerpt: "A capital request for inspection equipment lives or dies on the numbers. Use first-pass yield, the 10X rule, and your own rework data to build a defensible ROI model that proves SPI pays for itself.",
+      category: "Business",
+      date: "2025-03-01",
+      readTime: "11 min read",
+      image: "/blog/solder-paste-measurement-justification.jpg"
+    },
+    {
+      title: "Yield Improvement Strategies: Why It Starts at Solder Paste Printing",
+      slug: "yield-improvement-strategies",
+      excerpt: "Post-solder inspection measures yield; it doesn't improve it. Learn why first-pass yield is built at the printer, how to set paste height and volume control limits, and how to tune your process.",
+      category: "Best Practices",
+      date: "2025-03-01",
+      readTime: "12 min read",
+      image: "/blog/yield-improvement-strategies.jpg"
+    },
+    {
+      title: "Stamp Out Rework: How Early Defect Detection Protects Your Margins",
+      slug: "stamp-out-rework",
+      excerpt: "Rework quietly erodes profit in electronics assembly. Learn what it really costs, why it starts at the solder paste printer, and a practical plan to stamp it out and lift first-pass yield.",
+      category: "Business",
+      date: "2025-03-01",
+      readTime: "10 min read",
+      image: "/blog/stamp-out-rework.jpg"
+    },
+    {
+      title: "Billions of Solder Joints: Why PPM Quality Demands Automated Inspection",
+      slug: "billions-of-solder-joints",
+      excerpt: "Modern lines produce billions of solder joints. At that scale, even a tiny defect rate means thousands of failures. Learn why parts-per-million quality requires automated SPI and AOI.",
+      category: "Quality Control",
+      date: "2025-03-01",
+      readTime: "9 min read",
+      image: "/blog/billions-of-solder-joints.jpg"
+    },
+    {
       title: "Inline vs. Offline SPI: Which Configuration is Right for Your Line?",
       slug: "inline-vs-offline-spi",
       excerpt: "Choosing the wrong SPI configuration costs time and money. Compare inline and offline setups across production volume, closed-loop requirements, traceability needs, and board mix to find the right fit.",

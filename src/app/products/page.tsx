@@ -68,6 +68,22 @@ const spiProducts = [
     description: "Revolutionary dual-mode offline platform combining 3D SPI sensor technology with image-based AOI. Detects missing parts, bridging, polarity issues, and solder defects in a single pass.",
     badge: "Dual Mode",
   },
+  {
+    name: "LineMaster Fusion DMI",
+    slug: "linemaster-fusion-dmi",
+    type: "Dual Mode 3D SPI + AOI",
+    image: "/images/products/linemaster-fusion-dmi.jpg",
+    description: "Dual-mode offline platform merging phase-shift interferometry 3D SPI with image-based AOI. 1µm height accuracy, 4µm lateral SPI resolution, and component inspection down to 01005 in a single system.",
+    badge: "Dual Mode",
+  },
+  {
+    name: "CyberOptics SE Series",
+    slug: "cyberoptics-se-series",
+    type: "Pre-Owned Inline 3D SPI",
+    image: "/images/products/cyberoptics-se-series.png",
+    description: "Pre-owned high-speed inline 3D SPI from CyberOptics, the world's leading SPI supplier with 3,000+ installs. Award-winning CyberPrint OPTIMIZER software for closed-loop printer process control.",
+    badge: "Inline",
+  },
 ];
 
 const aoiProducts = [
@@ -94,6 +110,22 @@ const aoiProducts = [
     image: "/images/products/visionpro-merlin.jpg",
     description: "Affordable offline AOI with Detech2 Technology for absence, polarity, OCR, solder, and lead quality inspection. 20″×16″ inspection area expandable to 26″×22″.",
     badge: "Offline",
+  },
+  {
+    name: "VisionPro Merlin XL",
+    slug: "visionpro-merlin-xl",
+    type: "Large-Format Offline AOI",
+    image: "/images/products/visionpro-merlin-xl.png",
+    description: "Large-format offline AOI for oversized boards up to 26″×22″. Image-modeling detection with RGBW lighting, OCR, and 01005 component capability for manufacturers needing extended board capacity.",
+    badge: "Offline",
+  },
+  {
+    name: "AV 880 Series",
+    slug: "av-880-series",
+    type: "Inline AOI",
+    image: "/images/products/av-880-series.png",
+    description: "High-level inline AOI in a cost-effective standalone platform. Large 22″×26″ inspection field, 0.33s per field of view, CAD-based programming via CPL data, OCR, and real-time SPC charting.",
+    badge: "Inline",
   },
 ];
 
@@ -256,7 +288,7 @@ export default function ProductsPage() {
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="inline-flex items-center gap-2 bg-accent-cyan/10 border border-accent-cyan/30 rounded-full px-4 py-1.5 mb-5">
               <span className="w-2 h-2 rounded-full bg-accent-cyan animate-pulse" />
-              <span className="text-accent-cyan text-sm font-medium">12 Precision Systems</span>
+              <span className="text-accent-cyan text-sm font-medium">16 Precision Systems</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               All Products
@@ -279,13 +311,13 @@ export default function ProductsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
               {/* SPI */}
-              <SectionHeader label="Solder Paste Inspection" title="3D SPI Systems" count={7} />
+              <SectionHeader label="Solder Paste Inspection" title="3D SPI Systems" count={9} />
               {spiProducts.map((p) => (
                 <ProductCard key={p.slug} {...p} />
               ))}
 
               {/* AOI */}
-              <SectionHeader label="Automated Optical Inspection" title="AOI Systems" count={3} />
+              <SectionHeader label="Automated Optical Inspection" title="AOI Systems" count={5} />
               {aoiProducts.map((p) => (
                 <ProductCard key={p.slug} {...p} />
               ))}
