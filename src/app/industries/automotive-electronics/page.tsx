@@ -214,11 +214,11 @@ export default function AutomotiveElectronics() {
                       <p className="text-sm text-gray-600">Automated void measurement against customer specifications</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Thermal Pad Inspection</p>
+                      <p className="font-semibold mb-2 text-gray-900">Thermal Pad Inspection</p>
                       <p className="text-sm text-gray-600">Critical for power semiconductors in electric vehicles</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Documentation</p>
+                      <p className="font-semibold mb-2 text-gray-900">Documentation</p>
                       <p className="text-sm text-gray-600">X-ray images stored with traceability data</p>
                     </div>
                   </div>
@@ -284,7 +284,7 @@ export default function AutomotiveElectronics() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Proven in Automotive Manufacturing</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Proven in Automotive Manufacturing</h3>
                     <p className="text-gray-600">Decades of experience supporting automotive electronics manufacturers worldwide, including direct OEM suppliers and Tier 1/Tier 2 suppliers</p>
                   </div>
                 </div>
@@ -308,7 +308,7 @@ export default function AutomotiveElectronics() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Traceability Integration</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Traceability Integration</h3>
                     <p className="text-gray-600">Seamless integration with MES, ERP, and quality management systems for complete product genealogy and recall readiness</p>
                   </div>
                 </div>
@@ -332,7 +332,7 @@ export default function AutomotiveElectronics() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Expert Technical Support</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Expert Technical Support</h3>
                     <p className="text-gray-600">Direct access to our engineering team for technical questions, troubleshooting, and application support — no call centers, no queues</p>
                   </div>
                 </div>

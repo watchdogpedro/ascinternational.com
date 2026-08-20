@@ -174,7 +174,7 @@ export default function ROICalculator() {
                         onChange={(e) => setProductionVolume(Number(e.target.value))}
                         className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
                       />
-                      <div className="flex justify-between text-xs text-gray-400 mt-1">
+                      <div className="flex justify-between text-xs text-gray-600 mt-1">
                         <span>10K</span>
                         <span>5M</span>
                       </div>
@@ -208,7 +208,7 @@ export default function ROICalculator() {
                         onChange={(e) => setAverageBoardValue(Number(e.target.value))}
                         className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
                       />
-                      <div className="flex justify-between text-xs text-gray-400 mt-1">
+                      <div className="flex justify-between text-xs text-gray-600 mt-1">
                         <span>$5</span>
                         <span>$500</span>
                       </div>
@@ -242,7 +242,7 @@ export default function ROICalculator() {
                         onChange={(e) => setCurrentDefectRate(Number(e.target.value))}
                         className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
                       />
-                      <div className="flex justify-between text-xs text-gray-400 mt-1">
+                      <div className="flex justify-between text-xs text-gray-600 mt-1">
                         <span>0.1%</span>
                         <span>10%</span>
                       </div>
@@ -276,7 +276,7 @@ export default function ROICalculator() {
                         onChange={(e) => setCurrentReworkRate(Number(e.target.value))}
                         className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
                       />
-                      <div className="flex justify-between text-xs text-gray-400 mt-1">
+                      <div className="flex justify-between text-xs text-gray-600 mt-1">
                         <span>0.1%</span>
                         <span>15%</span>
                       </div>
@@ -310,7 +310,7 @@ export default function ROICalculator() {
                         onChange={(e) => setNumberOfLines(Number(e.target.value))}
                         className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
                       />
-                      <div className="flex justify-between text-xs text-gray-400 mt-1">
+                      <div className="flex justify-between text-xs text-gray-600 mt-1">
                         <span>1</span>
                         <span>12</span>
                       </div>

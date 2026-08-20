@@ -79,11 +79,11 @@ export default function Contact() {
                       </h3>
                       <p className="text-gray-600">
                         <a href="tel:+18884782912" className="hover:text-blue-600">+1 (888) 478-2912</a>
-                        <span className="text-gray-400 text-sm ml-2">Toll Free</span>
+                        <span className="text-gray-500 text-sm ml-2">Toll Free</span>
                       </p>
                       <p className="text-gray-600 mt-1">
                         <a href="tel:+17634796210" className="hover:text-blue-600">+1 (763) 479-6210</a>
-                        <span className="text-gray-400 text-sm ml-2">Direct</span>
+                        <span className="text-gray-500 text-sm ml-2">Direct</span>
                       </p>
                       <p className="text-gray-500 text-sm mt-1">Fax: +1 (763) 479-6206</p>
                       <p className="text-sm text-gray-500 mt-1">Monday - Friday, 8:00 AM - 5:00 PM CST</p>

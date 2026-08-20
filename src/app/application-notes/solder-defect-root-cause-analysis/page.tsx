@@ -332,7 +332,7 @@ export default function SolderDefectRootCauseAnalysis() {
                         <td className="px-4 py-3 border-b">Either SPI thresholds need tightening OR defect introduced after SPI</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-3 border-b font-semibold text-yellow-600">False call</td>
+                        <td className="px-4 py-3 border-b font-semibold text-yellow-700">False call</td>
                         <td className="px-4 py-3 border-b">Defect flagged</td>
                         <td className="px-4 py-3 border-b">No defect</td>
                         <td className="px-4 py-3 border-b">SPI thresholds too tight or measuring artifact &mdash; the reflow process &ldquo;healed&rdquo; the anomaly</td>

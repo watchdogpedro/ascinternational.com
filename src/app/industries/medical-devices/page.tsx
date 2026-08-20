@@ -105,14 +105,14 @@ export default function MedicalDevices() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-display text-3xl font-bold mb-12 text-center text-white">Regulatory Requirements</h2>
+              <h2 className="font-display text-3xl font-bold mb-12 text-center text-gray-900">Regulatory Requirements</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-white border border-gray-200 p-6 rounded-lg hover:border-blue-500 transition-all">
                   <h3 className="text-xl font-semibold mb-3 text-blue-600">FDA 21 CFR Part 11</h3>
                   <p className="text-gray-600 mb-4">
                     Electronic records and electronic signatures requirements for systems used in FDA-regulated manufacturing.
                   </p>
-                  <ul className="text-sm text-gray-400 space-y-1">
+                  <ul className="text-sm text-gray-600 space-y-1">
                     <li>• User access controls and authentication</li>
                     <li>• Audit trail of all system changes</li>
                     <li>• Data integrity and security</li>
@@ -125,7 +125,7 @@ export default function MedicalDevices() {
                   <p className="text-gray-600 mb-4">
                     Quality management system standard specifically for medical device manufacturers and suppliers.
                   </p>
-                  <ul className="text-sm text-gray-400 space-y-1">
+                  <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Process validation documentation</li>
                     <li>• Risk management integration</li>
                     <li>• Measurement equipment validation</li>
@@ -138,7 +138,7 @@ export default function MedicalDevices() {
                   <p className="text-gray-600 mb-4">
                     Complete documentation of manufacturing and inspection for each device produced, required for traceability.
                   </p>
-                  <ul className="text-sm text-gray-400 space-y-1">
+                  <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Inspection results and images</li>
                     <li>• Component traceability</li>
                     <li>• Process parameter records</li>
@@ -151,7 +151,7 @@ export default function MedicalDevices() {
                   <p className="text-gray-600 mb-4">
                     FDA requirement for documented product design and development process including verification and validation.
                   </p>
-                  <ul className="text-sm text-gray-400 space-y-1">
+                  <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Design verification protocols</li>
                     <li>• Process validation studies</li>
                     <li>• Installation qualification (IQ/OQ/PQ)</li>
@@ -167,67 +167,67 @@ export default function MedicalDevices() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-display text-3xl font-bold mb-12 text-center text-white">Inspection Solutions for Medical Devices</h2>
+              <h2 className="font-display text-3xl font-bold mb-12 text-center text-gray-900">Inspection Solutions for Medical Devices</h2>
               <div className="space-y-8">
                 <div className="bg-dark-secondary border border-white/10 p-8 rounded-lg">
                   <h3 className="font-display text-2xl font-bold mb-4 text-white">Pre-Production Validation</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     Complete validation packages demonstrating inspection system capability before production begins. Essential for regulatory submissions and FDA audits.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">IQ/OQ/PQ Protocols</p>
-                      <p className="text-sm text-gray-400">Installation, operational, and performance qualification documentation</p>
+                      <p className="font-semibold mb-2 text-gray-900">IQ/OQ/PQ Protocols</p>
+                      <p className="text-sm text-gray-600">Installation, operational, and performance qualification documentation</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Gage R&R Studies</p>
-                      <p className="text-sm text-gray-400">Measurement system analysis demonstrating repeatability and reproducibility</p>
+                      <p className="font-semibold mb-2 text-gray-900">Gage R&R Studies</p>
+                      <p className="text-sm text-gray-600">Measurement system analysis demonstrating repeatability and reproducibility</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Capability Studies</p>
-                      <p className="text-sm text-gray-400">Process capability analysis meeting regulatory requirements</p>
+                      <p className="font-semibold mb-2 text-gray-900">Capability Studies</p>
+                      <p className="text-sm text-gray-600">Process capability analysis meeting regulatory requirements</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-dark-secondary border border-white/10 p-8 rounded-lg">
                   <h3 className="font-display text-2xl font-bold mb-4 text-white">Production Inspection</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     100% inspection with complete documentation of every device manufactured. Data becomes part of permanent device history record.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-white border border-gray-200 p-4 rounded">
                       <p className="font-semibold mb-2 text-gray-900">Complete Traceability</p>
-                      <p className="text-sm text-gray-400">Serial number tracking with inspection data linked to each device</p>
+                      <p className="text-sm text-gray-600">Serial number tracking with inspection data linked to each device</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Image Archival</p>
-                      <p className="text-sm text-gray-400">High-resolution images stored for future review and audits</p>
+                      <p className="font-semibold mb-2 text-gray-900">Image Archival</p>
+                      <p className="text-sm text-gray-600">High-resolution images stored for future review and audits</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Secure Data Storage</p>
-                      <p className="text-sm text-gray-400">Long-term data retention meeting regulatory requirements</p>
+                      <p className="font-semibold mb-2 text-gray-900">Secure Data Storage</p>
+                      <p className="text-sm text-gray-600">Long-term data retention meeting regulatory requirements</p>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-dark-secondary border border-white/10 p-8 rounded-lg">
                   <h3 className="font-display text-2xl font-bold mb-4 text-white">Compliance Features</h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     Built-in features specifically designed to support FDA and ISO 13485 compliance requirements.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">User Management</p>
-                      <p className="text-sm text-gray-400">Role-based access control with electronic signatures</p>
+                      <p className="font-semibold mb-2 text-gray-900">User Management</p>
+                      <p className="text-sm text-gray-600">Role-based access control with electronic signatures</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Audit Trail</p>
-                      <p className="text-sm text-gray-400">Complete logging of all system activities and changes</p>
+                      <p className="font-semibold mb-2 text-gray-900">Audit Trail</p>
+                      <p className="text-sm text-gray-600">Complete logging of all system activities and changes</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Change Control</p>
-                      <p className="text-sm text-gray-400">Documented procedures for system modifications</p>
+                      <p className="font-semibold mb-2 text-gray-900">Change Control</p>
+                      <p className="text-sm text-gray-600">Documented procedures for system modifications</p>
                     </div>
                   </div>
                 </div>
@@ -240,7 +240,7 @@ export default function MedicalDevices() {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-display text-3xl font-bold mb-8 text-white">Medical Device Applications</h2>
+              <h2 className="font-display text-3xl font-bold mb-8 text-gray-900">Medical Device Applications</h2>
               <div className="space-y-6">
                 <div className="bg-white border border-gray-200 p-6 rounded-lg hover:border-blue-500 transition-all">
                   <h3 className="text-xl font-semibold mb-3 text-blue-600">Implantable Devices</h3>
@@ -292,7 +292,7 @@ export default function MedicalDevices() {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-display text-3xl font-bold mb-8 text-white">Why Choose ASC for Medical Devices?</h2>
+              <h2 className="font-display text-3xl font-bold mb-8 text-gray-900">Why Choose ASC for Medical Devices?</h2>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mr-4">
@@ -301,7 +301,7 @@ export default function MedicalDevices() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Medical Device Experience</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Medical Device Experience</h3>
                     <p className="text-gray-600">Decades of experience supporting medical device manufacturers through regulatory submissions, audits, and production</p>
                   </div>
                 </div>
@@ -325,7 +325,7 @@ export default function MedicalDevices() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">21 CFR Part 11 Ready</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">21 CFR Part 11 Ready</h3>
                     <p className="text-gray-600">Systems designed with FDA electronic records requirements built-in, including user management, audit trails, and electronic signatures</p>
                   </div>
                 </div>
@@ -337,7 +337,7 @@ export default function MedicalDevices() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Long-Term Partnership</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Long-Term Partnership</h3>
                     <p className="text-gray-600">Ongoing support through product lifecycle including system requalification, software updates, and audit support</p>
                   </div>
                 </div>
@@ -349,7 +349,7 @@ export default function MedicalDevices() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Integration Capabilities</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Integration Capabilities</h3>
                     <p className="text-gray-600">Connect with MES, ERP, and quality management systems for seamless DHR generation and traceability</p>
                   </div>
                 </div>

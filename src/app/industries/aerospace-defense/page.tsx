@@ -154,7 +154,7 @@ export default function AerospaceDefense() {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">CAD Comparison</p>
+                      <p className="font-semibold mb-2 text-gray-900">CAD Comparison</p>
                       <p className="text-sm text-gray-600">Automated comparison to design data for dimensional verification</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
@@ -162,7 +162,7 @@ export default function AerospaceDefense() {
                       <p className="text-sm text-gray-600">AS9102 forms with detailed measurements and images</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Characteristic Verification</p>
+                      <p className="font-semibold mb-2 text-gray-900">Characteristic Verification</p>
                       <p className="text-sm text-gray-600">All critical, major, and key characteristics documented</p>
                     </div>
                   </div>
@@ -183,7 +183,7 @@ export default function AerospaceDefense() {
                       <p className="text-sm text-gray-600">Verification of placement, orientation, and part numbers</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Workmanship Verification</p>
+                      <p className="font-semibold mb-2 text-gray-900">Workmanship Verification</p>
                       <p className="text-sm text-gray-600">Detailed analysis meeting strictest acceptance criteria</p>
                     </div>
                   </div>
@@ -196,7 +196,7 @@ export default function AerospaceDefense() {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Serial Number Tracking</p>
+                      <p className="font-semibold mb-2 text-gray-900">Serial Number Tracking</p>
                       <p className="text-sm text-gray-600">Barcode/2D code integration for unit-level traceability</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
@@ -204,7 +204,7 @@ export default function AerospaceDefense() {
                       <p className="text-sm text-gray-600">Lot code tracking for all components to detect counterfeits</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Long-Term Archival</p>
+                      <p className="font-semibold mb-2 text-gray-900">Long-Term Archival</p>
                       <p className="text-sm text-gray-600">Permanent storage of inspection data and images</p>
                     </div>
                   </div>
@@ -217,11 +217,11 @@ export default function AerospaceDefense() {
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">Void Analysis</p>
+                      <p className="font-semibold mb-2 text-gray-900">Void Analysis</p>
                       <p className="text-sm text-gray-600">Automated measurement against aerospace specifications</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
-                      <p className="font-semibold mb-2 text-white">3D Imaging</p>
+                      <p className="font-semibold mb-2 text-gray-900">3D Imaging</p>
                       <p className="text-sm text-gray-600">Computed tomography for complex package inspection</p>
                     </div>
                     <div className="bg-white border border-gray-200 p-4 rounded">
@@ -298,7 +298,7 @@ export default function AerospaceDefense() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Aerospace Industry Experience</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Aerospace Industry Experience</h3>
                     <p className="text-gray-600">Extensive experience supporting aerospace and defense manufacturers with AS9100 certified quality systems and military contractor requirements</p>
                   </div>
                 </div>
@@ -346,7 +346,7 @@ export default function AerospaceDefense() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Long-Term Support</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Long-Term Support</h3>
                     <p className="text-gray-600">Extended product lifecycles with ongoing support, spare parts availability, and system upgrades to support programs lasting decades</p>
                   </div>
                 </div>
@@ -358,7 +358,7 @@ export default function AerospaceDefense() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2 text-white">Security & Compliance</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-gray-900">Security & Compliance</h3>
                     <p className="text-gray-600">Systems designed with security features and data protection appropriate for defense manufacturing environments</p>
                   </div>
                 </div>

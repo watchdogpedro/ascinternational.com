@@ -5,11 +5,50 @@
 :root {
   --background: #0a0e27;
   --foreground: #ffffff;
+  /* Default text on light surfaces. Tailwind's gray-900. */
+  --ink: #111827;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+/*
+ * Surface-aware text colour.
+ *
+ * The shell — body, header, footer — is dark navy, so the document default is
+ * white. Most page content, though, sits on light surfaces, and any section
+ * that never set a text colour inherited that white and disappeared into the
+ * background. The mirror case also existed: pages whose <main> had no
+ * background let the navy show through behind text styled dark.
+ *
+ * These rules let each surface declare the text colour that belongs on it
+ * rather than leaning on one global default.
+ *
+ * They are wrapped in :where() so they carry ZERO specificity. Every explicit
+ * text-* utility still wins; these only supply a default where none was set.
+ * Order matters, since equal specificity means the last match wins: the dark
+ * block sits last so bg-dark-bg on <main> beats the <main> rule above it.
+ */
+:where(main) {
+  background-color: #ffffff;
+  color: var(--ink);
+}
+
+:where(
+  .bg-white:not(main), .bg-gray-50, .bg-gray-100, .bg-gray-200,
+  .bg-blue-50, .bg-green-50, .bg-red-50, .bg-yellow-50,
+  .bg-orange-50, .bg-purple-50, .bg-amber-50
+) {
+  color: var(--ink);
+}
+
+:where(
+  .bg-dark-bg, .bg-dark-secondary, .bg-dark-card, .bg-black,
+  .bg-gray-900, .bg-blue-600, .bg-blue-700, .bg-blue-800
+) {
+  color: #ffffff;
 }
 
 @layer utilities {

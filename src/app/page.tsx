@@ -675,17 +675,17 @@ export default function Home() {
 
             {/* Trusted By Industries */}
             <div className="text-center">
-              <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">Trusted Across Industries</p>
-              <div className="flex flex-wrap justify-center gap-8 items-center opacity-60">
-                <span className="text-lg font-display font-bold text-gray-400">Automotive</span>
-                <span className="text-gray-300">|</span>
-                <span className="text-lg font-display font-bold text-gray-400">Medical Devices</span>
-                <span className="text-gray-300">|</span>
-                <span className="text-lg font-display font-bold text-gray-400">Aerospace & Defense</span>
-                <span className="text-gray-300">|</span>
-                <span className="text-lg font-display font-bold text-gray-400">Contract Manufacturing</span>
-                <span className="text-gray-300">|</span>
-                <span className="text-lg font-display font-bold text-gray-400">Semiconductor</span>
+              <p className="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-6">Trusted Across Industries</p>
+              <div className="flex flex-wrap justify-center gap-8 items-center opacity-80">
+                <span className="text-lg font-display font-bold text-gray-600">Automotive</span>
+                <span className="text-gray-400">|</span>
+                <span className="text-lg font-display font-bold text-gray-600">Medical Devices</span>
+                <span className="text-gray-400">|</span>
+                <span className="text-lg font-display font-bold text-gray-600">Aerospace & Defense</span>
+                <span className="text-gray-400">|</span>
+                <span className="text-lg font-display font-bold text-gray-600">Contract Manufacturing</span>
+                <span className="text-gray-400">|</span>
+                <span className="text-lg font-display font-bold text-gray-600">Semiconductor</span>
               </div>
             </div>
           </div>

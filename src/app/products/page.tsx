@@ -263,7 +263,7 @@ function SectionHeader({ label, title, count }: { label: string; title: string; 
         <div className="text-accent-cyan text-xs font-semibold uppercase tracking-widest mb-1">{label}</div>
         <h2 className="text-2xl font-bold text-white">{title}</h2>
       </div>
-      <span className="text-gray-600 text-sm">{count} system{count !== 1 ? "s" : ""}</span>
+      <span className="text-gray-300 text-sm">{count} system{count !== 1 ? "s" : ""}</span>
     </div>
   );
 }
