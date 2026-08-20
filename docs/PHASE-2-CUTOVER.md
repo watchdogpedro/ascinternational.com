@@ -1,7 +1,30 @@
 # Phase 2 — moving this site onto ascinternational.com
 
-**Status:** code complete, not yet switched on.
-**Everything on this branch is inert until two environment variables are set.**
+**Status (19 Aug 2026, ~23:20 ET): PARTIALLY CUT OVER.**
+
+`ascinternational.com` now serves this site. Steps 1, 2 and 5 below are done and
+verified. **Steps 3 and 4 — the two environment variables and the redeploy —
+have NOT been done yet.**
+
+### What that means right now
+
+Both domains serve identical content, and the canonical tags on
+`ascinternational.com` still name `solderpasteinspection.com` as the real
+address. Left alone, Google consolidates authority onto the **old** domain —
+the opposite of the point of this migration. Harmless for a day or two, not for
+weeks.
+
+**To finish: do steps 3 and 4.** Nothing else is outstanding.
+
+### Verified after the DNS move
+
+| Check on `ascinternational.com` | Result |
+|---|---|
+| Homepage + TLS certificate | valid |
+| Legacy ASC redirects | 208 / 208 |
+| Site pages returning 200 | 97 / 97 |
+| Legacy PDFs returning 200 | 46 / 46 |
+| ASC email records (MX, SPF, DMARC, mail/smtp/imap/pop) | all 7 intact, never went down |
 
 This is the plain-English version. The confidential half of the story —
 account IDs, DNS records, who controls what — lives in
@@ -142,6 +165,27 @@ Do these in order. Steps 1–2 are the only ones that change anything visible.
 
 4. **Redeploy.** These are build-time variables — they do nothing until a fresh
    deploy runs.
+
+> **What actually happened on the night (19 Aug 2026).** Vercel told us to set
+> `A ascinternational.com 76.76.21.21` and that is what went into Cloudflare —
+> a single field on a single row, `185.146.167.204` → `76.76.21.21`. DNS moved
+> within seconds.
+>
+> **Then the apex sat without a TLS certificate for ~11 minutes** while
+> `www` already had one, so `https://ascinternational.com` showed a certificate
+> warning and the domain was effectively down for that window. Cause: the
+> domain was added to Vercel *before* DNS pointed at it, so the first
+> certificate request failed and Vercel backed off. `www` was added later, by
+> which time DNS had moved, so it got its certificate immediately.
+>
+> **It resolved on its own — no intervention.** If you cut over again, either
+> add the domain in Vercel *after* pointing DNS, or simply expect a ~15 minute
+> certificate gap and do it outside business hours. Do not remove and re-add
+> the domain during the first 15 minutes; you will lose the backoff progress.
+>
+> Vercel afterwards shows **"DNS Change Recommended"** (yellow) on both ASC
+> rows. It is cosmetic — Vercel now prefers its newer edge IP `216.150.1.1`
+> over the `76.76.21.21` it told us to use. The site works on either.
 
 5. **Check it.** `ascinternational.com` serves this site; a handful of old URLs
    from `docs/redirect-map.csv` land on the right pages;
