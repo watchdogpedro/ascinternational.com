@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Careers - Join the ASC International Team | Inspection & Metrology Jobs",
@@ -37,7 +38,7 @@ export default function CareersPage() {
     hiringOrganization: {
       "@type": "Organization",
       name: "ASC International, Inc.",
-      sameAs: "https://solderpasteinspection.com",
+      sameAs: `${SITE_URL}`,
     },
     jobLocation: {
       "@type": "Place",

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Inline vs. Offline SPI: Which Configuration is Right for Your Line? | ASC International",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2026-03-18",
     "dateModified": "2026-03-18",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/inline-vs-offline-spi"
+      "@id": `${SITE_URL}/blog/inline-vs-offline-spi`
     },
     "articleSection": "Buyer's Guide",
     "keywords": ["SPI", "inline inspection", "offline inspection", "solder paste", "electronics manufacturing"]

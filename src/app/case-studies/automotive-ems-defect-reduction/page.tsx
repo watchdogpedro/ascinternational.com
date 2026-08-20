@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Automotive EMS Defect Reduction Case Study | 67% Fewer Defects | ASC International",
@@ -30,14 +31,14 @@ export default function AutomotiveEMSCaseStudy() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png",
+        "url": `${SITE_URL}/logo.png`,
       },
     },
     "datePublished": "2026-02-01",
     "dateModified": "2026-02-01",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/case-studies/automotive-ems-defect-reduction",
+      "@id": `${SITE_URL}/case-studies/automotive-ems-defect-reduction`,
     },
     "articleSection": "Case Studies",
     "keywords": ["automotive", "defect reduction", "IATF 16949", "3D SPI", "AOI"],

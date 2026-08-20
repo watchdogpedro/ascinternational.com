@@ -1,3 +1,4 @@
+import { SITE_DOMAIN } from '@/lib/site'
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
@@ -64,7 +65,7 @@ export async function POST(request: NextRequest) {
   <div class="wrapper">
     <div class="header">
       <h1>New Contact Form Submission</h1>
-      <p>solderpasteinspection.com — ASC International</p>
+      <p>${SITE_DOMAIN} — ASC International</p>
     </div>
     <div class="body">
       <div class="field">

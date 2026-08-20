@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 interface BreadcrumbItem {
   name: string;
@@ -12,7 +13,7 @@ interface BreadcrumbProps {
 }
 
 export default function Breadcrumb({ items }: BreadcrumbProps) {
-  const baseUrl = "https://solderpasteinspection.com";
+  const baseUrl = `${SITE_URL}`;
 
   // Build the BreadcrumbList schema
   const breadcrumbSchema = {

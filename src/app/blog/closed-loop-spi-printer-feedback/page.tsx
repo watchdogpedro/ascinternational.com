@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Closed-Loop SPI to Printer Feedback: How Automatic Correction Works | ASC International",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2026-03-15",
     "dateModified": "2026-03-15",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/closed-loop-spi-printer-feedback"
+      "@id": `${SITE_URL}/blog/closed-loop-spi-printer-feedback`
     },
     "articleSection": "Technology",
     "keywords": ["closed-loop SPI", "printer feedback", "process control", "solder paste", "stencil printer", "automation"]

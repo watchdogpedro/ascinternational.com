@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "All-in-One Inspection Platform vs Best-of-Breed: Which Approach Wins? | ASC International",
@@ -21,7 +22,7 @@ export default function SinglePlatformVsBestOfBreed() {
     "@type": "ComparisonTable",
     "name": "All-in-One Inspection Platform vs Best-of-Breed Comparison",
     "description": "Comprehensive comparison of single-platform conglomerate inspection solutions versus best-of-breed specialist approaches",
-    "url": "https://solderpasteinspection.com/compare/single-platform-vs-best-of-breed",
+    "url": `${SITE_URL}/compare/single-platform-vs-best-of-breed`,
     "about": [
       {
         "@type": "Product",

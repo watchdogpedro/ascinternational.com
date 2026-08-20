@@ -2,18 +2,19 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import type { Metadata } from "next";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Electronics Inspection Glossary - Technical Terms & Definitions",
   description: "Comprehensive glossary of electronics manufacturing, inspection, and quality control terms. Definitions for SPI, AOI, SMT, PCB assembly, and industry standards.",
   keywords: ["SPI glossary", "AOI terms", "electronics manufacturing definitions", "PCB inspection terminology", "SMT glossary", "IPC standards", "quality control terms"],
   alternates: {
-    canonical: 'https://solderpasteinspection.com/glossary',
+    canonical: `${SITE_URL}/glossary`,
   },
   openGraph: {
     title: 'Electronics Inspection Glossary | ASC International',
     description: 'Comprehensive glossary of electronics manufacturing and inspection terms.',
-    url: 'https://solderpasteinspection.com/glossary',
+    url: `${SITE_URL}/glossary`,
   },
 };
 
@@ -523,12 +524,12 @@ export default function GlossaryPage() {
   // DefinedTerm schema — one per term, with url anchor for AI linking
   const definedTermSchemas = glossaryTerms.map((term) => ({
     "@type": "DefinedTerm",
-    "@id": `https://solderpasteinspection.com/glossary#${term.id}`,
+    "@id": `${SITE_URL}/glossary#${term.id}`,
     "name": term.term,
     "description": term.definition,
-    "url": `https://solderpasteinspection.com/glossary#${term.id}`,
+    "url": `${SITE_URL}/glossary#${term.id}`,
     "inDefinedTermSet": {
-      "@id": `https://solderpasteinspection.com/glossary#${term.category.toLowerCase().replace(/\s+/g, '-')}`
+      "@id": `${SITE_URL}/glossary#${term.category.toLowerCase().replace(/\s+/g, '-')}`
     },
   }));
 
@@ -536,13 +537,13 @@ export default function GlossaryPage() {
   const termSetSchemas = categories.map((category) => {
     const categoryTermIds = glossaryTerms
       .filter((t) => t.category === category)
-      .map((t) => ({ "@id": `https://solderpasteinspection.com/glossary#${t.id}` }));
+      .map((t) => ({ "@id": `${SITE_URL}/glossary#${t.id}` }));
     return {
       "@type": "DefinedTermSet",
-      "@id": `https://solderpasteinspection.com/glossary#${category.toLowerCase().replace(/\s+/g, '-')}`,
+      "@id": `${SITE_URL}/glossary#${category.toLowerCase().replace(/\s+/g, '-')}`,
       "name": `${category} Terms`,
       "description": `Glossary of ${category.toLowerCase()} terms in electronics manufacturing and inspection`,
-      "url": `https://solderpasteinspection.com/glossary#${category.toLowerCase().replace(/\s+/g, '-')}`,
+      "url": `${SITE_URL}/glossary#${category.toLowerCase().replace(/\s+/g, '-')}`,
       "hasDefinedTerm": categoryTermIds,
     };
   });
@@ -557,7 +558,7 @@ export default function GlossaryPage() {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": term.definition,
-        "url": `https://solderpasteinspection.com/glossary#${term.id}`,
+        "url": `${SITE_URL}/glossary#${term.id}`,
       },
     })),
   };
@@ -568,16 +569,16 @@ export default function GlossaryPage() {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://solderpasteinspection.com/glossary",
+        "@id": `${SITE_URL}/glossary`,
         "name": "Electronics Inspection Glossary - Technical Terms & Definitions",
-        "url": "https://solderpasteinspection.com/glossary",
+        "url": `${SITE_URL}/glossary`,
         "description": "Comprehensive glossary of electronics manufacturing, inspection, and quality control terms. Definitions for SPI, AOI, SMT, PCB assembly, and industry standards.",
         "inLanguage": "en-US",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://solderpasteinspection.com" },
-            { "@type": "ListItem", "position": 2, "name": "Glossary", "item": "https://solderpasteinspection.com/glossary" },
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}` },
+            { "@type": "ListItem", "position": 2, "name": "Glossary", "item": `${SITE_URL}/glossary` },
           ],
         },
         "speakable": {
@@ -590,7 +591,7 @@ export default function GlossaryPage() {
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://solderpasteinspection.com/#organization",
+          "@id": `${SITE_URL}/#organization`,
           "name": "ASC International",
         },
       },

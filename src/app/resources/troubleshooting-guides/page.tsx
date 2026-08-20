@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Troubleshooting Guides | Inspection System Support | ASC International",
@@ -45,7 +46,7 @@ export default function TroubleshootingGuides() {
     "@type": "CollectionPage",
     name: "Troubleshooting Guides",
     description: "Troubleshooting and maintenance references for ASC International inspection systems.",
-    url: "https://solderpasteinspection.com/resources/troubleshooting-guides",
+    url: `${SITE_URL}/resources/troubleshooting-guides`,
     hasPart: guides.map((g) => ({ "@type": "CreativeWork", name: g.name, description: g.desc })),
   };
 

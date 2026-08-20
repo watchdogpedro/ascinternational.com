@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Visit ASC International at IPC APEX EXPO 2026 | Anaheim, CA",
@@ -37,7 +38,7 @@ export default function ApexExpo2026() {
         "addressCountry": "US"
       }
     },
-    "image": "https://solderpasteinspection.com/images/apex-expo-2026.png",
+    "image": `${SITE_URL}/images/apex-expo-2026.png`,
     "organizer": {
       "@type": "Organization",
       "name": "IPC",
@@ -46,14 +47,14 @@ export default function ApexExpo2026() {
     "performer": {
       "@type": "Organization",
       "name": "ASC International",
-      "url": "https://solderpasteinspection.com"
+      "url": `${SITE_URL}`
     },
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "url": "https://solderpasteinspection.com/events/apex-expo-2026",
+      "url": `${SITE_URL}/events/apex-expo-2026`,
       "validFrom": "2025-10-01"
     },
     "superEvent": {

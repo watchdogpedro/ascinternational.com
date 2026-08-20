@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Electronics Inspection Equipment Comparisons | ASC International",
@@ -87,12 +88,12 @@ export default function ComparePage() {
     "@type": "CollectionPage",
     "name": "Electronics Inspection Equipment Comparisons",
     "description": "Comprehensive comparisons of inspection, metrology, and dispensing technologies for electronics manufacturing",
-    "url": "https://solderpasteinspection.com/compare",
+    "url": `${SITE_URL}/compare`,
     "hasPart": comparisons.map(comp => ({
       "@type": "WebPage",
       "name": comp.title,
       "description": comp.description,
-      "url": `https://solderpasteinspection.com${comp.href}`
+      "url": `${SITE_URL}${comp.href}`
     }))
   };
 

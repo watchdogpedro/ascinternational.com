@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "User Manuals & Guides | Inspection System Documentation | ASC International",
@@ -51,7 +52,7 @@ export default function UserManualsGuides() {
     "@type": "CollectionPage",
     name: "User Manuals & Guides",
     description: "Operation manuals and quick-start guides for ASC International inspection systems.",
-    url: "https://solderpasteinspection.com/resources/user-manuals-guides",
+    url: `${SITE_URL}/resources/user-manuals-guides`,
     hasPart: manuals.map((m) => ({ "@type": "CreativeWork", name: m.name, description: m.desc })),
   };
 

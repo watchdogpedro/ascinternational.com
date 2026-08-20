@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Aerospace AS9100 Inspection Compliance Case Study | ASC International",
@@ -30,14 +31,14 @@ export default function AerospaceAS9100CaseStudy() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png",
+        "url": `${SITE_URL}/logo.png`,
       },
     },
     "datePublished": "2026-02-01",
     "dateModified": "2026-02-01",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/case-studies/aerospace-as9100-compliance",
+      "@id": `${SITE_URL}/case-studies/aerospace-as9100-compliance`,
     },
     "articleSection": "Case Studies",
     "keywords": ["aerospace", "AS9100", "defense electronics", "automated inspection", "traceability"],

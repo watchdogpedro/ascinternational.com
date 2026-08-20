@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "3D SPI vs 2D SPI: Complete Comparison Guide 2026 | ASC International",
@@ -21,7 +22,7 @@ export default function ThreeDSPIvs2DSPI() {
     "@type": "ComparisonTable",
     "name": "3D SPI vs 2D SPI Comparison",
     "description": "Comprehensive comparison of 3D and 2D solder paste inspection technologies",
-    "url": "https://solderpasteinspection.com/compare/3d-spi-vs-2d-spi",
+    "url": `${SITE_URL}/compare/3d-spi-vs-2d-spi`,
     "about": [
       {
         "@type": "Product",

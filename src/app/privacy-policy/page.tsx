@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import { SITE_DOMAIN } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Privacy Policy | ASC International",
   description:
-    "How ASC International collects, uses, and protects the personal information of visitors to solderpasteinspection.com.",
+    `How ASC International collects, uses, and protects the personal information of visitors to ${SITE_DOMAIN}.`,
   robots: { index: true, follow: true },
   alternates: {
     canonical: "/privacy-policy",
@@ -50,7 +51,7 @@ export default function PrivacyPolicyPage() {
                   Inc. (&ldquo;ASC International,&rdquo; &ldquo;we,&rdquo; or
                   &ldquo;us&rdquo;) collects, uses, maintains, and discloses
                   information collected from users (each, a &ldquo;User&rdquo;) of the
-                  solderpasteinspection.com website (the &ldquo;Site&rdquo;). This
+                  {SITE_DOMAIN} website (the &ldquo;Site&rdquo;). This
                   policy applies to the Site and all products and services offered by
                   ASC International.
                 </p>

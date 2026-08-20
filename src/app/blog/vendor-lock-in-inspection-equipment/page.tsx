@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Avoiding Vendor Lock-In When Choosing Inspection Equipment | ASC Blog",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2026-01-18",
     "dateModified": "2026-01-18",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/vendor-lock-in-inspection-equipment"
+      "@id": `${SITE_URL}/blog/vendor-lock-in-inspection-equipment`
     },
     "articleSection": "Business",
     "keywords": ["vendor lock-in", "open architecture", "IPC-CFX", "inspection equipment"]

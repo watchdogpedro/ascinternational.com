@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "AOI System Evaluation Guide 2026: How to Choose the Right AOI Vendor | ASC International",
@@ -21,7 +22,7 @@ export default function AOIVendorEvaluation() {
     "@type": "ComparisonTable",
     "name": "AOI System Evaluation Guide 2026",
     "description": "Comprehensive evaluation framework for comparing automated optical inspection system vendors",
-    "url": "https://solderpasteinspection.com/compare/aoi-vendor-evaluation",
+    "url": `${SITE_URL}/compare/aoi-vendor-evaluation`,
     "about": [
       {
         "@type": "Product",

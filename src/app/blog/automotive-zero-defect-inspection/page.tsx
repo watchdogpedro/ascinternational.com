@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Automotive Electronics: Meeting Zero-Defect Requirements | ASC Blog",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2025-12-20",
     "dateModified": "2025-12-20",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/automotive-zero-defect-inspection"
+      "@id": `${SITE_URL}/blog/automotive-zero-defect-inspection`
     },
     "articleSection": "Industry",
     "keywords": ["automotive", "zero defect", "IATF 16949", "automotive quality"]

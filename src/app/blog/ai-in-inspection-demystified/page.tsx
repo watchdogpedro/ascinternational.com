@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "AI in Inspection: What Actually Works vs. Marketing Hype | ASC Blog",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2026-01-28",
     "dateModified": "2026-01-28",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/ai-in-inspection-demystified"
+      "@id": `${SITE_URL}/blog/ai-in-inspection-demystified`
     },
     "articleSection": "Technology",
     "keywords": ["AI inspection", "AI AOI", "artificial intelligence quality control"]

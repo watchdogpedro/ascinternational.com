@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "The Critical Role of SPI in Preventing Solder Defects | ASC Blog",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2025-12-28",
     "dateModified": "2025-12-28",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/spi-preventing-solder-defects"
+      "@id": `${SITE_URL}/blog/spi-preventing-solder-defects`
     },
     "articleSection": "Quality Control",
     "keywords": ["SPI", "solder defects", "quality control", "defect prevention"]
