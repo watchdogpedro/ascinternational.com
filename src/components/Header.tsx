@@ -283,13 +283,6 @@ export default function Header() {
             </div>
 
             <Link
-              href="/events/apex-expo-2026"
-              className="ml-2 bg-yellow-500 text-black px-3 py-2 rounded-lg text-sm font-bold hover:bg-yellow-400 transition-colors"
-            >
-              APEX 2026
-            </Link>
-
-            <Link
               href="/contact"
               className="ml-2 bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg px-4 py-2 rounded-lg text-sm font-bold hover:shadow-lg hover:shadow-accent-cyan/50 transition-all"
             >
@@ -400,14 +393,6 @@ export default function Header() {
               <Link href="/glossary" className="block text-gray-300 hover:text-accent-cyan py-2 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>Glossary</Link>
               <Link href="/faq" className="block text-gray-300 hover:text-accent-cyan py-2 pl-4 text-sm" onClick={() => setMobileMenuOpen(false)}>FAQ</Link>
             </div>
-
-            <Link
-              href="/events/apex-expo-2026"
-              className="block bg-yellow-500 text-black mx-3 my-2 px-3 py-2 rounded-lg text-base font-bold text-center"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              APEX 2026 - Visit Our Booth
-            </Link>
 
             <Link
               href="/contact"

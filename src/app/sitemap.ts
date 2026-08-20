@@ -498,13 +498,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
-    // Events pages - high priority for timely content
-    {
-      url: `${baseUrl}/events/apex-expo-2026`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
   ]
 
   return routes

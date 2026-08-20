@@ -47,6 +47,12 @@ const nextConfig: NextConfig = {
     return [
       ...hostRedirects,
 
+      // ── Retired event pages ─────────────────────────────
+      // IPC APEX EXPO 2026 (Anaheim, Mar 17-19 2026) has been and gone.
+      // The page is deleted; the URL keeps working for anyone holding
+      // the old link, and hands Google a 301 instead of a 404.
+      { source: "/events/apex-expo-2026", destination: "/contact", permanent: true },
+
       // ══════════════════════════════════════════════════════════════
       // Legacy ascinternational.com (WordPress) → this site
       //
