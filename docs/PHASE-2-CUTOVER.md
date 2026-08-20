@@ -37,6 +37,24 @@ configurable in this repo. Both `.net` rows point at `ascinternational.com`
 with a 308. If they ever get reset to `www.solderpasteinspection.com`, that is
 where to fix it.
 
+### This repo was renamed (20 Aug 2026)
+
+`watchdogpedro/solderpasteinspection.com` → **`watchdogpedro/ascinternational.com`**,
+to match the domain it now serves.
+
+- GitHub permanently redirects the old URL, so old links, clones and remotes
+  keep working. Updating a local remote is optional tidy-up:
+  `git remote set-url origin git@github.com:watchdogpedro/ascinternational.com.git`
+- Vercel tracks the repo by internal ID, not by name, so the deploy connection
+  survives the rename untouched.
+- The Vercel project is still called **`asc-international`** — that name was
+  always domain-neutral and needs no change.
+
+> **There is still only one repo.** It serves `ascinternational.com` and
+> redirects `solderpasteinspection.com` and both `.net` domains to it. Do not
+> create a second repo for the second domain — one codebase, one source of
+> truth.
+
 ### Still worth doing
 
 - Submit the new sitemap in Google Search Console; watch 404s for ~30 days.
