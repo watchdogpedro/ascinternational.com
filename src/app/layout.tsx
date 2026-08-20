@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, IBM_Plex_Sans } from "next/font/google";
 import "@/styles/globals.css";
+import { SITE_URL } from '@/lib/site'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -16,7 +17,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://solderpasteinspection.com'),
+  metadataBase: new URL(`${SITE_URL}`),
   title: {
     default: "ASC International - Quality Inspection & Measurement Systems",
     template: "%s | ASC International"
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://solderpasteinspection.com',
+    url: `${SITE_URL}`,
     siteName: 'ASC International',
     title: 'ASC International - Quality Inspection & Measurement Systems',
     description: 'Global supplier of quality inspection and measurement systems for electronics manufacturing. Established 1992, serving over 1,000 customers worldwide.',
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://solderpasteinspection.com',
+    canonical: `${SITE_URL}`,
   },
 };
 
@@ -78,17 +79,17 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://solderpasteinspection.com/#organization",
+    "@id": `${SITE_URL}/#organization`,
     "name": "ASC International",
     "alternateName": "ASC International Inc.",
-    "url": "https://solderpasteinspection.com",
+    "url": `${SITE_URL}`,
     "logo": {
       "@type": "ImageObject",
-      "url": "https://solderpasteinspection.com/logo.png",
+      "url": `${SITE_URL}/logo.png`,
       "width": "250",
       "height": "60"
     },
-    "image": "https://solderpasteinspection.com/og-image.png",
+    "image": `${SITE_URL}/og-image.png`,
     "description": "Global supplier of quality inspection and measurement systems for electronics manufacturing. Established 1992, serving over 1,000 customers worldwide with 3D SPI, AOI, conformal coating inspection, and measurement solutions.",
     "foundingDate": "1992",
     "slogan": "Your partner for quality and yield improvement",

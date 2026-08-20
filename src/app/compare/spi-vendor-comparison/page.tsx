@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "SPI Vendor Comparison Guide 2026: How to Evaluate SPI Systems | ASC International",
@@ -21,7 +22,7 @@ export default function SPIVendorComparison() {
     "@type": "ComparisonTable",
     "name": "SPI Vendor Comparison Guide 2026",
     "description": "Comprehensive evaluation framework for comparing solder paste inspection system vendors",
-    "url": "https://solderpasteinspection.com/compare/spi-vendor-comparison",
+    "url": `${SITE_URL}/compare/spi-vendor-comparison`,
     "about": [
       {
         "@type": "Product",

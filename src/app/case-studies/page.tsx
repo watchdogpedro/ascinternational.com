@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Inspection Case Studies | SPI & AOI Success Stories | ASC International",
@@ -92,7 +93,7 @@ export default function CaseStudies() {
       "itemListElement": caseStudies.map((cs, index) => ({
         "@type": "ListItem",
         "position": index + 1,
-        "url": `https://solderpasteinspection.com/case-studies/${cs.slug}`,
+        "url": `${SITE_URL}/case-studies/${cs.slug}`,
         "name": cs.title,
       })),
     },

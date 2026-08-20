@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Resources & Downloads | User Manuals, Software & Guides | ASC International",
@@ -70,11 +71,11 @@ export default function ResourcesHub() {
     name: "Resources & Downloads",
     description:
       "ASC International resource hub featuring user manuals & guides, software downloads, and troubleshooting guides for inspection systems.",
-    url: "https://solderpasteinspection.com/resources",
+    url: `${SITE_URL}/resources`,
     hasPart: resourceCards.map((c) => ({
       "@type": "WebPage",
       name: c.title,
-      url: `https://solderpasteinspection.com${c.href}`,
+      url: `${SITE_URL}${c.href}`,
     })),
   };
 

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "PCB Stencil Design for Solder Paste Printing: Aperture Ratios, Thickness & Common Mistakes | ASC International",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2026-03-17",
     "dateModified": "2026-03-17",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/stencil-design-solder-paste-printing"
+      "@id": `${SITE_URL}/blog/stencil-design-solder-paste-printing`
     },
     "articleSection": "Technology",
     "keywords": ["stencil design", "aperture ratio", "solder paste", "PCB assembly", "SMT process"]

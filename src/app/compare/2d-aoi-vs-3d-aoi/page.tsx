@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "2D AOI vs 3D AOI vs Hybrid AOI: Complete Comparison 2026 | ASC International",
@@ -21,7 +22,7 @@ export default function TwoDvs3DAOI() {
     "@type": "ComparisonTable",
     "name": "2D AOI vs 3D AOI vs Hybrid AOI Comparison",
     "description": "Comprehensive comparison of 2D, 3D, and Hybrid automated optical inspection technologies",
-    "url": "https://solderpasteinspection.com/compare/2d-aoi-vs-3d-aoi"
+    "url": `${SITE_URL}/compare/2d-aoi-vs-3d-aoi`
   };
 
   const faqSchema = {

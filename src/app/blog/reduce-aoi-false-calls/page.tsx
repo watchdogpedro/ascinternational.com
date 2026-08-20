@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "How to Reduce False Calls in Automated Optical Inspection | ASC Blog",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2026-01-15",
     "dateModified": "2026-01-15",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/reduce-aoi-false-calls"
+      "@id": `${SITE_URL}/blog/reduce-aoi-false-calls`
     },
     "articleSection": "Best Practices",
     "keywords": ["AOI", "false calls", "inspection optimization", "quality control"]

@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "Software Downloads | Inspection Software & Updates | ASC International",
@@ -47,7 +48,7 @@ export default function SoftwareDownloads() {
     "@type": "CollectionPage",
     name: "Software Downloads",
     description: "Inspection software, control packages and version updates for ASC International systems.",
-    url: "https://solderpasteinspection.com/resources/software-downloads",
+    url: `${SITE_URL}/resources/software-downloads`,
     hasPart: software.map((s) => ({ "@type": "SoftwareApplication", name: s.name, description: s.desc, applicationCategory: "DeveloperApplication" })),
   };
 

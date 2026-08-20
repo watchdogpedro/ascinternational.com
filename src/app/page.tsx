@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import { SITE_URL } from '@/lib/site'
 
 export default function Home() {
   // Website schema for homepage
@@ -9,7 +10,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "ASC International",
-    "url": "https://solderpasteinspection.com",
+    "url": `${SITE_URL}`,
     "description": "Precision Inspection & Measurement Systems for Electronics, Semiconductor, Life Science, and Industrial Metrology",
     "publisher": {
       "@type": "Organization",
@@ -19,7 +20,7 @@ export default function Home() {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://solderpasteinspection.com/search?q={search_term_string}"
+        "urlTemplate": `${SITE_URL}/search?q={search_term_string}`
       },
       "query-input": "required name=search_term_string"
     }
@@ -38,7 +39,7 @@ export default function Home() {
         "item": {
           "@type": "Product",
           "name": "3D Solder Paste Inspection",
-          "url": "https://solderpasteinspection.com/products/3d-solder-paste-inspection",
+          "url": `${SITE_URL}/products/3d-solder-paste-inspection`,
           "description": "Advanced inline and offline SPI systems for precise solder paste measurement"
         }
       },
@@ -48,7 +49,7 @@ export default function Home() {
         "item": {
           "@type": "Product",
           "name": "Automated Optical Inspection",
-          "url": "https://solderpasteinspection.com/products/automated-optical-inspection",
+          "url": `${SITE_URL}/products/automated-optical-inspection`,
           "description": "2D-3D AOI systems for comprehensive quality control"
         }
       },
@@ -58,7 +59,7 @@ export default function Home() {
         "item": {
           "@type": "Product",
           "name": "Conformal Coating Inspection",
-          "url": "https://solderpasteinspection.com/products/conformal-coating-inspection",
+          "url": `${SITE_URL}/products/conformal-coating-inspection`,
           "description": "Precise measurement and verification for conformal coating"
         }
       },
@@ -68,7 +69,7 @@ export default function Home() {
         "item": {
           "@type": "Product",
           "name": "Digital Video Inspection",
-          "url": "https://solderpasteinspection.com/products/digital-video-inspection",
+          "url": `${SITE_URL}/products/digital-video-inspection`,
           "description": "High-resolution digital video systems for detailed inspection"
         }
       },
@@ -78,7 +79,7 @@ export default function Home() {
         "item": {
           "@type": "Product",
           "name": "3D Industrial Metrology",
-          "url": "https://solderpasteinspection.com/products/3d-industrial-metrology",
+          "url": `${SITE_URL}/products/3d-industrial-metrology`,
           "description": "Advanced laser scanning for precise 3D measurement"
         }
       },
@@ -88,7 +89,7 @@ export default function Home() {
         "item": {
           "@type": "Product",
           "name": "Jetting Valves",
-          "url": "https://solderpasteinspection.com/products/jetting-valves",
+          "url": `${SITE_URL}/products/jetting-valves`,
           "description": "Precision jetting valves for solder paste dispensing"
         }
       }

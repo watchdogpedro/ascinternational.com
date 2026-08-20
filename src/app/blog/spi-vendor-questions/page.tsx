@@ -3,19 +3,20 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "10 Questions to Ask Every SPI Vendor Before You Buy | ASC Blog",
   description: "Before signing an SPI purchase order, ask these 10 questions. They reveal hidden costs, vendor lock-in risks, real-world performance, and support commitments vendors won't volunteer.",
   keywords: ["SPI vendor evaluation", "questions to ask SPI vendor", "solder paste inspection buying", "SPI vendor comparison", "how to choose SPI system", "SPI evaluation checklist"],
   alternates: {
-    canonical: "https://solderpasteinspection.com/blog/spi-vendor-questions",
+    canonical: `${SITE_URL}/blog/spi-vendor-questions`,
   },
   openGraph: {
     title: "10 Questions to Ask Every SPI Vendor Before You Buy",
     description: "Before signing an SPI purchase order, ask these 10 questions. They reveal hidden costs, vendor lock-in risks, and real-world performance.",
     type: "article",
-    url: "https://solderpasteinspection.com/blog/spi-vendor-questions",
+    url: `${SITE_URL}/blog/spi-vendor-questions`,
   },
 };
 
@@ -28,21 +29,21 @@ export default function BlogPost() {
     "author": {
       "@type": "Organization",
       "name": "ASC International",
-      "url": "https://solderpasteinspection.com",
+      "url": `${SITE_URL}`,
     },
     "publisher": {
       "@type": "Organization",
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png",
+        "url": `${SITE_URL}/logo.png`,
       },
     },
     "datePublished": "2026-03-08",
     "dateModified": "2026-03-08",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/spi-vendor-questions",
+      "@id": `${SITE_URL}/blog/spi-vendor-questions`,
     },
     "articleSection": "Buyer's Guide",
     "keywords": ["SPI vendor evaluation", "questions to ask SPI vendor", "SPI buying checklist", "solder paste inspection"],

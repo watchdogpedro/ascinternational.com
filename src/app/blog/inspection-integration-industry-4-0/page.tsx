@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: "The Complete Guide to Inspection Integration in Industry 4.0 | ASC Blog",
@@ -30,14 +31,14 @@ export default function BlogPost() {
       "name": "ASC International",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://solderpasteinspection.com/logo.png"
+        "url": `${SITE_URL}/logo.png`
       }
     },
     "datePublished": "2026-01-12",
     "dateModified": "2026-01-12",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://solderpasteinspection.com/blog/inspection-integration-industry-4-0"
+      "@id": `${SITE_URL}/blog/inspection-integration-industry-4-0`
     },
     "articleSection": "Technology",
     "keywords": ["IPC-CFX", "smart factory", "Industry 4.0", "MES integration"]
