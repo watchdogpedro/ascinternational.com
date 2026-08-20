@@ -367,80 +367,80 @@ export default function ConformalCoatingInspection() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Feature
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Manual Visual
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         UV Fluorescence (Recommended)
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         3D Measurement
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Coverage Detection</td>
-                      <td className="px-6 py-4 text-orange-700">Visual only (subjective)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (high contrast)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (measured)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coverage Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Visual only (subjective)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (high contrast)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (measured)</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Thickness Measurement</td>
-                      <td className="px-6 py-4 text-orange-700">Not possible</td>
-                      <td className="px-6 py-4 text-green-700">±5μm accuracy</td>
-                      <td className="px-6 py-4 text-green-700">±2μm accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Thickness Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Not possible</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">±5μm accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">±2μm accuracy</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-orange-700">Very slow (5-10 min/board)</td>
-                      <td className="px-6 py-4 text-green-700">Fast (30-90 sec/board)</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate (2-3 min/board)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Very slow (5-10 min/board)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Fast (30-90 sec/board)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate (2-3 min/board)</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Repeatability</td>
-                      <td className="px-6 py-4 text-orange-700">Poor (operator dependent)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (automated)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (automated)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Repeatability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Poor (operator dependent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (automated)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (automated)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Small Defect Detection</td>
-                      <td className="px-6 py-4 text-orange-700">Limited (&gt;1mm)</td>
-                      <td className="px-6 py-4 text-green-700">Good (&gt;0.5mm²)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (&gt;0.1mm²)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Small Defect Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Limited (&gt;1mm)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Good (&gt;0.5mm²)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (&gt;0.1mm²)</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Documentation</td>
-                      <td className="px-6 py-4 text-orange-700">Manual notes</td>
-                      <td className="px-6 py-4 text-green-700">Automatic images & reports</td>
-                      <td className="px-6 py-4 text-green-700">Full 3D data & images</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Documentation</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Manual notes</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Automatic images & reports</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Full 3D data & images</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Statistical Analysis</td>
-                      <td className="px-6 py-4 text-orange-700">Not available</td>
-                      <td className="px-6 py-4 text-green-700">Real-time SPC</td>
-                      <td className="px-6 py-4 text-green-700">Advanced analytics</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Statistical Analysis</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Not available</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Real-time SPC</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Advanced analytics</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Coating Types</td>
-                      <td className="px-6 py-4 text-gray-800">All types</td>
-                      <td className="px-6 py-4 text-gray-800">UV-traceable only</td>
-                      <td className="px-6 py-4 text-gray-800">All types</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coating Types</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">All types</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">UV-traceable only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">All types</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Initial Investment</td>
-                      <td className="px-6 py-4 text-gray-800">Minimal</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate</td>
-                      <td className="px-6 py-4 text-gray-800">Higher</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Initial Investment</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Minimal</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Higher</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Best For</td>
-                      <td className="px-6 py-4 text-gray-800">Low volume, non-critical</td>
-                      <td className="px-6 py-4 text-gray-800">High volume, automotive, medical</td>
-                      <td className="px-6 py-4 text-gray-800">Aerospace, military, R&D</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best For</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Low volume, non-critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">High volume, automotive, medical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Aerospace, military, R&D</td>
                     </tr>
                   </tbody>
                 </table>
@@ -463,40 +463,40 @@ export default function ConformalCoatingInspection() {
               {/* Measurement Performance */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Measurement Performance</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Imaging Technology</td>
-                        <td className="px-6 py-4 text-gray-800">UV fluorescence (365nm) + white light hybrid</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Imaging Technology</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">UV fluorescence (365nm) + white light hybrid</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Thickness Measurement Range</td>
-                        <td className="px-6 py-4 text-gray-800">25μm - 250μm (1 mil - 10 mils)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Thickness Measurement Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">25μm - 250μm (1 mil - 10 mils)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Thickness Measurement Accuracy</td>
-                        <td className="px-6 py-4 text-gray-800">±5μm (±0.0002")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Thickness Measurement Accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±5μm (±0.0002")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Thickness Repeatability</td>
-                        <td className="px-6 py-4 text-gray-800">±2μm (3σ)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Thickness Repeatability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±2μm (3σ)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Coverage Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">15μm - 25μm (0.0006" - 0.001")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coverage Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">15μm - 25μm (0.0006" - 0.001")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Minimum Defect Size Detectable</td>
-                        <td className="px-6 py-4 text-gray-800">0.5mm² (0.0008 in²)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Minimum Defect Size Detectable</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.5mm² (0.0008 in²)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">UV Wavelength</td>
-                        <td className="px-6 py-4 text-gray-800">365nm LED array</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">UV Wavelength</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">365nm LED array</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Camera Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 12 megapixel</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Camera Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 12 megapixel</td>
                       </tr>
                     </tbody>
                   </table>
@@ -506,36 +506,36 @@ export default function ConformalCoatingInspection() {
               {/* Board Handling */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Board Handling</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Inspection Area Maximum</td>
-                        <td className="px-6 py-4 text-gray-800">510mm × 460mm (20" × 18")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Inspection Area Maximum</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">510mm × 460mm (20" × 18")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Size Minimum</td>
-                        <td className="px-6 py-4 text-gray-800">50mm × 50mm (2" × 2")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Size Minimum</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">50mm × 50mm (2" × 2")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Thickness Range</td>
-                        <td className="px-6 py-4 text-gray-800">0.4mm - 6.0mm (0.016" - 0.24")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Thickness Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.4mm - 6.0mm (0.016" - 0.24")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Weight</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 5kg (11 lbs)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 5kg (11 lbs)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Warpage Handling</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 3mm with auto-focus</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Warpage Handling</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 3mm with auto-focus</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Conveyor Configuration</td>
-                        <td className="px-6 py-4 text-gray-800">Dual-lane SMEMA compatible</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Conveyor Configuration</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Dual-lane SMEMA compatible</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Inspection Time</td>
-                        <td className="px-6 py-4 text-gray-800">30-90 seconds per board (size dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Time</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">30-90 seconds per board (size dependent)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -545,36 +545,36 @@ export default function ConformalCoatingInspection() {
               {/* Coating Types & Standards */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Coating Types & Standards Compliance</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Compatible Coating Types</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Compatible Coating Types</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           Acrylic (AR), Urethane (UR), Silicone (SR), Epoxy (ER), Parylene (XY) - All with UV tracers
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">UV Tracer Concentration</td>
-                        <td className="px-6 py-4 text-gray-800">0.1% - 1.0% (coating dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">UV Tracer Concentration</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.1% - 1.0% (coating dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Coating Color Detection</td>
-                        <td className="px-6 py-4 text-gray-800">All colors (clear, amber, red, black)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coating Color Detection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">All colors (clear, amber, red, black)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Standards Compliance</td>
-                        <td className="px-6 py-4 text-gray-800">IPC-A-610 (all classes), IPC-CC-830, MIL-I-46058C</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Standards Compliance</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">IPC-A-610 (all classes), IPC-CC-830, MIL-I-46058C</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Acceptance Criteria</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Acceptance Criteria</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           Programmable thickness limits, coverage percentage, keep-out zone violations
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Defect Library</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Defect Library</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           Holidays, insufficient coverage, excessive thickness, bubbles, voids, keep-out violations
                         </td>
                       </tr>
@@ -586,40 +586,40 @@ export default function ConformalCoatingInspection() {
               {/* Software & Integration */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Software & Integration</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Programming Methods</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Programming Methods</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           Auto-programming from Gerber/CAD, manual teach mode, golden board import
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Keep-Out Zone Definition</td>
-                        <td className="px-6 py-4 text-gray-800">CAD import or manual teach for connectors, test points, switches</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Keep-Out Zone Definition</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">CAD import or manual teach for connectors, test points, switches</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Communication Protocols</td>
-                        <td className="px-6 py-4 text-gray-800">IPC-CFX, SMEMA, Ethernet, Modbus TCP/IP</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Communication Protocols</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">IPC-CFX, SMEMA, Ethernet, Modbus TCP/IP</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Data Output Formats</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Output Formats</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           Coverage heat maps, thickness distribution charts, defect location maps, PDF/CSV/XML reports
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Statistical Analysis</td>
-                        <td className="px-6 py-4 text-gray-800">Real-time SPC, Cpk, trend analysis, process optimization</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Statistical Analysis</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Real-time SPC, Cpk, trend analysis, process optimization</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Traceability</td>
-                        <td className="px-6 py-4 text-gray-800">Barcode reading, serial number tracking, image archiving</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Traceability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Barcode reading, serial number tracking, image archiving</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">User Interface</td>
-                        <td className="px-6 py-4 text-gray-800">Touch screen with intuitive workflow, multi-language support</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">User Interface</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Touch screen with intuitive workflow, multi-language support</td>
                       </tr>
                     </tbody>
                   </table>
@@ -629,36 +629,36 @@ export default function ConformalCoatingInspection() {
               {/* Environmental & Physical */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Environmental & Physical</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Machine Dimensions</td>
-                        <td className="px-6 py-4 text-gray-800">1100mm (L) × 950mm (W) × 1400mm (H)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Machine Dimensions</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1100mm (L) × 950mm (W) × 1400mm (H)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Machine Weight</td>
-                        <td className="px-6 py-4 text-gray-800">Approximately 450kg (992 lbs)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Machine Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Approximately 450kg (992 lbs)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Power Requirements</td>
-                        <td className="px-6 py-4 text-gray-800">AC 200-240V, 50/60Hz, Single phase, 1.0kVA</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Power Requirements</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">AC 200-240V, 50/60Hz, Single phase, 1.0kVA</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Compressed Air</td>
-                        <td className="px-6 py-4 text-gray-800">0.5-0.6 MPa (73-87 PSI), clean dry air</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Compressed Air</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.5-0.6 MPa (73-87 PSI), clean dry air</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Temperature</td>
-                        <td className="px-6 py-4 text-gray-800">20°C - 28°C (68°F - 82°F)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Temperature</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">20°C - 28°C (68°F - 82°F)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Humidity</td>
-                        <td className="px-6 py-4 text-gray-800">35% - 75% RH, non-condensing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Humidity</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">35% - 75% RH, non-condensing</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">UV Safety</td>
-                        <td className="px-6 py-4 text-gray-800">Enclosed system with interlock safety switches</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">UV Safety</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Enclosed system with interlock safety switches</td>
                       </tr>
                     </tbody>
                   </table>

@@ -72,78 +72,78 @@ export default function VisualInspectionComparison() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Manual Microscope</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">Digital Video Inspection</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Automated AOI</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Manual Microscope</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">Digital Video Inspection</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Automated AOI</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Operator Ergonomics</td>
-                      <td className="px-6 py-4 text-gray-600">Poor - Eye strain from eyepiece</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Excellent - Large monitor viewing</td>
-                      <td className="px-6 py-4 text-gray-600">Excellent - Minimal interaction</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operator Ergonomics</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Poor - Eye strain from eyepiece</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Excellent - Large monitor viewing</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Excellent - Minimal interaction</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Documentation</td>
-                      <td className="px-6 py-4 text-gray-600">✗ None (manual notes)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ HD images & video</td>
-                      <td className="px-6 py-4 text-gray-600">✓ Automatic archiving</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Documentation</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ None (manual notes)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ HD images & video</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✓ Automatic archiving</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Magnification</td>
-                      <td className="px-6 py-4 text-gray-600">10x - 100x typical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">7x - 200x with digital zoom</td>
-                      <td className="px-6 py-4 text-gray-600">Fixed (camera dependent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Magnification</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">10x - 100x typical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">7x - 200x with digital zoom</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Fixed (camera dependent)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Measurement Capability</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Eyepiece reticle (limited)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ On-screen tools (±2μm)</td>
-                      <td className="px-6 py-4 text-gray-600">✓ Sub-micron precision</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Capability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Eyepiece reticle (limited)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ On-screen tools (±2μm)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✓ Sub-micron precision</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Image Storage</td>
-                      <td className="px-6 py-4 text-gray-600">✗ No digital capture</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Unlimited (USB/network)</td>
-                      <td className="px-6 py-4 text-gray-600">✓ Extensive database</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Image Storage</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ No digital capture</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Unlimited (USB/network)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✓ Extensive database</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Multi-User Viewing</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Single operator only</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Group viewing on monitor</td>
-                      <td className="px-6 py-4 text-gray-600">✓ Remote review</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Multi-User Viewing</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Single operator only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Group viewing on monitor</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✓ Remote review</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-gray-600">Slow (manual positioning)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Medium (operator guided)</td>
-                      <td className="px-6 py-4 text-gray-600">Fast (fully automated)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Slow (manual positioning)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Medium (operator guided)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Fast (fully automated)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Training Required</td>
-                      <td className="px-6 py-4 text-gray-600">Moderate (focus & positioning)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Minimal (intuitive interface)</td>
-                      <td className="px-6 py-4 text-gray-600">Extensive (programming)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Training Required</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Moderate (focus & positioning)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Minimal (intuitive interface)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Extensive (programming)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Automation Level</td>
-                      <td className="px-6 py-4 text-gray-600">None (100% manual)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Semi-automated (operator guided)</td>
-                      <td className="px-6 py-4 text-gray-600">Fully automated</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Automation Level</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">None (100% manual)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Semi-automated (operator guided)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Fully automated</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Cost Level</td>
-                      <td className="px-6 py-4 text-gray-600">Low ($2K - $8K)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Medium ($8K - $25K)</td>
-                      <td className="px-6 py-4 text-gray-600">High ($50K - $250K+)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Cost Level</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Low ($2K - $8K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Medium ($8K - $25K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">High ($50K - $250K+)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best Applications</td>
-                      <td className="px-6 py-4 text-gray-600">Basic lab checks, prototypes</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Rework, failure analysis, training</td>
-                      <td className="px-6 py-4 text-gray-600">Production lines, high volume</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best Applications</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Basic lab checks, prototypes</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Rework, failure analysis, training</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Production lines, high volume</td>
                     </tr>
                   </tbody>
                 </table>

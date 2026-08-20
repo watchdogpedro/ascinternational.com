@@ -236,48 +236,48 @@ export default function IndustrialMetrology() {
               {/* Measurement Performance */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Measurement Performance</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Measurement Technology</td>
-                        <td className="px-6 py-4 text-gray-800">Blue LED laser triangulation (405nm wavelength)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Measurement Technology</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Blue LED laser triangulation (405nm wavelength)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Accuracy</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 0.5μm (sub-micron precision)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 0.5μm (sub-micron precision)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">0.2μm - 1μm (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.2μm - 1μm (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Repeatability</td>
-                        <td className="px-6 py-4 text-gray-800">±0.3μm (2σ)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Repeatability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±0.3μm (2σ)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Point Distance</td>
-                        <td className="px-6 py-4 text-gray-800">2μm - 50μm (adjustable point spacing)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Point Distance</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">2μm - 50μm (adjustable point spacing)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Scan Speed</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 2 million points/second</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Scan Speed</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 2 million points/second</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Measurement Rate</td>
-                        <td className="px-6 py-4 text-gray-800">50-200 profiles/second (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Rate</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">50-200 profiles/second (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Z-Measurement Range</td>
-                        <td className="px-6 py-4 text-gray-800">5mm - 100mm (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Z-Measurement Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">5mm - 100mm (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Working Distance</td>
-                        <td className="px-6 py-4 text-gray-800">100mm - 300mm (sensor to object)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Working Distance</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">100mm - 300mm (sensor to object)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Standoff Distance</td>
-                        <td className="px-6 py-4 text-gray-800">150mm typical (safe working distance)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Standoff Distance</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">150mm typical (safe working distance)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -287,48 +287,48 @@ export default function IndustrialMetrology() {
               {/* Scanning System */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Scanning System & Hardware</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Measurement Volume</td>
-                        <td className="px-6 py-4 text-gray-800">50mm × 50mm to 500mm × 500mm (various models)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Measurement Volume</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">50mm × 50mm to 500mm × 500mm (various models)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Laser Wavelength</td>
-                        <td className="px-6 py-4 text-gray-800">405nm (blue LED laser)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Laser Wavelength</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">405nm (blue LED laser)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Laser Class</td>
-                        <td className="px-6 py-4 text-gray-800">Class 2 laser (eye-safe with blink reflex)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Laser Class</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Class 2 laser (eye-safe with blink reflex)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Camera Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">2048 × 1536 pixels (3.1MP)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Camera Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">2048 × 1536 pixels (3.1MP)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Line Width</td>
-                        <td className="px-6 py-4 text-gray-800">20mm - 200mm (depending on model)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Line Width</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">20mm - 200mm (depending on model)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Motion System</td>
-                        <td className="px-6 py-4 text-gray-800">Linear stage with encoder feedback</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Motion System</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Linear stage with encoder feedback</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Stage Travel</td>
-                        <td className="px-6 py-4 text-gray-800">300mm - 600mm (X-axis, model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Stage Travel</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">300mm - 600mm (X-axis, model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Stage Accuracy</td>
-                        <td className="px-6 py-4 text-gray-800">±1μm positioning accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Stage Accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±1μm positioning accuracy</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Rotation Stage</td>
-                        <td className="px-6 py-4 text-gray-800">Optional 360° rotary table for full 3D capture</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Rotation Stage</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Optional 360° rotary table for full 3D capture</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Temperature Sensor</td>
-                        <td className="px-6 py-4 text-gray-800">Integrated thermal compensation</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Temperature Sensor</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Integrated thermal compensation</td>
                       </tr>
                     </tbody>
                   </table>
@@ -338,52 +338,52 @@ export default function IndustrialMetrology() {
               {/* Software & Analysis */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Software & Analysis</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">CAD Import Formats</td>
-                        <td className="px-6 py-4 text-gray-800">STEP, IGES, STL, Parasolid, CATIA, SolidWorks, Inventor</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">CAD Import Formats</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">STEP, IGES, STL, Parasolid, CATIA, SolidWorks, Inventor</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Export Formats</td>
-                        <td className="px-6 py-4 text-gray-800">STL, PLY, OBJ, XYZ, ASC, STEP, IGES</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Export Formats</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">STL, PLY, OBJ, XYZ, ASC, STEP, IGES</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">GD&T Standards</td>
-                        <td className="px-6 py-4 text-gray-800">ASME Y14.5, ISO 1101 geometric tolerancing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">GD&T Standards</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">ASME Y14.5, ISO 1101 geometric tolerancing</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">CAD Comparison</td>
-                        <td className="px-6 py-4 text-gray-800">Best-fit alignment, color deviation maps, statistical analysis</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">CAD Comparison</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Best-fit alignment, color deviation maps, statistical analysis</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Deviation Tolerance</td>
-                        <td className="px-6 py-4 text-gray-800">±0.5mm to ±10mm range (configurable)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Deviation Tolerance</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±0.5mm to ±10mm range (configurable)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Measurement Tools</td>
-                        <td className="px-6 py-4 text-gray-800">Distance, angle, radius, flatness, profile, position, runout</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Tools</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Distance, angle, radius, flatness, profile, position, runout</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Cross-Section Analysis</td>
-                        <td className="px-6 py-4 text-gray-800">2D profile extraction at any plane</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Cross-Section Analysis</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">2D profile extraction at any plane</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Surface Filtering</td>
-                        <td className="px-6 py-4 text-gray-800">Gaussian, median, smoothing filters for noise reduction</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Surface Filtering</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Gaussian, median, smoothing filters for noise reduction</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Reporting</td>
-                        <td className="px-6 py-4 text-gray-800">PDF, Excel, customizable templates with images and statistics</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Reporting</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">PDF, Excel, customizable templates with images and statistics</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Scripting/Automation</td>
-                        <td className="px-6 py-4 text-gray-800">Python API for batch processing and custom workflows</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Scripting/Automation</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Python API for batch processing and custom workflows</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Point Cloud Processing</td>
-                        <td className="px-6 py-4 text-gray-800">Mesh generation, decimation, hole filling, smoothing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Point Cloud Processing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Mesh generation, decimation, hole filling, smoothing</td>
                       </tr>
                     </tbody>
                   </table>
@@ -393,36 +393,36 @@ export default function IndustrialMetrology() {
               {/* Standards & Calibration */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Standards & Calibration</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Calibration Standard</td>
-                        <td className="px-6 py-4 text-gray-800">NIST traceable calibration artifacts</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Calibration Standard</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">NIST traceable calibration artifacts</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Calibration Method</td>
-                        <td className="px-6 py-4 text-gray-800">Certified step gauge and calibration plate</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Calibration Method</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Certified step gauge and calibration plate</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Calibration Frequency</td>
-                        <td className="px-6 py-4 text-gray-800">Annual recommended (per ISO 17025)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Calibration Frequency</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Annual recommended (per ISO 17025)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">VDI/VDE 2634</td>
-                        <td className="px-6 py-4 text-gray-800">Compliant with optical 3D measuring systems standard</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">VDI/VDE 2634</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Compliant with optical 3D measuring systems standard</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">ISO 10360</td>
-                        <td className="px-6 py-4 text-gray-800">CMM acceptance and verification standard applicable</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">ISO 10360</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">CMM acceptance and verification standard applicable</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Measurement Uncertainty</td>
-                        <td className="px-6 py-4 text-gray-800">±(2μm + 4μm/m) per ISO GUM</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Uncertainty</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±(2μm + 4μm/m) per ISO GUM</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Quality Standards</td>
-                        <td className="px-6 py-4 text-gray-800">AS9100, ISO 9001, ISO 13485 compatible</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Quality Standards</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">AS9100, ISO 9001, ISO 13485 compatible</td>
                       </tr>
                     </tbody>
                   </table>
@@ -432,56 +432,56 @@ export default function IndustrialMetrology() {
               {/* Physical & Environmental */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Physical & Environmental</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">System Dimensions</td>
-                        <td className="px-6 py-4 text-gray-800">800mm × 600mm × 700mm (typical desktop model)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">System Dimensions</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">800mm × 600mm × 700mm (typical desktop model)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">System Weight</td>
-                        <td className="px-6 py-4 text-gray-800">60kg - 150kg (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">System Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">60kg - 150kg (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Power Requirements</td>
-                        <td className="px-6 py-4 text-gray-800">100-240VAC, 50/60Hz, 200W typical</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Power Requirements</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">100-240VAC, 50/60Hz, 200W typical</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Temperature</td>
-                        <td className="px-6 py-4 text-gray-800">18°C - 26°C (controlled environment required)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Temperature</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">18°C - 26°C (controlled environment required)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Storage Temperature</td>
-                        <td className="px-6 py-4 text-gray-800">5°C - 40°C</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Storage Temperature</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">5°C - 40°C</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Humidity</td>
-                        <td className="px-6 py-4 text-gray-800">20% - 80% RH, non-condensing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Humidity</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">20% - 80% RH, non-condensing</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Temperature Stability</td>
-                        <td className="px-6 py-4 text-gray-800">±1°C/hour for optimal accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Temperature Stability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±1°C/hour for optimal accuracy</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Vibration Sensitivity</td>
-                        <td className="px-6 py-4 text-gray-800">Isolation table recommended for sub-micron work</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Vibration Sensitivity</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Isolation table recommended for sub-micron work</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Computer Requirements</td>
-                        <td className="px-6 py-4 text-gray-800">Windows 10/11, Intel i7 or better, 16GB RAM, SSD storage</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Computer Requirements</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Windows 10/11, Intel i7 or better, 16GB RAM, SSD storage</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Interface</td>
-                        <td className="px-6 py-4 text-gray-800">USB 3.0, GigE Vision (Ethernet)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Interface</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">USB 3.0, GigE Vision (Ethernet)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Safety Certifications</td>
-                        <td className="px-6 py-4 text-gray-800">CE, FCC, RoHS compliant</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Safety Certifications</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">CE, FCC, RoHS compliant</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Warranty</td>
-                        <td className="px-6 py-4 text-gray-800">2-year standard warranty with annual calibration service</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Warranty</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">2-year standard warranty with annual calibration service</td>
                       </tr>
                     </tbody>
                   </table>
@@ -508,78 +508,78 @@ export default function IndustrialMetrology() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">Laser Scanning</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Structured Light</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Contact (CMM)</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">Laser Scanning</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Structured Light</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Contact (CMM)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Measurement Accuracy</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">0.5μm - 2μm (Excellent)</td>
-                      <td className="px-6 py-4 text-gray-800">5μm - 20μm (Good)</td>
-                      <td className="px-6 py-4 text-gray-800">0.3μm - 1μm (Best)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">0.5μm - 2μm (Excellent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">5μm - 20μm (Good)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.3μm - 1μm (Best)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Measurement Speed</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Fast - Millions of points/sec</td>
-                      <td className="px-6 py-4 text-gray-800">Very Fast - Full area capture</td>
-                      <td className="px-6 py-4 text-gray-800">Slow - Point-by-point</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Fast - Millions of points/sec</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Very Fast - Full area capture</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Slow - Point-by-point</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Surface Requirements</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Works on most surfaces</td>
-                      <td className="px-6 py-4 text-gray-800">Matte/coating may be needed</td>
-                      <td className="px-6 py-4 text-gray-800">All surfaces (physical contact)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Surface Requirements</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Works on most surfaces</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Matte/coating may be needed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">All surfaces (physical contact)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Part Contact</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Non-contact (no damage)</td>
-                      <td className="px-6 py-4 text-gray-800">Non-contact (no damage)</td>
-                      <td className="px-6 py-4 text-gray-800">Contact (may deflect soft parts)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Part Contact</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Non-contact (no damage)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Non-contact (no damage)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Contact (may deflect soft parts)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Complex Geometry</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Excellent - captures details</td>
-                      <td className="px-6 py-4 text-gray-800">Good - full area view</td>
-                      <td className="px-6 py-4 text-gray-800">Limited - hard-to-reach areas</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Complex Geometry</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Excellent - captures details</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Good - full area view</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Limited - hard-to-reach areas</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Data Density</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Very High - dense point cloud</td>
-                      <td className="px-6 py-4 text-gray-800">Very High - full surface</td>
-                      <td className="px-6 py-4 text-gray-800">Low - sampled points only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Density</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Very High - dense point cloud</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Very High - full surface</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Low - sampled points only</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Typical Part Size</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">50mm - 500mm (versatile)</td>
-                      <td className="px-6 py-4 text-gray-800">100mm - 1000mm (larger parts)</td>
-                      <td className="px-6 py-4 text-gray-800">10mm - 3000mm (very large)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Typical Part Size</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">50mm - 500mm (versatile)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">100mm - 1000mm (larger parts)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">10mm - 3000mm (very large)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Cost Level</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Medium ($50K - $150K)</td>
-                      <td className="px-6 py-4 text-gray-800">Medium-High ($80K - $200K)</td>
-                      <td className="px-6 py-4 text-gray-800">High ($100K - $500K+)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Cost Level</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Medium ($50K - $150K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Medium-High ($80K - $200K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">High ($100K - $500K+)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Environmental Sensitivity</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Low - stable in production</td>
-                      <td className="px-6 py-4 text-gray-800">Medium - ambient light affects</td>
-                      <td className="px-6 py-4 text-gray-800">High - temperature controlled</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Environmental Sensitivity</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Low - stable in production</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Medium - ambient light affects</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">High - temperature controlled</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Training Required</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Moderate - 2-3 days</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate - 2-4 days</td>
-                      <td className="px-6 py-4 text-gray-800">Extensive - weeks/months</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Training Required</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Moderate - 2-3 days</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate - 2-4 days</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Extensive - weeks/months</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best Applications</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">PCB warpage, flatness, reverse engineering</td>
-                      <td className="px-6 py-4 text-gray-800">Large parts, body panels, complex shapes</td>
-                      <td className="px-6 py-4 text-gray-800">GD&T inspection, precision components</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best Applications</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">PCB warpage, flatness, reverse engineering</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Large parts, body panels, complex shapes</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">GD&T inspection, precision components</td>
                     </tr>
                   </tbody>
                 </table>

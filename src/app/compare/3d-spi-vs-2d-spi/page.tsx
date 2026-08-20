@@ -224,81 +224,81 @@ export default function ThreeDSPIvs2DSPI() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">3D SPI (Recommended)</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">2D SPI</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">3D SPI (Recommended)</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">2D SPI</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Volume Measurement</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Accurate (±1% typical)</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Not available (estimates only)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Volume Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Accurate (±1% typical)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Not available (estimates only)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Height Measurement</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ ±1μm resolution</td>
-                      <td className="px-6 py-4 text-gray-600">✗ No height data</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Height Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ ±1μm resolution</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ No height data</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Area Measurement</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ ±10μm accuracy</td>
-                      <td className="px-6 py-4 text-gray-600">✓ ±15μm accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Area Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ ±10μm accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✓ ±15μm accuracy</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Bridging Detection</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Excellent (3D space analysis)</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Limited (top view only)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Bridging Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Excellent (3D space analysis)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Limited (top view only)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">PCB Warpage Handling</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Excellent (measures actual height)</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Poor (false positives)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">PCB Warpage Handling</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Excellent (measures actual height)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Poor (false positives)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Coplanarity Detection</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Yes (measures pad heights)</td>
-                      <td className="px-6 py-4 text-gray-600">✗ No capability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coplanarity Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Yes (measures pad heights)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ No capability</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">False Call Rate</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">&lt;1% (excellent)</td>
-                      <td className="px-6 py-4 text-gray-600">5-10% (high false positives)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">False Call Rate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">&lt;1% (excellent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">5-10% (high false positives)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Up to 85 cm²/sec</td>
-                      <td className="px-6 py-4 text-gray-600">60-80 cm²/sec</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Up to 85 cm²/sec</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">60-80 cm²/sec</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Fine Pitch Components</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ 0201, 01005 capable</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Limited to 0402+</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Fine Pitch Components</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ 0201, 01005 capable</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Limited to 0402+</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Reflective Surface Handling</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Good (structured light)</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Challenges with reflections</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Reflective Surface Handling</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Good (structured light)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Challenges with reflections</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Initial Cost</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">$100K - $250K</td>
-                      <td className="px-6 py-4 text-gray-600">$60K - $150K (20-40% less)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Initial Cost</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">$100K - $250K</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">$60K - $150K (20-40% less)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">ROI Timeframe</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">6-12 months (defect reduction)</td>
-                      <td className="px-6 py-4 text-gray-600">12-18 months (limited improvement)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">ROI Timeframe</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">6-12 months (defect reduction)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">12-18 months (limited improvement)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">IPC Class 2/3 Compliance</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Fully compliant</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Limited compliance</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">IPC Class 2/3 Compliance</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Fully compliant</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Limited compliance</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best Use Cases</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Modern electronics, fine-pitch, BGAs, high-volume</td>
-                      <td className="px-6 py-4 text-gray-600">Simple boards, large components, low-volume</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best Use Cases</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Modern electronics, fine-pitch, BGAs, high-volume</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Simple boards, large components, low-volume</td>
                     </tr>
                   </tbody>
                 </table>

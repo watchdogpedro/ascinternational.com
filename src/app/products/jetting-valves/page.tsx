@@ -248,48 +248,48 @@ export default function JettingValves() {
               {/* Dispensing Performance */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Dispensing Performance</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Dispense Volume Range</td>
-                        <td className="px-6 py-4 text-gray-800">0.5nL - 50μL per deposit (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Dispense Volume Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.5nL - 50μL per deposit (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Typical Dispense Volume</td>
-                        <td className="px-6 py-4 text-gray-800">5nL - 10μL (most common applications)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Typical Dispense Volume</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">5nL - 10μL (most common applications)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Volume Repeatability</td>
-                        <td className="px-6 py-4 text-gray-800">±1% (CV &lt; 3% for optimal conditions)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Volume Repeatability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±1% (CV &lt; 3% for optimal conditions)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Dispense Rate</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 1000 Hz (1000 dots per second)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Dispense Rate</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 1000 Hz (1000 dots per second)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Continuous Operation Speed</td>
-                        <td className="px-6 py-4 text-gray-800">500-800 Hz sustained (fluid dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Continuous Operation Speed</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">500-800 Hz sustained (fluid dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Dot Size Range</td>
-                        <td className="px-6 py-4 text-gray-800">0.3mm - 5mm diameter (parameter dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Dot Size Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.3mm - 5mm diameter (parameter dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Placement Accuracy</td>
-                        <td className="px-6 py-4 text-gray-800">±25μm (with precision motion system)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Placement Accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±25μm (with precision motion system)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Jetting Height</td>
-                        <td className="px-6 py-4 text-gray-800">1mm - 5mm standoff (non-contact distance)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Jetting Height</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1mm - 5mm standoff (non-contact distance)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Optimal Jetting Height</td>
-                        <td className="px-6 py-4 text-gray-800">2mm - 3mm (minimizes satellite formation)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Optimal Jetting Height</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">2mm - 3mm (minimizes satellite formation)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Response Time</td>
-                        <td className="px-6 py-4 text-gray-800">&lt;1ms (piezo), 2-5ms (pneumatic)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Response Time</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">&lt;1ms (piezo), 2-5ms (pneumatic)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -299,52 +299,52 @@ export default function JettingValves() {
               {/* Valve & Actuation */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Valve & Actuation System</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Actuation Technology</td>
-                        <td className="px-6 py-4 text-gray-800">Piezoelectric or pneumatic (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Actuation Technology</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Piezoelectric or pneumatic (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Piezo Drive Voltage</td>
-                        <td className="px-6 py-4 text-gray-800">24VDC (internal high voltage amplification)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Piezo Drive Voltage</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">24VDC (internal high voltage amplification)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Pneumatic Pressure Range</td>
-                        <td className="px-6 py-4 text-gray-800">1-7 bar (15-100 psi)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Pneumatic Pressure Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1-7 bar (15-100 psi)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Air Consumption</td>
-                        <td className="px-6 py-4 text-gray-800">3-5 L/min @ 5 bar (pneumatic models)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Air Consumption</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">3-5 L/min @ 5 bar (pneumatic models)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Nozzle Orifice Size</td>
-                        <td className="px-6 py-4 text-gray-800">50μm - 500μm (interchangeable nozzles)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Nozzle Orifice Size</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">50μm - 500μm (interchangeable nozzles)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Nozzle Material</td>
-                        <td className="px-6 py-4 text-gray-800">Stainless steel, tungsten carbide, ceramic</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Nozzle Material</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Stainless steel, tungsten carbide, ceramic</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Valve Body Material</td>
-                        <td className="px-6 py-4 text-gray-800">Anodized aluminum, stainless steel</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Valve Body Material</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Anodized aluminum, stainless steel</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Fluid Path Material</td>
-                        <td className="px-6 py-4 text-gray-800">316 stainless steel, PEEK, PTFE</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Fluid Path Material</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">316 stainless steel, PEEK, PTFE</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Seal Material</td>
-                        <td className="px-6 py-4 text-gray-800">EPDM, Viton, FFKM (fluid compatible)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Seal Material</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">EPDM, Viton, FFKM (fluid compatible)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Cycle Life</td>
-                        <td className="px-6 py-4 text-gray-800">100 million+ cycles (typical)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Cycle Life</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">100 million+ cycles (typical)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Maintenance Interval</td>
-                        <td className="px-6 py-4 text-gray-800">500-1000 hours (depends on fluid)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Maintenance Interval</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">500-1000 hours (depends on fluid)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -354,48 +354,48 @@ export default function JettingValves() {
               {/* Material Handling */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Material Handling & Compatibility</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Viscosity Range</td>
-                        <td className="px-6 py-4 text-gray-800">1 cP - 1,000,000 cP (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Viscosity Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1 cP - 1,000,000 cP (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Low Viscosity Range</td>
-                        <td className="px-6 py-4 text-gray-800">1-100 cP (flux, low-viscosity adhesives)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Low Viscosity Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1-100 cP (flux, low-viscosity adhesives)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Medium Viscosity Range</td>
-                        <td className="px-6 py-4 text-gray-800">100-10,000 cP (solder paste, adhesives)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Medium Viscosity Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">100-10,000 cP (solder paste, adhesives)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">High Viscosity Range</td>
-                        <td className="px-6 py-4 text-gray-800">10,000-1,000,000 cP (thick pastes, encapsulants)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">High Viscosity Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">10,000-1,000,000 cP (thick pastes, encapsulants)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Compatible Materials</td>
-                        <td className="px-6 py-4 text-gray-800">Solder paste (SAC305, SnPb), SMT adhesives, epoxies</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Compatible Materials</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Solder paste (SAC305, SnPb), SMT adhesives, epoxies</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Additional Materials</td>
-                        <td className="px-6 py-4 text-gray-800">Flux, underfills, encapsulants, silicones, acrylics</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Additional Materials</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Flux, underfills, encapsulants, silicones, acrylics</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Filler Content</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 50% by volume (particle size &lt; 50μm)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Filler Content</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 50% by volume (particle size &lt; 50μm)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Reservoir Capacity</td>
-                        <td className="px-6 py-4 text-gray-800">3cc - 30cc cartridge (model dependent)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Reservoir Capacity</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">3cc - 30cc cartridge (model dependent)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Pressure Regulation</td>
-                        <td className="px-6 py-4 text-gray-800">Precision regulator with digital display (0.01 bar resolution)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Pressure Regulation</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Precision regulator with digital display (0.01 bar resolution)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Material Temperature Control</td>
-                        <td className="px-6 py-4 text-gray-800">Heated cartridge option: 25°C - 60°C (±1°C)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Material Temperature Control</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Heated cartridge option: 25°C - 60°C (±1°C)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -405,48 +405,48 @@ export default function JettingValves() {
               {/* Control & Integration */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Control & Integration</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Control Interface</td>
-                        <td className="px-6 py-4 text-gray-800">RS-232, Ethernet TCP/IP, EtherCAT</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Control Interface</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">RS-232, Ethernet TCP/IP, EtherCAT</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Digital I/O</td>
-                        <td className="px-6 py-4 text-gray-800">Trigger input, dispense complete output, status signals</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Digital I/O</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Trigger input, dispense complete output, status signals</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Trigger Input</td>
-                        <td className="px-6 py-4 text-gray-800">TTL/CMOS compatible, 5-24VDC, optoisolated</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Trigger Input</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">TTL/CMOS compatible, 5-24VDC, optoisolated</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Control Software</td>
-                        <td className="px-6 py-4 text-gray-800">Windows-based GUI with parameter setup and diagnostics</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Control Software</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Windows-based GUI with parameter setup and diagnostics</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Programming</td>
-                        <td className="px-6 py-4 text-gray-800">Teach pendant, CAD import (Gerber, DXF), manual entry</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Programming</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Teach pendant, CAD import (Gerber, DXF), manual entry</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Recipe Management</td>
-                        <td className="px-6 py-4 text-gray-800">Unlimited recipes, secure storage, import/export</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Recipe Management</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Unlimited recipes, secure storage, import/export</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Vision Integration</td>
-                        <td className="px-6 py-4 text-gray-800">Fiducial recognition, pattern matching, dispense verification</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Vision Integration</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Fiducial recognition, pattern matching, dispense verification</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Process Monitoring</td>
-                        <td className="px-6 py-4 text-gray-800">Real-time pressure monitoring, shot counter, error detection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Process Monitoring</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Real-time pressure monitoring, shot counter, error detection</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Data Logging</td>
-                        <td className="px-6 py-4 text-gray-800">CSV export, database integration, traceability features</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Logging</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">CSV export, database integration, traceability features</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Network Protocols</td>
-                        <td className="px-6 py-4 text-gray-800">TCP/IP, Modbus TCP, OPC UA (Industry 4.0 ready)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Network Protocols</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">TCP/IP, Modbus TCP, OPC UA (Industry 4.0 ready)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -456,56 +456,56 @@ export default function JettingValves() {
               {/* Physical & Environmental */}
               <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-blue-600">Physical & Environmental</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Valve Dimensions</td>
-                        <td className="px-6 py-4 text-gray-800">50mm × 30mm × 80mm (typical head unit)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Valve Dimensions</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">50mm × 30mm × 80mm (typical head unit)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Valve Weight</td>
-                        <td className="px-6 py-4 text-gray-800">200g - 500g (depending on configuration)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Valve Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">200g - 500g (depending on configuration)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Controller Dimensions</td>
-                        <td className="px-6 py-4 text-gray-800">300mm × 200mm × 100mm (benchtop unit)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Controller Dimensions</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">300mm × 200mm × 100mm (benchtop unit)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">System Weight</td>
-                        <td className="px-6 py-4 text-gray-800">5kg - 8kg (valve + controller)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">System Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">5kg - 8kg (valve + controller)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Power Requirements</td>
-                        <td className="px-6 py-4 text-gray-800">100-240VAC, 50/60Hz, 100W typical</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Power Requirements</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">100-240VAC, 50/60Hz, 100W typical</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Temperature</td>
-                        <td className="px-6 py-4 text-gray-800">15°C - 40°C ambient</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Temperature</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">15°C - 40°C ambient</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Storage Temperature</td>
-                        <td className="px-6 py-4 text-gray-800">-10°C - 50°C</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Storage Temperature</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">-10°C - 50°C</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Humidity</td>
-                        <td className="px-6 py-4 text-gray-800">20% - 80% RH, non-condensing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Humidity</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">20% - 80% RH, non-condensing</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Mounting Options</td>
-                        <td className="px-6 py-4 text-gray-800">Robot flange, XYZ gantry, manual stand</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Mounting Options</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Robot flange, XYZ gantry, manual stand</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Cable Length</td>
-                        <td className="px-6 py-4 text-gray-800">2m standard (5m optional)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Cable Length</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">2m standard (5m optional)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Safety Certifications</td>
-                        <td className="px-6 py-4 text-gray-800">CE, FCC, RoHS compliant</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Safety Certifications</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">CE, FCC, RoHS compliant</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Warranty</td>
-                        <td className="px-6 py-4 text-gray-800">1-year standard warranty with service support</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Warranty</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1-year standard warranty with service support</td>
                       </tr>
                     </tbody>
                   </table>
@@ -532,84 +532,84 @@ export default function JettingValves() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">Jetting Valve</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Contact Dispensing</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Spray Coating</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">Jetting Valve</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Contact Dispensing</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Spray Coating</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Substrate Contact</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Non-contact (no damage)</td>
-                      <td className="px-6 py-4 text-gray-800">Contact required (potential issues)</td>
-                      <td className="px-6 py-4 text-gray-800">Non-contact (overspray concerns)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Substrate Contact</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Non-contact (no damage)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Contact required (potential issues)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Non-contact (overspray concerns)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Placement Accuracy</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">±25μm (excellent precision)</td>
-                      <td className="px-6 py-4 text-gray-800">±50μm (good precision)</td>
-                      <td className="px-6 py-4 text-gray-800">±500μm (area coverage)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Placement Accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">±25μm (excellent precision)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±50μm (good precision)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±500μm (area coverage)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Dispense Speed</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Very Fast (up to 1000 dots/sec)</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate (limited by motion)</td>
-                      <td className="px-6 py-4 text-gray-800">Fast (continuous)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Dispense Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Very Fast (up to 1000 dots/sec)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate (limited by motion)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Fast (continuous)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Material Waste</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Minimal (50% reduction vs contact)</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate (stringing, drips)</td>
-                      <td className="px-6 py-4 text-gray-800">High (overspray, masking needed)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Material Waste</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Minimal (50% reduction vs contact)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate (stringing, drips)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">High (overspray, masking needed)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Selective Deposition</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Excellent - precise targeting</td>
-                      <td className="px-6 py-4 text-gray-800">Good - targeted application</td>
-                      <td className="px-6 py-4 text-gray-800">Poor - masking required</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Selective Deposition</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Excellent - precise targeting</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Good - targeted application</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Poor - masking required</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Volume Repeatability</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">±1% (excellent)</td>
-                      <td className="px-6 py-4 text-gray-800">±3-5% (good)</td>
-                      <td className="px-6 py-4 text-gray-800">±10-20% (variable)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Volume Repeatability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">±1% (excellent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±3-5% (good)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±10-20% (variable)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Viscosity Range</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">1 - 1,000,000 cP (very wide)</td>
-                      <td className="px-6 py-4 text-gray-800">100 - 500,000 cP (wide)</td>
-                      <td className="px-6 py-4 text-gray-800">1 - 5,000 cP (limited)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Viscosity Range</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">1 - 1,000,000 cP (very wide)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">100 - 500,000 cP (wide)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1 - 5,000 cP (limited)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Maintenance</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Low - minimal nozzle clogging</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate - tip wear, clogging</td>
-                      <td className="px-6 py-4 text-gray-800">High - nozzle cleaning required</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Maintenance</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Low - minimal nozzle clogging</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate - tip wear, clogging</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">High - nozzle cleaning required</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Equipment Cost</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Medium ($5K - $25K)</td>
-                      <td className="px-6 py-4 text-gray-800">Low-Medium ($2K - $15K)</td>
-                      <td className="px-6 py-4 text-gray-800">Medium-High ($10K - $50K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Equipment Cost</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Medium ($5K - $25K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Low-Medium ($2K - $15K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Medium-High ($10K - $50K)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Operating Cost</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Low - minimal waste</td>
-                      <td className="px-6 py-4 text-gray-800">Medium - consumables, waste</td>
-                      <td className="px-6 py-4 text-gray-800">High - material waste, filters</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Cost</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Low - minimal waste</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Medium - consumables, waste</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">High - material waste, filters</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Setup/Changeover</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Fast - recipe change only</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate - tip change, calibration</td>
-                      <td className="px-6 py-4 text-gray-800">Slow - masking, cleaning</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Setup/Changeover</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Fast - recipe change only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate - tip change, calibration</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Slow - masking, cleaning</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best Applications</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Selective solder paste, rework, high-mix</td>
-                      <td className="px-6 py-4 text-gray-800">Underfill, gaskets, lines/beads</td>
-                      <td className="px-6 py-4 text-gray-800">Conformal coating, large area coverage</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best Applications</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Selective solder paste, rework, high-mix</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Underfill, gaskets, lines/beads</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Conformal coating, large area coverage</td>
                     </tr>
                   </tbody>
                 </table>

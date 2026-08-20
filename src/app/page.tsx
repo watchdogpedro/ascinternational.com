@@ -108,10 +108,10 @@ export default function Home() {
       />
       <Header />
       <main className="min-h-screen bg-white">
-        {/* Hero Section - 20:9 Responsive Aspect Ratio */}
+        {/* Hero Section - flows to content height; 20:9 proportion on wide screens */}
         <section className="relative overflow-hidden bg-dark-bg">
-          {/* Responsive 20:9 Aspect Ratio Container */}
-          <div className="relative w-full" style={{ aspectRatio: '20 / 9' }}>
+          {/* Content-height on mobile/tablet, 20:9 minimum on xl and up */}
+          <div className="relative flex w-full items-center xl:min-h-[45vw]">
             {/* Background Image - Futuristic SPI System */}
             <div className="absolute inset-0">
               <Image
@@ -132,8 +132,8 @@ export default function Home() {
             {/* Additional subtle overlay for depth */}
             <div className="absolute inset-0 z-5 bg-gradient-to-b from-dark-bg/25 via-transparent to-dark-bg/45" />
 
-            {/* Content Container - Centered within aspect ratio */}
-            <div className="absolute inset-0 z-20 flex items-center">
+            {/* Content Container */}
+            <div className="relative z-20 w-full py-14 sm:py-16 xl:py-0">
               <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   {/* Left: Content */}
@@ -372,11 +372,11 @@ export default function Home() {
                   </div>
 
                   {/* Corner reference marks (engineering-spec detail) */}
-                  <div className="absolute top-0 left-0 z-30 text-[10px] font-mono text-accent-cyan/50 tracking-wider">
+                  <div className="absolute top-0 left-0 z-30 text-xs sm:text-[10px] font-mono text-accent-cyan/50 tracking-wider">
                     <div>// 3D-SPI</div>
                     <div className="text-accent-cyan/30">FUSION_3D.MODEL</div>
                   </div>
-                  <div className="absolute bottom-0 right-0 z-30 text-[10px] font-mono text-accent-cyan/50 tracking-wider text-right">
+                  <div className="absolute bottom-0 right-0 z-30 text-xs sm:text-[10px] font-mono text-accent-cyan/50 tracking-wider text-right">
                     <div className="text-accent-cyan/30">SCAN_ACTIVE</div>
                     <div className="flex items-center justify-end gap-1.5">
                       <div className="w-1.5 h-1.5 rounded-full bg-accent-cyan animate-pulse" />

@@ -72,72 +72,72 @@ export default function CoatingInspectionComparison() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Manual Visual</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-green-600">UV Fluorescence</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">3D Measurement</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Manual Visual</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-green-600">UV Fluorescence</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">3D Measurement</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Coverage Detection</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Subjective visual check</td>
-                      <td className="px-6 py-4 text-green-600 font-semibold">✓ Excellent (fluorescence shows gaps)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Excellent (height map)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coverage Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Subjective visual check</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600 font-semibold">✓ Excellent (fluorescence shows gaps)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Excellent (height map)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Thickness Measurement</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Not possible</td>
-                      <td className="px-6 py-4 text-green-600">⚠ Estimated from brightness</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Accurate (±5μm)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Thickness Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Not possible</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">⚠ Estimated from brightness</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Accurate (±5μm)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-gray-600">Slow (manual review)</td>
-                      <td className="px-6 py-4 text-green-600 font-semibold">Fast (automated)</td>
-                      <td className="px-6 py-4 text-blue-600">Medium (3D scanning)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Slow (manual review)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600 font-semibold">Fast (automated)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600">Medium (3D scanning)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Repeatability</td>
-                      <td className="px-6 py-4 text-gray-600">Poor (operator dependent)</td>
-                      <td className="px-6 py-4 text-green-600 font-semibold">Good (consistent detection)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Excellent (±0.5μm repeatability)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Repeatability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Poor (operator dependent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600 font-semibold">Good (consistent detection)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Excellent (±0.5μm repeatability)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Documentation</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Manual notes only</td>
-                      <td className="px-6 py-4 text-green-600">✓ Images and pass/fail data</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Full thickness maps & statistics</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Documentation</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Manual notes only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ Images and pass/fail data</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Full thickness maps & statistics</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">IPC-CC-830 Compliance</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Limited documentation</td>
-                      <td className="px-6 py-4 text-green-600">✓ Coverage verification</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Full compliance + thickness</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">IPC-CC-830 Compliance</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Limited documentation</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ Coverage verification</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Full compliance + thickness</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Coating Type Compatibility</td>
-                      <td className="px-6 py-4 text-gray-600">All types (visual)</td>
-                      <td className="px-6 py-4 text-green-600 font-semibold">UV-traceable coatings only</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">All coating types</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coating Type Compatibility</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">All types (visual)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600 font-semibold">UV-traceable coatings only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">All coating types</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Defect Detection</td>
-                      <td className="px-6 py-4 text-gray-600">Obvious gaps only</td>
-                      <td className="px-6 py-4 text-green-600 font-semibold">Gaps, thin areas, pooling</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">All defects + dimensional data</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Defect Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Obvious gaps only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600 font-semibold">Gaps, thin areas, pooling</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">All defects + dimensional data</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Operator Skill Required</td>
-                      <td className="px-6 py-4 text-gray-600">High (experience needed)</td>
-                      <td className="px-6 py-4 text-green-600">Low (automated detection)</td>
-                      <td className="px-6 py-4 text-blue-600">Low (automated measurement)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operator Skill Required</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">High (experience needed)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">Low (automated detection)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600">Low (automated measurement)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Initial Cost</td>
-                      <td className="px-6 py-4 text-gray-600">$500 - $5K (lights, microscope)</td>
-                      <td className="px-6 py-4 text-green-600">$25K - $80K</td>
-                      <td className="px-6 py-4 text-blue-600">$80K - $200K</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Initial Cost</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">$500 - $5K (lights, microscope)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">$25K - $80K</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600">$80K - $200K</td>
                     </tr>
                   </tbody>
                 </table>

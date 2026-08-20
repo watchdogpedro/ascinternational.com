@@ -72,84 +72,84 @@ export default function DispensingMethodsComparison() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">Jetting Valves</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Contact Dispensing</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Spray Coating</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">Jetting Valves</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Contact Dispensing</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Spray Coating</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Precision</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Excellent (±50μm placement)</td>
-                      <td className="px-6 py-4 text-gray-600">Good (±100μm with needle)</td>
-                      <td className="px-6 py-4 text-gray-600">Poor (overspray issues)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Precision</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Excellent (±50μm placement)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Good (±100μm with needle)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Poor (overspray issues)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Material Waste</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Minimal (50-90% reduction)</td>
-                      <td className="px-6 py-4 text-gray-600">Low (only what's dispensed)</td>
-                      <td className="px-6 py-4 text-gray-600">High (overspray, masking)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Material Waste</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Minimal (50-90% reduction)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Low (only what's dispensed)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">High (overspray, masking)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Part Contact</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Non-contact (no damage risk)</td>
-                      <td className="px-6 py-4 text-gray-600">Contact (may damage delicate)</td>
-                      <td className="px-6 py-4 text-gray-600">Non-contact (requires masking)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Part Contact</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Non-contact (no damage risk)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Contact (may damage delicate)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Non-contact (requires masking)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Selective Coating</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Excellent (programmable areas)</td>
-                      <td className="px-6 py-4 text-gray-600">Good (programmable paths)</td>
-                      <td className="px-6 py-4 text-gray-600">Limited (requires masking)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Selective Coating</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Excellent (programmable areas)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Good (programmable paths)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Limited (requires masking)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Coating Thickness Control</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Precise (±5μm per pass)</td>
-                      <td className="px-6 py-4 text-gray-600">Good (needle height control)</td>
-                      <td className="px-6 py-4 text-gray-600">Variable (operator dependent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coating Thickness Control</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Precise (±5μm per pass)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Good (needle height control)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Variable (operator dependent)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Viscosity Range</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">1 - 100,000 cP (wide range)</td>
-                      <td className="px-6 py-4 text-gray-600">1,000 - 1M+ cP (very high)</td>
-                      <td className="px-6 py-4 text-gray-600">10 - 5,000 cP (limited)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Viscosity Range</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">1 - 100,000 cP (wide range)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">1,000 - 1M+ cP (very high)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">10 - 5,000 cP (limited)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Speed</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Fast (1,000+ dots/sec)</td>
-                      <td className="px-6 py-4 text-gray-600">Medium (path speed limited)</td>
-                      <td className="px-6 py-4 text-gray-600">Very fast (full area)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Fast (1,000+ dots/sec)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Medium (path speed limited)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Very fast (full area)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Setup/Changeover Time</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Minutes (program change)</td>
-                      <td className="px-6 py-4 text-gray-600">15-30 min (needle change)</td>
-                      <td className="px-6 py-4 text-gray-600">30-60 min (masking setup)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Setup/Changeover Time</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Minutes (program change)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">15-30 min (needle change)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">30-60 min (masking setup)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Material Compatibility</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Most conformal coatings, adhesives</td>
-                      <td className="px-6 py-4 text-gray-600">All materials (potting, underfill)</td>
-                      <td className="px-6 py-4 text-gray-600">Low-viscosity coatings only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Material Compatibility</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Most conformal coatings, adhesives</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">All materials (potting, underfill)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Low-viscosity coatings only</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Automation Level</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Fully automated (robot/gantry)</td>
-                      <td className="px-6 py-4 text-gray-600">Fully automated (robot/gantry)</td>
-                      <td className="px-6 py-4 text-gray-600">Manual to semi-automated</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Automation Level</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Fully automated (robot/gantry)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Fully automated (robot/gantry)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Manual to semi-automated</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Cost Level</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Medium-High ($40K - $150K)</td>
-                      <td className="px-6 py-4 text-gray-600">Medium ($20K - $80K)</td>
-                      <td className="px-6 py-4 text-gray-600">Low-Medium ($5K - $40K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Cost Level</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Medium-High ($40K - $150K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Medium ($20K - $80K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Low-Medium ($5K - $40K)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best Applications</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Selective coating, fine-pitch, keep-out areas</td>
-                      <td className="px-6 py-4 text-gray-600">Potting, underfill, dam-and-fill</td>
-                      <td className="px-6 py-4 text-gray-600">Full-board coating, simple boards</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best Applications</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Selective coating, fine-pitch, keep-out areas</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Potting, underfill, dam-and-fill</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Full-board coating, simple boards</td>
                     </tr>
                   </tbody>
                 </table>

@@ -72,78 +72,78 @@ export default function MetrologyTechnologiesComparison() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">Laser Scanning</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Structured Light</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Contact (CMM)</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">Laser Scanning</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Structured Light</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Contact (CMM)</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Accuracy</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">0.5μm - 2μm (excellent)</td>
-                      <td className="px-6 py-4 text-gray-600">5μm - 20μm (good)</td>
-                      <td className="px-6 py-4 text-gray-600">0.3μm - 1μm (best)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">0.5μm - 2μm (excellent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">5μm - 20μm (good)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">0.3μm - 1μm (best)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Speed</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Fast (millions of points/sec)</td>
-                      <td className="px-6 py-4 text-gray-600">Very fast (full area capture)</td>
-                      <td className="px-6 py-4 text-gray-600">Slow (point-by-point)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Fast (millions of points/sec)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Very fast (full area capture)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Slow (point-by-point)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Surface Requirements</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Works on most surfaces</td>
-                      <td className="px-6 py-4 text-gray-600">Matte/coating may be needed</td>
-                      <td className="px-6 py-4 text-gray-600">All surfaces (contact)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Surface Requirements</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Works on most surfaces</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Matte/coating may be needed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">All surfaces (contact)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Part Contact</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Non-contact (no damage)</td>
-                      <td className="px-6 py-4 text-gray-600">Non-contact (no damage)</td>
-                      <td className="px-6 py-4 text-gray-600">Contact (may deflect soft parts)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Part Contact</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Non-contact (no damage)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Non-contact (no damage)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Contact (may deflect soft parts)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Complex Geometry</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Excellent (captures details)</td>
-                      <td className="px-6 py-4 text-gray-600">Good (full area view)</td>
-                      <td className="px-6 py-4 text-gray-600">Limited (hard-to-reach areas)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Complex Geometry</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Excellent (captures details)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Good (full area view)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Limited (hard-to-reach areas)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Data Density</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Very high (dense point cloud)</td>
-                      <td className="px-6 py-4 text-gray-600">Very high (full surface)</td>
-                      <td className="px-6 py-4 text-gray-600">Low (sampled points)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Density</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Very high (dense point cloud)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Very high (full surface)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Low (sampled points)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Typical Part Size</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">50mm - 500mm (versatile)</td>
-                      <td className="px-6 py-4 text-gray-600">100mm - 1000mm (larger)</td>
-                      <td className="px-6 py-4 text-gray-600">10mm - 3000mm (very large)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Typical Part Size</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">50mm - 500mm (versatile)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">100mm - 1000mm (larger)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">10mm - 3000mm (very large)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Cost Level</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Medium ($50K - $150K)</td>
-                      <td className="px-6 py-4 text-gray-600">Medium-High ($80K - $200K)</td>
-                      <td className="px-6 py-4 text-gray-600">High ($100K - $500K+)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Cost Level</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Medium ($50K - $150K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Medium-High ($80K - $200K)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">High ($100K - $500K+)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Environmental Sensitivity</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Low (stable in production)</td>
-                      <td className="px-6 py-4 text-gray-600">Medium (ambient light)</td>
-                      <td className="px-6 py-4 text-gray-600">High (temperature controlled)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Environmental Sensitivity</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Low (stable in production)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Medium (ambient light)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">High (temperature controlled)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Training Required</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Moderate (2-3 days)</td>
-                      <td className="px-6 py-4 text-gray-600">Moderate (2-4 days)</td>
-                      <td className="px-6 py-4 text-gray-600">Extensive (weeks/months)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Training Required</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Moderate (2-3 days)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Moderate (2-4 days)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Extensive (weeks/months)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best Applications</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">PCB warpage, flatness, reverse engineering</td>
-                      <td className="px-6 py-4 text-gray-600">Large parts, body panels, complex shapes</td>
-                      <td className="px-6 py-4 text-gray-600">GD&T inspection, precision components</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best Applications</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">PCB warpage, flatness, reverse engineering</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Large parts, body panels, complex shapes</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">GD&T inspection, precision components</td>
                     </tr>
                   </tbody>
                 </table>

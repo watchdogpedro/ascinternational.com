@@ -171,102 +171,102 @@ export default function TwoDvs3DAOI() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">2D AOI</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">3D AOI (Recommended)</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-green-600">Hybrid AOI</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">2D AOI</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">3D AOI (Recommended)</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-green-600">Hybrid AOI</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Height Measurement</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Not available</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Full 3D measurement</td>
-                      <td className="px-6 py-4 text-green-600">✓ Selective areas</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Height Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Not available</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Full 3D measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ Selective areas</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Lifted Lead Detection</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Cannot detect</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Excellent (10μm resolution)</td>
-                      <td className="px-6 py-4 text-green-600">✓ On measured components</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Lifted Lead Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Cannot detect</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Excellent (10μm resolution)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ On measured components</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Coplanarity Detection</td>
-                      <td className="px-6 py-4 text-gray-600">✗ No capability</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Yes (measures pad heights)</td>
-                      <td className="px-6 py-4 text-green-600">✓ On critical components</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coplanarity Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ No capability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Yes (measures pad heights)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ On critical components</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Solder Volume Assessment</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Estimated only</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Accurate measurement</td>
-                      <td className="px-6 py-4 text-green-600">✓ Where measured in 3D</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Solder Volume Assessment</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Estimated only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Accurate measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ Where measured in 3D</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Component Standoff</td>
-                      <td className="px-6 py-4 text-gray-600">✗ Cannot verify</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Measures actual height</td>
-                      <td className="px-6 py-4 text-green-600">✓ For selected components</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Component Standoff</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">✗ Cannot verify</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Measures actual height</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ For selected components</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Tombstone Detection</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Limited (severe cases only)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Excellent (angle measurement)</td>
-                      <td className="px-6 py-4 text-green-600">✓ Good</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Tombstone Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Limited (severe cases only)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Excellent (angle measurement)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ Good</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">BGA Inspection</td>
-                      <td className="px-6 py-4 text-gray-600">⚠ Limited to visible balls</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">✓ Full coplanarity check</td>
-                      <td className="px-6 py-4 text-green-600">✓ Targeted 3D measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">BGA Inspection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">⚠ Limited to visible balls</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">✓ Full coplanarity check</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">✓ Targeted 3D measurement</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">False Call Rate</td>
-                      <td className="px-6 py-4 text-gray-600">1-3% (moderate)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">&lt;0.5% (excellent)</td>
-                      <td className="px-6 py-4 text-green-600">0.5-1% (good)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">False Call Rate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">1-3% (moderate)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">&lt;0.5% (excellent)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">0.5-1% (good)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Defect Detection Rate</td>
-                      <td className="px-6 py-4 text-gray-600">70-80% of defects</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">95-98% of defects</td>
-                      <td className="px-6 py-4 text-green-600">85-92% of defects</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Defect Detection Rate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">70-80% of defects</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">95-98% of defects</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">85-92% of defects</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-gray-600">100-150 cm²/sec (fastest)</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">80-120 cm²/sec</td>
-                      <td className="px-6 py-4 text-green-600">90-130 cm²/sec</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">100-150 cm²/sec (fastest)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">80-120 cm²/sec</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">90-130 cm²/sec</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Camera Resolution</td>
-                      <td className="px-6 py-4 text-gray-600">16-29 MP typical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">29 MP + height sensors</td>
-                      <td className="px-6 py-4 text-green-600">16-29 MP + selective 3D</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Camera Resolution</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">16-29 MP typical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">29 MP + height sensors</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">16-29 MP + selective 3D</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Component Library</td>
-                      <td className="px-6 py-4 text-gray-600">30+ defect types</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">50+ defect types</td>
-                      <td className="px-6 py-4 text-green-600">40+ defect types</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Component Library</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">30+ defect types</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">50+ defect types</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">40+ defect types</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Initial Cost</td>
-                      <td className="px-6 py-4 text-gray-600">$80K - $180K</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">$120K - $300K (30-50% more)</td>
-                      <td className="px-6 py-4 text-green-600">$100K - $220K (15-25% more)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Initial Cost</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">$80K - $180K</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">$120K - $300K (30-50% more)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">$100K - $220K (15-25% more)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">ROI Timeframe</td>
-                      <td className="px-6 py-4 text-gray-600">18-24 months</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">8-18 months (defect savings)</td>
-                      <td className="px-6 py-4 text-green-600">12-20 months</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">ROI Timeframe</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">18-24 months</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">8-18 months (defect savings)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">12-20 months</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best Applications</td>
-                      <td className="px-6 py-4 text-gray-600">Simple boards, large components, high speed</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Complex assemblies, BGAs, QFPs, fine-pitch</td>
-                      <td className="px-6 py-4 text-green-600">Mixed complexity, budget-conscious</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best Applications</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Simple boards, large components, high speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Complex assemblies, BGAs, QFPs, fine-pitch</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-600">Mixed complexity, budget-conscious</td>
                     </tr>
                   </tbody>
                 </table>

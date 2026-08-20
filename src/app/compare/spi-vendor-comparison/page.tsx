@@ -211,72 +211,72 @@ export default function SPIVendorComparison() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Evaluation Criterion</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Weight</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">What to Look For (Best Practice)</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Red Flags to Avoid</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Evaluation Criterion</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Weight</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">What to Look For (Best Practice)</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Red Flags to Avoid</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Measurement Accuracy</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Critical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">GR&R &lt;10%, height repeatability &lt;0.5μm, volume accuracy ±1%</td>
-                      <td className="px-6 py-4 text-gray-600">Specs only shown under ideal conditions, no GR&R data available</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">GR&R &lt;10%, height repeatability &lt;0.5μm, volume accuracy ±1%</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Specs only shown under ideal conditions, no GR&R data available</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Real throughput tested on your boards, 70+ cm²/sec sustained</td>
-                      <td className="px-6 py-4 text-gray-600">Speed claims only at reduced resolution, throughput varies by board complexity</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Real throughput tested on your boards, 70+ cm²/sec sustained</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Speed claims only at reduced resolution, throughput varies by board complexity</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Open Data Formats</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Critical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Standard export formats (CSV, XML, IPC-2591), API access, your data belongs to you</td>
-                      <td className="px-6 py-4 text-gray-600">Proprietary-only formats, extra fees for data export, limited API access</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Open Data Formats</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Standard export formats (CSV, XML, IPC-2591), API access, your data belongs to you</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Proprietary-only formats, extra fees for data export, limited API access</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Closed-Loop Integration</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Works with any printer brand, standard SMEMA/Hermes protocols, proven integrations</td>
-                      <td className="px-6 py-4 text-gray-600">Only works with same-brand printers, requires proprietary middleware</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Closed-Loop Integration</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Works with any printer brand, standard SMEMA/Hermes protocols, proven integrations</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Only works with same-brand printers, requires proprietary middleware</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Technical Support Quality</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Critical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Direct engineer access, &lt;4hr response for critical issues, on-site support available</td>
-                      <td className="px-6 py-4 text-gray-600">Tiered call center, days to reach an engineer, support sold as separate contract</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Technical Support Quality</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Direct engineer access, &lt;4hr response for critical issues, on-site support available</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Tiered call center, days to reach an engineer, support sold as separate contract</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Total Cost of Ownership</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Transparent pricing, software included, reasonable maintenance costs</td>
-                      <td className="px-6 py-4 text-gray-600">Low sticker price but expensive annual software licenses, hidden upgrade fees</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Total Cost of Ownership</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Transparent pricing, software included, reasonable maintenance costs</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Low sticker price but expensive annual software licenses, hidden upgrade fees</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Software Usability</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Medium</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Intuitive UI, fast program setup, minimal training required for new boards</td>
-                      <td className="px-6 py-4 text-gray-600">Complex interface requiring weeks of training, vendor-dependent programming</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Software Usability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Medium</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Intuitive UI, fast program setup, minimal training required for new boards</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Complex interface requiring weeks of training, vendor-dependent programming</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">False Call Rate</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">&lt;1% false calls demonstrated on your actual boards</td>
-                      <td className="px-6 py-4 text-gray-600">False call rate only specified for simple test boards, not real production</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">False Call Rate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">&lt;1% false calls demonstrated on your actual boards</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">False call rate only specified for simple test boards, not real production</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Upgrade Path</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Medium</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Field-upgradable hardware, backward-compatible software updates</td>
-                      <td className="px-6 py-4 text-gray-600">Must buy new system for capability upgrades, discontinued model support</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Upgrade Path</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Medium</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Field-upgradable hardware, backward-compatible software updates</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Must buy new system for capability upgrades, discontinued model support</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Vendor Focus &amp; Stability</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Medium</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Inspection is their core business, consistent R&D investment, stable ownership</td>
-                      <td className="px-6 py-4 text-gray-600">SPI is a minor product line, frequent acquisitions, shifting priorities</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Vendor Focus &amp; Stability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Medium</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Inspection is their core business, consistent R&D investment, stable ownership</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">SPI is a minor product line, frequent acquisitions, shifting priorities</td>
                     </tr>
                   </tbody>
                 </table>

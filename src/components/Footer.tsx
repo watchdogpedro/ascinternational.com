@@ -23,59 +23,59 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="font-display text-lg font-semibold mb-4 text-accent-cyan">Quick Links</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-0 lg:space-y-2">
               <li>
-                <Link href="/products" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/products" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Products
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/services" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/industries" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/industries" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Industries
                 </Link>
               </li>
               <li>
-                <Link href="/case-studies" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/case-studies" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/blog" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/compare" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/compare" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Equipment Comparisons
                 </Link>
               </li>
               <li>
-                <Link href="/tools/roi-calculator" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/tools/roi-calculator" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   ROI Calculator
                 </Link>
               </li>
               <li>
-                <Link href="/glossary" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/glossary" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Glossary
                 </Link>
               </li>
               <li>
-                <Link href="/about/company" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/about/company" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/careers" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-accent-cyan transition-colors">
+                <Link href="/contact" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Contact
                 </Link>
               </li>
@@ -85,19 +85,19 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="font-display text-lg font-semibold mb-4 text-accent-cyan">Contact</h4>
-            <ul className="space-y-3 text-gray-400">
+            <ul className="space-y-0 text-gray-400 lg:space-y-3">
               <li>
-                <a href="tel:+18884782912" className="hover:text-accent-cyan transition-colors">
+                <a href="tel:+18884782912" className="inline-block py-3 lg:py-0 hover:text-accent-cyan transition-colors">
                   Toll Free: +1 (888) 478-2912
                 </a>
               </li>
               <li>
-                <a href="tel:+17634796210" className="hover:text-accent-cyan transition-colors">
+                <a href="tel:+17634796210" className="inline-block py-3 lg:py-0 hover:text-accent-cyan transition-colors">
                   Tel: +1 (763) 479-6210
                 </a>
               </li>
               <li>
-                <a href="mailto:info@ascinternational.com" className="hover:text-accent-cyan transition-colors">
+                <a href="mailto:info@ascinternational.com" className="inline-block [overflow-wrap:anywhere] py-3 lg:py-0 hover:text-accent-cyan transition-colors">
                   info@ascinternational.com
                 </a>
               </li>
@@ -112,7 +112,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center text-gray-500 text-sm">
           <p>&copy; {currentYear} ASC International. All rights reserved.</p>
           <span className="hidden sm:inline">|</span>
-          <Link href="/privacy-policy" className="hover:text-accent-cyan transition-colors">
+          <Link href="/privacy-policy" className="inline-block py-3 lg:py-0 hover:text-accent-cyan transition-colors">
             Privacy Policy
           </Link>
         </div>

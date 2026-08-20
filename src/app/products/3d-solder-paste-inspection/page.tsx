@@ -441,21 +441,21 @@ export default function SolderPasteInspection() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Feature
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         3D SPI (Recommended)
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         2D SPI
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Volume Measurement</td>
-                      <td className="px-6 py-4 text-gray-800">
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Volume Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                         <span className="inline-flex items-center text-green-700">
                           <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -463,7 +463,7 @@ export default function SolderPasteInspection() {
                           Direct measurement (±2% accuracy)
                         </span>
                       </td>
-                      <td className="px-6 py-4 text-gray-800">
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                         <span className="inline-flex items-center text-orange-700">
                           <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
@@ -473,44 +473,44 @@ export default function SolderPasteInspection() {
                       </td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Height Measurement</td>
-                      <td className="px-6 py-4 text-green-700">Direct measurement (±1μm)</td>
-                      <td className="px-6 py-4 text-orange-700">Not available</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Height Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Direct measurement (±1μm)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Not available</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Area Measurement</td>
-                      <td className="px-6 py-4 text-green-700">High accuracy</td>
-                      <td className="px-6 py-4 text-green-700">High accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Area Measurement</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">High accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">High accuracy</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Bridging Detection</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (3D profile analysis)</td>
-                      <td className="px-6 py-4 text-orange-700">Limited (2D view only)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Bridging Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (3D profile analysis)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Limited (2D view only)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">PCB Warpage Handling</td>
-                      <td className="px-6 py-4 text-green-700">Automatic compensation up to 3mm</td>
-                      <td className="px-6 py-4 text-orange-700">Requires manual setup</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">PCB Warpage Handling</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Automatic compensation up to 3mm</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Requires manual setup</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Coplanarity Detection</td>
-                      <td className="px-6 py-4 text-green-700">Yes (full 3D measurement)</td>
-                      <td className="px-6 py-4 text-orange-700">No</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coplanarity Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Yes (full 3D measurement)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">No</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">False Call Rate</td>
-                      <td className="px-6 py-4 text-green-700">&lt; 1% (with proper setup)</td>
-                      <td className="px-6 py-4 text-orange-700">3-5% typical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">False Call Rate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">&lt; 1% (with proper setup)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">3-5% typical</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Best For</td>
-                      <td className="px-6 py-4 text-gray-800">Fine pitch, high reliability, Class 3</td>
-                      <td className="px-6 py-4 text-gray-800">Large pads, Class 1-2, budget constraints</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best For</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Fine pitch, high reliability, Class 3</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Large pads, Class 1-2, budget constraints</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">ROI Timeframe</td>
-                      <td className="px-6 py-4 text-gray-800">12-18 months typical</td>
-                      <td className="px-6 py-4 text-gray-800">18-24 months typical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">ROI Timeframe</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">12-18 months typical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">18-24 months typical</td>
                     </tr>
                   </tbody>
                 </table>
@@ -570,32 +570,32 @@ export default function SolderPasteInspection() {
               {/* Measurement Performance */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Measurement Performance</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Inspection Technology</td>
-                        <td className="px-6 py-4 text-gray-800">Phase-shift 3D measurement with structured light projection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Inspection Technology</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Phase-shift 3D measurement with structured light projection</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Height Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">±1μm (0.00004")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Height Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±1μm (0.00004")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">XY Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">10μm - 20μm configurable (0.0004" - 0.0008")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">XY Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">10μm - 20μm configurable (0.0004" - 0.0008")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Repeatability</td>
-                        <td className="px-6 py-4 text-gray-800">±0.5μm (3σ)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Repeatability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±0.5μm (3σ)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Measurement Method</td>
-                        <td className="px-6 py-4 text-gray-800">Non-contact optical measurement</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Method</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Non-contact optical measurement</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 85cm²/sec (13.2 in²/sec)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 85cm²/sec (13.2 in²/sec)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -605,32 +605,32 @@ export default function SolderPasteInspection() {
               {/* Board Handling */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Board Handling</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Board Size Range</td>
-                        <td className="px-6 py-4 text-gray-800">50mm × 50mm to 510mm × 460mm (2" × 2" to 20" × 18")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Board Size Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">50mm × 50mm to 510mm × 460mm (2" × 2" to 20" × 18")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Thickness</td>
-                        <td className="px-6 py-4 text-gray-800">0.4mm - 6.0mm (0.016" - 0.24")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Thickness</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.4mm - 6.0mm (0.016" - 0.24")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Weight</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 5kg (11 lbs)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 5kg (11 lbs)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Warpage Handling</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 3mm with automatic height compensation</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Warpage Handling</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 3mm with automatic height compensation</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Conveyor Type</td>
-                        <td className="px-6 py-4 text-gray-800">Dual-lane SMEMA compatible</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Conveyor Type</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Dual-lane SMEMA compatible</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Transport Height</td>
-                        <td className="px-6 py-4 text-gray-800">900mm ± 20mm (35.4" ± 0.8")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Transport Height</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">900mm ± 20mm (35.4" ± 0.8")</td>
                       </tr>
                     </tbody>
                   </table>
@@ -640,30 +640,30 @@ export default function SolderPasteInspection() {
               {/* Inspection Capabilities */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Inspection Capabilities</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Smallest Component Size</td>
-                        <td className="px-6 py-4 text-gray-800">01005 (0.4mm × 0.2mm / Metric 0402)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Smallest Component Size</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">01005 (0.4mm × 0.2mm / Metric 0402)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Minimum Pad Pitch</td>
-                        <td className="px-6 py-4 text-gray-800">0.3mm (0.012")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Minimum Pad Pitch</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.3mm (0.012")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Defect Detection</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Defect Detection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           Insufficient paste, excess paste, bridging, offset, shape defects, missing deposits
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Measurement Parameters</td>
-                        <td className="px-6 py-4 text-gray-800">Volume, height, area, X/Y offset, shape analysis</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Measurement Parameters</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Volume, height, area, X/Y offset, shape analysis</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Fiducial Detection</td>
-                        <td className="px-6 py-4 text-gray-800">Automatic recognition with sub-pixel accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Fiducial Detection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Automatic recognition with sub-pixel accuracy</td>
                       </tr>
                     </tbody>
                   </table>
@@ -673,36 +673,36 @@ export default function SolderPasteInspection() {
               {/* Software & Integration */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Software & Integration</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Programming Methods</td>
-                        <td className="px-6 py-4 text-gray-800">Auto-programming from CAD, teach mode, golden board</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Programming Methods</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Auto-programming from CAD, teach mode, golden board</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Communication Protocols</td>
-                        <td className="px-6 py-4 text-gray-800">IPC-CFX, SECS/GEM, SMEMA, Modbus TCP/IP</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Communication Protocols</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">IPC-CFX, SECS/GEM, SMEMA, Modbus TCP/IP</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Data Formats</td>
-                        <td className="px-6 py-4 text-gray-800">Gerber (RS-274X), ODB++, GenCAD, IPC-2581</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Formats</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Gerber (RS-274X), ODB++, GenCAD, IPC-2581</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Statistical Analysis</td>
-                        <td className="px-6 py-4 text-gray-800">Real-time SPC, Cpk calculation, trend charts, control charts</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Statistical Analysis</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Real-time SPC, Cpk calculation, trend charts, control charts</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Closed-Loop Feedback</td>
-                        <td className="px-6 py-4 text-gray-800">Automatic printer adjustment, offset correction</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Closed-Loop Feedback</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Automatic printer adjustment, offset correction</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Reporting</td>
-                        <td className="px-6 py-4 text-gray-800">PDF, CSV, XML export with customizable templates</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Reporting</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">PDF, CSV, XML export with customizable templates</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Traceability</td>
-                        <td className="px-6 py-4 text-gray-800">Barcode/2D code reading, serial number tracking</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Traceability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Barcode/2D code reading, serial number tracking</td>
                       </tr>
                     </tbody>
                   </table>
@@ -712,32 +712,32 @@ export default function SolderPasteInspection() {
               {/* Environmental & Physical */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Environmental & Physical</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Machine Dimensions</td>
-                        <td className="px-6 py-4 text-gray-800">1200mm (L) × 1100mm (W) × 1450mm (H)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Machine Dimensions</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1200mm (L) × 1100mm (W) × 1450mm (H)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Machine Weight</td>
-                        <td className="px-6 py-4 text-gray-800">Approximately 600kg (1,320 lbs)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Machine Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Approximately 600kg (1,320 lbs)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Power Requirements</td>
-                        <td className="px-6 py-4 text-gray-800">AC 200-240V, 50/60Hz, Single phase, 1.5kVA</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Power Requirements</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">AC 200-240V, 50/60Hz, Single phase, 1.5kVA</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Compressed Air</td>
-                        <td className="px-6 py-4 text-gray-800">0.5-0.7 MPa (73-100 PSI), clean dry air</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Compressed Air</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.5-0.7 MPa (73-100 PSI), clean dry air</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Temperature</td>
-                        <td className="px-6 py-4 text-gray-800">20°C - 28°C (68°F - 82°F)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Temperature</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">20°C - 28°C (68°F - 82°F)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Humidity</td>
-                        <td className="px-6 py-4 text-gray-800">35% - 75% RH, non-condensing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Humidity</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">35% - 75% RH, non-condensing</td>
                       </tr>
                     </tbody>
                   </table>

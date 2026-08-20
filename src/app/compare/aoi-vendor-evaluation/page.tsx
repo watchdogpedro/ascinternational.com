@@ -215,72 +215,72 @@ export default function AOIVendorEvaluation() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Evaluation Criterion</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Weight</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">Best Practice (What to Look For)</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Red Flags</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Evaluation Criterion</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Weight</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">Best Practice (What to Look For)</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Red Flags</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Defect Detection Coverage</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Critical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Detects all IPC defect classes, zero escapes on seeded defect test</td>
-                      <td className="px-6 py-4 text-gray-600">Only tested on simple defects, no seeded defect capability data</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Defect Detection Coverage</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Detects all IPC defect classes, zero escapes on seeded defect test</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Only tested on simple defects, no seeded defect capability data</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">False Call Rate</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Critical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">&lt;500 ppm on real production boards, &lt;200 ppm after optimization</td>
-                      <td className="px-6 py-4 text-gray-600">False call rate only quoted on demo boards, no production data available</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">False Call Rate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">&lt;500 ppm on real production boards, &lt;200 ppm after optimization</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">False call rate only quoted on demo boards, no production data available</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">AI / Machine Learning</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Practical AI for false call reduction, transparent decisions, on-premise processing</td>
-                      <td className="px-6 py-4 text-gray-600">Vague AI claims, requires cloud upload of your board data, black-box decisions</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">AI / Machine Learning</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Practical AI for false call reduction, transparent decisions, on-premise processing</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Vague AI claims, requires cloud upload of your board data, black-box decisions</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Data Openness</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Critical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Standard formats (CSV, XML, IPC-CFX), full API access, your data your way</td>
-                      <td className="px-6 py-4 text-gray-600">Proprietary formats only, extra fees for data export, restricted API</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Openness</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Standard formats (CSV, XML, IPC-CFX), full API access, your data your way</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Proprietary formats only, extra fees for data export, restricted API</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Integration Flexibility</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Works with any MES, supports SMEMA/Hermes, vendor-agnostic data sharing</td>
-                      <td className="px-6 py-4 text-gray-600">Only integrates with same-brand equipment, requires proprietary middleware</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Integration Flexibility</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Works with any MES, supports SMEMA/Hermes, vendor-agnostic data sharing</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Only integrates with same-brand equipment, requires proprietary middleware</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Support Model</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Critical</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Direct engineer access, &lt;4hr critical response, application engineering included</td>
-                      <td className="px-6 py-4 text-gray-600">Tiered call center, days-long escalation path, support sold separately</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Support Model</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Critical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Direct engineer access, &lt;4hr critical response, application engineering included</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Tiered call center, days-long escalation path, support sold separately</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">3D Measurement Capability</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">True 3D height measurement, coplanarity detection, lifted lead detection</td>
-                      <td className="px-6 py-4 text-gray-600">2.5D only (shadow-based), limited height measurement accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">3D Measurement Capability</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">True 3D height measurement, coplanarity detection, lifted lead detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">2.5D only (shadow-based), limited height measurement accuracy</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Sustained throughput matching line takt time, no accuracy compromise for speed</td>
-                      <td className="px-6 py-4 text-gray-600">Speed specs at reduced resolution, throughput bottlenecks on complex boards</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Sustained throughput matching line takt time, no accuracy compromise for speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Speed specs at reduced resolution, throughput bottlenecks on complex boards</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Programming Ease</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Medium</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Fast new-board setup (&lt;30 min for typical boards), CAD import, library-based</td>
-                      <td className="px-6 py-4 text-gray-600">Hours to program new boards, requires vendor assistance for complex setups</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Programming Ease</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Medium</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Fast new-board setup (&lt;30 min for typical boards), CAD import, library-based</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Hours to program new boards, requires vendor assistance for complex setups</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Total Cost of Ownership</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">High</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Transparent pricing, software included, reasonable annual maintenance</td>
-                      <td className="px-6 py-4 text-gray-600">Low sticker price with expensive annual licenses, per-feature module pricing</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Total Cost of Ownership</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">High</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Transparent pricing, software included, reasonable annual maintenance</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Low sticker price with expensive annual licenses, per-feature module pricing</td>
                     </tr>
                   </tbody>
                 </table>

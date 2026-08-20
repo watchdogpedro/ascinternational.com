@@ -224,76 +224,76 @@ export default function SinglePlatformVsBestOfBreed() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Factor</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-blue-600">Best-of-Breed Specialists</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">All-in-One Platform</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">Factor</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-blue-600">Best-of-Breed Specialists</th>
+                      <th className="px-3 py-3 sm:px-6 sm:py-4 text-left text-sm font-semibold text-gray-900">All-in-One Platform</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Technology at Each Station</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Best-in-class at every inspection point</td>
-                      <td className="px-6 py-4 text-gray-600">Strong at 1-2 points, mediocre at others</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Technology at Each Station</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Best-in-class at every inspection point</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Strong at 1-2 points, mediocre at others</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Data Architecture</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Open standards (CFX, CSV, XML, APIs)</td>
-                      <td className="px-6 py-4 text-gray-600">Proprietary formats, closed ecosystem</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Architecture</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Open standards (CFX, CSV, XML, APIs)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Proprietary formats, closed ecosystem</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Vendor Lock-in Risk</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Low - can replace any station independently</td>
-                      <td className="px-6 py-4 text-gray-600">High - proprietary integration ties everything together</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Vendor Lock-in Risk</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Low - can replace any station independently</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">High - proprietary integration ties everything together</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Support Quality</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Deep specialists at each station</td>
-                      <td className="px-6 py-4 text-gray-600">Generalists covering multiple product lines</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Support Quality</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Deep specialists at each station</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Generalists covering multiple product lines</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Innovation Pace</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Fast - 100% R&D focus on each technology</td>
-                      <td className="px-6 py-4 text-gray-600">Slower - R&D split across many product lines</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Innovation Pace</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Fast - 100% R&D focus on each technology</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Slower - R&D split across many product lines</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Procurement Simplicity</td>
-                      <td className="px-6 py-4 text-blue-600">Multiple POs (minor inconvenience)</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Single PO (convenient)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Procurement Simplicity</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600">Multiple POs (minor inconvenience)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Single PO (convenient)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Software Ecosystem</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Best-in-class at each point, unified through MES</td>
-                      <td className="px-6 py-4 text-gray-600">Unified interface but compromised depth</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Software Ecosystem</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Best-in-class at each point, unified through MES</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Unified interface but compromised depth</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Flexibility to Change</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Replace any station without affecting others</td>
-                      <td className="px-6 py-4 text-gray-600">Changing one system may disrupt entire ecosystem</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Flexibility to Change</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Replace any station without affecting others</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Changing one system may disrupt entire ecosystem</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Negotiating Leverage</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Can negotiate independently with each vendor</td>
-                      <td className="px-6 py-4 text-gray-600">Bundle pricing may mask inflated individual costs</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Negotiating Leverage</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Can negotiate independently with each vendor</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Bundle pricing may mask inflated individual costs</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Total Cost of Ownership</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Typically lower - transparent per-system pricing</td>
-                      <td className="px-6 py-4 text-gray-600">Often higher when factoring platform licenses and lock-in</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Total Cost of Ownership</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Typically lower - transparent per-system pricing</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Often higher when factoring platform licenses and lock-in</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Risk of Product Discontinuation</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Low - inspection is their core business</td>
-                      <td className="px-6 py-4 text-gray-600">Real risk - minor product lines may be deprioritized</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Risk of Product Discontinuation</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Low - inspection is their core business</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Real risk - minor product lines may be deprioritized</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Training Requirements</td>
-                      <td className="px-6 py-4 text-blue-600">Different interfaces per station (manageable)</td>
-                      <td className="px-6 py-4 text-gray-600 font-semibold">Consistent interface across stations (convenient)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Training Requirements</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600">Different interfaces per station (manageable)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600 font-semibold">Consistent interface across stations (convenient)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Industry 4.0 Readiness</td>
-                      <td className="px-6 py-4 text-blue-600 font-semibold">Open standards enable any analytics platform</td>
-                      <td className="px-6 py-4 text-gray-600">Limited to vendor's own analytics suite</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Industry 4.0 Readiness</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-blue-600 font-semibold">Open standards enable any analytics platform</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-600">Limited to vendor's own analytics suite</td>
                     </tr>
                   </tbody>
                 </table>

@@ -387,80 +387,80 @@ export default function AutomatedOpticalInspection() {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-gray-50">
                     <tr>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Feature
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         2D AOI
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         3D AOI (Recommended)
                       </th>
-                      <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                      <th className="px-3 py-2.5 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         Hybrid 2D+3D
                       </th>
                     </tr>
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Solder Joint Inspection</td>
-                      <td className="px-6 py-4 text-orange-700">Limited (top view only)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (full 3D profile)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (combined)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Solder Joint Inspection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Limited (top view only)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (full 3D profile)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (combined)</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Component Height</td>
-                      <td className="px-6 py-4 text-orange-700">Cannot measure</td>
-                      <td className="px-6 py-4 text-green-700">±2μm accuracy</td>
-                      <td className="px-6 py-4 text-green-700">±2μm accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Component Height</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Cannot measure</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">±2μm accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">±2μm accuracy</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Coplanarity Detection</td>
-                      <td className="px-6 py-4 text-orange-700">No</td>
-                      <td className="px-6 py-4 text-green-700">Yes</td>
-                      <td className="px-6 py-4 text-green-700">Yes</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Coplanarity Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">No</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Yes</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Yes</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Polarity Detection</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (color imaging)</td>
-                      <td className="px-6 py-4 text-orange-700">Limited (grayscale)</td>
-                      <td className="px-6 py-4 text-green-700">Excellent (color + 3D)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Polarity Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (color imaging)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Limited (grayscale)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent (color + 3D)</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Tombstoning Detection</td>
-                      <td className="px-6 py-4 text-orange-700">Moderate</td>
-                      <td className="px-6 py-4 text-green-700">Excellent</td>
-                      <td className="px-6 py-4 text-green-700">Excellent</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Tombstoning Detection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Moderate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Excellent</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">False Call Rate</td>
-                      <td className="px-6 py-4 text-orange-700">2-5% typical</td>
-                      <td className="px-6 py-4 text-green-700">&lt;1% with AI</td>
-                      <td className="px-6 py-4 text-green-700">&lt;0.5% with AI</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">False Call Rate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">2-5% typical</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">&lt;1% with AI</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">&lt;0.5% with AI</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                      <td className="px-6 py-4 text-green-700">Very fast (150cm²/sec)</td>
-                      <td className="px-6 py-4 text-green-700">Fast (120cm²/sec)</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate (100cm²/sec)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Very fast (150cm²/sec)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Fast (120cm²/sec)</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate (100cm²/sec)</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">BGA Inspection</td>
-                      <td className="px-6 py-4 text-orange-700">Ball presence only</td>
-                      <td className="px-6 py-4 text-green-700">Volume & height</td>
-                      <td className="px-6 py-4 text-green-700">Complete analysis</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">BGA Inspection</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-orange-700">Ball presence only</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Volume & height</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-green-700">Complete analysis</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 font-medium text-gray-900">Best For</td>
-                      <td className="px-6 py-4 text-gray-800">Simple assemblies, Class 1-2</td>
-                      <td className="px-6 py-4 text-gray-800">Complex assemblies, Class 3</td>
-                      <td className="px-6 py-4 text-gray-800">All applications, highest accuracy</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Best For</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Simple assemblies, Class 1-2</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Complex assemblies, Class 3</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">All applications, highest accuracy</td>
                     </tr>
                     <tr className="bg-gray-50">
-                      <td className="px-6 py-4 font-medium text-gray-900">Initial Investment</td>
-                      <td className="px-6 py-4 text-gray-800">Lower</td>
-                      <td className="px-6 py-4 text-gray-800">Moderate</td>
-                      <td className="px-6 py-4 text-gray-800">Higher</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Initial Investment</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Lower</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Moderate</td>
+                      <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Higher</td>
                     </tr>
                   </tbody>
                 </table>
@@ -488,40 +488,40 @@ export default function AutomatedOpticalInspection() {
               {/* Imaging & Measurement */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Imaging & Measurement Performance</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Imaging Technology</td>
-                        <td className="px-6 py-4 text-gray-800">2D high-resolution color + 3D structured light projection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Imaging Technology</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">2D high-resolution color + 3D structured light projection</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Camera Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 29 megapixel per image</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Camera Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 29 megapixel per image</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">XY Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">10μm - 15μm configurable (0.0004" - 0.0006")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">XY Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">10μm - 15μm configurable (0.0004" - 0.0006")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Height Measurement Accuracy</td>
-                        <td className="px-6 py-4 text-gray-800">±2μm (0.00008")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Height Measurement Accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±2μm (0.00008")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Z-Axis Resolution</td>
-                        <td className="px-6 py-4 text-gray-800">±1μm</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Z-Axis Resolution</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">±1μm</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Inspection Speed</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 120cm²/sec (18.6 in²/sec)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Inspection Speed</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 120cm²/sec (18.6 in²/sec)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Field of View</td>
-                        <td className="px-6 py-4 text-gray-800">Multi-camera system for full board coverage</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Field of View</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Multi-camera system for full board coverage</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Lighting System</td>
-                        <td className="px-6 py-4 text-gray-800">Programmable multi-angle LED with RGB capability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Lighting System</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Programmable multi-angle LED with RGB capability</td>
                       </tr>
                     </tbody>
                   </table>
@@ -531,36 +531,36 @@ export default function AutomatedOpticalInspection() {
               {/* Board Handling */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Board Handling</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Board Size Range</td>
-                        <td className="px-6 py-4 text-gray-800">50mm × 50mm to 510mm × 510mm (2" × 2" to 20" × 20")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Board Size Range</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">50mm × 50mm to 510mm × 510mm (2" × 2" to 20" × 20")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Thickness</td>
-                        <td className="px-6 py-4 text-gray-800">0.4mm - 8.0mm (0.016" - 0.31")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Thickness</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.4mm - 8.0mm (0.016" - 0.31")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Weight</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 7kg (15.4 lbs)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 7kg (15.4 lbs)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Board Warpage Handling</td>
-                        <td className="px-6 py-4 text-gray-800">Up to 5mm with laser height sensors</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Board Warpage Handling</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Up to 5mm with laser height sensors</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Conveyor Configuration</td>
-                        <td className="px-6 py-4 text-gray-800">Dual-lane with automatic width adjustment</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Conveyor Configuration</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Dual-lane with automatic width adjustment</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Transport Height</td>
-                        <td className="px-6 py-4 text-gray-800">900mm ± 20mm (35.4" ± 0.8")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Transport Height</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">900mm ± 20mm (35.4" ± 0.8")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Top/Bottom Inspection</td>
-                        <td className="px-6 py-4 text-gray-800">Top side standard, bottom side optional</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Top/Bottom Inspection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Top side standard, bottom side optional</td>
                       </tr>
                     </tbody>
                   </table>
@@ -570,43 +570,43 @@ export default function AutomatedOpticalInspection() {
               {/* Inspection Capabilities */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Inspection Capabilities & AI Features</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Smallest Component Size</td>
-                        <td className="px-6 py-4 text-gray-800">01005 (0.4mm × 0.2mm / Metric 0402)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Smallest Component Size</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">01005 (0.4mm × 0.2mm / Metric 0402)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Minimum Component Pitch</td>
-                        <td className="px-6 py-4 text-gray-800">0.3mm (0.012")</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Minimum Component Pitch</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.3mm (0.012")</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Defect Types Detected</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Defect Types Detected</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           50+ types including missing/wrong components, polarity, shift, skew, tombstone, lifted leads,
                           solder bridges, insufficient/excess solder, cold joints, solder balls
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">AI Detection Engine</td>
-                        <td className="px-6 py-4 text-gray-800">Deep learning neural networks with continuous learning</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">AI Detection Engine</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Deep learning neural networks with continuous learning</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">False Call Rate</td>
-                        <td className="px-6 py-4 text-gray-800">&lt;0.5% with AI optimization (industry leading)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">False Call Rate</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">&lt;0.5% with AI optimization (industry leading)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Escape Rate</td>
-                        <td className="px-6 py-4 text-gray-800">&lt;0.1% for critical defects</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Escape Rate</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">&lt;0.1% for critical defects</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Component Library</td>
-                        <td className="px-6 py-4 text-gray-800">10,000+ pre-trained components, expandable</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Component Library</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">10,000+ pre-trained components, expandable</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Fiducial Detection</td>
-                        <td className="px-6 py-4 text-gray-800">Automatic recognition with sub-pixel accuracy</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Fiducial Detection</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Automatic recognition with sub-pixel accuracy</td>
                       </tr>
                     </tbody>
                   </table>
@@ -616,42 +616,42 @@ export default function AutomatedOpticalInspection() {
               {/* Software & Integration */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Software & Integration</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Programming Methods</td>
-                        <td className="px-6 py-4 text-gray-800">
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Programming Methods</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">
                           Auto-programming from CAD (Gerber, ODB++, GenCAD), golden board teach, manual teach
                         </td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Communication Protocols</td>
-                        <td className="px-6 py-4 text-gray-800">IPC-CFX, SECS/GEM, SMEMA, Hermes, Modbus TCP/IP</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Communication Protocols</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">IPC-CFX, SECS/GEM, SMEMA, Hermes, Modbus TCP/IP</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Data Formats</td>
-                        <td className="px-6 py-4 text-gray-800">Gerber (RS-274X), ODB++, GenCAD, IPC-2581</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Data Formats</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Gerber (RS-274X), ODB++, GenCAD, IPC-2581</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Statistical Analysis</td>
-                        <td className="px-6 py-4 text-gray-800">Real-time SPC, Cpk, Pareto charts, trend analysis, defect clustering</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Statistical Analysis</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Real-time SPC, Cpk, Pareto charts, trend analysis, defect clustering</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Traceability</td>
-                        <td className="px-6 py-4 text-gray-800">1D/2D barcode reading, serial number tracking, image archiving</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Traceability</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1D/2D barcode reading, serial number tracking, image archiving</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Reporting</td>
-                        <td className="px-6 py-4 text-gray-800">PDF, Excel, CSV, XML with customizable templates</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Reporting</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">PDF, Excel, CSV, XML with customizable templates</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Network Integration</td>
-                        <td className="px-6 py-4 text-gray-800">Ethernet, wireless, cloud connectivity for Industry 4.0</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Network Integration</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Ethernet, wireless, cloud connectivity for Industry 4.0</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">User Interface</td>
-                        <td className="px-6 py-4 text-gray-800">Multi-language touch screen with intuitive workflow</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">User Interface</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Multi-language touch screen with intuitive workflow</td>
                       </tr>
                     </tbody>
                   </table>
@@ -661,36 +661,36 @@ export default function AutomatedOpticalInspection() {
               {/* Environmental & Physical */}
               <div className="mb-8">
                 <h3 className="text-xl font-semibold mb-4 text-blue-600">Environmental & Physical</h3>
-                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <div className="bg-white rounded-lg shadow-md overflow-x-auto">
                   <table className="min-w-full divide-y divide-gray-200">
                     <tbody className="divide-y divide-gray-200">
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900 w-1/3">Machine Dimensions</td>
-                        <td className="px-6 py-4 text-gray-800">1350mm (L) × 1250mm (W) × 1500mm (H)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900 w-1/3">Machine Dimensions</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">1350mm (L) × 1250mm (W) × 1500mm (H)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Machine Weight</td>
-                        <td className="px-6 py-4 text-gray-800">Approximately 800kg (1,760 lbs)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Machine Weight</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">Approximately 800kg (1,760 lbs)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Power Requirements</td>
-                        <td className="px-6 py-4 text-gray-800">AC 200-240V, 50/60Hz, Single phase, 2.0kVA</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Power Requirements</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">AC 200-240V, 50/60Hz, Single phase, 2.0kVA</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Compressed Air</td>
-                        <td className="px-6 py-4 text-gray-800">0.5-0.7 MPa (73-100 PSI), clean dry air, 50 L/min</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Compressed Air</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">0.5-0.7 MPa (73-100 PSI), clean dry air, 50 L/min</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Temperature</td>
-                        <td className="px-6 py-4 text-gray-800">20°C - 28°C (68°F - 82°F)</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Temperature</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">20°C - 28°C (68°F - 82°F)</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Operating Humidity</td>
-                        <td className="px-6 py-4 text-gray-800">30% - 70% RH, non-condensing</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Operating Humidity</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">30% - 70% RH, non-condensing</td>
                       </tr>
                       <tr>
-                        <td className="px-6 py-4 font-medium text-gray-900">Noise Level</td>
-                        <td className="px-6 py-4 text-gray-800">&lt;70 dB(A) during operation</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 font-medium text-gray-900">Noise Level</td>
+                        <td className="px-3 py-3 sm:px-6 sm:py-4 text-gray-800">&lt;70 dB(A) during operation</td>
                       </tr>
                     </tbody>
                   </table>
