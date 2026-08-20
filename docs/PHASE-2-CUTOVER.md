@@ -94,6 +94,27 @@ Against a production build of this site:
 > Next.js emits **308** rather than 301. Both are permanent redirects and
 > Google treats them identically for passing link authority.
 
+## 3. The old site's 46 PDFs
+
+Not in any sitemap, so easy to miss — the old site serves **46 product PDFs**
+(brochures, datasheets, training manuals) under `/wp-content/uploads/...` and
+`/userfiles/file/...`. All 46 are live and returning 200 today.
+
+Google indexes PDFs directly, distributors link to datasheets, and ASC's sales
+people email these links. Pointing the domain at a site that doesn't have them
+would 404 every one.
+
+All 46 are now committed to `public/` **at their exact original paths**, so the
+existing URLs keep working unchanged after cutover. No redirects needed and
+nothing to maintain — they are static files.
+
+Verified: all 46 reconstructed URLs return 200 on the live old site, and all 46
+serve correctly from this site with `content-type: application/pdf`.
+
+> These are not yet linked from anywhere in the new site's navigation — they
+> exist so old links don't break. Surfacing them on the product and Resources
+> pages is worth doing separately.
+
 ---
 
 ## Cutover day — the actual steps
