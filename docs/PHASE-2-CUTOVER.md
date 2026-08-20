@@ -1,30 +1,40 @@
 # Phase 2 — moving this site onto ascinternational.com
 
-**Status (19 Aug 2026, ~23:20 ET): PARTIALLY CUT OVER.**
+**Status: ✅ CUTOVER COMPLETE (19 Aug 2026, ~23:40 ET).**
 
-`ascinternational.com` now serves this site. Steps 1, 2 and 5 below are done and
-verified. **Steps 3 and 4 — the two environment variables and the redeploy —
-have NOT been done yet.**
+`ascinternational.com` is live and is now the canonical address.
+`solderpasteinspection.com` 301s to it path-for-path. ASC's email never went
+down. All five steps below are done.
 
-### What that means right now
+### Verified live after the final redeploy
 
-Both domains serve identical content, and the canonical tags on
-`ascinternational.com` still name `solderpasteinspection.com` as the real
-address. Left alone, Google consolidates authority onto the **old** domain —
-the opposite of the point of this migration. Harmless for a day or two, not for
-weeks.
-
-**To finish: do steps 3 and 4.** Nothing else is outstanding.
-
-### Verified after the DNS move
-
-| Check on `ascinternational.com` | Result |
+| Check | Result |
 |---|---|
-| Homepage + TLS certificate | valid |
-| Legacy ASC redirects | 208 / 208 |
+| Legacy ASC redirects resolving to the intended URL | 208 / 208 |
 | Site pages returning 200 | 97 / 97 |
 | Legacy PDFs returning 200 | 46 / 46 |
-| ASC email records (MX, SPF, DMARC, mail/smtp/imap/pop) | all 7 intact, never went down |
+| ASC email records (MX, SPF, DMARC, mail/smtp/imap/pop) | 7 / 7 intact |
+| Canonical tags, sitemap, robots.txt, JSON-LD | all name `ascinternational.com` |
+| `solderpasteinspection.com/<path>` → `ascinternational.com/<path>` | 308, path preserved |
+| `www.solderpasteinspection.com` → apex | 308 |
+
+### Known minor: the `.net` domains chain
+
+`solderpasteinspection.net` redirects to `www.solderpasteinspection.com` at the
+**Vercel domain level**, which then redirects to `ascinternational.com`. Two
+hops instead of one. It resolves correctly and Google follows short chains, so
+this is tidy-up, not a defect.
+
+To make it one hop: Vercel → Settings → Domains → Edit both `.net` rows and
+change the redirect target from `www.solderpasteinspection.com` to
+`ascinternational.com`. That setting lives in the Vercel dashboard, not in
+`next.config.ts`, which is why the code could not fix it.
+
+### Still worth doing
+
+- Submit the new sitemap in Google Search Console; watch 404s for ~30 days.
+- Surface the 46 PDFs in the site navigation — they are reachable at their old
+  URLs but nothing on the new site links to them.
 
 This is the plain-English version. The confidential half of the story —
 account IDs, DNS records, who controls what — lives in
