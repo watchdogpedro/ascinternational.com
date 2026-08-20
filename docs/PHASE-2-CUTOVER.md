@@ -18,17 +18,24 @@ down. All five steps below are done.
 | `solderpasteinspection.com/<path>` → `ascinternational.com/<path>` | 308, path preserved |
 | `www.solderpasteinspection.com` → apex | 308 |
 
-### Known minor: the `.net` domains chain
+### All four legacy domains resolve in one hop
 
-`solderpasteinspection.net` redirects to `www.solderpasteinspection.com` at the
-**Vercel domain level**, which then redirects to `ascinternational.com`. Two
-hops instead of one. It resolves correctly and Google follows short chains, so
-this is tidy-up, not a defect.
+Verified end to end — every legacy host 308s straight to `ascinternational.com`
+with the path preserved, no chaining:
 
-To make it one hop: Vercel → Settings → Domains → Edit both `.net` rows and
-change the redirect target from `www.solderpasteinspection.com` to
-`ascinternational.com`. That setting lives in the Vercel dashboard, not in
-`next.config.ts`, which is why the code could not fix it.
+| From | Hops |
+|---|---|
+| `solderpasteinspection.com/<path>` | 1 |
+| `www.solderpasteinspection.com/<path>` | 1 |
+| `solderpasteinspection.net/<path>` | 1 |
+| `www.solderpasteinspection.net/<path>` | 1 |
+
+The `.com` pair is handled by `next.config.ts`. The `.net` pair is handled at
+the **Vercel domain level** (Settings → Domains → Edit → redirect target), which
+fires before `next.config.ts` ever runs — so the `.net` redirect target is *not*
+configurable in this repo. Both `.net` rows point at `ascinternational.com`
+with a 308. If they ever get reset to `www.solderpasteinspection.com`, that is
+where to fix it.
 
 ### Still worth doing
 
