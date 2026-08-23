@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Medical Device PCB Inspection: FDA, ISO 13485 & IPC Requirements | ASC International",
+  title: "Medical Device PCB Inspection: FDA, ISO 13485 & IPC Requirements",
   description: "What inspection standards apply to medical device PCB assembly. Covers FDA 21 CFR Part 820, ISO 13485, IPC-A-610 Class 3, and how 3D SPI and AOI help manufacturers meet them.",
   keywords: ["medical device PCB inspection", "ISO 13485 inspection", "FDA PCB quality", "IPC-A-610 Class 3", "medical electronics quality", "medical device manufacturing"],
   openGraph: {

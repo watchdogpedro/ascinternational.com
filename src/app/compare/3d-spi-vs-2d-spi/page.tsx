@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "3D SPI vs 2D SPI: Complete Comparison Guide 2026 | ASC International",
+  title: "3D SPI vs 2D SPI: Complete Comparison Guide 2026",
   description: "Comprehensive comparison of 3D and 2D solder paste inspection systems. Compare accuracy, speed, defect detection, ROI, and determine which SPI technology is right for your production needs.",
   keywords: ["3D SPI vs 2D SPI", "solder paste inspection comparison", "3D SPI advantages", "2D SPI vs 3D SPI", "which SPI is better"],
   openGraph: {

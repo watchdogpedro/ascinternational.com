@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "LineMaster Falcon Plus | Inline Dual Mode AOI + SPI | ASC International",
+  title: "LineMaster Falcon Plus | Inline Dual Mode AOI + SPI",
   description: "Inline dual-mode system combining 3D SPI and AOI in one pass. 12 MP color camera, dual laser height verification, RGBW-UV lighting, and a 20\"×20\" board area standard.",
   keywords: ["LineMaster Falcon Plus", "inline AOI SPI", "dual mode AOI", "inline inspection system"],
 };

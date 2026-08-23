@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Electronics Inspection Equipment Comparisons | ASC International",
+  title: "Electronics Inspection Equipment Comparisons",
   description: "Compare inspection and dispensing technologies: 3D SPI vs 2D SPI, 2D AOI vs 3D AOI, jetting vs contact dispensing. Data-driven comparisons to help you choose the right equipment.",
   keywords: ["3D SPI vs 2D SPI", "2D AOI vs 3D AOI", "inspection comparison", "dispensing comparison", "equipment selection"],
   openGraph: {

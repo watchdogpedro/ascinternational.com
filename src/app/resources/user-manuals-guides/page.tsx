@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "User Manuals & Guides | Inspection System Documentation | ASC International",
+  title: "User Manuals & Guides | Inspection System Documentation",
   description:
     "Operation manuals and quick-start guides for ASC International inspection systems — VisionPro AP212, VisionMaster AP450, Criterion, AV862, HSi, LaserVision Mini SP3D, LineMaster FUSion, SP2D, Verax and more. Request the manual for your system.",
   keywords: [

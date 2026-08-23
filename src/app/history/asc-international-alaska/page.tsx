@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Optical Inspection in Alaska | ASC International",
+  title: "Optical Inspection in Alaska",
   description:
     "Advanced optical and automated inspection systems for Alaska electronics and industrial manufacturers. High-resolution imaging, laser-based defect detection, and AI-ready quality control from ASC International.",
   keywords: [

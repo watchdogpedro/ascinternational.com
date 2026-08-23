@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions | ASC International",
+  title: "Frequently Asked Questions",
   description: "Find answers to common questions about inspection systems, services, support, and purchasing from ASC International. Expert guidance on 3D SPI, AOI, and inspection solutions.",
   keywords: ["inspection FAQ", "SPI questions", "AOI support", "inspection systems help", "PCB inspection questions"],
   openGraph: {

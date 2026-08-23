@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Solder Paste Measurement Justification: Building the ROI Case for SPI | ASC International",
+  title: "Solder Paste Measurement Justification: Building the ROI Case for SPI",
   description: "How to justify solder paste inspection to management. Build a defensible ROI model using the 10X rule, first-pass yield, rework cost, and defect data to prove SPI pays for itself.",
   keywords: ["solder paste measurement justification", "SPI ROI", "solder paste inspection ROI", "10X rule", "first-pass yield", "rework cost", "SPI payback period", "inspection investment"],
   openGraph: {

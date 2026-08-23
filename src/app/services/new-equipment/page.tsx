@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "New Equipment Sales | ASC International",
+  title: "New Equipment Sales",
   description: "Purchase the latest inspection and measurement systems from ASC International. Cutting-edge technology, full warranty coverage, and comprehensive support for electronics manufacturing.",
   keywords: ["new inspection equipment", "3D SPI purchase", "AOI systems", "new equipment sales", "inspection system purchase"],
   openGraph: {

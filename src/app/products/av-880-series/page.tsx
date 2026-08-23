@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AV 880 Series | Inline AOI System | ASC International",
+  title: "AV 880 Series | Inline AOI System",
   description: "High-level inline automated optical inspection in a cost-effective standalone platform. Large 22\"×26\" inspection field, OCR, CAD-based programming, real-time SPC charting, and 0.33s per field of view.",
   keywords: ["AV 880 Series", "inline AOI", "automated optical inspection", "CAD programming AOI", "inline inspection system"],
 };

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Solder Defect Root Cause Analysis Using SPI and AOI Data | Application Note | ASC International",
+  title: "Solder Defect Root Cause Analysis Using SPI and AOI Data | Application Note",
   description: "Practical methodology for correlating solder paste inspection and automated optical inspection data to identify root causes of solder defects. Includes defect categorization, fishbone diagrams, data analysis techniques, and corrective action procedures.",
   keywords: ["root cause analysis", "solder defect analysis", "SPI AOI correlation", "defect categorization", "corrective action", "fishbone diagram", "application note", "technical guide"],
   openGraph: {

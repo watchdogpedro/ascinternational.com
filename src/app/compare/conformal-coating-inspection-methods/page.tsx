@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Manual vs UV vs 3D Conformal Coating Inspection Comparison | ASC International",
+  title: "Manual vs UV vs 3D Conformal Coating Inspection Comparison",
   description: "Compare manual, UV fluorescence, and 3D conformal coating inspection methods. Detailed comparison of accuracy, speed, coverage detection, and thickness measurement capabilities.",
   keywords: ["conformal coating inspection", "UV inspection", "3D coating measurement", "manual inspection vs automated"],
 };

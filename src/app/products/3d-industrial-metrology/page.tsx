@@ -5,7 +5,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "3D Industrial Metrology Systems | ASC International",
+  title: "3D Industrial Metrology Systems",
   description: "Precision 3D laser scanning and metrology systems for electronics manufacturing. Sub-micron accuracy for dimensional verification, reverse engineering, and quality control.",
   keywords: ["3D metrology", "laser scanning", "dimensional measurement", "3D scanning", "industrial metrology", "precision measurement"],
   openGraph: {

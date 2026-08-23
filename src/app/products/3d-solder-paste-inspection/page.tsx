@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "3D Solder Paste Inspection (SPI) Systems | ASC International",
+  title: "3D Solder Paste Inspection (SPI) Systems",
   description: "Advanced 3D solder paste inspection systems for PCB manufacturing. Inline and offline SPI solutions for accurate solder paste volume, height, and area measurement. 34+ years experience.",
   keywords: ["3D SPI", "solder paste inspection", "3D inspection systems", "PCB inspection", "solder paste measurement", "inline SPI", "offline SPI"],
   openGraph: {

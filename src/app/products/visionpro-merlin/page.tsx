@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "VisionPro Merlin | Affordable Offline 2D-3D AOI | ASC International",
+  title: "VisionPro Merlin | Affordable Offline 2D-3D AOI",
   description: "Affordable offline 2D-3D AOI with Detech2 Technology. 12 MP camera, dual laser height verification, 20\"×16\" inspection area expandable to 26\"×22\". Very low false call rates.",
   keywords: ["VisionPro Merlin", "offline AOI", "2D 3D AOI", "affordable AOI system"],
 };

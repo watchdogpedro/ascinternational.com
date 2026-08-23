@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Automated Optical Inspection (AOI) Systems | ASC International",
+  title: "Automated Optical Inspection (AOI) Systems",
   description: "Advanced 2D-3D AOI systems for post-reflow PCB inspection. AI-powered defect detection for component placement, solder joints, and assembly quality verification.",
   keywords: ["AOI systems", "automated optical inspection", "PCB inspection", "2D AOI", "3D AOI", "post-reflow inspection", "electronics inspection"],
   openGraph: {

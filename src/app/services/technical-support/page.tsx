@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Technical Support Services | ASC International",
+  title: "Technical Support Services",
   description: "Worldwide technical support for ASC inspection equipment. Remote diagnostics, on-site service, preventive maintenance, training, and 24/7 emergency support available.",
   keywords: ["technical support", "equipment service", "maintenance", "training", "remote support", "field service"],
   openGraph: {

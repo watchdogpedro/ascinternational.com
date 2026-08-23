@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "VisionPro AP500 | Offline 3D SPI | ASC International",
+  title: "VisionPro AP500 | Offline 3D SPI",
   description: "ASC International's most popular offline 3D SPI system. The VisionPro AP500 delivers fully automatic solder paste measurement in a rugged benchtop package with minimal operator training required.",
   keywords: ["VisionPro AP500", "offline SPI", "benchtop SPI", "3D solder paste inspection"],
 };

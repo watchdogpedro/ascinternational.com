@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Yield Improvement Strategies: Why It Starts at Solder Paste Printing | ASC International",
+  title: "Yield Improvement Strategies: Why It Starts at Solder Paste Printing",
   description: "A practical yield improvement strategy for SMT manufacturers. Learn why first-pass yield is built at the printer, how to set paste height and volume limits, and how to tune your process.",
   keywords: ["yield improvement strategies", "first-pass yield", "SMT yield", "solder paste printing", "paste height and volume", "process control", "SPI yield improvement", "control limits"],
   openGraph: {

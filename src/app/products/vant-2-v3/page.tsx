@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "VANT-2 V3 | 3D Industrial Metrology Scanner | ASC International",
+  title: "VANT-2 V3 | 3D Industrial Metrology Scanner",
   description: "Precision 3D laser scanning metrology system for dimensional inspection, reverse engineering, and CAD comparison. NIST-traceable accuracy for electronics, aerospace, and industrial applications.",
   keywords: ["VANT-2 V3", "3D metrology", "laser scanner", "dimensional inspection", "3D scanning"],
 };

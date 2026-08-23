@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_DOMAIN } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ASC International",
+  title: "Privacy Policy",
   description:
     `How ASC International collects, uses, and protects the personal information of visitors to ${SITE_DOMAIN}.`,
   robots: { index: true, follow: true },
@@ -97,6 +97,38 @@ export default function PrivacyPolicyPage() {
                   experience. Users may set their web browser to refuse cookies or to
                   alert them when cookies are being sent. If they do so, note that some
                   parts of the Site may not function properly.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="font-display text-2xl font-bold mb-3 text-accent-cyan">
+                  Website Visitor Identification
+                </h2>
+                <p className="mb-3">
+                  We use a third-party visitor identification service to understand which
+                  organizations are researching our products. When you visit our Site, this
+                  service records your IP address, the pages you view, how long you spend on
+                  them, the site or search that referred you, and basic browser and device
+                  details. It then attempts to match that activity to a business or
+                  organization, and in some cases to an individual business contact.
+                </p>
+                <p className="mb-3">
+                  We use this to follow up with relevant technical information and to
+                  understand which of our products are drawing interest. We do not use it to
+                  identify visitors browsing for personal rather than business purposes, and
+                  we do not sell this data.
+                </p>
+                <p>
+                  If you would rather not be identified this way, email{" "}
+                  <a
+                    href="mailto:info@ascinternational.com"
+                    className="text-accent-cyan hover:underline"
+                  >
+                    info@ascinternational.com
+                  </a>{" "}
+                  and we will remove your information and exclude you going forward. You can
+                  also block this tracking with most ad- and tracker-blocking browser
+                  extensions.
                 </p>
               </div>
 

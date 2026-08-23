@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Resources & Downloads | User Manuals, Software & Guides | ASC International",
+  title: "Resources & Downloads | User Manuals, Software & Guides",
   description:
     "ASC International resource hub: user manuals & guides, software downloads, and troubleshooting guides for VisionPro, Criterion, LaserVision, SP2D, AV862 and more — plus blog, application notes, glossary, FAQ and ROI tools.",
   keywords: [

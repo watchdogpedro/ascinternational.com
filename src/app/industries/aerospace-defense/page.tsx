@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Aerospace & Defense Inspection | ASC International",
+  title: "Aerospace & Defense Inspection",
   description: "Mission-critical inspection systems for aerospace and defense electronics. AS9100 compliant solutions with IPC Class 3 standards and complete traceability.",
   keywords: ["aerospace inspection", "defense electronics", "AS9100", "IPC Class 3", "mil-spec inspection"],
   openGraph: {

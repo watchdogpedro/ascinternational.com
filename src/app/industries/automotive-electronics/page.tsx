@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Automotive Electronics Inspection | ASC International",
+  title: "Automotive Electronics Inspection",
   description: "Zero-defect inspection systems for automotive electronics manufacturing. IATF 16949 compliant solutions with full traceability and PPAP documentation support.",
   keywords: ["automotive electronics inspection", "IATF 16949", "automotive quality", "PPAP documentation", "zero-defect manufacturing"],
   openGraph: {

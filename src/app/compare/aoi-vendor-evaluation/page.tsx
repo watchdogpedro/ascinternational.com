@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "AOI System Evaluation Guide 2026: How to Choose the Right AOI Vendor | ASC International",
+  title: "AOI System Evaluation Guide 2026: How to Choose the Right AOI Vendor",
   description: "Comprehensive AOI vendor evaluation framework for 2026. Compare defect detection capability, false call rates, AI approaches, data openness, integration flexibility, and support models to find the best AOI system.",
   keywords: ["AOI vendor comparison", "best AOI system", "AOI evaluation", "automated optical inspection vendor", "AOI system selection", "AOI buying guide 2026"],
   openGraph: {

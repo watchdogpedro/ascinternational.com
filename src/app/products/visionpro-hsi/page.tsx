@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "VisionPro HSi | High-Speed Offline 3D SPI | ASC International",
+  title: "VisionPro HSi | High-Speed Offline 3D SPI",
   description: "High-speed offline 3D solder paste inspection in a rugged portable benchtop package. Accurate 3D measurements of paste pads, BGAs, and PCB features with excellent repeatability.",
   keywords: ["VisionPro HSi", "offline SPI", "high speed SPI", "3D solder paste inspection benchtop"],
 };

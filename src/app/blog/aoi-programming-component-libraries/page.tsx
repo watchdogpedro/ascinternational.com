@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "AOI Programming Best Practices: Building Component Libraries That Hold Up | ASC International",
+  title: "AOI Programming Best Practices: Building Component Libraries That Hold Up",
   description: "How to build AOI component libraries that minimize false calls and escapes across product families. Covers inspection window sizing, threshold tuning, lighting strategy, and library maintenance.",
   keywords: ["AOI programming", "component library AOI", "AOI false calls", "AOI inspection setup", "automated optical inspection programming", "AOI library"],
   openGraph: {

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    "PCB & Solder Paste Inspection: Unlocking Precision | ASC International",
+    "PCB & Solder Paste Inspection: Unlocking Precision",
   description:
     "A guide to PCB and solder paste inspection. Learn how 3D AOI and SPI catch missing components, solder bridges, voids, and cold joints — and how automation improves accuracy and yield.",
   keywords: [

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Inline vs. Offline SPI: Which Configuration is Right for Your Line? | ASC International",
+  title: "Inline vs. Offline SPI: Which Configuration is Right for Your Line?",
   description: "Compare inline and offline SPI configurations. Learn which solder paste inspection setup delivers the best ROI for your production volume, board mix, and quality targets.",
   keywords: ["inline SPI", "offline SPI", "SPI configuration", "solder paste inspection setup", "inline vs offline inspection"],
   openGraph: {

@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "2D AOI vs 3D AOI vs Hybrid AOI: Complete Comparison 2026 | ASC International",
+  title: "2D AOI vs 3D AOI vs Hybrid AOI: Complete Comparison 2026",
   description: "Compare 2D, 3D, and Hybrid AOI systems for PCB inspection. Detailed comparison of accuracy, speed, defect detection, cost, and ROI to choose the right automated optical inspection technology.",
   keywords: ["2D AOI vs 3D AOI", "Hybrid AOI comparison", "automated optical inspection comparison", "which AOI is better", "2D vs 3D AOI"],
   openGraph: {

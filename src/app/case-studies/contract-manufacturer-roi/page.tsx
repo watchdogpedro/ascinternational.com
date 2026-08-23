@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Contract Manufacturer ROI Case Study | 4-Month Payback | ASC International",
+  title: "Contract Manufacturer ROI Case Study | 4-Month Payback",
   description: "How a high-mix contract manufacturer achieved 4-month ROI on inspection investment with 80% rework reduction and 15% capacity increase. ASC systems with fast changeover for EMS operations.",
   keywords: ["contract manufacturer inspection", "EMS inspection ROI", "high-mix inspection", "fast changeover inspection", "inspection payback period", "rework reduction"],
   openGraph: {

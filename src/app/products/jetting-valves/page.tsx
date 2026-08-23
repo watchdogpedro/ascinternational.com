@@ -5,7 +5,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Precision Jetting Valves | ASC International",
+  title: "Precision Jetting Valves",
   description: "High-speed precision jetting valves for solder paste and adhesive dispensing. Non-contact dispensing with minimal waste, high accuracy, and flexible integration.",
   keywords: ["jetting valves", "dispensing systems", "solder paste jetting", "adhesive dispensing", "precision dispensing", "non-contact dispensing"],
   openGraph: {

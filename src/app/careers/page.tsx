@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Careers - Join the ASC International Team | Inspection & Metrology Jobs",
+  title: "Careers - Inspection & Metrology Jobs",
   description:
     "Build your career with ASC International, a global leader in electronics inspection and measurement since 1992. View current openings including our Automated Optical Inspection (AOI) Engineer role.",
   keywords: [

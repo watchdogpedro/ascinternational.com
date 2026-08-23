@@ -5,7 +5,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Conformal Coating Inspection Systems | ASC International",
+  title: "Conformal Coating Inspection Systems",
   description: "Advanced conformal coating inspection and measurement systems. UV fluorescence imaging for precise coverage analysis and thickness measurement on PCB assemblies.",
   keywords: ["conformal coating inspection", "coating thickness measurement", "UV fluorescence inspection", "PCB coating verification", "conformal coat AOI"],
   openGraph: {

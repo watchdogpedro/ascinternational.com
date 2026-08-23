@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Semiconductor Inspection Solutions | ASC International",
+  title: "Semiconductor Inspection Solutions",
   description: "Advanced inspection systems for semiconductor manufacturing, wafer-level inspection, die-level SPI, and advanced packaging quality control. Ultra-high-resolution solutions for extreme miniaturization.",
   keywords: ["semiconductor inspection", "wafer inspection", "die inspection", "semiconductor quality", "wafer bumping inspection", "advanced packaging inspection", "flip-chip inspection"],
   openGraph: {

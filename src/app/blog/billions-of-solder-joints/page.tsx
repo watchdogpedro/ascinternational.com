@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Billions of Solder Joints: Why PPM Quality Demands Automated Inspection | ASC International",
+  title: "Billions of Solder Joints: Why PPM Quality Demands Automated Inspection",
   description: "Modern electronics produce billions of solder joints. At that scale, even a tiny defect rate means thousands of failures. Learn why parts-per-million quality requires automated SPI and AOI.",
   keywords: ["billions of solder joints", "PPM defect rate", "solder joint reliability", "statistical process control", "automated inspection", "SPI", "AOI", "zero defect manufacturing", "DPMO"],
   openGraph: {

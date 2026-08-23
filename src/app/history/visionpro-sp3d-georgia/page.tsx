@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "VisionPro SP3D Inspection Technology in Georgia | ASC International",
+  title: "VisionPro SP3D Inspection Technology in Georgia",
   description:
     "VisionPro SP3D laser-based 3D solder paste inspection for Georgia electronics manufacturers. High-resolution imaging and conical convergence illumination automate defect detection and measurement.",
   keywords: [

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services - ASC International | Support & Solutions",
+  title: "Services - Support & Solutions",
   description: "Comprehensive services including new equipment sales, pre-owned systems, contract inspection, and global technical support for electronics manufacturing quality control.",
   keywords: ["inspection services", "equipment sales", "technical support", "contract inspection", "refurbished equipment", "pre-owned systems"],
   openGraph: {
