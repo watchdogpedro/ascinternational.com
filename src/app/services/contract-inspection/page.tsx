@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/contract-inspection' },
   title: "Contract Inspection Services",
   description: "Professional PCB and electronics inspection services by ASC experts. On-site or at our facility. 3D SPI, AOI, X-ray, and specialty inspection services available.",
   keywords: ["contract inspection", "inspection services", "PCB inspection services", "electronics testing services", "third-party inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Contract Inspection Services - ASC International",
     description: "Expert inspection services performed by certified technicians at your facility or ours.",
     type: "website",

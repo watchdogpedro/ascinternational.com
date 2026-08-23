@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "SMT inspection jobs",
   ],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Careers at ASC International - Join a Growing Team",
     description:
       "Help manufacturers worldwide improve quality and yield. Explore engineering and support careers at ASC International.",

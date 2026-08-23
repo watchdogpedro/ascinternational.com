@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/history/asc-international-alaska' },
   title: "Optical Inspection in Alaska",
   description:
     "Advanced optical and automated inspection systems for Alaska electronics and industrial manufacturers. High-resolution imaging, laser-based defect detection, and AI-ready quality control from ASC International.",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "electronics manufacturing Alaska",
   ],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Unlocking the Power of Optical Inspection: ASC International in Alaska",
     description:
       "How Alaska manufacturers use advanced optical and automated inspection to detect defects with precision and reduce inspection time.",

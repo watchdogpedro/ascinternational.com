@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/industries/semiconductor' },
   title: "Semiconductor Inspection Solutions",
   description: "Advanced inspection systems for semiconductor manufacturing, wafer-level inspection, die-level SPI, and advanced packaging quality control. Ultra-high-resolution solutions for extreme miniaturization.",
   keywords: ["semiconductor inspection", "wafer inspection", "die inspection", "semiconductor quality", "wafer bumping inspection", "advanced packaging inspection", "flip-chip inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Semiconductor Inspection Solutions - ASC International",
     description: "Ultra-high-resolution inspection solutions for semiconductor manufacturing and advanced packaging operations.",
     type: "website",

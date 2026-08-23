@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/compare/visual-inspection-methods' },
   title: "Manual Microscope vs Digital Video vs Automated AOI Comparison",
   description: "Compare manual microscope, digital video inspection, and automated AOI systems. Detailed comparison of ergonomics, documentation, speed, and cost for electronics inspection.",
   keywords: ["manual microscope vs digital", "digital video inspection", "visual inspection comparison", "microscope vs AOI"],

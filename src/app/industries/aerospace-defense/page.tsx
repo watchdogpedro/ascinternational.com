@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/industries/aerospace-defense' },
   title: "Aerospace & Defense Inspection",
   description: "Mission-critical inspection systems for aerospace and defense electronics. AS9100 compliant solutions with IPC Class 3 standards and complete traceability.",
   keywords: ["aerospace inspection", "defense electronics", "AS9100", "IPC Class 3", "mil-spec inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Aerospace & Defense - ASC International",
     description: "Inspection systems meeting the demanding requirements of aerospace and defense manufacturing.",
     type: "website",

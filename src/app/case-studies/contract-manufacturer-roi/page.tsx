@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/case-studies/contract-manufacturer-roi' },
   title: "Contract Manufacturer ROI Case Study | 4-Month Payback",
   description: "How a high-mix contract manufacturer achieved 4-month ROI on inspection investment with 80% rework reduction and 15% capacity increase. ASC systems with fast changeover for EMS operations.",
   keywords: ["contract manufacturer inspection", "EMS inspection ROI", "high-mix inspection", "fast changeover inspection", "inspection payback period", "rework reduction"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Contract Manufacturer Achieves 4-Month ROI on Inspection Investment",
     description: "Case study: High-mix EMS provider achieves 4-month payback, 80% rework reduction, and 15% capacity increase with ASC inspection systems.",
     type: "article",

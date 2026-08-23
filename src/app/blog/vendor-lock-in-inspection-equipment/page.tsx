@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/vendor-lock-in-inspection-equipment' },
   title: "Avoiding Vendor Lock-In When Choosing Inspection Equipment | ASC Blog",
   description: "Learn how to identify and avoid vendor lock-in in inspection equipment. Understand proprietary vs open data formats, IPC-CFX benefits, and essential questions to ask vendors before purchasing.",
   keywords: ["inspection vendor lock-in", "open architecture inspection", "IPC-CFX inspection", "proprietary inspection data", "inspection equipment selection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Avoiding Vendor Lock-In When Choosing Inspection Equipment",
     description: "How to identify and avoid vendor lock-in when purchasing AOI and SPI systems.",
     type: "article",

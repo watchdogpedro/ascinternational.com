@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/visionpro-sp3d' },
   title: "VisionPro SP3D | Benchtop Laser SPI",
   description: "Laser-based benchtop 3D solder paste inspection system with reliable height, area, and volume measurements. ASCan Ultra software with onboard SPC charting and Gerber import.",
   keywords: ["VisionPro SP3D", "laser SPI", "benchtop SPI", "3D solder paste inspection"],

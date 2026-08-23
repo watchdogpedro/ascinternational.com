@@ -6,10 +6,12 @@ import Link from "next/link";
 import BlogCover from "@/components/BlogCover";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog' },
   title: "Blog - Electronics Inspection Insights",
   description: "Expert insights on electronics inspection, quality control, SMT manufacturing, and industry best practices from ASC International's team of specialists.",
   keywords: ["inspection blog", "electronics manufacturing", "quality control", "SMT best practices", "inspection technology"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Blog - ASC International",
     description: "Expert insights on electronics inspection and quality control.",
     type: "website",

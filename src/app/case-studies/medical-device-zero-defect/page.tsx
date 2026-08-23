@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/case-studies/medical-device-zero-defect' },
   title: "Medical Device Zero-Defect Manufacturing Case Study",
   description: "How a Class III medical device manufacturer achieved 99.97% first-pass yield and zero field returns using ASC 3D SPI with full traceability. FDA and ISO 13485 compliant.",
   keywords: ["medical device inspection", "ISO 13485 compliance", "FDA inspection requirements", "zero defect manufacturing", "medical device traceability", "SPI medical devices"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Achieving Near-Zero Defect Manufacturing for Medical Devices",
     description: "Case study: Medical device manufacturer achieves 99.97% first-pass yield and zero field returns with ASC 3D SPI and full traceability integration.",
     type: "article",

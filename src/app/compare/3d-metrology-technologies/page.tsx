@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/compare/3d-metrology-technologies' },
   title: "Laser Scanning vs Structured Light vs CMM Comparison",
   description: "Compare laser scanning, structured light, and contact CMM metrology technologies. Detailed comparison of accuracy, speed, surface requirements, and cost for dimensional measurement.",
   keywords: ["laser scanning vs CMM", "structured light metrology", "3D measurement comparison", "metrology technology"],

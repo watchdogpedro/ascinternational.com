@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/application-notes' },
   title: "Technical Application Notes",
   description: "In-depth technical application notes covering solder paste inspection optimization, closed-loop process control, defect analysis, and electronics manufacturing best practices.",
   keywords: ["application notes", "technical guide", "SPI optimization", "process control", "solder defect analysis", "electronics inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Technical Application Notes | ASC International",
     description: "Deep technical resources for electronics inspection engineers and quality professionals.",
     type: "website",

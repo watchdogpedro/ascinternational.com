@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/resources/troubleshooting-guides' },
   title: "Troubleshooting Guides | Inspection System Support",
   description:
     "Troubleshooting and maintenance references for ASC International inspection systems — VisionPro AP212, AP450, Criterion, AV862, HSi, LaserVision Mini SP3D, LineMaster FUSion, MSS130, VisionPro Series, SP2D and Verax. Request a guide for your system.",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "LaserVision Mini SP3D support",
   ],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Troubleshooting Guides | ASC International",
     description: "Troubleshooting and maintenance references for ASC inspection systems.",
     type: "website",

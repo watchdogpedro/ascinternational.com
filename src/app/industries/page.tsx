@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/industries' },
   title: "Industries We Serve",
   description: "ASC International provides specialized inspection solutions for electronics manufacturing, automotive electronics, medical devices, and aerospace & defense industries worldwide.",
   keywords: ["electronics manufacturing", "automotive electronics inspection", "medical device quality control", "aerospace inspection", "defense electronics"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Industries We Serve - ASC International",
     description: "Specialized inspection solutions for critical manufacturing industries.",
     type: "website",

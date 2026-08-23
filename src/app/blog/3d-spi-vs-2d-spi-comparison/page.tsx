@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/3d-spi-vs-2d-spi-comparison' },
   title: "3D SPI vs 2D SPI: Why the Third Dimension Matters | ASC Blog",
   description: "Comprehensive comparison of 3D and 2D solder paste inspection systems. Learn why 3D SPI provides superior defect detection, measurement accuracy, and ROI for electronics manufacturing.",
   keywords: ["3D SPI", "2D SPI", "solder paste inspection", "SPI comparison", "3D inspection advantages"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "3D SPI vs 2D SPI: Why the Third Dimension Matters",
     description: "Discover why 3D solder paste inspection provides superior defect detection compared to 2D systems.",
     type: "article",

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/resources' },
   title: "Resources & Downloads | User Manuals, Software & Guides",
   description:
     "ASC International resource hub: user manuals & guides, software downloads, and troubleshooting guides for VisionPro, Criterion, LaserVision, SP2D, AV862 and more — plus blog, application notes, glossary, FAQ and ROI tools.",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "Criterion software",
   ],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Resources & Downloads | ASC International",
     description:
       "User manuals, software downloads, and troubleshooting guides for ASC inspection systems, plus blog, application notes, glossary, FAQ and ROI tools.",

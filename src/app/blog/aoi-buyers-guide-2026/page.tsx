@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/aoi-buyers-guide-2026' },
   title: "How to Choose an AOI System in 2026: Complete Buyer's Guide | ASC Blog",
   description: "Complete guide to selecting an automated optical inspection system. Compare 2D vs 3D AOI, evaluate key criteria, avoid common mistakes, and understand integration considerations.",
   keywords: ["AOI buyer's guide", "AOI selection", "choose AOI system", "2D vs 3D AOI", "automated optical inspection guide"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "How to Choose an AOI System in 2026: Complete Buyer's Guide",
     description: "Complete guide to selecting an automated optical inspection system in 2026.",
     type: "article",

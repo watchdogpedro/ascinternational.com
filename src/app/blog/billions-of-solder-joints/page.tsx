@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/billions-of-solder-joints' },
   title: "Billions of Solder Joints: Why PPM Quality Demands Automated Inspection",
   description: "Modern electronics produce billions of solder joints. At that scale, even a tiny defect rate means thousands of failures. Learn why parts-per-million quality requires automated SPI and AOI.",
   keywords: ["billions of solder joints", "PPM defect rate", "solder joint reliability", "statistical process control", "automated inspection", "SPI", "AOI", "zero defect manufacturing", "DPMO"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Billions of Solder Joints: Why PPM Quality Demands Automated Inspection",
     description: "At the scale of modern electronics, only parts-per-million defect rates are acceptable. Here is why that demands automated solder paste and optical inspection.",
     type: "article",

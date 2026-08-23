@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/new-equipment' },
   title: "New Equipment Sales",
   description: "Purchase the latest inspection and measurement systems from ASC International. Cutting-edge technology, full warranty coverage, and comprehensive support for electronics manufacturing.",
   keywords: ["new inspection equipment", "3D SPI purchase", "AOI systems", "new equipment sales", "inspection system purchase"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "New Equipment Sales - ASC International",
     description: "Latest inspection systems with cutting-edge technology and full warranty support.",
     type: "website",

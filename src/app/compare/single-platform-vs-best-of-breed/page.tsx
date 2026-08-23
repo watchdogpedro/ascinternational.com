@@ -6,10 +6,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/compare/single-platform-vs-best-of-breed' },
   title: "All-in-One Inspection Platform vs Best-of-Breed: Which Approach Wins?",
   description: "Compare all-in-one inspection platforms with best-of-breed specialist approaches. Analyze flexibility, performance, vendor lock-in risk, support quality, innovation pace, and total cost to determine which strategy delivers better results.",
   keywords: ["all-in-one inspection platform", "best-of-breed inspection", "inspection platform comparison", "single vendor inspection", "specialist inspection vendor", "inspection vendor lock-in"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "All-in-One Inspection Platform vs Best-of-Breed: Complete Comparison",
     description: "Data-driven comparison of single-platform and best-of-breed approaches to inspection equipment selection. Covers flexibility, performance, cost, and long-term value.",
     type: "article",
@@ -149,7 +151,7 @@ export default function SinglePlatformVsBestOfBreed() {
                 <div className="bg-white border-2 border-blue-200 rounded-lg p-6">
                   <h3 className="text-2xl font-bold mb-4 text-blue-600">Best-of-Breed Approach</h3>
                   <p className="text-gray-700 mb-4">
-                    Select the most capable specialist vendor for each inspection point. A top-tier <Link href="/products/3d-solder-paste-inspection" className="text-blue-600 hover:underline">SPI</Link> from one vendor, the best <Link href="/products/3d-automated-optical-inspection" className="text-blue-600 hover:underline">AOI</Link> from another, connected through open industry standards.
+                    Select the most capable specialist vendor for each inspection point. A top-tier <Link href="/products/3d-solder-paste-inspection" className="text-blue-600 hover:underline">SPI</Link> from one vendor, the best <Link href="/products/automated-optical-inspection" className="text-blue-600 hover:underline">AOI</Link> from another, connected through open industry standards.
                   </p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start">

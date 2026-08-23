@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/ai-in-inspection-demystified' },
   title: "AI in Inspection: What Actually Works vs. Marketing Hype | ASC Blog",
   description: "Separate AI reality from marketing hype in inspection equipment. Learn what AI actually does in AOI and SPI systems, how to evaluate AI claims, and which AI features deliver real value.",
   keywords: ["AI inspection", "AI AOI", "artificial intelligence quality control", "machine learning inspection", "AI solder paste inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "AI in Inspection: What Actually Works vs. Marketing Hype",
     description: "Separate AI reality from marketing hype in inspection equipment evaluation.",
     type: "article",

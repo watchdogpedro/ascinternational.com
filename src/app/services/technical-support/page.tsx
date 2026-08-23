@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/technical-support' },
   title: "Technical Support Services",
   description: "Worldwide technical support for ASC inspection equipment. Remote diagnostics, on-site service, preventive maintenance, training, and 24/7 emergency support available.",
   keywords: ["technical support", "equipment service", "maintenance", "training", "remote support", "field service"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Technical Support - ASC International",
     description: "Global technical support network keeping your inspection equipment running at peak performance.",
     type: "website",

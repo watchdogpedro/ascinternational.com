@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/mss-130-dvi' },
   title: "MSS 130 DVI | Digital Video Inspection Scope",
   description: "Plug-and-play digital video inspection scope with measurement tools for lines, circles, angles, and arcs. Supports multiple lenses, fully controllable lighting, and network-ready for multi-scope installations.",
   keywords: ["MSS 130 DVI", "digital video inspection", "inspection microscope", "DVI scope"],

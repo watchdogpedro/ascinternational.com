@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/case-studies/aerospace-as9100-compliance' },
   title: "Aerospace AS9100 Inspection Compliance Case Study",
   description: "How an aerospace electronics manufacturer eliminated AS9100 audit findings, reduced inspection labor by 45%, and achieved complete digital traceability with ASC automated inspection systems.",
   keywords: ["AS9100 compliance", "aerospace inspection", "automated inspection aerospace", "defense electronics inspection", "inspection labor reduction", "digital traceability"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Meeting AS9100 Requirements with Automated Inspection",
     description: "Case study: Aerospace manufacturer achieves zero audit findings and 45% inspection labor reduction with ASC automated inspection systems.",
     type: "article",

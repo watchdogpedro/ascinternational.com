@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/linemaster-falcon' },
   title: "LineMaster Falcon | Affordable Inline 2D-3D AOI",
   description: "Affordable inline 2D-3D AOI with Detech2 Technology. Detects absence, polarity, OCR, solder defects, and lead quality down to 01005 components with very low false call rates.",
   keywords: ["LineMaster Falcon", "inline AOI", "2D-3D AOI", "affordable inline AOI"],

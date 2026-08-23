@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/history/visionpro-sp3d-georgia' },
   title: "VisionPro SP3D Inspection Technology in Georgia",
   description:
     "VisionPro SP3D laser-based 3D solder paste inspection for Georgia electronics manufacturers. High-resolution imaging and conical convergence illumination automate defect detection and measurement.",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
     "electronics manufacturing Georgia",
   ],
   openGraph: {
+    images: ['/og-image.png'],
     title:
       "VisionPro SP3D: Cutting-Edge Inspection Technology Revolutionizing Georgia's Industries",
     description:

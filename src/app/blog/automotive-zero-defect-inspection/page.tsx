@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/automotive-zero-defect-inspection' },
   title: "Automotive Electronics: Meeting Zero-Defect Requirements | ASC Blog",
   description: "Automotive OEMs demand PPM defect rates in single digits. Learn inspection strategies and documentation required for automotive electronics manufacturing and IATF 16949 compliance.",
   keywords: ["automotive electronics", "zero defect", "IATF 16949", "automotive quality", "PPM", "PPAP"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Automotive Electronics: Meeting Zero-Defect Requirements",
     description: "Learn about inspection strategies for automotive electronics zero-defect manufacturing.",
     type: "article",

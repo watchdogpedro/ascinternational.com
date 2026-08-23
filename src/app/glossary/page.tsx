@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/glossary`,
   },
   openGraph: {
+    images: ['/og-image.png'],
     title: 'Electronics Inspection Glossary | ASC International',
     description: 'Comprehensive glossary of electronics manufacturing and inspection terms.',
     url: `${SITE_URL}/glossary`,

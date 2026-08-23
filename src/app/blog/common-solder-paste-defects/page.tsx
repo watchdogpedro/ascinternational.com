@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/common-solder-paste-defects' },
   title: "Common Solder Paste Defects: Causes, Detection & Prevention Guide",
   description: "Complete guide to solder paste defects in PCB assembly. Learn to identify, prevent, and fix insufficient paste, bridging, offset, and other printing defects before they cause failures.",
   keywords: ["solder paste defects", "PCB printing defects", "insufficient solder paste", "solder bridging", "paste offset", "SPI defect detection", "printing troubleshooting"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Common Solder Paste Defects: Root Causes and Prevention",
     description: "Comprehensive guide to identifying and preventing the 6 most common solder paste defects in electronics manufacturing.",
     type: "article",

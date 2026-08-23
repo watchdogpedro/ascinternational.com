@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/cyberoptics-se-series' },
   title: "CyberOptics SE Series | Pre-Owned Inline 3D SPI",
   description: "Pre-owned high-speed inline 3D solder paste inspection from CyberOptics — the world's leading SPI supplier with 3,000+ systems installed. Award-winning CyberPrint OPTIMIZER software and automated in-process SMT inspection.",
   keywords: ["CyberOptics SE Series", "pre-owned SPI", "inline 3D SPI", "SE600", "CyberPrint OPTIMIZER", "solder paste inspection"],

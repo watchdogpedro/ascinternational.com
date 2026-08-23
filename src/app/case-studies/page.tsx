@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/case-studies' },
   title: "Inspection Case Studies | SPI & AOI Success Stories",
   description: "Real-world inspection case studies showing measurable results. See how manufacturers in automotive, medical, aerospace, and contract manufacturing achieved dramatic quality improvements with ASC inspection systems.",
   keywords: ["inspection case studies", "SPI results", "AOI success stories", "defect reduction case study", "inspection ROI case study"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Inspection Case Studies - ASC International",
     description: "Real-world results from manufacturers using ASC inspection systems across automotive, medical, aerospace, and contract manufacturing.",
     type: "website",

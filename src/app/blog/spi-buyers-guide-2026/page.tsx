@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/spi-buyers-guide-2026' },
   title: "Complete SPI Buyer's Guide 2026 | ASC Blog",
   description: "Everything you need to know before purchasing a solder paste inspection system in 2026. Evaluation criteria, budget considerations, inline vs offline, and top features to prioritize.",
   keywords: ["SPI buyer's guide", "choose SPI system", "SPI selection criteria", "solder paste inspection buying guide", "3D SPI evaluation"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Complete SPI Buyer's Guide 2026",
     description: "Everything you need to know before purchasing a solder paste inspection system in 2026.",
     type: "article",

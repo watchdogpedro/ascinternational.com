@@ -6,10 +6,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/compare/aoi-vendor-evaluation' },
   title: "AOI System Evaluation Guide 2026: How to Choose the Right AOI Vendor",
   description: "Comprehensive AOI vendor evaluation framework for 2026. Compare defect detection capability, false call rates, AI approaches, data openness, integration flexibility, and support models to find the best AOI system.",
   keywords: ["AOI vendor comparison", "best AOI system", "AOI evaluation", "automated optical inspection vendor", "AOI system selection", "AOI buying guide 2026"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "AOI System Evaluation Guide 2026: Vendor Selection Framework",
     description: "Data-driven framework for evaluating and comparing AOI vendors. Covers defect detection, AI approaches, data openness, and total cost of ownership.",
     type: "article",
@@ -149,7 +151,7 @@ export default function AOIVendorEvaluation() {
                 <div className="bg-white border-2 border-blue-200 rounded-lg p-6">
                   <h3 className="text-2xl font-bold mb-4 text-blue-600">What Matters Most</h3>
                   <p className="text-gray-700 mb-4">
-                    These three criteria have the highest impact on production success with any <Link href="/products/3d-automated-optical-inspection" className="text-blue-600 hover:underline">AOI system</Link>.
+                    These three criteria have the highest impact on production success with any <Link href="/products/automated-optical-inspection" className="text-blue-600 hover:underline">AOI system</Link>.
                   </p>
                   <ul className="space-y-2 text-gray-700">
                     <li className="flex items-start">
@@ -643,7 +645,7 @@ export default function AOIVendorEvaluation() {
                 <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
                   Request AOI Evaluation Support
                 </Link>
-                <Link href="/products/3d-automated-optical-inspection" className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors border border-blue-500">
+                <Link href="/products/automated-optical-inspection" className="bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-600 transition-colors border border-blue-500">
                   View Our AOI Systems
                 </Link>
               </div>

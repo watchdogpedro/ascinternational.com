@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/3d-aoi/pcb-solder-paste-inspection-precision' },
   title:
     "PCB & Solder Paste Inspection: Unlocking Precision",
   description:
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "ASC International",
   ],
   openGraph: {
+    images: ['/og-image.png'],
     title:
       "The World of PCB and Solder Paste Inspection: Unlocking Precision",
     description:

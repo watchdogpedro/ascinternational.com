@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/resources/software-downloads' },
   title: "Software Downloads | Inspection Software & Updates",
   description:
     "Inspection software, control packages and version updates for ASC International systems — Criterion, VisionPro Series, AP212, AP450, AV862, HSi, LaserVision Mini SP3D, LineMaster FUSion, MSS130 DVI, SP2D and Verax. Request your software update.",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
     "Verax software",
   ],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Software Downloads | ASC International",
     description: "Inspection software, control packages and version updates for ASC inspection systems.",
     type: "website",

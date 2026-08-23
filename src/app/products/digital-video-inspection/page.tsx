@@ -5,10 +5,12 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/digital-video-inspection' },
   title: "Digital Video Inspection Systems",
   description: "High-resolution digital video inspection microscopes for PCB assembly. Manual and semi-automated inspection with HD imaging, magnification up to 200x, and easy operation.",
   keywords: ["digital video inspection", "inspection microscope", "PCB inspection", "visual inspection", "digital microscope", "manual inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Digital Video Inspection Systems - ASC International",
     description: "Professional digital microscopy solutions for detailed visual inspection and quality verification.",
     type: "website",

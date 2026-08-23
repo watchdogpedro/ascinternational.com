@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/calculating-inspection-roi' },
   title: "Calculating ROI for Inspection Equipment: A Complete Guide | ASC Blog",
   description: "Comprehensive guide to calculating return on investment for inspection systems. Learn to quantify hard and soft costs, typical payback periods, and justify inspection equipment purchases.",
   keywords: ["inspection ROI", "equipment ROI calculation", "SPI ROI", "AOI return on investment", "justifying inspection equipment"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Calculating ROI for Inspection Equipment: A Complete Guide",
     description: "Learn how to calculate expected ROI for inspection systems including hard and soft costs and typical payback periods.",
     type: "article",

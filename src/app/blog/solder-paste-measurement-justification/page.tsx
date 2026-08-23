@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/solder-paste-measurement-justification' },
   title: "Solder Paste Measurement Justification: Building the ROI Case for SPI",
   description: "How to justify solder paste inspection to management. Build a defensible ROI model using the 10X rule, first-pass yield, rework cost, and defect data to prove SPI pays for itself.",
   keywords: ["solder paste measurement justification", "SPI ROI", "solder paste inspection ROI", "10X rule", "first-pass yield", "rework cost", "SPI payback period", "inspection investment"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Solder Paste Measurement Justification: Building the ROI Case",
     description: "A practical framework for proving the return on investment of solder paste inspection using yield, rework cost, and defect data.",
     type: "article",

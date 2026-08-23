@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/spi-preventing-solder-defects' },
   title: "The Critical Role of SPI in Preventing Solder Defects | ASC Blog",
   description: "Studies show 60-70% of solder defects originate at the paste printing stage. Learn how 3D SPI catches these defects early when they're easiest and least expensive to fix.",
   keywords: ["3D SPI", "solder defects", "paste inspection", "defect prevention", "solder quality"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "The Critical Role of SPI in Preventing Solder Defects",
     description: "Discover how 3D SPI prevents solder defects at the most cost-effective point in assembly.",
     type: "article",

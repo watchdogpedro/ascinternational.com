@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/application-notes/optimizing-spi-program-settings' },
   title: "Optimizing 3D SPI Program Settings for Fine-Pitch Components | Application Note",
   description: "Comprehensive technical guide to configuring 3D solder paste inspection programs for fine-pitch components. Covers threshold optimization, algorithm selection, false call reduction, and measurement region configuration.",
   keywords: ["SPI program optimization", "fine-pitch inspection", "solder paste inspection settings", "SPI threshold configuration", "false call reduction", "application note", "technical guide"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Optimizing 3D SPI Program Settings for Fine-Pitch Components",
     description: "Advanced technical guide for configuring 3D SPI inspection programs to achieve optimal defect detection on fine-pitch assemblies.",
     type: "article",

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/blog/spi-vendor-questions`,
   },
   openGraph: {
+    images: ['/og-image.png'],
     title: "10 Questions to Ask Every SPI Vendor Before You Buy",
     description: "Before signing an SPI purchase order, ask these 10 questions. They reveal hidden costs, vendor lock-in risks, and real-world performance.",
     type: "article",

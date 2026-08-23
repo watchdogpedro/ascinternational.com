@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/inspection-integration-industry-4-0' },
   title: "The Complete Guide to Inspection Integration in Industry 4.0 | ASC Blog",
   description: "Learn how to integrate inspection systems into smart factory environments. Covers IPC-CFX, SECS/GEM, OPC-UA, MES integration, and data flow architecture for Industry 4.0 electronics manufacturing.",
   keywords: ["IPC-CFX inspection", "smart factory inspection", "Industry 4.0 integration", "MES inspection integration", "OPC-UA inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "The Complete Guide to Inspection Integration in Industry 4.0",
     description: "How to integrate inspection systems into smart factory environments with IPC-CFX, OPC-UA, and MES connectivity.",
     type: "article",

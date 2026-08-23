@@ -5,10 +5,12 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products/3d-industrial-metrology' },
   title: "3D Industrial Metrology Systems",
   description: "Precision 3D laser scanning and metrology systems for electronics manufacturing. Sub-micron accuracy for dimensional verification, reverse engineering, and quality control.",
   keywords: ["3D metrology", "laser scanning", "dimensional measurement", "3D scanning", "industrial metrology", "precision measurement"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "3D Industrial Metrology Systems - ASC International",
     description: "Advanced laser scanning systems for precise 3D measurement and dimensional verification.",
     type: "website",

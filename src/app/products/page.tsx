@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/products' },
   title: "All Inspection & Measurement Products",
   description: "Complete product lineup from ASC International — 3D SPI, AOI, conformal coating, digital video, 3D metrology, and jetting valves. 12 precision inspection systems for electronics, semiconductor, and industrial manufacturing.",
   keywords: ["ASC International products", "SPI systems", "AOI systems", "3D solder paste inspection", "automated optical inspection", "LineMaster", "VisionPro", "inspection equipment"],

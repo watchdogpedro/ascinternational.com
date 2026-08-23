@@ -6,10 +6,12 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/blog/true-cost-of-inspection' },
   title: "The True Cost of Inspection: What Vendors Don't Tell You | ASC Blog",
   description: "Uncover the hidden costs of inspection equipment ownership. Learn about proprietary software licenses, vendor lock-in, upgrade fees, training costs, and how to calculate true total cost of ownership.",
   keywords: ["hidden costs AOI SPI", "total cost inspection", "inspection TCO", "inspection equipment hidden costs", "vendor lock-in inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "The True Cost of Inspection: What Vendors Don't Tell You",
     description: "Uncover the hidden costs of inspection equipment that vendors don't discuss during the sales process.",
     type: "article",

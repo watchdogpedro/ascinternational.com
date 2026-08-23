@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/compare/dispensing-methods' },
   title: "Jetting vs Contact Dispensing vs Spray Coating Comparison",
   description: "Compare jetting valves, contact dispensing, and spray coating methods for conformal coating and adhesive dispensing. Detailed comparison of precision, speed, waste reduction, and material compatibility.",
   keywords: ["jetting valves vs contact dispensing", "spray coating comparison", "non-contact dispensing", "dispensing methods comparison"],

@@ -6,10 +6,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/compare/3d-spi-vs-2d-spi' },
   title: "3D SPI vs 2D SPI: Complete Comparison Guide 2026",
   description: "Comprehensive comparison of 3D and 2D solder paste inspection systems. Compare accuracy, speed, defect detection, ROI, and determine which SPI technology is right for your production needs.",
   keywords: ["3D SPI vs 2D SPI", "solder paste inspection comparison", "3D SPI advantages", "2D SPI vs 3D SPI", "which SPI is better"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "3D SPI vs 2D SPI: Which Technology is Right for You?",
     description: "Data-driven comparison of 3D and 2D solder paste inspection with specifications, use cases, and ROI analysis.",
     type: "article",

@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/industries/electronics-manufacturing' },
   title: "Electronics Manufacturing Inspection Solutions",
   description: "Comprehensive inspection systems for PCB assembly, SMT production, and electronics manufacturing. Solutions for high-volume production, complex assemblies, and quality compliance.",
   keywords: ["PCB inspection", "SMT inspection", "electronics manufacturing", "PCB assembly quality", "surface mount inspection"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Electronics Manufacturing - ASC International",
     description: "Industry-leading inspection solutions for electronics manufacturing operations.",
     type: "website",

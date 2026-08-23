@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/industries/medical-devices' },
   title: "Medical Device Inspection Systems",
   description: "FDA-compliant inspection and documentation systems for medical electronics. ISO 13485 certified solutions with validation support and complete traceability.",
   keywords: ["medical device inspection", "FDA compliance", "ISO 13485", "21 CFR Part 11", "medical electronics quality"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Medical Devices - ASC International",
     description: "FDA-compliant inspection systems for medical device manufacturing.",
     type: "website",

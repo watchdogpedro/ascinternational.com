@@ -5,10 +5,12 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/services/pre-owned-systems' },
   title: "Pre-Owned & Refurbished Inspection Systems",
   description: "Factory-certified pre-owned SPI and AOI systems at 30–50% below new equipment cost. CyberOptics SE Series, QX Series, LSM Series and more. Warranty included. Contact ASC International.",
   keywords: ["pre-owned SPI", "refurbished AOI", "used inspection equipment", "CyberOptics SE500", "CyberOptics QX600", "used SPI system", "refurbished inspection systems", "pre-owned AOI"],
   openGraph: {
+    images: ['/og-image.png'],
     title: "Pre-Owned & Refurbished Inspection Systems — ASC International",
     description: "Factory-certified pre-owned SPI and AOI systems. Real models, real savings. Backed by warranty and ASC support.",
     type: "website",
