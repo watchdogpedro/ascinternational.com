@@ -498,6 +498,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
+    // New blog posts August 2026
+    {
+      url: `${baseUrl}/blog/conformal-coating-inspection-defects`,
+      lastModified: new Date('2026-08-23'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
   ]
 
   return routes
