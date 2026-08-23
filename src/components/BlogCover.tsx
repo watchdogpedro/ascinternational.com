@@ -119,13 +119,9 @@ export default function BlogCover({ category, slug, className = "" }: BlogCoverP
         style={{ backgroundColor: accent, opacity: 0.18 }}
       />
 
-      {/* corner registration marks, the way an inspection system sees a board */}
-      {[
-        "left-3 top-3",
-        "right-3 top-3",
-        "left-3 bottom-3",
-        "right-3 bottom-3",
-      ].map((pos) => (
+      {/* registration marks on a diagonal, the way fiducials sit on a real board,
+          which also keeps the bottom-left corner clear for the category label */}
+      {["left-3 top-3", "right-3 top-3", "right-3 bottom-3"].map((pos) => (
         <svg
           key={pos}
           className={`absolute ${pos} h-3.5 w-3.5`}
