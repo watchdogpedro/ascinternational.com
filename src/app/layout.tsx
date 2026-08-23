@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Space_Grotesk, IBM_Plex_Sans } from "next/font/google";
 import "@/styles/globals.css";
 import { SITE_URL } from '@/lib/site'
@@ -138,7 +139,22 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body className={`${spaceGrotesk.variable} ${ibmPlexSans.variable} font-body bg-[#0a0e27]`}>{children}</body>
+      <body className={`${spaceGrotesk.variable} ${ibmPlexSans.variable} font-body bg-[#0a0e27]`}>
+        {children}
+        {/* Visual Visitor — visitor identification tag (account D0szeA9jGI) */}
+        <Script id="visual-visitor" strategy="afterInteractive">
+          {`
+            var fesdpid = 'D0szeA9jGI';
+            var fesdpextid = '5908b36a';
+            var __ibaseUrl = (("https:" == document.location.protocol) ? "https://fe.sitedataprocessing.com" : "http://fe.sitedataprocessing.com");
+            (function () {
+              var va = document.createElement('script'); va.type = 'text/javascript'; va.async = true;
+              va.src = __ibaseUrl + '/cscripts/' + fesdpid + '-' + fesdpextid + '.js';
+              var sv = document.getElementsByTagName('script')[0]; sv.parentNode.insertBefore(va, sv);
+            })();
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
