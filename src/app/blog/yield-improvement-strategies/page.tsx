@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/yield-improvement-strategies' },
-  title: "Yield Improvement Strategies: Why It Starts at Solder Paste Printing",
-  description: "A practical yield improvement strategy for SMT manufacturers. Learn why first-pass yield is built at the printer, how to set paste height and volume limits, and how to tune your process.",
+  title: "Yield Improvement Starts at the Printer",
+  description: "A practical yield strategy for SMT. Why first-pass yield is built at the printer, how to set paste height and volume limits, and how to tune the process.",
   keywords: ["yield improvement strategies", "first-pass yield", "SMT yield", "solder paste printing", "paste height and volume", "process control", "SPI yield improvement", "control limits"],
   openGraph: {
     images: ['/og-image.png'],

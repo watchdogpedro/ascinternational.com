@@ -7,9 +7,9 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/resources/troubleshooting-guides' },
-  title: "Troubleshooting Guides | Inspection System Support",
+  title: "Troubleshooting Guides",
   description:
-    "Troubleshooting and maintenance references for ASC International inspection systems — VisionPro AP212, AP450, Criterion, AV862, HSi, LaserVision Mini SP3D, LineMaster FUSion, MSS130, VisionPro Series, SP2D and Verax. Request a guide for your system.",
+    "Troubleshooting and maintenance references for ASC inspection systems: VisionPro, Criterion, HSi, LaserVision, LineMaster and more. Request a guide.",
   keywords: [
     "ASC troubleshooting guides",
     "SPI troubleshooting",

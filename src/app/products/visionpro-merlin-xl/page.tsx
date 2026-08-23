@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/visionpro-merlin-xl' },
-  title: "VisionPro Merlin XL | Large-Format Offline AOI",
-  description: "Large-format offline 2D-3D AOI for oversized boards up to 26\"×22\". Image-modeling defect detection, RGBW lighting, OCR, 01005 component capability, and real-time SPC charting on Windows 10/11 Pro.",
+  title: "VisionPro Merlin XL | Large-Format AOI",
+  description: "Large-format offline 2D-3D AOI for boards up to 26x22 inches. Image-modeling defect detection, RGBW lighting, OCR, 01005 capability, real-time SPC.",
   keywords: ["VisionPro Merlin XL", "large format AOI", "offline AOI", "oversized board inspection", "2D 3D AOI"],
 };
 

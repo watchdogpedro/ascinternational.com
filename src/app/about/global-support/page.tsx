@@ -6,8 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/about/global-support' },
-  title: "Technical Support Services",
-  description: "ASC International provides expert technical support from our engineering team — remote diagnostics, on-site service, preventive maintenance, training, and rapid response for all inspection systems.",
+  title: "Global Technical Support",
+  description: "Expert technical support from ASC engineers: remote diagnostics, on-site service, preventive maintenance, training, and fast response.",
   keywords: ["technical support", "inspection support", "service plans", "training", "maintenance", "customer service"],
   openGraph: {
     images: ['/og-image.png'],

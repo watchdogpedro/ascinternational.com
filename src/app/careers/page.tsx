@@ -7,7 +7,7 @@ import { SITE_URL } from '@/lib/site'
 export const metadata: Metadata = {
   title: "Careers - Inspection & Metrology Jobs",
   description:
-    "Build your career with ASC International, a global leader in electronics inspection and measurement since 1992. View current openings including our Automated Optical Inspection (AOI) Engineer role.",
+    "Build your career at ASC International, a global leader in electronics inspection since 1992. See current openings, including our AOI Engineer role.",
   keywords: [
     "ASC International careers",
     "AOI Engineer job",

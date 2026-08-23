@@ -6,8 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/about/why-choose-asc' },
-  title: "Why Choose Us - Your Partner for Quality & Yield",
-  description: "Discover why over 1,000 manufacturers choose ASC International: 34+ years expertise, proven reliability, expert technical support, industry-leading technology, and comprehensive solutions.",
+  title: "Why Choose Us",
+  description: "Why 1,000+ manufacturers choose ASC: 34 years of experience, proven reliability, expert support, and inspection technology that earns its place.",
   keywords: ["ASC advantages", "quality inspection partner", "electronics inspection expert", "manufacturing solutions", "inspection technology leader"],
   openGraph: {
     images: ['/og-image.png'],

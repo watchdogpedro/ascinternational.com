@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/reduce-aoi-false-calls' },
-  title: "How to Reduce False Calls in Automated Optical Inspection | ASC Blog",
-  description: "Proven strategies to minimize AOI false positives while maintaining defect detection. Learn optimization techniques, programming best practices, and process improvements.",
+  title: "How to Reduce False Calls in AOI",
+  description: "How to cut AOI false calls without missing real defects. Optimization techniques, programming practices, and process changes that hold up in production.",
   keywords: ["AOI false calls", "reduce false positives", "AOI optimization", "automated optical inspection", "inspection accuracy"],
   openGraph: {
     images: ['/og-image.png'],

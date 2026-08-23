@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/visionpro-m500' },
-  title: "VisionPro M500 | Advanced Benchtop 3D SPI",
-  description: "Advanced true 3D benchtop SPI with 0.48μm Z-resolution, 6.8μm lateral resolution, and larger FOV sensor. Real-time integrated SPC charts for demanding solder paste measurement.",
+  title: "VisionPro M500 | Benchtop 3D SPI",
+  description: "Benchtop 3D SPI with 0.48um Z-resolution, 6.8um lateral resolution, and a larger FOV sensor. Real-time SPC charts for demanding paste measurement.",
   keywords: ["VisionPro M500", "advanced SPI", "benchtop 3D SPI", "high resolution SPI"],
 };
 

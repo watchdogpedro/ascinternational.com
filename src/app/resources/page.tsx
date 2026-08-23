@@ -7,9 +7,9 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/resources' },
-  title: "Resources & Downloads | User Manuals, Software & Guides",
+  title: "Resources: Manuals, Software, Guides",
   description:
-    "ASC International resource hub: user manuals & guides, software downloads, and troubleshooting guides for VisionPro, Criterion, LaserVision, SP2D, AV862 and more — plus blog, application notes, glossary, FAQ and ROI tools.",
+    "ASC resource hub: user manuals, software downloads, and troubleshooting guides for VisionPro, Criterion, LaserVision and more, plus blog, notes, and tools.",
   keywords: [
     "ASC International resources",
     "solder paste inspection downloads",

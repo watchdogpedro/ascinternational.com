@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/stamp-out-rework' },
-  title: "Stamp Out Rework: How Early Defect Detection Protects Your Margins",
-  description: "Rework quietly erodes profit in electronics assembly. Learn what rework really costs, why it starts at the solder paste printer, and a practical plan to stamp it out and improve first-pass yield.",
+  title: "How Early Detection Cuts Rework Cost",
+  description: "Rework quietly eats profit in electronics assembly. What it really costs, why it starts at the paste printer, and a plan to cut it and lift first-pass yield.",
   keywords: ["stamp out rework", "reduce rework", "rework cost", "first-pass yield", "zero defects", "10X rule", "solder paste printing", "process control", "PCB rework reduction"],
   openGraph: {
     images: ['/og-image.png'],

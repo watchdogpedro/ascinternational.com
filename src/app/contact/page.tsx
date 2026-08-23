@@ -8,7 +8,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   alternates: { canonical: '/contact' },
   title: "Contact Us - Get in Touch Today",
-  description: "Contact ASC International for quality inspection and measurement systems. Request a quote, schedule a demo, or speak with our experts about your manufacturing needs.",
+  description: "Contact ASC International about inspection and measurement systems. Request a quote, book a demo, or talk through your manufacturing needs.",
   keywords: ["contact ASC", "request quote", "inspection systems", "sales inquiry", "technical support", "demo request"],
   openGraph: {
     images: ['/og-image.png'],

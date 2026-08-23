@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: '/industries/semiconductor' },
   title: "Semiconductor Inspection Solutions",
-  description: "Advanced inspection systems for semiconductor manufacturing, wafer-level inspection, die-level SPI, and advanced packaging quality control. Ultra-high-resolution solutions for extreme miniaturization.",
+  description: "Inspection for semiconductor manufacturing: wafer-level inspection, die-level SPI, and advanced packaging QC. High-resolution for tight geometries.",
   keywords: ["semiconductor inspection", "wafer inspection", "die inspection", "semiconductor quality", "wafer bumping inspection", "advanced packaging inspection", "flip-chip inspection"],
   openGraph: {
     images: ['/og-image.png'],

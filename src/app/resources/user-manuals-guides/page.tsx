@@ -7,9 +7,9 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/resources/user-manuals-guides' },
-  title: "User Manuals & Guides | Inspection System Documentation",
+  title: "User Manuals & Guides",
   description:
-    "Operation manuals and quick-start guides for ASC International inspection systems — VisionPro AP212, VisionMaster AP450, Criterion, AV862, HSi, LaserVision Mini SP3D, LineMaster FUSion, SP2D, Verax and more. Request the manual for your system.",
+    "Operation manuals and quick-start guides for ASC inspection systems: VisionPro, Criterion, AV862, HSi, LaserVision, LineMaster and more. Request yours.",
   keywords: [
     "ASC user manuals",
     "VisionPro AP212 manual",

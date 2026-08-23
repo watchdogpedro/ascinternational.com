@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   alternates: { canonical: '/products/conformal-coating-inspection' },
   title: "Conformal Coating Inspection Systems",
-  description: "Advanced conformal coating inspection and measurement systems. UV fluorescence imaging for precise coverage analysis and thickness measurement on PCB assemblies.",
+  description: "Conformal coating inspection systems using UV fluorescence imaging to check coverage and thickness on PCB assemblies.",
   keywords: ["conformal coating inspection", "coating thickness measurement", "UV fluorescence inspection", "PCB coating verification", "conformal coat AOI"],
   openGraph: {
     images: ['/og-image.png'],

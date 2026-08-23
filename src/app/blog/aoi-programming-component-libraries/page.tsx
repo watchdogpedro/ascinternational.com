@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/aoi-programming-component-libraries' },
-  title: "AOI Programming Best Practices: Building Component Libraries That Hold Up",
-  description: "How to build AOI component libraries that minimize false calls and escapes across product families. Covers inspection window sizing, threshold tuning, lighting strategy, and library maintenance.",
+  title: "AOI Component Library Best Practices",
+  description: "How to build AOI component libraries that cut false calls and escapes across product families. Window sizing, threshold tuning, lighting, upkeep.",
   keywords: ["AOI programming", "component library AOI", "AOI false calls", "AOI inspection setup", "automated optical inspection programming", "AOI library"],
   openGraph: {
     images: ['/og-image.png'],

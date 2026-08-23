@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/industries/contract-manufacturing' },
-  title: "Contract Manufacturing (EMS) Inspection Solutions",
-  description: "Flexible, high-mix inspection solutions for contract manufacturers and EMS providers. Fast changeovers, multi-standard compliance, and open architecture that works with any equipment on your line.",
+  title: "Contract Manufacturing (EMS) Inspection",
+  description: "Flexible, high-mix inspection for contract manufacturers and EMS providers. Fast changeovers, multi-standard compliance, and open architecture.",
   keywords: ["EMS inspection", "contract manufacturing quality", "high-mix inspection", "CEM inspection", "EMS quality control", "contract electronics manufacturing"],
   openGraph: {
     images: ['/og-image.png'],

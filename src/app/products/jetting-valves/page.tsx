@@ -7,7 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   alternates: { canonical: '/products/jetting-valves' },
   title: "Precision Jetting Valves",
-  description: "High-speed precision jetting valves for solder paste and adhesive dispensing. Non-contact dispensing with minimal waste, high accuracy, and flexible integration.",
+  description: "High-speed jetting valves for solder paste and adhesive dispensing. Non-contact, low waste, accurate, and easy to integrate.",
   keywords: ["jetting valves", "dispensing systems", "solder paste jetting", "adhesive dispensing", "precision dispensing", "non-contact dispensing"],
   openGraph: {
     images: ['/og-image.png'],

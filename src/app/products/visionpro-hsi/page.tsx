@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/visionpro-hsi' },
-  title: "VisionPro HSi | High-Speed Offline 3D SPI",
-  description: "High-speed offline 3D solder paste inspection in a rugged portable benchtop package. Accurate 3D measurements of paste pads, BGAs, and PCB features with excellent repeatability.",
+  title: "VisionPro HSi | High-Speed Offline SPI",
+  description: "High-speed offline 3D SPI in a rugged portable benchtop. Accurate 3D measurement of paste pads, BGAs, and PCB features, with strong repeatability.",
   keywords: ["VisionPro HSi", "offline SPI", "high speed SPI", "3D solder paste inspection benchtop"],
 };
 

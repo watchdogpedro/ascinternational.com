@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/application-notes/implementing-closed-loop-spi-printer-feedback' },
-  title: "Implementing Closed-Loop Feedback Between SPI and Stencil Printer | Application Note",
-  description: "Step-by-step technical guide for implementing closed-loop communication between 3D SPI systems and stencil printers. Covers communication protocols, automatic offset correction, squeegee pressure adjustments, and validation procedures.",
+  title: "Closed-Loop SPI-to-Printer Feedback",
+  description: "A step-by-step guide to closed-loop communication between 3D SPI and stencil printers. Protocols, automatic offset correction, and validation.",
   keywords: ["closed-loop feedback", "SPI printer communication", "stencil printer optimization", "automatic offset correction", "process control", "application note", "technical guide"],
   openGraph: {
     images: ['/og-image.png'],

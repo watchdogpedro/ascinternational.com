@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/compare/conformal-coating-inspection-methods' },
-  title: "Manual vs UV vs 3D Conformal Coating Inspection Comparison",
-  description: "Compare manual, UV fluorescence, and 3D conformal coating inspection methods. Detailed comparison of accuracy, speed, coverage detection, and thickness measurement capabilities.",
+  title: "Conformal Coating Inspection Compared",
+  description: "Manual, UV fluorescence, and 3D conformal coating inspection compared. Accuracy, speed, coverage detection, and thickness measurement.",
   keywords: ["conformal coating inspection", "UV inspection", "3D coating measurement", "manual inspection vs automated"],
 };
 

@@ -7,9 +7,9 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/resources/software-downloads' },
-  title: "Software Downloads | Inspection Software & Updates",
+  title: "Software Downloads",
   description:
-    "Inspection software, control packages and version updates for ASC International systems — Criterion, VisionPro Series, AP212, AP450, AV862, HSi, LaserVision Mini SP3D, LineMaster FUSion, MSS130 DVI, SP2D and Verax. Request your software update.",
+    "Inspection software and version updates for ASC systems: Criterion, VisionPro, HSi, LaserVision, LineMaster, MSS130 DVI and more. Request your update.",
   keywords: [
     "ASC software downloads",
     "Criterion software",

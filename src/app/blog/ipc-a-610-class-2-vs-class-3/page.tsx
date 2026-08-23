@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/ipc-a-610-class-2-vs-class-3' },
-  title: "Understanding IPC-A-610 Class 2 vs Class 3 Requirements | ASC Blog",
-  description: "Complete guide to IPC-A-610 Class 2 and Class 3 acceptance criteria for electronics assemblies. Learn the differences, when each applies, and inspection implications.",
+  title: "IPC-A-610 Class 2 vs Class 3",
+  description: "IPC-A-610 Class 2 and Class 3 acceptance criteria explained. The differences, when each applies, and what they mean for inspection.",
   keywords: ["IPC-A-610", "Class 2", "Class 3", "acceptance criteria", "workmanship standards", "electronics assembly standards"],
   openGraph: {
     images: ['/og-image.png'],

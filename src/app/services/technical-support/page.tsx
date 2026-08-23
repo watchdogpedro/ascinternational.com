@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: '/services/technical-support' },
   title: "Technical Support Services",
-  description: "Worldwide technical support for ASC inspection equipment. Remote diagnostics, on-site service, preventive maintenance, training, and 24/7 emergency support available.",
+  description: "Worldwide support for ASC inspection equipment: remote diagnostics, on-site service, preventive maintenance, training, and 24/7 emergency help.",
   keywords: ["technical support", "equipment service", "maintenance", "training", "remote support", "field service"],
   openGraph: {
     images: ['/og-image.png'],

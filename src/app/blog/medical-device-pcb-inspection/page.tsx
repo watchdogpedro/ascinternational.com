@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/medical-device-pcb-inspection' },
-  title: "Medical Device PCB Inspection: FDA, ISO 13485 & IPC Requirements",
-  description: "What inspection standards apply to medical device PCB assembly. Covers FDA 21 CFR Part 820, ISO 13485, IPC-A-610 Class 3, and how 3D SPI and AOI help manufacturers meet them.",
+  title: "Medical Device PCB Inspection Standards",
+  description: "Which inspection standards apply to medical device PCB assembly: FDA 21 CFR Part 820, ISO 13485, IPC-A-610 Class 3, and how SPI and AOI help.",
   keywords: ["medical device PCB inspection", "ISO 13485 inspection", "FDA PCB quality", "IPC-A-610 Class 3", "medical electronics quality", "medical device manufacturing"],
   openGraph: {
     images: ['/og-image.png'],

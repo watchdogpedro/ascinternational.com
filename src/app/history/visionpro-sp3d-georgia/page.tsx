@@ -6,9 +6,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/history/visionpro-sp3d-georgia' },
-  title: "VisionPro SP3D Inspection Technology in Georgia",
+  title: "VisionPro SP3D in Georgia",
   description:
-    "VisionPro SP3D laser-based 3D solder paste inspection for Georgia electronics manufacturers. High-resolution imaging and conical convergence illumination automate defect detection and measurement.",
+    "VisionPro SP3D laser-based 3D solder paste inspection for Georgia electronics manufacturers. High-resolution imaging and automated defect detection.",
   keywords: [
     "VisionPro SP3D Georgia",
     "solder paste inspection Georgia",

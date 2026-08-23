@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/compare/2d-aoi-vs-3d-aoi' },
-  title: "2D AOI vs 3D AOI vs Hybrid AOI: Complete Comparison 2026",
-  description: "Compare 2D, 3D, and Hybrid AOI systems for PCB inspection. Detailed comparison of accuracy, speed, defect detection, cost, and ROI to choose the right automated optical inspection technology.",
+  title: "2D AOI vs 3D AOI vs Hybrid",
+  description: "2D, 3D, and hybrid AOI compared for PCB inspection. Accuracy, speed, defect detection, cost, and return, so you can choose the right technology.",
   keywords: ["2D AOI vs 3D AOI", "Hybrid AOI comparison", "automated optical inspection comparison", "which AOI is better", "2D vs 3D AOI"],
   openGraph: {
     images: ['/og-image.png'],

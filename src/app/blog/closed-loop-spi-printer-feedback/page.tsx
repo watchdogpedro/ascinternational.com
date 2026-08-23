@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/closed-loop-spi-printer-feedback' },
-  title: "Closed-Loop SPI to Printer Feedback: How Automatic Correction Works",
-  description: "How closed-loop solder paste inspection systems automatically correct printer offsets in real time. Learn the process, the benefits, and how to implement it on your line.",
+  title: "How Closed-Loop SPI Feedback Works",
+  description: "How closed-loop SPI corrects printer offsets in real time. The process, the payoff, and what it takes to run it on your line.",
   keywords: ["closed-loop SPI", "printer feedback", "automatic printer correction", "SPI closed loop", "solder paste process control", "stencil printer feedback"],
   openGraph: {
     images: ['/og-image.png'],

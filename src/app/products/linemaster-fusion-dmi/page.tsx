@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/linemaster-fusion-dmi' },
-  title: "LineMaster Fusion DMI | Dual-Mode 3D SPI + AOI",
-  description: "Dual-mode offline platform merging 3D SPI sensor technology with image-based AOI. Phase-shift interferometry for paste, image modeling for components — 1µm height accuracy, 01005 capability, 20\"×16\" area.",
+  title: "LineMaster Fusion DMI | 3D SPI + AOI",
+  description: "Dual-mode offline platform: phase-shift interferometry for paste, image modeling for components. 1um height accuracy, 01005 capability, 20x16 inch area.",
   keywords: ["LineMaster Fusion DMI", "dual mode SPI AOI", "3D SPI", "AOI inspection", "phase shift interferometry"],
 };
 

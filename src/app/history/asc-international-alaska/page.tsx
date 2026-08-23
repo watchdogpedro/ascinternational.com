@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/history/asc-international-alaska' },
   title: "Optical Inspection in Alaska",
   description:
-    "Advanced optical and automated inspection systems for Alaska electronics and industrial manufacturers. High-resolution imaging, laser-based defect detection, and AI-ready quality control from ASC International.",
+    "Optical and automated inspection for Alaska electronics and industrial manufacturers. High-resolution imaging, laser defect detection, AI-ready QC.",
   keywords: [
     "optical inspection Alaska",
     "ASC International Alaska",

@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/vant-2-v3' },
-  title: "VANT-2 V3 | 3D Industrial Metrology Scanner",
-  description: "Precision 3D laser scanning metrology system for dimensional inspection, reverse engineering, and CAD comparison. NIST-traceable accuracy for electronics, aerospace, and industrial applications.",
+  title: "VANT-2 V3 | 3D Metrology Scanner",
+  description: "3D laser scanning metrology for dimensional inspection, reverse engineering, and CAD comparison. NIST-traceable for electronics, aerospace, industrial.",
   keywords: ["VANT-2 V3", "3D metrology", "laser scanner", "dimensional inspection", "3D scanning"],
 };
 

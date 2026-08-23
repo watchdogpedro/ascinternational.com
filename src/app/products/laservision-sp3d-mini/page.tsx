@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/laservision-sp3d-mini' },
-  title: "LaserVision SP3D Mini | Budget Benchtop SPI",
-  description: "Affordable laser-based 3D SPI delivering the same measurement capability as the VisionPro SP3D on a cost-optimized platform. Customer-supplied PC option available.",
+  title: "LaserVision SP3D Mini | Benchtop SPI",
+  description: "Affordable laser-based 3D SPI with the same measurement capability as the VisionPro SP3D on a cost-optimized platform. Customer-supplied PC option.",
   keywords: ["LaserVision SP3D Mini", "budget SPI", "affordable SPI", "benchtop laser SPI"],
 };
 

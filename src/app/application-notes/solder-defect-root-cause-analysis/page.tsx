@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/application-notes/solder-defect-root-cause-analysis' },
-  title: "Solder Defect Root Cause Analysis Using SPI and AOI Data | Application Note",
-  description: "Practical methodology for correlating solder paste inspection and automated optical inspection data to identify root causes of solder defects. Includes defect categorization, fishbone diagrams, data analysis techniques, and corrective action procedures.",
+  title: "Solder Defect Root Cause Analysis",
+  description: "Correlate SPI and AOI data to find the root cause of solder defects. Covers defect categorization, fishbone analysis, and corrective actions.",
   keywords: ["root cause analysis", "solder defect analysis", "SPI AOI correlation", "defect categorization", "corrective action", "fishbone diagram", "application note", "technical guide"],
   openGraph: {
     images: ['/og-image.png'],

@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/linemaster-fusion-3d' },
-  title: "LineMaster Fusion 3D | Affordable Inline 3D SPI System",
-  description: "The LineMaster Fusion 3D delivers high-speed inline 3D solder paste inspection with 1µm height accuracy, PSI 1500® sensor technology, and closed-loop printer feedback — at an accessible price point. 3-year warranty.",
+  title: "LineMaster Fusion 3D | Inline 3D SPI",
+  description: "High-speed inline 3D SPI with 1um height accuracy, PSI 1500 sensor, and closed-loop printer feedback, at an accessible price. 3-year warranty.",
   keywords: [
     "LineMaster Fusion 3D",
     "inline SPI",

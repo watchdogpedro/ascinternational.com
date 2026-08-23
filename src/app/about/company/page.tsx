@@ -6,8 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/about/company' },
-  title: "About Us - 34+ Years in Electronics Inspection",
-  description: "Founded in 1992, ASC International is a global leader in quality inspection and measurement systems for electronics manufacturing with 1,000+ customers worldwide.",
+  title: "About ASC International",
+  description: "Founded in 1992, ASC International supplies quality inspection and measurement systems for electronics manufacturing to 1,000+ customers worldwide.",
   keywords: ["ASC International", "electronics inspection", "company history", "manufacturing inspection", "quality control systems"],
   openGraph: {
     images: ['/og-image.png'],

@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/stencil-design-solder-paste-printing' },
-  title: "PCB Stencil Design for Solder Paste Printing: Aperture Ratios, Thickness & Common Mistakes",
-  description: "A practical guide to stencil design for solder paste printing. Learn how aperture ratio, stencil thickness, and opening geometry affect paste deposit volume and quality.",
+  title: "Stencil Design for Solder Paste Printing",
+  description: "A practical guide to stencil design for solder paste printing. How aperture ratio, thickness, and opening geometry affect paste deposit volume and quality.",
   keywords: ["stencil design", "aperture ratio", "solder paste printing", "stencil thickness", "solder paste volume", "PCB stencil", "paste deposit quality"],
   openGraph: {
     images: ['/og-image.png'],

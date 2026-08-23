@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/compare/spi-vendor-comparison' },
-  title: "SPI Vendor Comparison Guide 2026: How to Evaluate SPI Systems",
-  description: "Comprehensive SPI vendor evaluation framework for 2026. Compare accuracy, speed, open data formats, closed-loop capabilities, support quality, and total cost of ownership to find the best SPI system.",
+  title: "SPI Vendor Comparison Guide 2026",
+  description: "A 2026 framework for evaluating SPI vendors. Compare accuracy, speed, open data formats, closed-loop capability, support, and total cost of ownership.",
   keywords: ["SPI vendor comparison", "best SPI system", "SPI evaluation guide", "solder paste inspection vendor", "SPI system selection", "SPI buying guide 2026"],
   openGraph: {
     images: ['/og-image.png'],

@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/case-studies/automotive-ems-defect-reduction' },
-  title: "Automotive EMS Defect Reduction Case Study | 67% Fewer Defects",
-  description: "Learn how a Tier 1 automotive EMS provider reduced defects by 67% and saved $750K annually using ASC 3D SPI and AOI with closed-loop feedback. IATF 16949 compliance achieved.",
+  title: "Automotive EMS: 67% Fewer Defects",
+  description: "A Tier 1 automotive EMS cut defects 67% and saved $750K a year using ASC 3D SPI and AOI with closed-loop feedback. IATF 16949 achieved.",
   keywords: ["automotive inspection case study", "IATF 16949 compliance", "defect reduction", "3D SPI automotive", "AOI closed-loop feedback", "EMS quality improvement"],
   openGraph: {
     images: ['/og-image.png'],

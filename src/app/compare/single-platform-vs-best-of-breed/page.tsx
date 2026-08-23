@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/compare/single-platform-vs-best-of-breed' },
-  title: "All-in-One Inspection Platform vs Best-of-Breed: Which Approach Wins?",
-  description: "Compare all-in-one inspection platforms with best-of-breed specialist approaches. Analyze flexibility, performance, vendor lock-in risk, support quality, innovation pace, and total cost to determine which strategy delivers better results.",
+  title: "All-in-One vs Best-of-Breed Inspection",
+  description: "All-in-one inspection platforms vs best-of-breed specialists. Flexibility, performance, lock-in risk, support, and total cost, so you can pick a strategy.",
   keywords: ["all-in-one inspection platform", "best-of-breed inspection", "inspection platform comparison", "single vendor inspection", "specialist inspection vendor", "inspection vendor lock-in"],
   openGraph: {
     images: ['/og-image.png'],

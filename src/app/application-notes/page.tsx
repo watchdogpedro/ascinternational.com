@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: '/application-notes' },
   title: "Technical Application Notes",
-  description: "In-depth technical application notes covering solder paste inspection optimization, closed-loop process control, defect analysis, and electronics manufacturing best practices.",
+  description: "Technical application notes on SPI optimization, closed-loop process control, defect analysis, and best practices for electronics manufacturing.",
   keywords: ["application notes", "technical guide", "SPI optimization", "process control", "solder defect analysis", "electronics inspection"],
   openGraph: {
     images: ['/og-image.png'],

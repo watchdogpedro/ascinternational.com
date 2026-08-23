@@ -6,8 +6,8 @@ import Link from "next/link";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "10 Questions to Ask Every SPI Vendor Before You Buy | ASC Blog",
-  description: "Before signing an SPI purchase order, ask these 10 questions. They reveal hidden costs, vendor lock-in risks, real-world performance, and support commitments vendors won't volunteer.",
+  title: "10 Questions to Ask Every SPI Vendor",
+  description: "Before you sign an SPI purchase order, ask these 10 questions. They surface hidden costs, lock-in risk, real performance, and support vendors won't volunteer.",
   keywords: ["SPI vendor evaluation", "questions to ask SPI vendor", "solder paste inspection buying", "SPI vendor comparison", "how to choose SPI system", "SPI evaluation checklist"],
   alternates: {
     canonical: `${SITE_URL}/blog/spi-vendor-questions`,

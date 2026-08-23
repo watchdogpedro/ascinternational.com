@@ -1,10 +1,10 @@
 # SEO copy rewrites for review — ascinternational.com
 
 **Date:** August 23, 2026  
-**For:** Paul + Steve to approve or edit before anything goes live.  
+**For:** Paul + Steve. These values are now LIVE (pushed Aug 23) — Paul approved the push.  
 **Covers:** SEO audit items #5 (meta descriptions over 160 chars), #6 (titles over 60 chars), and #8 (two pages sharing a title).
 
-Nothing here is applied yet. These are proposals. Once you two sign off — mark up anything you want changed — I'll set them in the page metadata and push.
+These are the live titles and descriptions as of Aug 23. Steve: if you want any wording changed, mark it up here and I'll update the page and redeploy. Every value was length-checked (all titles fit 60, all descriptions fit 160) and read for AI-writing tells before going out.
 
 ## How to read this
 

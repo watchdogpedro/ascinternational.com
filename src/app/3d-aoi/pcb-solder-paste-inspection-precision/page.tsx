@@ -7,9 +7,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: '/3d-aoi/pcb-solder-paste-inspection-precision' },
   title:
-    "PCB & Solder Paste Inspection: Unlocking Precision",
+    "PCB & Solder Paste Inspection Precision",
   description:
-    "A guide to PCB and solder paste inspection. Learn how 3D AOI and SPI catch missing components, solder bridges, voids, and cold joints — and how automation improves accuracy and yield.",
+    "A guide to PCB and solder paste inspection. How 3D AOI and SPI catch missing components, bridges, voids, and cold joints, and how automation lifts yield.",
   keywords: [
     "PCB inspection",
     "solder paste inspection",

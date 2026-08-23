@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/automated-optical-inspection' },
-  title: "Automated Optical Inspection (AOI) Systems",
-  description: "Advanced 2D-3D AOI systems for post-reflow PCB inspection. AI-powered defect detection for component placement, solder joints, and assembly quality verification.",
+  title: "Post-Reflow AOI Inspection Systems",
+  description: "2D-3D AOI for post-reflow PCB inspection. AI-assisted defect detection for component placement, solder joints, and assembly quality.",
   keywords: ["AOI systems", "automated optical inspection", "PCB inspection", "2D AOI", "3D AOI", "post-reflow inspection", "electronics inspection"],
   openGraph: {
     images: ['/og-image.png'],

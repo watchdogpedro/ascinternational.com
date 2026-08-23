@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: '/products/3d-solder-paste-inspection' },
   title: "3D Solder Paste Inspection (SPI) Systems",
-  description: "Advanced 3D solder paste inspection systems for PCB manufacturing. Inline and offline SPI solutions for accurate solder paste volume, height, and area measurement. 34+ years experience.",
+  description: "Inline and offline 3D SPI systems that measure solder paste volume, height, and area on PCBs. 34 years supplying electronics manufacturers.",
   keywords: ["3D SPI", "solder paste inspection", "3D inspection systems", "PCB inspection", "solder paste measurement", "inline SPI", "offline SPI"],
   openGraph: {
     images: ['/og-image.png'],

@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: '/products/linemaster-dmi' },
   title: "LineMaster DMI | Dual Mode SPI + AOI",
-  description: "Revolutionary offline dual-mode platform combining 3D SPI and AOI in one system. The LineMaster DMI detects solder paste defects and component placement errors — single pass, single system.",
+  description: "Offline dual-mode platform combining 3D SPI and AOI. The LineMaster DMI catches solder paste defects and placement errors in a single pass.",
   keywords: ["LineMaster DMI", "dual mode SPI AOI", "offline SPI AOI", "universal inspection"],
 };
 

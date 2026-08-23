@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   alternates: { canonical: '/faq' },
   title: "Frequently Asked Questions",
-  description: "Find answers to common questions about inspection systems, services, support, and purchasing from ASC International. Expert guidance on 3D SPI, AOI, and inspection solutions.",
+  description: "Answers to common questions about inspection systems, services, support, and buying from ASC. Guidance on 3D SPI, AOI, and inspection.",
   keywords: ["inspection FAQ", "SPI questions", "AOI support", "inspection systems help", "PCB inspection questions"],
   openGraph: {
     images: ['/og-image.png'],

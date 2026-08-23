@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/compare' },
-  title: "Electronics Inspection Equipment Comparisons",
-  description: "Compare inspection and dispensing technologies: 3D SPI vs 2D SPI, 2D AOI vs 3D AOI, jetting vs contact dispensing. Data-driven comparisons to help you choose the right equipment.",
+  title: "Inspection Equipment Comparisons",
+  description: "Compare inspection and dispensing technologies: 3D vs 2D SPI, 2D vs 3D AOI, jetting vs contact dispensing. Data-driven guides to choosing equipment.",
   keywords: ["3D SPI vs 2D SPI", "2D AOI vs 3D AOI", "inspection comparison", "dispensing comparison", "equipment selection"],
   openGraph: {
     images: ['/og-image.png'],

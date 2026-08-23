@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/multi-reflection-suppression-explained' },
-  title: "Understanding Multi-Reflection Suppression in SPI | ASC Blog",
-  description: "Learn how multi-reflection suppression (MRS) technology works in solder paste inspection, why it matters for measurement accuracy, and how modern SPI systems handle reflective surfaces.",
+  title: "Multi-Reflection Suppression in SPI",
+  description: "How multi-reflection suppression (MRS) works in solder paste inspection, why it matters for accuracy, and how modern SPI handles reflective surfaces.",
   keywords: ["MRS SPI", "reflection suppression", "solder paste inspection accuracy", "multi-reflection suppression", "SPI measurement accuracy"],
   openGraph: {
     images: ['/og-image.png'],

@@ -7,8 +7,8 @@ import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/blog/conformal-coating-inspection-defects' },
-  title: "Coating Comes Last: The Real Cost of Conformal Coating Defects",
-  description: "Conformal coating goes on after every other cost is already in the board, which makes escapes here the expensive kind. What actually goes wrong, why the blacklight booth does not scale, and what automated UV inspection measures.",
+  title: "The Real Cost of Coating Defects",
+  description: "Conformal coating goes on after every other cost is in the board, so an escape here is expensive. What goes wrong, and what automated UV inspection catches.",
   keywords: ["conformal coating inspection", "conformal coating defects", "UV fluorescence inspection", "coating holidays", "coating thickness measurement", "keep-out area coating", "IPC-A-610 conformal coating", "IPC-CC-830", "parylene inspection", "PCB conformal coating"],
   openGraph: {
     images: ['/og-image.png'],

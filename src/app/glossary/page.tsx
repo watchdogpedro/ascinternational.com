@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { SITE_URL } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: "Electronics Inspection Glossary - Technical Terms & Definitions",
+  title: "Electronics Inspection Glossary",
   description: "Comprehensive glossary of electronics manufacturing, inspection, and quality control terms. Definitions for SPI, AOI, SMT, PCB assembly, and industry standards.",
   keywords: ["SPI glossary", "AOI terms", "electronics manufacturing definitions", "PCB inspection terminology", "SMT glossary", "IPC standards", "quality control terms"],
   alternates: {
