@@ -18,6 +18,15 @@ export const metadata: Metadata = {
 export default function Blog() {
   const blogPosts = [
     {
+      title: "Coating Comes Last: The Real Cost of Conformal Coating Defects",
+      slug: "conformal-coating-inspection-defects",
+      excerpt: "Coating goes on after every other cost is already in the board. What actually goes wrong, why the blacklight booth doesn't scale, and what automated UV inspection measures that an operator can't.",
+      category: "Quality Control",
+      date: "2026-08-23",
+      readTime: "6 min read",
+      image: "/blog/conformal-coating-inspection-defects.jpg"
+    },
+    {
       title: "Solder Paste Measurement Justification: Building the ROI Case for SPI",
       slug: "solder-paste-measurement-justification",
       excerpt: "A capital request for inspection equipment lives or dies on the numbers. Use first-pass yield, the 10X rule, and your own rework data to build a defensible ROI model that proves SPI pays for itself.",
