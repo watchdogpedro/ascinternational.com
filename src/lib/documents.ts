@@ -1,17 +1,20 @@
 /**
  * Catalogue of the legacy PDF library carried over from the old WordPress site.
  *
- * These 46 files serve at their original `/wp-content/uploads/...` and
+ * These PDFs serve at their original `/wp-content/uploads/...` and
  * `/userfiles/file/...` paths. Google indexed them directly on the old site,
  * so the paths must not change — but until now nothing on the Next.js site
  * linked to them and they appeared in no sitemap, leaving them orphaned.
  *
- * The 46 files hold 39 distinct documents. Seven are redundant re-uploads:
- * WordPress kept the same PDF under `-1` / `-2` suffixes, and one brochure was
- * uploaded three times under three different product names. Every duplicate is
- * recorded in `aliases` so the extra URLs keep resolving while only the
- * canonical `path` is advertised in the sitemap. Serving one document at three
- * indexed URLs splits its ranking signals between them.
+ * The library arrived holding 46 files but only 39 distinct documents. Seven
+ * were redundant re-uploads: WordPress kept the same PDF under `-1` / `-2`
+ * suffixes, and one brochure was uploaded three times under three different
+ * product names. Serving one document at three indexed URLs splits its ranking
+ * signals between them, so the redundant copies have been deleted and their
+ * URLs now 301 to the surviving file (see the redirect block in
+ * `next.config.ts`). Each retired URL is recorded in `redirectsFrom` below so
+ * the mapping stays visible from the catalogue rather than only from routing
+ * config. Nothing that already links to an old URL breaks.
  *
  * Identification did not come from filenames, which are wrong often enough to
  * matter — `av860.pdf` is the AV 862 brochure, `LSM-Lit.pdf` is a CyberOptics
@@ -47,10 +50,12 @@ export interface LegacyDocument {
   /** Canonical path. This is the URL to link and to list in the sitemap. */
   path: string
   /**
-   * Additional live paths serving this same document. They still resolve, so
-   * old inbound links keep working, but they stay out of the sitemap.
+   * Retired URLs that used to serve a redundant copy of this same document.
+   * The files are gone; these paths 301 to `path`. Kept here so the history of
+   * each merge is visible, and so nothing re-adds a duplicate by accident.
+   * Never list these in the sitemap — they are redirects, not destinations.
    */
-  aliases?: string[]
+  redirectsFrom?: string[]
   kind: DocumentKind
   status: DocumentStatus
   /** Manufacturer, where the system is not ASC's own. */
@@ -88,7 +93,7 @@ export const DOCUMENTS: LegacyDocument[] = [
     title: 'VisionPro Series — SP3D, M300 and M500',
     path: `${UPLOADS}/2025/05/visionpro_sp3d_compressed.pdf`,
     // One brochure covering all three models, uploaded once per model name.
-    aliases: [
+    redirectsFrom: [
       `${UPLOADS}/2025/05/visionpro_500_compressed.pdf`,
       `${UPLOADS}/2025/05/visionpro_M300_compressed.pdf`,
     ],
@@ -101,7 +106,7 @@ export const DOCUMENTS: LegacyDocument[] = [
     slug: 'visionpro-hsi',
     title: 'VisionPro HSi',
     path: `${UPLOADS}/2025/05/ASCI_VisionPro_HSi_compressed.pdf`,
-    aliases: [`${UPLOADS}/2025/05/ASCI_VisionPro_HSi_compressed-1.pdf`],
+    redirectsFrom: [`${UPLOADS}/2025/05/ASCI_VisionPro_HSi_compressed-1.pdf`],
     kind: 'brochure',
     status: 'current',
     product: 'visionpro-hsi',
@@ -164,7 +169,7 @@ export const DOCUMENTS: LegacyDocument[] = [
     slug: 'linemaster-fusion-dual-mode',
     title: 'LineMaster Fusion — Dual-Mode 3D SPI/AOI',
     path: `${UPLOADS}/2025/05/ASCI-LINEMASTERFUSION_compressed.pdf`,
-    aliases: [`${UPLOADS}/2025/05/ASCI-LINEMASTERFUSION_compressed-1.pdf`],
+    redirectsFrom: [`${UPLOADS}/2025/05/ASCI-LINEMASTERFUSION_compressed-1.pdf`],
     kind: 'brochure',
     status: 'current',
     product: 'linemaster-fusion-dmi',
@@ -175,7 +180,7 @@ export const DOCUMENTS: LegacyDocument[] = [
     title: 'Falcon AOI',
     path: `${UPLOADS}/2025/09/LineMaster-Falcon-AOI_Updated.pdf`,
     // Same document: identical permanent ID, re-exported at a different size.
-    aliases: [`${UPLOADS}/2025/05/LineMaster-Falcon-Plus-AOI_compressed.pdf`],
+    redirectsFrom: [`${UPLOADS}/2025/05/LineMaster-Falcon-Plus-AOI_compressed.pdf`],
     kind: 'brochure',
     status: 'current',
     vendor: 'Prey',
@@ -289,7 +294,7 @@ export const DOCUMENTS: LegacyDocument[] = [
     slug: 'visionpro-ap212',
     title: 'VisionPro AP212',
     path: `${UPLOADS}/2025/05/AP212_compressed.pdf`,
-    aliases: [
+    redirectsFrom: [
       `${UPLOADS}/2025/05/AP212_compressed-1.pdf`,
       `${UPLOADS}/2025/05/AP212_compressed-2.pdf`,
     ],
@@ -500,8 +505,19 @@ export const CURRENT_BROCHURES = DOCUMENTS.filter(
   (d) => d.kind === 'brochure' && d.status === 'current' && !d.gated && !d.review,
 )
 
-/** Every path that resolves to a document, canonical URLs and aliases alike. */
-export const ALL_DOCUMENT_PATHS = DOCUMENTS.flatMap((d) => [d.path, ...(d.aliases ?? [])])
+/**
+ * Every path that resolves to a document, including retired URLs that now
+ * redirect. Useful for checking that no link anywhere points at a dead file.
+ */
+export const ALL_DOCUMENT_PATHS = DOCUMENTS.flatMap((d) => [
+  d.path,
+  ...(d.redirectsFrom ?? []),
+])
+
+/** Retired duplicate URLs, each 301ing to the document that replaced it. */
+export const RETIRED_DOCUMENT_PATHS = DOCUMENTS.flatMap((d) =>
+  (d.redirectsFrom ?? []).map((from) => ({ from, to: d.path })),
+)
 
 /** Canonical paths only — this is what belongs in the sitemap. */
 export const CANONICAL_DOCUMENT_PATHS = PUBLIC_DOCUMENTS.map((d) => d.path)

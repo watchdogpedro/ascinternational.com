@@ -299,6 +299,28 @@ const nextConfig: NextConfig = {
 
       // ── Legacy /automated-optical-inspection articles (1) ──
       { source: "/automated-optical-inspection/unveiling-the-power-of-visionmaster-150-image-detection-for-precise", destination: "/products/automated-optical-inspection", permanent: true },
+      // ── Duplicate PDF uploads folded into one copy each ───────
+      // Bringing the old WordPress library across left seven files that are
+      // byte-for-byte the same document as another file. WordPress had kept
+      // re-uploads under -1/-2 suffixes, and the VisionPro Series brochure was
+      // uploaded three times, once per model name it covers.
+      //
+      // The redundant copies are deleted; these redirects keep their URLs
+      // working for anything that already links to them. Confirmed duplicates:
+      // each pair shares the permanent document ID in the PDF's own /ID array,
+      // so this is not a guess from the filenames — which are unreliable here.
+      { source: "/wp-content/uploads/2025/05/visionpro_500_compressed.pdf", destination: "/wp-content/uploads/2025/05/visionpro_sp3d_compressed.pdf", permanent: true },
+      { source: "/wp-content/uploads/2025/05/visionpro_M300_compressed.pdf", destination: "/wp-content/uploads/2025/05/visionpro_sp3d_compressed.pdf", permanent: true },
+      { source: "/wp-content/uploads/2025/05/AP212_compressed-1.pdf", destination: "/wp-content/uploads/2025/05/AP212_compressed.pdf", permanent: true },
+      { source: "/wp-content/uploads/2025/05/AP212_compressed-2.pdf", destination: "/wp-content/uploads/2025/05/AP212_compressed.pdf", permanent: true },
+      { source: "/wp-content/uploads/2025/05/ASCI_VisionPro_HSi_compressed-1.pdf", destination: "/wp-content/uploads/2025/05/ASCI_VisionPro_HSi_compressed.pdf", permanent: true },
+      { source: "/wp-content/uploads/2025/05/ASCI-LINEMASTERFUSION_compressed-1.pdf", destination: "/wp-content/uploads/2025/05/ASCI-LINEMASTERFUSION_compressed.pdf", permanent: true },
+      // Titled "Prey - Falcon AOI 2021" — the same document as the September
+      // upload, despite the "Falcon-Plus" filename. Whether the Falcon Plus is
+      // a separate system needing its own datasheet is still an open question;
+      // if it is, that will be a new file rather than this one.
+      { source: "/wp-content/uploads/2025/05/LineMaster-Falcon-Plus-AOI_compressed.pdf", destination: "/wp-content/uploads/2025/09/LineMaster-Falcon-AOI_Updated.pdf", permanent: true },
+
       // ── Catch-alls: anything not named above ──────────────────
       { source: "/product-category/refurbished-aoi-spi", destination: "/services/pre-owned-systems", permanent: true },
       { source: "/product-category/:slug*", destination: "/products", permanent: true },
