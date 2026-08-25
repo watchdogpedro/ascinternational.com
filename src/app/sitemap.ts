@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/site'
+import { PUBLIC_DOCUMENTS } from '@/lib/documents'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = SITE_URL
@@ -585,6 +586,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/resources/product-literature`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
       url: `${baseUrl}/history/asc-international-alaska`,
       lastModified: currentDate,
       changeFrequency: 'yearly' as const,
@@ -610,5 +617,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  return routes
+  /**
+   * The PDF library carried over from the old WordPress site.
+   *
+   * Google indexes PDFs directly and had these ranking on the old site, but
+   * they were in no sitemap and linked from no page, so nothing pointed a
+   * crawler at them. Only canonical paths are listed — retired duplicate URLs
+   * redirect and must stay out. Manuals held behind the contact form are
+   * excluded by PUBLIC_DOCUMENTS.
+   *
+   * Legacy literature is listed at a lower priority than current product
+   * sheets. It stays indexable for owners of discontinued equipment searching
+   * by model number, without competing against the systems ASC sells today.
+   */
+  const documentRoutes = PUBLIC_DOCUMENTS.map((doc) => ({
+    url: `${baseUrl}${doc.path}`,
+    lastModified: currentDate,
+    changeFrequency: 'yearly' as const,
+    priority: doc.status === 'current' ? 0.6 : 0.4,
+  }))
+
+  return [...routes, ...documentRoutes]
 }

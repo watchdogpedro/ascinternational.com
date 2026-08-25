@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import Image from "next/image";
 import Link from "next/link";
+import { documentForProduct, formatBytes } from "@/lib/documents";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/products/mss-130-dvi' },
@@ -22,6 +23,8 @@ const highlights = [
   "Center point measurement capability",
   "Compatible with Windows systems",
 ];
+
+const datasheet = documentForProduct("mss-130-dvi");
 
 export default function MSS130DVI() {
   return (
@@ -84,8 +87,21 @@ export default function MSS130DVI() {
         <section className="py-16 bg-dark-secondary border-t border-white/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-2xl">
             <h2 className="text-2xl font-bold text-white mb-3">Full Specifications</h2>
-            <p className="text-gray-400 mb-6">Complete technical specifications and lens/lighting configuration options available upon request.</p>
-            <Link href="/contact" className="px-6 py-3 bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-accent-cyan/40 transition-all">Request Datasheet</Link>
+            <p className="text-gray-400 mb-6">The datasheet covers dimensions, throughput and measurement specifications. Lens and lighting options are quoted against your line.</p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              {datasheet && (
+                <a
+                  href={datasheet.path}
+                  target="_blank"
+                  rel="noopener"
+                  className="px-6 py-3 bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg font-bold rounded-lg hover:shadow-lg hover:shadow-accent-cyan/40 transition-all"
+                >
+                  Download Datasheet{" "}
+                  <span className="font-normal opacity-75">(PDF, {formatBytes(datasheet.bytes)})</span>
+                </a>
+              )}
+              <Link href="/contact" className="px-6 py-3 bg-white/5 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-accent-cyan/50 transition-all">Request Full Specs</Link>
+            </div>
           </div>
         </section>
       </main>
