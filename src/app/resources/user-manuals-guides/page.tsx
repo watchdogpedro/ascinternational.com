@@ -81,7 +81,7 @@ export default function UserManualsGuides() {
               </span>
               <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-5">User Manuals &amp; Guides</h1>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Operation manuals and quick-start guides for the full ASC International inspection lineup. Find the document for your system below, then request a copy and our support team will send the correct version for your equipment and software revision.
+                Operation manuals and quick-start guides for the full ASC International inspection lineup. Find the document for your system below, then request a copy and our support team will send the correct version for your equipment and software revision. Looking for specifications rather than operating instructions? Those are on <a href="/resources/product-literature" className="text-accent-cyan hover:text-white transition-colors">product literature</a>, free to download.
               </p>
             </div>
           </div>

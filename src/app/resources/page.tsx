@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/resources' },
   title: "Resources: Manuals, Software, Guides",
   description:
-    "ASC resource hub: user manuals, software downloads, and troubleshooting guides for VisionPro, Criterion, LaserVision and more, plus blog, notes, and tools.",
+    "ASC resource hub: datasheets, user manuals, software downloads and troubleshooting guides for VisionPro, Criterion, LaserVision and more, plus tools.",
   keywords: [
     "ASC International resources",
     "solder paste inspection downloads",
@@ -23,12 +23,21 @@ export const metadata: Metadata = {
     images: ['/og-image.png'],
     title: "Resources & Downloads | ASC International",
     description:
-      "User manuals, software downloads, and troubleshooting guides for ASC inspection systems, plus blog, application notes, glossary, FAQ and ROI tools.",
+      "Datasheets, user manuals, software downloads and troubleshooting guides for ASC inspection systems, plus blog, application notes, glossary and ROI tools.",
     type: "website",
   },
 };
 
 const resourceCards = [
+  {
+    title: "Product Literature",
+    href: "/resources/product-literature",
+    desc: "Datasheets and specifications for the VisionPro, LineMaster, LaserVision, MSS and CyberOptics lines, free to download, plus archived literature for discontinued systems.",
+    tag: "Datasheets",
+    icon: (
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    ),
+  },
   {
     title: "User Manuals & Guides",
     href: "/resources/user-manuals-guides",
@@ -72,7 +81,7 @@ export default function ResourcesHub() {
     "@type": "CollectionPage",
     name: "Resources & Downloads",
     description:
-      "ASC International resource hub featuring user manuals & guides, software downloads, and troubleshooting guides for inspection systems.",
+      "ASC International resource hub: product datasheets, user manuals and guides, software downloads, and troubleshooting guides for inspection systems.",
     url: `${SITE_URL}/resources`,
     hasPart: resourceCards.map((c) => ({
       "@type": "WebPage",
@@ -105,7 +114,7 @@ export default function ResourcesHub() {
                 Resources &amp; Downloads
               </h1>
               <p className="text-lg text-gray-300 leading-relaxed">
-                Everything you need to get the most from your ASC International inspection systems — user manuals and guides, software downloads, and troubleshooting references for our complete SPI and AOI lineup, alongside our blog, application notes, glossary, FAQ and ROI tools.
+                Datasheets and specifications for the full SPI and AOI lineup, operation manuals, software downloads and troubleshooting references — alongside our blog, application notes, glossary, FAQ and ROI tools.
               </p>
             </div>
           </div>
@@ -114,7 +123,7 @@ export default function ResourcesHub() {
         {/* Primary resource cards */}
         <section className="pb-16">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {resourceCards.map((card) => (
                 <Link
                   key={card.href}
