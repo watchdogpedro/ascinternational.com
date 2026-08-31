@@ -228,7 +228,7 @@ export default function LinemasterFusion3D() {
                       "radial-gradient(ellipse, rgba(0,217,255,0.45) 0%, rgba(14,165,233,0.2) 50%, transparent 70%)",
                   }}
                 />
-                <div className="relative overflow-hidden rounded-2xl border border-accent-cyan/25 bg-dark-bg aspect-square">
+                <div className="relative overflow-hidden rounded-2xl border border-accent-cyan/25 bg-dark-bg mx-auto w-fit">
                   <div
                     className="absolute inset-0"
                     style={{
@@ -244,17 +244,17 @@ export default function LinemasterFusion3D() {
                         "radial-gradient(ellipse at 50% 55%, rgba(0,217,255,0.18) 0%, rgba(14,165,233,0.07) 45%, transparent 72%)",
                     }}
                   />
-                  <div className="absolute top-4 left-4 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />
-                  <div className="absolute top-4 right-4 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
-                  <div className="absolute bottom-4 left-4 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
-                  <div className="absolute bottom-4 right-4 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
-                  <div className="relative z-10 h-full flex items-center justify-center p-12">
+                  <div className="absolute top-2 left-2 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />
+                  <div className="absolute top-2 right-2 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
+                  <div className="absolute bottom-2 left-2 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
+                  <div className="absolute bottom-2 right-2 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
+                  <div className="relative z-10 flex items-center justify-center p-4">
                     <Image
                       src="/images/products/linemaster-fusion-3d.jpg"
                       alt="LineMaster Fusion 3D Inline 3D SPI System"
                       width={420}
                       height={360}
-                      className="object-contain max-h-full w-auto rounded-lg"
+                      className="object-contain h-[300px] sm:h-[460px] w-auto max-w-full rounded-lg"
                       priority
                     />
                   </div>
