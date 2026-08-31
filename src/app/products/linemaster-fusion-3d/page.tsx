@@ -244,11 +244,11 @@ export default function LinemasterFusion3D() {
                         "radial-gradient(ellipse at 50% 55%, rgba(0,217,255,0.18) 0%, rgba(14,165,233,0.07) 45%, transparent 72%)",
                     }}
                   />
-                  <div className="absolute top-2 left-2 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />
-                  <div className="absolute top-2 right-2 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
-                  <div className="absolute bottom-2 left-2 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
-                  <div className="absolute bottom-2 right-2 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
-                  <div className="relative z-10 flex items-center justify-center p-4">
+                  <div className="absolute top-1 left-1 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />
+                  <div className="absolute top-1 right-1 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
+                  <div className="absolute bottom-1 left-1 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
+                  <div className="absolute bottom-1 right-1 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
+                  <div className="relative z-10 flex items-center justify-center p-2">
                     <Image
                       src="/images/products/linemaster-fusion-3d.jpg"
                       alt="LineMaster Fusion 3D Inline 3D SPI System"

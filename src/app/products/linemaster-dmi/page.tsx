@@ -42,11 +42,11 @@ export default function LinemasterDMI() {
                 <div className="relative overflow-hidden rounded-2xl border border-green-500/30 bg-dark-bg mx-auto w-fit">
                   <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(34,197,94,0.08) 1px, transparent 1px)", backgroundSize: "22px 22px" }} />
                   <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(34,197,94,0.15) 0%, rgba(0,217,255,0.07) 45%, transparent 72%)" }} />
-                  <div className="absolute top-2 left-2 w-7 h-7 border-t-2 border-l-2 border-green-500/60" />
-                  <div className="absolute top-2 right-2 w-7 h-7 border-t-2 border-r-2 border-green-500/60" />
-                  <div className="absolute bottom-2 left-2 w-7 h-7 border-b-2 border-l-2 border-green-500/30" />
-                  <div className="absolute bottom-2 right-2 w-7 h-7 border-b-2 border-r-2 border-green-500/30" />
-                  <div className="relative z-10 flex items-center justify-center p-4">
+                  <div className="absolute top-1 left-1 w-7 h-7 border-t-2 border-l-2 border-green-500/60" />
+                  <div className="absolute top-1 right-1 w-7 h-7 border-t-2 border-r-2 border-green-500/60" />
+                  <div className="absolute bottom-1 left-1 w-7 h-7 border-b-2 border-l-2 border-green-500/30" />
+                  <div className="absolute bottom-1 right-1 w-7 h-7 border-b-2 border-r-2 border-green-500/30" />
+                  <div className="relative z-10 flex items-center justify-center p-2">
                     <Image src="/images/products/linemaster-dmi.jpg" alt="LineMaster DMI Dual Mode SPI AOI System" width={340} height={360} className="object-contain h-[300px] sm:h-[460px] w-auto max-w-full rounded-lg" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(34,197,94,0.6), transparent)" }} />
