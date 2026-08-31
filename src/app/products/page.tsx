@@ -41,7 +41,7 @@ const spiProducts = [
     name: "VisionPro SP3D",
     slug: "visionpro-sp3d",
     type: "Benchtop Laser SPI",
-    image: "/images/products/visionpro-sp3d.png",
+    image: "/images/products/visionpro-sp3d.jpg",
     description: "Laser-based benchtop SPI with reliable height, area, and volume measurements. Onboard SPC charting, custom data reports, and Windows 10/11 Pro via ASCan Ultra software.",
     badge: "Benchtop",
   },
