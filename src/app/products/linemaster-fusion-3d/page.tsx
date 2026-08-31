@@ -56,15 +56,15 @@ const jsonLd = {
 };
 
 const highlights = [
-  "High-speed inline 3D measurement — 0.33s per FOV",
-  "Fully automatic — no operator intervention required",
+  "Precise high-speed 3D measurement",
+  "Fully automatic — seamless post-print control",
   "Closed-loop solder paste printer feedback",
-  "Measures paste height, area, volume, X-Y, and bridging",
+  "True height, area, volume, X-Y, and bridging",
   "Photo-realistic 3D profiles for every board",
   "5-minute GerberPro® programming",
   "Real-time SPC run charts with data traceability",
   "NIST Calibration Standard included",
-  "Windows 10/11 Pro operating system",
+  "Windows 11 Pro operating system",
   "SMEMA conveyor compatible",
   "3-year end-user warranty with online support",
   "Expandable inspection area up to 48″ × 24″",
@@ -145,7 +145,7 @@ const specs = [
   { parameter: "Maximum Inspection Area", value: '48" × 24" (1219mm × 610mm) expandable' },
   { parameter: "Sensor Technology", value: "PSI 1500® Phase-Shift Interferometry" },
   { parameter: "Measurements Captured", value: "Height, Area, Volume, X-Y Registration, Bridging" },
-  { parameter: "Operating System", value: "Windows 10 / 11 Pro" },
+  { parameter: "Operating System", value: "Windows 11 Pro" },
   { parameter: "Conveyor Compatibility", value: "SMEMA Standard" },
   { parameter: "Programming", value: "GerberPro® (≈5 min) + Offline Programming" },
   { parameter: "Calibration", value: "NIST Traceable Standard" },
