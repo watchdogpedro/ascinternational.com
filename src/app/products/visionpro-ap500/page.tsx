@@ -49,7 +49,7 @@ export default function VisionProAP500() {
                   <div className="absolute top-1 right-1 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
                   <div className="absolute bottom-1 left-1 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
                   <div className="absolute bottom-1 right-1 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
-                  <div className="relative z-10 flex items-center justify-center p-2">
+                  <div className="relative z-10 flex items-center justify-center p-[18px]">
                     <Image src="/images/products/visionpro-ap500.jpg" alt="VisionPro AP500 Offline 3D SPI System" width={380} height={320} className="object-contain h-[300px] sm:h-[460px] w-auto max-w-full rounded-lg" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(0,217,255,0.6), transparent)" }} />

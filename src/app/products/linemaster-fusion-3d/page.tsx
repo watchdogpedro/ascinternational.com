@@ -248,7 +248,7 @@ export default function LinemasterFusion3D() {
                   <div className="absolute top-1 right-1 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
                   <div className="absolute bottom-1 left-1 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
                   <div className="absolute bottom-1 right-1 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
-                  <div className="relative z-10 flex items-center justify-center p-2">
+                  <div className="relative z-10 flex items-center justify-center p-[18px]">
                     <Image
                       src="/images/products/linemaster-fusion-3d.jpg"
                       alt="LineMaster Fusion 3D Inline 3D SPI System"

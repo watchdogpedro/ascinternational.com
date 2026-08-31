@@ -49,7 +49,7 @@ export default function LineMasterFusionDMI() {
                   <div className="absolute top-1 right-1 w-7 h-7 border-t-2 border-r-2 border-green-500/60" />
                   <div className="absolute bottom-1 left-1 w-7 h-7 border-b-2 border-l-2 border-green-500/30" />
                   <div className="absolute bottom-1 right-1 w-7 h-7 border-b-2 border-r-2 border-green-500/30" />
-                  <div className="relative z-10 flex items-center justify-center p-2">
+                  <div className="relative z-10 flex items-center justify-center p-[18px]">
                     <Image src="/images/products/linemaster-fusion-dmi.jpg" alt="LineMaster Fusion DMI Dual-Mode 3D SPI and AOI System" width={320} height={380} className="object-contain h-[300px] sm:h-[460px] w-auto max-w-full rounded-lg" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(34,197,94,0.6), transparent)" }} />
