@@ -49,7 +49,7 @@ const spiProducts = [
     name: "VisionPro M500",
     slug: "visionpro-m500",
     type: "Benchtop Advanced SPI",
-    image: "/images/products/visionpro-m500.png",
+    image: "/images/products/visionpro-m500.jpg",
     description: "Advanced true 3D benchtop SPI with 0.48μm Z-resolution, 6.8μm lateral resolution, and a larger FOV sensor for superior paste measurement in demanding applications.",
     badge: "Benchtop",
   },
