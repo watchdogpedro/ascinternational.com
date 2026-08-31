@@ -343,7 +343,7 @@ export default function Home() {
                   {/* Product image — floating, no frame, smaller for callout breathing room */}
                   <div className="relative z-10 h-full flex items-center justify-center animate-float-slow px-4 py-16">
                     <Image
-                      src="/images/products/linemaster-fusion-3d.png"
+                      src="/images/products/linemaster-fusion-3d.jpg"
                       alt="LineMaster Fusion 3D Inline SPI System"
                       width={340}
                       height={280}

@@ -17,7 +17,7 @@ const spiProducts = [
     name: "LineMaster Fusion 3D",
     slug: "linemaster-fusion-3d",
     type: "Inline 3D SPI",
-    image: "/images/products/linemaster-fusion-3d.png",
+    image: "/images/products/linemaster-fusion-3d.jpg",
     description: "High-speed inline 3D solder paste inspection with fully automatic measurement, eliminating operator errors and delivering outstanding repeatability at an affordable price.",
     badge: "Inline",
   },

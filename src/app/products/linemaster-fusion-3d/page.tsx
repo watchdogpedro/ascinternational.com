@@ -248,7 +248,7 @@ export default function LinemasterFusion3D() {
                   <div className="absolute bottom-4 right-4 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
                   <div className="relative z-10 flex items-center justify-center p-8" style={{ minHeight: "420px" }}>
                     <Image
-                      src="/images/products/linemaster-fusion-3d.png"
+                      src="/images/products/linemaster-fusion-3d.jpg"
                       alt="LineMaster Fusion 3D Inline 3D SPI System"
                       width={420}
                       height={360}
