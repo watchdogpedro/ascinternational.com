@@ -42,7 +42,7 @@ export default function VisionProAP500() {
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl border border-accent-cyan/30 bg-dark-bg" style={{ height: "420px" }}>
+                <div className="relative overflow-hidden rounded-2xl border border-accent-cyan/30 bg-dark-bg aspect-square">
                   <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(0,217,255,0.1) 1px, transparent 1px)", backgroundSize: "22px 22px" }} />
                   <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(0,217,255,0.18) 0%, rgba(14,165,233,0.08) 45%, transparent 72%)" }} />
                   <div className="absolute top-4 left-4 w-7 h-7 border-t-2 border-l-2 border-accent-cyan/60" />

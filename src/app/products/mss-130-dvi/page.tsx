@@ -42,7 +42,7 @@ export default function MSS130DVI() {
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 bg-dark-bg" style={{ height: "420px" }}>
+                <div className="relative overflow-hidden rounded-2xl border border-yellow-500/30 bg-dark-bg aspect-square">
                   <div className="absolute inset-0" style={{ backgroundImage: "radial-gradient(circle, rgba(234,179,8,0.08) 1px, transparent 1px)", backgroundSize: "22px 22px" }} />
                   <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 55%, rgba(234,179,8,0.15) 0%, rgba(0,217,255,0.07) 45%, transparent 72%)" }} />
                   <div className="absolute top-4 left-4 w-7 h-7 border-t-2 border-l-2 border-yellow-500/60" />
