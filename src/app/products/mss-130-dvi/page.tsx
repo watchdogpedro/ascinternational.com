@@ -49,8 +49,8 @@ export default function MSS130DVI() {
                   <div className="absolute top-4 right-4 w-7 h-7 border-t-2 border-r-2 border-yellow-500/60" />
                   <div className="absolute bottom-4 left-4 w-7 h-7 border-b-2 border-l-2 border-yellow-500/30" />
                   <div className="absolute bottom-4 right-4 w-7 h-7 border-b-2 border-r-2 border-yellow-500/30" />
-                  <div className="relative z-10 h-full flex items-center justify-center p-8">
-                    <Image src="/images/products/mss-130-dvi.jpg" alt="MSS 130 DVI Digital Video Inspection Scope" width={360} height={380} className="object-contain max-h-full w-auto" />
+                  <div className="relative z-10 h-full flex items-center justify-center p-12">
+                    <Image src="/images/products/mss-130-dvi.jpg" alt="MSS 130 DVI Digital Video Inspection Scope" width={360} height={380} className="object-contain max-h-full w-auto rounded-lg" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(234,179,8,0.6), transparent)" }} />
                 </div>

@@ -216,6 +216,11 @@ export default function LinemasterFusion3D() {
 
               {/* Image frame */}
               <div className="relative order-2 lg:order-1">
+                <div className="flex justify-end mb-3">
+                  <span className="bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg text-xs font-bold px-3 py-1.5 rounded-full shadow-lg shadow-accent-cyan/40">
+                    PSI 1500® Technology
+                  </span>
+                </div>
                 <div
                   className="absolute inset-0 rounded-3xl blur-3xl opacity-30"
                   style={{
@@ -246,13 +251,13 @@ export default function LinemasterFusion3D() {
                   <div className="absolute top-4 right-4 w-7 h-7 border-t-2 border-r-2 border-accent-cyan/60" />
                   <div className="absolute bottom-4 left-4 w-7 h-7 border-b-2 border-l-2 border-accent-cyan/30" />
                   <div className="absolute bottom-4 right-4 w-7 h-7 border-b-2 border-r-2 border-accent-cyan/30" />
-                  <div className="relative z-10 flex items-center justify-center p-8" style={{ minHeight: "420px" }}>
+                  <div className="relative z-10 flex items-center justify-center p-12" style={{ minHeight: "420px" }}>
                     <Image
                       src="/images/products/linemaster-fusion-3d.jpg"
                       alt="LineMaster Fusion 3D Inline 3D SPI System"
                       width={420}
                       height={360}
-                      className="object-contain max-h-full w-auto"
+                      className="object-contain max-h-full w-auto rounded-lg"
                       priority
                     />
                   </div>
@@ -263,10 +268,6 @@ export default function LinemasterFusion3D() {
                         "linear-gradient(90deg, transparent, rgba(0,217,255,0.6), transparent)",
                     }}
                   />
-                  {/* Floating badge */}
-                  <div className="absolute top-5 right-5 bg-gradient-to-r from-accent-cyan to-accent-blue text-dark-bg text-xs font-bold px-3 py-1.5 rounded-full shadow-lg shadow-accent-cyan/40">
-                    PSI 1500® Technology
-                  </div>
                 </div>
               </div>
 
