@@ -47,7 +47,7 @@ export default function VisionProMerlinXL() {
                   <div className="absolute bottom-1 left-1 w-7 h-7 border-b-2 border-l-2 border-accent-blue/30" />
                   <div className="absolute bottom-1 right-1 w-7 h-7 border-b-2 border-r-2 border-accent-blue/30" />
                   <div className="relative z-10 flex items-center justify-center p-[18px]">
-                    <Image src="/images/products/visionpro-merlin-xl.png" alt="VisionPro Merlin XL Large-Format Offline AOI System" width={320} height={380} className="object-contain h-[300px] sm:h-[460px] w-auto max-w-full rounded-lg" />
+                    <Image src="/images/products/visionpro-merlin-xl.jpg" alt="VisionPro Merlin XL Large-Format Offline AOI System" width={320} height={380} className="object-contain h-[300px] sm:h-[460px] w-auto max-w-full rounded-lg" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(14,165,233,0.6), transparent)" }} />
                 </div>
