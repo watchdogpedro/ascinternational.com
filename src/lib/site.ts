@@ -10,13 +10,20 @@
  *
  *   NEXT_PUBLIC_SITE_URL=https://ascinternational.com
  *
- * Set that in the Vercel project on cutover day and the whole site — every
- * canonical, every schema block, the sitemap — flips at once. Leave it unset
- * and the site continues to identify as solderpasteinspection.com, which is
- * why this file is safe to ship to production ahead of the cutover.
+ * Set that in the Vercel project and the whole site — every canonical, every
+ * schema block, the sitemap — reads from it at once.
+ *
+ * The cutover to ascinternational.com happened on 2026-08-19. Until then the
+ * fallback below was deliberately solderpasteinspection.com, so this file
+ * could ship ahead of the switch without changing the live domain. That is no
+ * longer the right default.
+ *
+ * NEXT_PUBLIC_SITE_URL is read at BUILD time. If it is ever cleared, renamed,
+ * or missing from a new Vercel environment, every absolute URL on the site
+ * falls back to whatever is below. It must name the live domain.
  */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || 'https://solderpasteinspection.com'
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://ascinternational.com'
 ).replace(/\/$/, '')
 
 /** Bare hostname, for prose ("...visitors to ascinternational.com"). */
