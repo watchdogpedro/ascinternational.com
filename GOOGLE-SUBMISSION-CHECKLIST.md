@@ -1,437 +1,217 @@
-# Google Search Console Submission Checklist
-## solderpasteinspection.net
+# Google Search Console Submission — ascinternational.com
 
-**Date:** February 6, 2025
-**Status:** Ready to Submit ✅
+**Last updated:** September 1, 2026
+**Site:** https://ascinternational.com
+**Maintained by:** Winfield Technologies Inc.
 
----
-
-## Pre-Submission Verification ✅
-
-- [x] **Site is live and accessible**
-  - URL: https://solderpasteinspection.net
-  - Test: Site loads correctly in browser
-  - Mobile test: Responsive design working
-
-- [x] **Sitemap exists**
-  - Location: https://solderpasteinspection.net/sitemap.xml
-  - Test: Visit URL and verify XML loads
-  - Contains: 50+ URLs including new blog post
-
-- [x] **Robots.txt configured**
-  - Location: https://solderpasteinspection.net/robots.txt
-  - Allows: All pages for crawling
-  - References: Sitemap URL
-
-- [x] **All pages have unique titles and descriptions**
-  - FAQ: "Frequently Asked Questions | ASC International"
-  - 3D SPI: "3D Solder Paste Inspection (SPI) Systems | ASC International"
-  - Blog: "Common Solder Paste Defects: Causes, Detection & Prevention Guide"
-
-- [x] **Schema markup implemented**
-  - FAQPage schema: FAQ page
-  - Product schema: All product pages
-  - Article schema: Blog posts
-  - BreadcrumbList: Major pages
-  - Organization schema: Home page
-
-- [x] **No broken links**
-  - Internal links verified
-  - External links tested
-
-- [x] **HTTPS enabled**
-  - SSL certificate: Active
-  - All pages force HTTPS
+> Replaces the February 2025 version of this document, which was written for
+> `solderpasteinspection.net` before the domain migration. That domain is now a
+> redirect. Everything below is for the current site.
 
 ---
 
-## Step 1: Google Search Console Setup
+## Where the site stands
 
-### Create Account & Add Property
+Verified against production on September 1, 2026:
 
-1. **Visit Google Search Console**
-   ```
-   https://search.google.com/search-console
-   ```
+| Check | Status |
+|---|---|
+| Site live at https://ascinternational.com | HTTP 200 |
+| `sitemap.xml` | 200, 133 URLs, all on `ascinternational.com` |
+| PDFs in sitemap | 35 |
+| `robots.txt` | Allows crawling, references the sitemap |
+| `noindex` tags | None |
+| Legacy domains | All four 308 to `ascinternational.com` in one hop |
 
-2. **Click "Add Property"**
-   - Choose: "Domain" (preferred) OR "URL prefix"
-   - Enter: `solderpasteinspection.net`
+Nothing on the site side is blocking submission.
 
-3. **Verify Ownership** (Choose one method):
+### Legacy domain redirects
 
-   **Option A: DNS Verification** (Recommended)
-   - Copy TXT record provided by Google
-   - Add to your DNS settings at your domain registrar
-   - Wait 5-10 minutes for propagation
-   - Click "Verify" in Search Console
+All verified one-hop, no chains:
 
-   **Option B: HTML File Upload**
-   - Download verification file from Google
-   - Upload to: `public/` directory
-   - Deploy site
-   - Click "Verify"
+- `solderpasteinspection.com` → `ascinternational.com`
+- `www.solderpasteinspection.com` → `ascinternational.com`
+- `solderpasteinspection.net` → `ascinternational.com`
+- `www.solderpasteinspection.net` → `ascinternational.com`
 
-   **Option C: HTML Tag**
-   - Copy meta tag from Google
-   - Add to `src/app/layout.tsx` in `<head>`
-   - Deploy site
-   - Click "Verify"
-
-4. **Wait for Verification**
-   - Usually instant for HTML methods
-   - DNS can take 24-48 hours
+The `.net` redirect target is configured **in the Vercel dashboard**, not in
+`next.config.ts`. The values still in `next.config.ts` point at
+`solderpasteinspection.com` and are overridden at runtime. Don't "fix" that file
+expecting it to change behavior.
 
 ---
 
-## Step 2: Submit Sitemap
+## Before you start: which Google account
 
-1. **Navigate to Sitemaps**
-   - Left sidebar → "Sitemaps"
-
-2. **Add New Sitemap**
-   - Enter: `sitemap.xml`
-   - Click "Submit"
-
-3. **Verify Submission**
-   - Status should show "Success"
-   - Wait 24-48 hours for processing
-   - Google will discover ~50 URLs
+Whichever account verifies the property becomes its long-term owner, and moving
+ownership later is awkward. Use the Winfield Workspace account
+(`pdenman@winfieldtech.com`) rather than a personal Gmail. ASC's people can be
+added as users afterward without giving up ownership.
 
 ---
 
-## Step 3: Request Indexing for Priority Pages
+## Step 1 — Add the property
 
-**Priority Pages to Index First:**
+Go to https://search.google.com/search-console and click **Add property**.
 
-1. **Home Page**
-   ```
-   https://solderpasteinspection.net/
-   ```
-   - Go to URL Inspection tool
-   - Paste URL
-   - Click "Request Indexing"
+Choose **Domain**, not "URL prefix." Enter `ascinternational.com` with no
+`https://` and no `www`.
 
-2. **3D SPI Product Page** (Highest SEO value)
-   ```
-   https://solderpasteinspection.net/products/3d-solder-paste-inspection
-   ```
-   - Request indexing
-
-3. **FAQ Page** (20 questions with schema)
-   ```
-   https://solderpasteinspection.net/faq
-   ```
-   - Request indexing
-
-4. **Solder Paste Defects Blog** (2000+ words, high value)
-   ```
-   https://solderpasteinspection.net/blog/common-solder-paste-defects
-   ```
-   - Request indexing
-
-5. **Contact Page**
-   ```
-   https://solderpasteinspection.net/contact
-   ```
-   - Request indexing
-
-**Note:** Google limits manual index requests to ~10 per day. Focus on most important pages first.
+Domain covers `www` and non-`www`, http and https, and any subdomain in a single
+property. URL prefix would cover one exact variant, leaving you with several
+properties each reporting a slice of the same site.
 
 ---
 
-## Step 4: Set Up Google Analytics 4 (Optional but Recommended)
+## Step 2 — Verify by DNS
 
-1. **Create GA4 Property**
-   ```
-   https://analytics.google.com
-   ```
-   - Click "Admin" → "Create Property"
-   - Property name: "ASC International - SPI Site"
-   - Set timezone and currency
-   - Click "Create"
+Google shows a TXT record starting `google-site-verification=`. Copy it.
 
-2. **Get Measurement ID**
-   - Will look like: `G-XXXXXXXXXX`
-   - Copy this ID
+DNS for this domain is at **Cloudflare**. Log in, open `ascinternational.com`,
+and go to **DNS → Records**.
 
-3. **Add to Site** (if not already implemented)
-   - Add to `src/app/layout.tsx`
-   - Or use Next.js Script component
+### ⚠️ Protect the email records
 
-4. **Link to Search Console**
-   - In GA4: Admin → Property Settings → Product Links
-   - Link to Search Console property
-   - This enables combined reporting
+ASC's email resolves through this same DNS zone. You are **adding** one record.
+Do not edit or delete either of these:
 
----
+| Type | Value | What it does |
+|---|---|---|
+| MX | `inbound.registeredsite.com` (priority 5) | ASC's inbound mail |
+| TXT | `v=spf1 include:spf.registeredsite.com ~all` | Email authentication |
 
-## Step 5: Verify Core Web Vitals
+Deleting either one takes ASC's email down.
 
-1. **Go to "Core Web Vitals" Report**
-   - Left sidebar in Search Console
-   - Wait 24-48 hours for data
+A related trap from the August 2026 migration: Cloudflare's DNS import turns the
+orange proxy **on** by default, which breaks mail routing. Proxy status doesn't
+apply to TXT records, so adding this one is safe, but don't let a bulk operation
+flip the proxy on the mail records.
 
-2. **Check for Issues**
-   - Target: All green (Good)
-   - Fix any yellow or red warnings
+### Add the record
 
-3. **Test Individual Pages**
-   - Use PageSpeed Insights: https://pagespeed.web.dev/
-   - Test home page and product pages
-   - Target score: 90+ for mobile and desktop
+Click **Add record**:
+
+- **Type:** TXT
+- **Name:** `@`
+- **Content:** the `google-site-verification=...` string
+- **TTL:** Auto
+
+Save, then click **Verify** in Search Console. Two TXT records on `@` is correct
+and expected — the new one sits alongside SPF rather than replacing it.
+
+If verification fails, wait five minutes and retry. Cloudflare usually
+propagates in under a minute and failures at this step are almost always timing.
 
 ---
 
-## Step 6: Monitor Indexing Progress
+## Step 3 — Submit the sitemap
 
-### Week 1 Checklist
+Left sidebar → **Sitemaps**. Enter `sitemap.xml` (the domain is prefilled) and
+click **Submit**.
 
-- [ ] **Day 1:** Sitemap submitted
-- [ ] **Day 1:** Priority pages requested for indexing
-- [ ] **Day 2:** Check Search Console for crawl activity
-- [ ] **Day 3:** Verify at least 10 pages indexed
-- [ ] **Day 7:** 30+ pages indexed
-- [ ] **Day 7:** Zero coverage errors
-
-### Week 2-4 Checklist
-
-- [ ] **Week 2:** 40+ pages indexed
-- [ ] **Week 2:** Search impressions appearing
-- [ ] **Week 3:** First organic clicks
-- [ ] **Week 4:** All major pages indexed
-
-### Tools to Monitor
-
-**Google Search Console Sections:**
-1. **Coverage:** Shows indexed vs. not indexed pages
-2. **Performance:** Shows impressions, clicks, position
-3. **Sitemaps:** Shows crawl status
-4. **Mobile Usability:** Shows mobile issues
-5. **Core Web Vitals:** Shows page experience
+Status should read "Success." The discovered-URL count often shows 0 initially
+and fills in within a day. It should reach **133**.
 
 ---
 
-## Troubleshooting Common Issues
+## Step 4 — Request indexing on priority pages
 
-### Issue: Pages Not Indexing
+Use the **URL Inspection** bar at the top of Search Console. Paste a URL, let it
+load, then click **Request Indexing**.
 
-**Check:**
-1. Search Console → Coverage → "Excluded"
-2. Look for reasons:
-   - "Crawled - currently not indexed" → Normal, wait
-   - "Discovered - currently not indexed" → Wait or request indexing
-   - "Blocked by robots.txt" → Fix robots.txt
-   - "Page with redirect" → Check redirects
+Start with these:
 
-**Fix:**
-- Request indexing manually
-- Check internal links to page
-- Verify canonical tags correct
-- Ensure content is unique and valuable
+1. `https://ascinternational.com`
+2. `https://ascinternational.com/products`
+3. `https://ascinternational.com/3d-aoi`
+4. `https://ascinternational.com/contact`
+5. `https://ascinternational.com/about`
 
-### Issue: Coverage Errors
-
-**Common Errors:**
-- "404 not found" → Fix broken links
-- "Soft 404" → Add more content or remove page
-- "Server error (5xx)" → Fix server issues
-- "Redirect error" → Fix redirect chains
-
-**Action:**
-- Fix errors in Search Console
-- Click "Validate Fix"
-- Wait for re-crawl
-
-### Issue: Low Impressions After 4 Weeks
-
-**Possible Causes:**
-- Keywords too competitive → Target long-tail keywords
-- Content too thin → Expand content
-- No backlinks → Get 2-3 quality backlinks
-- Technical issues → Run SEO audit
-
-**Action:**
-- Create more content around target keywords
-- Ensure FAQ answers are complete
-- Build internal links
-- Consider limited outreach for backlinks
+Google caps manual requests at roughly ten per day. The sitemap covers the
+remaining 128 URLs, so there's no reason to work through them by hand.
 
 ---
 
-## Expected Timeline
+## Step 5 — Change of address (the migration step)
 
-### Indexing Timeline
+**This is the step that carries the old domain's ranking history across, and the
+one most likely to get skipped.**
 
-| Timeframe | Expected Activity |
-|-----------|-------------------|
-| Day 1 | Sitemap submitted, priority pages requested |
-| Days 1-3 | Google discovers site, crawls homepage |
-| Days 3-7 | Main pages indexed (10-20 pages) |
-| Week 2 | Most pages indexed (30-40 pages) |
-| Week 3-4 | All pages indexed (50+ pages) |
+The site moved from `solderpasteinspection.com` on August 19, 2026. The
+redirects are correct, so Google will eventually work it out on its own. The
+Change of Address tool tells it directly instead of waiting.
 
-### Ranking Timeline
+**If a Search Console property already exists for the old domain:**
+open that property → **Settings** (gear) → **Change of address** → select
+`ascinternational.com` as the destination. Google runs its own redirect check
+before processing.
 
-| Timeframe | Expected Results |
-|-----------|------------------|
-| Week 1-2 | No rankings yet (indexing phase) |
-| Week 3-4 | First impressions appear |
-| Week 4-8 | Rankings for long-tail keywords |
-| Week 8-12 | Rankings for medium keywords |
-| Month 3-6 | Rankings for primary keywords |
-| Month 6+ | Established rankings, featured snippets |
+**If no property exists for the old domain:** add
+`solderpasteinspection.com` as a property using the same Domain method in Step
+1, purely so Change of Address becomes available. The redirects are already in
+place, so it should verify and process without extra work.
 
 ---
 
-## Success Criteria (Week 4)
+## What to expect
 
-After 4 weeks, you should see:
+The homepage typically indexes within a few days. The full 133 URLs work through
+over several weeks.
 
-**Indexing:**
-- [x] 40+ pages indexed
-- [x] Zero critical errors
-- [x] All priority pages indexed
+Expect a large batch of pages sitting in **"Discovered – currently not indexed"**
+in the Pages report early on. That's Google's crawl queue, not a rejection, and
+it isn't something to act on during the first few weeks.
 
-**Performance:**
-- [x] 200+ search impressions/week
-- [x] 10+ clicks/week
-- [x] Some queries showing average position <50
+### The 35 PDFs
 
-**Technical:**
-- [x] Mobile usability: "Valid"
-- [x] Core Web Vitals: "Good" URLs > 75%
-- [x] No security issues
+The PDF library was catalogued and surfaced in August 2026. Those 35 files are
+in the sitemap but have no Search Console history yet.
+
+**Check back around October 1, 2026.** By then there should be enough query and
+impression data to see which PDFs earn traffic. That data is what should drive
+any decision to prune the library — not guesswork before the numbers exist.
 
 ---
 
-## Quick Reference Commands
+## Known issue to watch
 
-### Check if Site is Indexed
+`src/lib/site.ts` line 19 sets the site's base URL as:
+
 ```
-site:solderpasteinspection.net
-```
-Run this Google search to see indexed pages.
-
-### Check Specific Page Indexed
-```
-site:solderpasteinspection.net/faq
+process.env.NEXT_PUBLIC_SITE_URL || 'https://solderpasteinspection.com'
 ```
 
-### Check Who Links to You
-```
-link:solderpasteinspection.net
-```
+The environment variable is set correctly in Vercel today, and production output
+confirms every canonical, sitemap entry, and schema URL uses
+`ascinternational.com`.
 
-### Test Structured Data
-```
-https://search.google.com/test/rich-results
-```
-Enter your URLs to verify schema markup.
+The risk is the fallback. `NEXT_PUBLIC_SITE_URL` is read at **build time**. If it
+were ever cleared, renamed, or missing from a new Vercel environment, the next
+build would silently emit the old domain across every canonical tag and
+structured-data URL on the site. That would be actively harmful right after
+submitting to Google.
 
----
-
-## Post-Submission Monitoring Schedule
-
-### Daily (Week 1)
-- Check Search Console for new pages indexed
-- Monitor for coverage errors
-- Verify no critical issues
-
-### Weekly (Weeks 2-8)
-- Review Performance report
-- Check impressions and clicks
-- Identify top performing pages
-- Look for featured snippet opportunities
-
-### Monthly (Ongoing)
-- Analyze top queries
-- Review click-through rates
-- Identify content gaps
-- Plan new content based on data
+Changing the fallback to `https://ascinternational.com` removes the landmine
+without altering current behavior.
 
 ---
 
-## Next Content to Create (Based on Search Data)
+## Verification tools
 
-After 4-6 weeks, review Search Console "Queries" report to see:
-1. What questions users ask
-2. Where you rank positions 11-20 (page 2)
-3. Queries with high impressions but low clicks
+- Rich Results Test — https://search.google.com/test/rich-results
+- PageSpeed Insights — https://pagespeed.web.dev/
+- Schema validator — https://validator.schema.org/
+- Search Console help — https://support.google.com/webmasters
 
-**Create content to:**
-- Answer queries you're ranking 11-20 for
-- Target variations of successful keywords
-- Fill gaps in your current content
+To spot-check indexing progress, search Google for `site:ascinternational.com`.
 
 ---
 
-## Emergency Contacts & Resources
+## Ongoing
 
-**Google Search Console Help:**
-- https://support.google.com/webmasters
+**Weeks 1–4:** watch the Pages report for coverage errors. Errors are worth
+acting on; "Discovered – currently not indexed" is not.
 
-**Test Tools:**
-- Rich Results Test: https://search.google.com/test/rich-results
-- PageSpeed Insights: https://pagespeed.web.dev/
-- Mobile-Friendly Test: https://search.google.com/test/mobile-friendly
-
-**Schema Validator:**
-- https://validator.schema.org/
-
----
-
-## ✅ Final Pre-Launch Check
-
-Run this checklist before submitting:
-
-- [ ] Site loads at https://solderpasteinspection.net
-- [ ] Sitemap accessible at /sitemap.xml
-- [ ] Robots.txt accessible at /robots.txt
-- [ ] FAQ page has 20 questions
-- [ ] 3D SPI product page enhanced
-- [ ] New blog post published
-- [ ] All pages have unique titles
-- [ ] No console errors in browser
-- [ ] Mobile responsive
-- [ ] Forms work (contact form)
-
-**Status:** ✅ All items complete - Ready to submit!
-
----
-
-## 🚀 Action Items Summary
-
-### Do Now (Today):
-1. ✅ Deploy latest changes (if not already)
-2. ⬜ Set up Google Search Console account
-3. ⬜ Verify domain ownership
-4. ⬜ Submit sitemap
-5. ⬜ Request indexing for 5 priority pages
-
-### Do This Week:
-6. ⬜ Set up Google Analytics 4
-7. ⬜ Link GSC and GA4
-8. ⬜ Monitor first indexing results
-9. ⬜ Test Core Web Vitals
-
-### Do Week 2:
-10. ⬜ Review Coverage report
-11. ⬜ Fix any errors
-12. ⬜ Verify all priority pages indexed
-
-### Do Week 4:
-13. ⬜ Review Performance data
-14. ⬜ Identify top queries
-15. ⬜ Plan next content pieces
-
----
-
-**Good luck with your submission! 🎯**
-
-The site is well-optimized and ready for search engine visibility. With the comprehensive FAQ, enhanced product pages, and authoritative blog content, you're positioned to capture featured snippets and rank well for target keywords.
-
----
-
-*Last Updated: February 6, 2025*
-*Next Review: After 4 weeks of indexing*
+**Month 2 onward:** work the Performance report. Queries ranking in positions
+11–20 are the cheapest wins, and pages with high impressions but low clicks
+usually need a better title or meta description rather than new content.
