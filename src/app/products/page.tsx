@@ -116,7 +116,7 @@ const aoiProducts = [
     name: "VisionPro Merlin XL",
     slug: "visionpro-merlin-xl",
     type: "Large-Format Offline AOI",
-    image: "/images/products/visionpro-merlin-xl.png",
+    image: "/images/products/visionpro-merlin-xl.jpg",
     description: "Large-format offline AOI for oversized boards up to 26″×22″. Image-modeling detection with RGBW lighting, OCR, and 01005 component capability for manufacturers needing extended board capacity.",
     badge: "Offline",
   },
