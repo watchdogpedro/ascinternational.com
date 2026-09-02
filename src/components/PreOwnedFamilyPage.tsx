@@ -110,14 +110,14 @@ export default function PreOwnedFamilyPage({
             }}
           />
           <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className={image ? "grid lg:grid-cols-[1fr_auto] gap-12 items-center" : ""}>
+            <div className={image ? "grid lg:grid-cols-[minmax(0,1.15fr)_auto] gap-12 items-center" : ""}>
             <div className="max-w-4xl">
               <div className="inline-flex items-center gap-2 bg-green-400/10 border border-green-400/30 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                 <span className="text-green-400 text-sm font-medium">Systems Available Now</span>
               </div>
               <div className="text-accent-cyan text-sm font-semibold uppercase tracking-widest mb-3">{kicker}</div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight text-balance">
                 {family}
                 <br />
                 <span className="bg-gradient-to-r from-accent-cyan to-green-400 bg-clip-text text-transparent">
