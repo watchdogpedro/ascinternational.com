@@ -83,6 +83,22 @@ export default function CyberOpticsQXSeriesPreOwned() {
       systemsHeading="QX Series Models"
       systemsIntro="Click a model for its spec sheet. Lighting, conveyor and software configuration differ unit to unit, so check what is actually in stock before committing to a model number."
       systemsColumns="3"
+      newAlternative={{
+        rationale:
+          "The QX line is 2D. It reads the board from above, which is enough for presence, polarity and gross joint defects, but it cannot measure height — so lifted leads and insufficient solder are harder for it to call reliably. If your defect escapes are the ones a 2D camera struggles with, the fix is a 3D platform rather than a cheaper 2D one.",
+        systems: [
+          {
+            name: "LineMaster Falcon",
+            href: "/products/linemaster-falcon",
+            desc: "Inline 2D-3D AOI, current platform, full warranty",
+          },
+          {
+            name: "VisionPro Merlin",
+            href: "/products/visionpro-merlin",
+            desc: "Offline 2D-3D AOI for the quality lab or bench",
+          },
+        ],
+      }}
       fitFor={[
         "Your operators are doing final visual inspection by eye and escapes are still getting to the customer.",
         "You already run SPI and want to close the loop on the placement and reflow side too.",

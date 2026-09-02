@@ -91,6 +91,22 @@ export default function CyberOpticsLSMSeriesPreOwned() {
         "An LSM already runs in your shop and you want a second, or a spare, that your operators already know.",
         "You want documented paste measurement for a customer audit without an inline capital purchase.",
       ]}
+      newAlternative={{
+        rationale:
+          "The LSM family is the oldest kit ASC handles, and for some shops that is fine — the measurement still holds up and the price is hard to argue with. But if you are buying offline SPI to keep for the next decade rather than to match a machine you already run, a current benchtop platform will be supported for longer and will not tie you to hardware from the Windows 98 era.",
+        systems: [
+          {
+            name: "VisionPro AP500",
+            href: "/products/visionpro-ap500",
+            desc: "ASC's most popular offline SPI, current platform",
+          },
+          {
+            name: "LaserVision SP3D Mini",
+            href: "/products/laservision-sp3d-mini",
+            desc: "Budget benchtop laser SPI, new",
+          },
+        ],
+      }}
       caveat="Be clear-eyed about the age of this family. The LSM and LSM 300 brochures linked above are archive material — the LSM literature shows a CRT monitor and RS-232 output, and the LSM 300 documentation describes a Windows 98 machine. ASC refurbishes and supports these systems, and for the right shop they are still good value, but they are not current products and the literature should not be read as a current spec. Ask us what the unit on the floor actually runs."
     />
   );

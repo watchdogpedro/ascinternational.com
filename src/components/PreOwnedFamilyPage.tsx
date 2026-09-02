@@ -34,6 +34,16 @@ export interface PreOwnedFamilyPageProps {
   caveat?: string;
   /** Product photo for the hero. Omitted where ASC has no photo of the family. */
   image?: { src: string; alt: string };
+  /**
+   * The equivalent new ASC systems. Someone searching a CyberOptics model
+   * number is a qualified inspection buyer — give them the new option rather
+   * than a dead end when the used one is wrong for them.
+   */
+  newAlternative: {
+    /** One line on when new is the better call for this category. */
+    rationale: string;
+    systems: { name: string; href: string; desc: string }[];
+  };
 }
 
 const gridCols: Record<string, string> = {
@@ -60,6 +70,7 @@ export default function PreOwnedFamilyPage({
   fitFor,
   caveat,
   image,
+  newAlternative,
 }: PreOwnedFamilyPageProps) {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -209,8 +220,53 @@ export default function PreOwnedFamilyPage({
           </div>
         </section>
 
+        {/* New equipment cross-link */}
+        <section className="py-16 bg-dark-secondary border-t border-white/10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl">
+              <div className="text-accent-cyan text-sm font-semibold uppercase tracking-widest mb-2">
+                Buying New Instead
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                If pre-owned is the wrong call
+              </h2>
+              <p className="text-gray-400 mb-8 max-w-2xl leading-relaxed">{newAlternative.rationale}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {newAlternative.systems.map((n) => (
+                  <Link
+                    key={n.href}
+                    href={n.href}
+                    className="group flex items-start justify-between gap-4 bg-dark-card border border-white/10 rounded-xl p-5 hover:border-accent-cyan/30 hover:bg-white/[0.02] transition-all"
+                  >
+                    <div>
+                      <div className="text-white font-bold group-hover:text-accent-cyan transition-colors">
+                        {n.name}
+                      </div>
+                      <div className="text-sm text-gray-500 mt-1">{n.desc}</div>
+                      <div className="text-xs font-semibold text-accent-cyan mt-3">ASC — new</div>
+                    </div>
+                    <span
+                      aria-hidden="true"
+                      className="text-accent-cyan text-lg transition-transform group-hover:translate-x-0.5"
+                    >
+                      &rarr;
+                    </span>
+                  </Link>
+                ))}
+              </div>
+              <Link
+                href="/services/new-equipment"
+                className="inline-flex items-center gap-1.5 mt-6 text-sm font-semibold text-accent-cyan hover:text-white transition-colors"
+              >
+                All new equipment
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Fit */}
-        <section className="py-16 bg-dark-secondary border-y border-white/10">
+        <section className="py-16 border-t border-white/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Worth a look if</h2>

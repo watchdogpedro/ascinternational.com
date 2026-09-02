@@ -105,6 +105,22 @@ export default function CyberOpticsSESeriesPreOwned() {
         src: "/images/products/cyberoptics-se-series.png",
         alt: "CyberOptics SE Series inline 3D solder paste inspection system",
       }}
+      newAlternative={{
+        rationale:
+          "A used SE makes sense when you are matching an existing installation or working to a fixed budget. It makes less sense when you are putting inline SPI on a line for the first time, because you inherit someone else's service history and the software stops where the platform stopped. If this is a new line rather than a second one, look at what ASC builds now.",
+        systems: [
+          {
+            name: "LineMaster Fusion 3D",
+            href: "/products/linemaster-fusion-3d",
+            desc: "High-speed inline 3D SPI, current platform, full warranty",
+          },
+          {
+            name: "LineMaster DMI",
+            href: "/products/linemaster-dmi",
+            desc: "Dual mode — 3D SPI and AOI in one offline system",
+          },
+        ],
+      }}
     />
   );
 }
