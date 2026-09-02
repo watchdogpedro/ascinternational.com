@@ -80,6 +80,7 @@ const spiProducts = [
   {
     name: "CyberOptics SE Series",
     slug: "cyberoptics-se-series",
+    href: "/pre-owned/cyberoptics-se-series",
     type: "Pre-Owned Inline 3D SPI",
     image: "/images/products/cyberoptics-se-series.png",
     description: "Pre-owned high-speed inline 3D SPI from CyberOptics, the world's leading SPI supplier with 3,000+ installs. Award-winning CyberPrint OPTIMIZER software for closed-loop printer process control.",
@@ -158,12 +159,12 @@ const badgeColors: Record<string, string> = {
   "Metrology": "bg-orange-500/15 text-orange-400 border-orange-500/30",
 };
 
-function ProductCard({ name, slug, type, image, description, badge }: {
-  name: string; slug: string; type: string; image: string; description: string; badge: string;
+function ProductCard({ name, slug, type, image, description, badge, href }: {
+  name: string; slug: string; type: string; image: string; description: string; badge: string; href?: string;
 }) {
   return (
     <Link
-      href={`/products/${slug}`}
+      href={href ?? `/products/${slug}`}
       className="group flex flex-col bg-dark-card border border-white/10 rounded-xl overflow-hidden hover:border-accent-cyan/40 hover:shadow-2xl hover:shadow-accent-cyan/10 hover:-translate-y-1 transition-all duration-300"
     >
       {/* Image Frame — tech background effect */}
@@ -351,7 +352,7 @@ export default function ProductsPage() {
                   Talk to an Engineer
                 </Link>
                 <Link
-                  href="/services/pre-owned-systems"
+                  href="/pre-owned"
                   className="px-8 py-4 bg-white/5 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-accent-cyan/50 transition-all"
                 >
                   View Pre-Owned Systems

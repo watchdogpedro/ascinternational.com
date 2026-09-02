@@ -15,9 +15,13 @@
 │   ├── /products/3d-industrial-metrology
 │   └── /products/jetting-valves
 │
+├── /pre-owned
+│   ├── /pre-owned/cyberoptics-se-series
+│   ├── /pre-owned/cyberoptics-lsm-series
+│   └── /pre-owned/cyberoptics-qx-series
+│
 ├── /services
 │   ├── /services/new-equipment
-│   ├── /services/pre-owned-systems
 │   ├── /services/contract-inspection
 │   └── /services/technical-support
 │

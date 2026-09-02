@@ -84,7 +84,10 @@ const nextConfig: NextConfig = {
       // ── SMT inspection solution pages (5) ───────────────
       { source: "/smt-inspection/automated-optical-inspection", destination: "/products/automated-optical-inspection", permanent: true },
       { source: "/smt-inspection/digital-video-inspection", destination: "/products/digital-video-inspection", permanent: true },
-      { source: "/smt-inspection/pre-owned-refurbished", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/smt-inspection/pre-owned-refurbished", destination: "/pre-owned", permanent: true },
+      // Pre-Owned promoted to its own top-level section, September 2026.
+      { source: "/services/pre-owned-systems", destination: "/pre-owned", permanent: true },
+      { source: "/products/cyberoptics-se-series", destination: "/pre-owned/cyberoptics-se-series", permanent: true },
       { source: "/smt-inspection/solder-paste-inspection", destination: "/products/3d-solder-paste-inspection", permanent: true },
       { source: "/smt-inspection/universal-product-inspection", destination: "/products", permanent: true },
 
@@ -95,12 +98,12 @@ const nextConfig: NextConfig = {
 
       // ── Product detail pages (old WordPress /product/*) (40) ──
       { source: "/product/av-880-series", destination: "/products/av-880-series", permanent: true },
-      { source: "/product/cyberoptics-lsm", destination: "/services/pre-owned-systems", permanent: true },
-      { source: "/product/cyberoptics-lsm-2", destination: "/services/pre-owned-systems", permanent: true },
-      { source: "/product/cyberoptics-lsm-300", destination: "/services/pre-owned-systems", permanent: true },
-      { source: "/product/cyberoptics-qx150i", destination: "/services/pre-owned-systems", permanent: true },
-      { source: "/product/cyberoptics-qx500", destination: "/services/pre-owned-systems", permanent: true },
-      { source: "/product/cyberoptics-qx600", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/product/cyberoptics-lsm", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
+      { source: "/product/cyberoptics-lsm-2", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
+      { source: "/product/cyberoptics-lsm-300", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
+      { source: "/product/cyberoptics-qx150i", destination: "/pre-owned/cyberoptics-qx-series", permanent: true },
+      { source: "/product/cyberoptics-qx500", destination: "/pre-owned/cyberoptics-qx-series", permanent: true },
+      { source: "/product/cyberoptics-qx600", destination: "/pre-owned/cyberoptics-qx-series", permanent: true },
       { source: "/product/cyberoptics-se-200", destination: "/products/cyberoptics-se-series", permanent: true },
       { source: "/product/cyberoptics-se-300-ultra", destination: "/products/cyberoptics-se-series", permanent: true },
       { source: "/product/cyberoptics-se-series", destination: "/products/cyberoptics-se-series", permanent: true },
@@ -197,9 +200,9 @@ const nextConfig: NextConfig = {
       { source: "/resources/discover-the-cutting-edge-world-of-automatic-surface-inspection-asc-internationals", destination: "/products/automated-optical-inspection", permanent: true },
       { source: "/resources/discover-the-ultimate-solution-for-enhanced-automated-optical-inspection-in", destination: "/products/automated-optical-inspection", permanent: true },
       { source: "/resources/discover-what-services-asc-international-offers-unlocking-advanced-inspection-technologies", destination: "/services", permanent: true },
-      { source: "/resources/headline-uncover-the-power-of-cyberoptics-lsm-2-your-precision", destination: "/services/pre-owned-systems", permanent: true },
-      { source: "/resources/headline-unlocking-precision-with-cyberoptics-lsm-in-north-dakota-tldr", destination: "/services/pre-owned-systems", permanent: true },
-      { source: "/resources/refurbished-aoi-spi-revolutionizing-electronics-inspection-in-south-korea", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/resources/headline-uncover-the-power-of-cyberoptics-lsm-2-your-precision", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
+      { source: "/resources/headline-unlocking-precision-with-cyberoptics-lsm-in-north-dakota-tldr", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
+      { source: "/resources/refurbished-aoi-spi-revolutionizing-electronics-inspection-in-south-korea", destination: "/pre-owned", permanent: true },
       { source: "/resources/related-faq-questions-the-near-me-resource-for-everything", destination: "/faq", permanent: true },
       { source: "/resources/solder-paste-inspection-process-unlocking-precision-for-printed-circuit-boards", destination: "/products/3d-solder-paste-inspection", permanent: true },
       { source: "/resources/the-ultimate-guide-to-aoi-automated-optical-inspection-defect-inspection", destination: "/products/automated-optical-inspection", permanent: true },
@@ -210,7 +213,7 @@ const nextConfig: NextConfig = {
 
       // ── Legacy /cyberoptics articles (12) ────────────────
       { source: "/cyberoptics/cyberoptics-innovations-asc-international-revolutionizing-inspection-technologies-tldr-experience-the", destination: "/products/cyberoptics-se-series", permanent: true },
-      { source: "/cyberoptics/cyberoptics-lsm-a-game-changer-for-precision-inspection-in-saudi-arabia", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/cyberoptics/cyberoptics-lsm-a-game-changer-for-precision-inspection-in-saudi-arabia", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
       { source: "/cyberoptics/cyberoptics-se-series-unveiling-the-power-of-optical-inspection-in", destination: "/products/cyberoptics-se-series", permanent: true },
       { source: "/cyberoptics/discover-cyberoptics-se-200-the-ultimate-game-changer-in-north-carolina", destination: "/products/cyberoptics-se-series", permanent: true },
       { source: "/cyberoptics/discover-the-cutting-edge-of-industrial-inspection-asc-international-and-cyberoptics", destination: "/products/cyberoptics-se-series", permanent: true },
@@ -218,7 +221,7 @@ const nextConfig: NextConfig = {
       { source: "/cyberoptics/spi-machine-benefits-revolutionizing-solder-inspection-and-pcb-assembly-in", destination: "/products/cyberoptics-se-series", permanent: true },
       { source: "/cyberoptics/the-cyber-optics-revolution-reshaping-inspection-technologies-transform-your", destination: "/products/cyberoptics-se-series", permanent: true },
       { source: "/cyberoptics/uncover-the-history-shaping-capabilities-of-cyberoptics-se500-in-connecticut-tldr", destination: "/products/cyberoptics-se-series", permanent: true },
-      { source: "/cyberoptics/uncover-the-secrets-of-precision-3d-solder-paste-inspection-cyberoptics-lsm-300", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/cyberoptics/uncover-the-secrets-of-precision-3d-solder-paste-inspection-cyberoptics-lsm-300", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
       { source: "/cyberoptics/unraveling-the-secrets-of-spi-machines-a-comprehensive-guide-imagine", destination: "/blog/spi-buyers-guide-2026", permanent: true },
       { source: "/cyberoptics/visionpro-merlin-precision-inspection-for-japans-booming-electronics-industry-summary", destination: "/products/visionpro-merlin", permanent: true },
 
@@ -278,12 +281,12 @@ const nextConfig: NextConfig = {
       { source: "/solder-paste-inspection/3d-solder-paste-inspection", destination: "/products/3d-solder-paste-inspection", permanent: true },
       { source: "/solder-paste-inspection/aoi-soldering-inspection-equipment-in-italy-a-comprehensive-guide-to", destination: "/products/automated-optical-inspection", permanent: true },
       { source: "/solder-paste-inspection/choosing-the-right-solder-paste-inspection-machine-your-guide-to", destination: "/blog/spi-buyers-guide-2026", permanent: true },
-      { source: "/solder-paste-inspection/cyberoptics-lsm-300-revolutionizing-solder-paste-inspection-in-norway-tldr", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/solder-paste-inspection/cyberoptics-lsm-300-revolutionizing-solder-paste-inspection-in-norway-tldr", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
       { source: "/solder-paste-inspection/discover-the-revolutionary-impact-of-asc-international-on-the-kansas", destination: "/products/3d-solder-paste-inspection", permanent: true },
       { source: "/solder-paste-inspection/discover-the-revolutionary-visionmaster-ap450-a-game-changer-for-arkansas-solder", destination: "/products/visionpro-ap500", permanent: true },
       { source: "/solder-paste-inspection/discover-the-secrets-of-solder-paste-inspection-an-in-depth-guide", destination: "/products/3d-solder-paste-inspection", permanent: true },
       { source: "/solder-paste-inspection/electrify-the-future-of-montana-electronics-manufacturing-with-asc-international", destination: "/products/3d-solder-paste-inspection", permanent: true },
-      { source: "/solder-paste-inspection/get-your-eyes-on-the-prize-cyberoptics-lsm-2-revolutionizes", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/solder-paste-inspection/get-your-eyes-on-the-prize-cyberoptics-lsm-2-revolutionizes", destination: "/pre-owned/cyberoptics-lsm-series", permanent: true },
       { source: "/solder-paste-inspection/headline-revolutionize-solder-paste-inspection-with-cutting-edge-technology-tldr-discover", destination: "/products/3d-solder-paste-inspection", permanent: true },
       { source: "/solder-paste-inspection/laservision-sp3d-revolutionizing-industrial-inspection-in-hawaii-and-beyond-tldr", destination: "/products/laservision-sp3d-mini", permanent: true },
       { source: "/solder-paste-inspection/solder-paste-inspection-reduces-errors-for-florida-pcb-manufacturer", destination: "/products/3d-solder-paste-inspection", permanent: true },
@@ -322,7 +325,7 @@ const nextConfig: NextConfig = {
       { source: "/wp-content/uploads/2025/05/LineMaster-Falcon-Plus-AOI_compressed.pdf", destination: "/wp-content/uploads/2025/09/LineMaster-Falcon-AOI_Updated.pdf", permanent: true },
 
       // ── Catch-alls: anything not named above ──────────────────
-      { source: "/product-category/refurbished-aoi-spi", destination: "/services/pre-owned-systems", permanent: true },
+      { source: "/product-category/refurbished-aoi-spi", destination: "/pre-owned", permanent: true },
       { source: "/product-category/:slug*", destination: "/products", permanent: true },
       { source: "/product/:slug", destination: "/products", permanent: true },
       { source: "/dealers/:slug*", destination: "/about/global-support", permanent: true },

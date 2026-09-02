@@ -537,3 +537,12 @@ export function formatBytes(bytes: number): string {
   const mb = bytes / 1_000_000
   return mb >= 1 ? `${mb.toFixed(1)} MB` : `${Math.round(bytes / 1000)} KB`
 }
+
+/**
+ * Look a document up by its slug. Used by the pre-owned pages, where each
+ * model card links straight to that model's own brochure rather than to a
+ * generic product-level datasheet.
+ */
+export function documentBySlug(slug: string): LegacyDocument | undefined {
+  return DOCUMENTS.find((d) => d.slug === slug)
+}

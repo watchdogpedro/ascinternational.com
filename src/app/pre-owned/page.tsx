@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import PreOwnedSystemCard, { type PreOwnedSystem } from "@/components/PreOwnedSystemCard";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  alternates: { canonical: '/services/pre-owned-systems' },
+  alternates: { canonical: '/pre-owned' },
   title: "Pre-Owned & Refurbished Systems",
   description: "Factory-certified pre-owned SPI and AOI at 30-50% below new. CyberOptics SE Series, QX Series, LSM Series and more. Warranty included.",
   keywords: ["pre-owned SPI", "refurbished AOI", "used inspection equipment", "CyberOptics SE500", "CyberOptics QX600", "used SPI system", "refurbished inspection systems", "pre-owned AOI"],
@@ -17,71 +18,83 @@ export const metadata: Metadata = {
   },
 };
 
-const spiInlineSystems = [
+const spiInlineSystems: PreOwnedSystem[] = [
   {
     model: "CyberOptics SE600",
     type: "High Speed Inline SPI",
     badge: "Available",
+    doc: "cyberoptics-se600",
     highlights: ["Inline conveyor configuration", "High-speed 3D measurement", "Closed-loop printer feedback", "SMEMA compatible"],
   },
   {
     model: "CyberOptics SE500",
     type: "High Speed Inline SPI",
     badge: "Available",
+    doc: "cyberoptics-se500",
     highlights: ["Inline 3D solder paste inspection", "Phase-shift measurement technology", "Real-time SPC output", "Small footprint"],
   },
   {
     model: "CyberOptics SE 300 Ultra",
     type: "High Speed Inline SPI",
     badge: "Available",
+    doc: "cyberoptics-se300-ultra",
     highlights: ["Proven inline platform", "3D volume & height measurement", "Automated program generation", "Compact design"],
   },
   {
     model: "CyberOptics SE Series",
     type: "High Speed Inline SPI",
     badge: "Multiple Units",
+    href: "/pre-owned/cyberoptics-se-series",
     highlights: ["Various configurations available", "Inline inspection capability", "Full 3D measurement", "Contact us for current stock"],
   },
 ];
 
-const spiOfflineSystems = [
+const spiOfflineSystems: PreOwnedSystem[] = [
   {
     model: "CyberOptics LSM 300",
     type: "Offline SPI",
     badge: "Available",
+    doc: "cyberoptics-lsm300",
+    legacyDoc: true,
     highlights: ["Offline manual & semi-auto inspection", "3D solder paste measurement", "Ideal for low-volume/high-mix", "Benchtop configuration"],
   },
   {
     model: "CyberOptics LSM 2",
     type: "Offline SPI",
     badge: "Available",
+    doc: "cyberoptics-lsm2",
     highlights: ["Automated in-process inspection", "Industry-proven platform", "3,000+ units deployed globally", "Easy setup & operation"],
   },
   {
     model: "CyberOptics LSM",
     type: "Offline SPI",
     badge: "Available",
+    doc: "cyberoptics-lsm",
+    legacyDoc: true,
     highlights: ["First-generation SPI platform", "Manual inspection workflow", "Cost-effective entry point", "Trusted by 1,000s of engineers"],
   },
 ];
 
-const aoiSystems = [
+const aoiSystems: PreOwnedSystem[] = [
   {
     model: "CyberOptics QX600",
     type: "High Resolution 2D AOI",
     badge: "Available",
+    doc: "cyberoptics-qx600",
     highlights: ["High-resolution 2D optical inspection", "Full PCB coverage", "Low false-call rate", "Inline capable"],
   },
   {
     model: "CyberOptics QX500",
     type: "2D AOI",
     badge: "Available",
+    doc: "cyberoptics-qx500",
     highlights: ["Proven 2D AOI platform", "Component placement verification", "Solder joint inspection", "Reliable defect detection"],
   },
   {
     model: "CyberOptics QX150i",
     type: "High Resolution 2D AOI",
     badge: "Available",
+    doc: "cyberoptics-qx150i",
     highlights: ["High-resolution imaging", "Compact inline AOI", "Fast programming", "SMEMA compatible"],
   },
 ];
@@ -156,32 +169,6 @@ const refurbishmentSteps = [
   { step: "06", title: "Final Certification", desc: "Full inspection report, calibration certificates, and documentation package prepared for handover." },
 ];
 
-function SystemCard({ model, type, badge, highlights }: { model: string; type: string; badge: string; highlights: string[] }) {
-  return (
-    <div className="bg-dark-card border border-white/10 rounded-xl p-5 hover:border-accent-cyan/30 transition-all group">
-      <div className="flex items-start justify-between mb-3">
-        <div>
-          <div className="text-white font-bold text-lg group-hover:text-accent-cyan transition-colors">{model}</div>
-          <div className="text-sm text-gray-500">{type}</div>
-        </div>
-        <span className="text-xs font-semibold text-green-400 bg-green-400/10 border border-green-400/20 px-2 py-1 rounded-full whitespace-nowrap">
-          {badge}
-        </span>
-      </div>
-      <ul className="space-y-1.5">
-        {highlights.map((h, i) => (
-          <li key={i} className="flex items-start gap-2 text-sm text-gray-400">
-            <svg className="w-3.5 h-3.5 text-accent-cyan flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-            </svg>
-            {h}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 export default function PreOwnedSystems() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -222,8 +209,7 @@ export default function PreOwnedSystems() {
         <Breadcrumb
           items={[
             { name: "Home", href: "/" },
-            { name: "Services", href: "/services" },
-            { name: "Pre-Owned Systems" },
+            { name: "Pre-Owned" },
           ]}
         />
 
@@ -317,10 +303,17 @@ export default function PreOwnedSystems() {
               <p className="text-gray-400 max-w-2xl">
                 High-speed inline 3D solder paste inspection for production environments. Drop-in compatible with your existing SMT line via SMEMA.
               </p>
+              <Link
+                href="/pre-owned/cyberoptics-se-series"
+                className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-accent-cyan hover:text-white transition-colors"
+              >
+                All CyberOptics SE Series models
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {spiInlineSystems.map((s) => (
-                <SystemCard key={s.model} {...s} />
+                <PreOwnedSystemCard key={s.model} {...s} />
               ))}
             </div>
           </div>
@@ -335,10 +328,17 @@ export default function PreOwnedSystems() {
               <p className="text-gray-400 max-w-2xl">
                 Offline and benchtop SPI platforms for low-volume, high-mix production and quality lab inspection workflows.
               </p>
+              <Link
+                href="/pre-owned/cyberoptics-lsm-series"
+                className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-accent-cyan hover:text-white transition-colors"
+              >
+                All CyberOptics LSM Series models
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {spiOfflineSystems.map((s) => (
-                <SystemCard key={s.model} {...s} />
+                <PreOwnedSystemCard key={s.model} {...s} />
               ))}
             </div>
           </div>
@@ -353,10 +353,17 @@ export default function PreOwnedSystems() {
               <p className="text-gray-400 max-w-2xl">
                 Pre-owned AOI systems for post-reflow board inspection. Verify component placement, polarity, and solder joint quality.
               </p>
+              <Link
+                href="/pre-owned/cyberoptics-qx-series"
+                className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-accent-cyan hover:text-white transition-colors"
+              >
+                All CyberOptics QX Series models
+                <span aria-hidden="true">&rarr;</span>
+              </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {aoiSystems.map((s) => (
-                <SystemCard key={s.model} {...s} />
+                <PreOwnedSystemCard key={s.model} {...s} />
               ))}
             </div>
           </div>
@@ -387,7 +394,7 @@ export default function PreOwnedSystems() {
         </section>
 
         {/* Refurbishment Process */}
-        <section className="py-20">
+        <section id="process" className="py-20 scroll-mt-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">

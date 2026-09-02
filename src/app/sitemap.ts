@@ -220,10 +220,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/services/pre-owned-systems`,
+      url: `${baseUrl}/pre-owned`,
       lastModified: currentDate,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/pre-owned/cyberoptics-se-series`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/pre-owned/cyberoptics-lsm-series`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/pre-owned/cyberoptics-qx-series`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/services/technical-support`,
@@ -509,12 +527,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Pages previously missing from the sitemap (added Aug 23 2026 SEO audit)
     {
       url: `${baseUrl}/products/av-880-series`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/products/cyberoptics-se-series`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
       priority: 0.8,

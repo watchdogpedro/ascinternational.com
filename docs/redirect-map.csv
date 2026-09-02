@@ -53,7 +53,7 @@ old_url,new_url,rule
 /careers,,same-path (no redirect needed)
 /contact-us,/contact,exact
 /cyberoptics/cyberoptics-innovations-asc-international-revolutionizing-inspection-technologies-tldr-experience-the,/products/cyberoptics-se-series,kw:cyberoptics
-/cyberoptics/cyberoptics-lsm-a-game-changer-for-precision-inspection-in-saudi-arabia,/services/pre-owned-systems,kw:lsm-300|lsm-2|cyberoptic
+/cyberoptics/cyberoptics-lsm-a-game-changer-for-precision-inspection-in-saudi-arabia,/pre-owned/cyberoptics-lsm-series,kw:lsm-300|lsm-2|cyberoptic
 /cyberoptics/cyberoptics-se-series-unveiling-the-power-of-optical-inspection-in,/products/cyberoptics-se-series,kw:se-series|se-200|se500|s
 /cyberoptics/discover-cyberoptics-se-200-the-ultimate-game-changer-in-north-carolina,/products/cyberoptics-se-series,kw:se-series|se-200|se500|s
 /cyberoptics/discover-the-cutting-edge-of-industrial-inspection-asc-international-and-cyberoptics,/products/cyberoptics-se-series,kw:cyberoptics
@@ -61,7 +61,7 @@ old_url,new_url,rule
 /cyberoptics/spi-machine-benefits-revolutionizing-solder-inspection-and-pcb-assembly-in,/products/cyberoptics-se-series,kw:cyberoptics
 /cyberoptics/the-cyber-optics-revolution-reshaping-inspection-technologies-transform-your,/products/cyberoptics-se-series,kw:cyberoptics
 /cyberoptics/uncover-the-history-shaping-capabilities-of-cyberoptics-se500-in-connecticut-tldr,/products/cyberoptics-se-series,kw:se-series|se-200|se500|s
-/cyberoptics/uncover-the-secrets-of-precision-3d-solder-paste-inspection-cyberoptics-lsm-300,/services/pre-owned-systems,kw:lsm-300|lsm-2|cyberoptic
+/cyberoptics/uncover-the-secrets-of-precision-3d-solder-paste-inspection-cyberoptics-lsm-300,/pre-owned/cyberoptics-lsm-series,kw:lsm-300|lsm-2|cyberoptic
 /cyberoptics/unraveling-the-secrets-of-spi-machines-a-comprehensive-guide-imagine,/blog/spi-buyers-guide-2026,kw:choosing-the-right|buyer
 /cyberoptics/visionpro-merlin-precision-inspection-for-japans-booming-electronics-industry-summary,/products/visionpro-merlin,kw:merlin
 /dealers/addis-electronic,/about/global-support,dealers
@@ -125,12 +125,12 @@ old_url,new_url,rule
 /process-control/visionpro-m500-revolutionizing-process-control-in-north-america,/products/visionpro-m500,kw:visionpro-m500|visionmas
 /process-control/yield-improvement-strategies,/blog/yield-improvement-strategies,exact
 /product/av-880-series,/products/av-880-series,product
-/product/cyberoptics-lsm,/services/pre-owned-systems,product
-/product/cyberoptics-lsm-2,/services/pre-owned-systems,product
-/product/cyberoptics-lsm-300,/services/pre-owned-systems,product
-/product/cyberoptics-qx150i,/services/pre-owned-systems,product
-/product/cyberoptics-qx500,/services/pre-owned-systems,product
-/product/cyberoptics-qx600,/services/pre-owned-systems,product
+/product/cyberoptics-lsm,/pre-owned/cyberoptics-lsm-series,product
+/product/cyberoptics-lsm-2,/pre-owned/cyberoptics-lsm-series,product
+/product/cyberoptics-lsm-300,/pre-owned/cyberoptics-lsm-series,product
+/product/cyberoptics-qx150i,/pre-owned/cyberoptics-qx-series,product
+/product/cyberoptics-qx500,/pre-owned/cyberoptics-qx-series,product
+/product/cyberoptics-qx600,/pre-owned/cyberoptics-qx-series,product
 /product/cyberoptics-se-200,/products/cyberoptics-se-series,product
 /product/cyberoptics-se-300-ultra,/products/cyberoptics-se-series,product
 /product/cyberoptics-se-series,/products/cyberoptics-se-series,product
@@ -170,9 +170,9 @@ old_url,new_url,rule
 /resources/discover-the-cutting-edge-world-of-automatic-surface-inspection-asc-internationals,/products/automated-optical-inspection,kw:aoi|automated-optical|op
 /resources/discover-the-ultimate-solution-for-enhanced-automated-optical-inspection-in,/products/automated-optical-inspection,kw:aoi|automated-optical|op
 /resources/discover-what-services-asc-international-offers-unlocking-advanced-inspection-technologies,/services,exact
-/resources/headline-uncover-the-power-of-cyberoptics-lsm-2-your-precision,/services/pre-owned-systems,kw:lsm-300|lsm-2|cyberoptic
-/resources/headline-unlocking-precision-with-cyberoptics-lsm-in-north-dakota-tldr,/services/pre-owned-systems,kw:lsm-300|lsm-2|cyberoptic
-/resources/refurbished-aoi-spi-revolutionizing-electronics-inspection-in-south-korea,/services/pre-owned-systems,kw:refurbished|pre-owned
+/resources/headline-uncover-the-power-of-cyberoptics-lsm-2-your-precision,/pre-owned/cyberoptics-lsm-series,kw:lsm-300|lsm-2|cyberoptic
+/resources/headline-unlocking-precision-with-cyberoptics-lsm-in-north-dakota-tldr,/pre-owned/cyberoptics-lsm-series,kw:lsm-300|lsm-2|cyberoptic
+/resources/refurbished-aoi-spi-revolutionizing-electronics-inspection-in-south-korea,/pre-owned,kw:refurbished|pre-owned
 /resources/related-faq-questions-the-near-me-resource-for-everything,/faq,exact
 /resources/software-downloads,,same-path (no redirect needed)
 /resources/solder-paste-inspection-process-unlocking-precision-for-printed-circuit-boards,/products/3d-solder-paste-inspection,kw:what-is-a-solder-paste-i
@@ -188,18 +188,18 @@ old_url,new_url,rule
 /smt-inspection,/products,exact
 /smt-inspection/automated-optical-inspection,/products/automated-optical-inspection,exact
 /smt-inspection/digital-video-inspection,/products/digital-video-inspection,exact
-/smt-inspection/pre-owned-refurbished,/services/pre-owned-systems,exact
+/smt-inspection/pre-owned-refurbished,/pre-owned,exact
 /smt-inspection/solder-paste-inspection,/products/3d-solder-paste-inspection,exact
 /smt-inspection/universal-product-inspection,/products,exact
 /solder-paste-inspection/3d-solder-paste-inspection,/products/3d-solder-paste-inspection,exact
 /solder-paste-inspection/aoi-soldering-inspection-equipment-in-italy-a-comprehensive-guide-to,/products/automated-optical-inspection,kw:aoi|automated-optical|op
 /solder-paste-inspection/choosing-the-right-solder-paste-inspection-machine-your-guide-to,/blog/spi-buyers-guide-2026,kw:choosing-the-right|buyer
-/solder-paste-inspection/cyberoptics-lsm-300-revolutionizing-solder-paste-inspection-in-norway-tldr,/services/pre-owned-systems,kw:lsm-300|lsm-2|cyberoptic
+/solder-paste-inspection/cyberoptics-lsm-300-revolutionizing-solder-paste-inspection-in-norway-tldr,/pre-owned/cyberoptics-lsm-series,kw:lsm-300|lsm-2|cyberoptic
 /solder-paste-inspection/discover-the-revolutionary-impact-of-asc-international-on-the-kansas,/products/3d-solder-paste-inspection,kw:spi|solder-paste|solder-
 /solder-paste-inspection/discover-the-revolutionary-visionmaster-ap450-a-game-changer-for-arkansas-solder,/products/visionpro-ap500,kw:ap212|ap450|ap-xt
 /solder-paste-inspection/discover-the-secrets-of-solder-paste-inspection-an-in-depth-guide,/products/3d-solder-paste-inspection,kw:spi|solder-paste|solder-
 /solder-paste-inspection/electrify-the-future-of-montana-electronics-manufacturing-with-asc-international,/products/3d-solder-paste-inspection,kw:spi|solder-paste|solder-
-/solder-paste-inspection/get-your-eyes-on-the-prize-cyberoptics-lsm-2-revolutionizes,/services/pre-owned-systems,kw:lsm-300|lsm-2|cyberoptic
+/solder-paste-inspection/get-your-eyes-on-the-prize-cyberoptics-lsm-2-revolutionizes,/pre-owned/cyberoptics-lsm-series,kw:lsm-300|lsm-2|cyberoptic
 /solder-paste-inspection/headline-revolutionize-solder-paste-inspection-with-cutting-edge-technology-tldr-discover,/products/3d-solder-paste-inspection,kw:spi|solder-paste|solder-
 /solder-paste-inspection/laservision-sp3d-revolutionizing-industrial-inspection-in-hawaii-and-beyond-tldr,/products/laservision-sp3d-mini,kw:laservision-sp3d
 /solder-paste-inspection/solder-paste-inspection-reduces-errors-for-florida-pcb-manufacturer,/products/3d-solder-paste-inspection,kw:spi|solder-paste|solder-

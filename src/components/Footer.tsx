@@ -30,6 +30,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/pre-owned" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
+                  Pre-Owned Systems
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="inline-block py-3 lg:py-0 text-gray-400 hover:text-accent-cyan transition-colors">
                   Services
                 </Link>

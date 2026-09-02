@@ -42,9 +42,15 @@ export default function Header() {
     },
   ];
 
+  const preOwnedMenu = [
+    { name: "All Pre-Owned Systems", href: "/pre-owned", desc: "Certified refurbished SPI & AOI" },
+    { name: "CyberOptics SE Series", href: "/pre-owned/cyberoptics-se-series", desc: "Inline 3D SPI — SE600, SE500, SE 300" },
+    { name: "CyberOptics LSM Series", href: "/pre-owned/cyberoptics-lsm-series", desc: "Offline SPI — LSM, LSM 2, LSM 300" },
+    { name: "CyberOptics QX Series", href: "/pre-owned/cyberoptics-qx-series", desc: "2D AOI — QX600, QX500, QX150i" },
+  ];
+
   const servicesMenu = [
     { name: "New Equipment", href: "/services/new-equipment", desc: "Latest inspection systems" },
-    { name: "Pre-Owned Systems", href: "/services/pre-owned-systems", desc: "Certified refurbished equipment" },
     { name: "Contract Inspection", href: "/services/contract-inspection", desc: "Professional inspection services" },
     { name: "Technical Support", href: "/services/technical-support", desc: "Expert support from our engineers" },
   ];
@@ -125,6 +131,37 @@ export default function Header() {
                       </div>
                     ))}
                   </div>
+                </div>
+              )}
+            </div>
+
+            {/* Pre-Owned Dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setActiveDropdown("preowned")}
+              onMouseLeave={() => setActiveDropdown(null)}
+            >
+              <button className="text-gray-300 hover:text-accent-cyan px-3 py-2 text-sm font-medium transition-colors flex items-center">
+                Pre-Owned
+                <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {activeDropdown === "preowned" && (
+                <div className="absolute left-0 mt-0 w-80 bg-dark-secondary/95 backdrop-blur-md shadow-2xl rounded-lg border border-white/10 p-4">
+                  <ul className="space-y-1">
+                    {preOwnedMenu.map((item) => (
+                      <li key={item.name}>
+                        <Link
+                          href={item.href}
+                          className="block p-2 rounded hover:bg-white/5 transition-colors group"
+                        >
+                          <div className="text-sm font-medium text-white group-hover:text-accent-cyan transition-colors">{item.name}</div>
+                          <div className="text-xs text-gray-400">{item.desc}</div>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
             </div>
@@ -330,6 +367,20 @@ export default function Header() {
             <div className="px-3 py-2">
               <div className="text-xs font-semibold text-accent-cyan uppercase mb-2">Products</div>
               {productsMenu.flatMap(category => category.items).map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block text-gray-300 hover:text-accent-cyan py-2 pl-4 text-sm"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+            <div className="px-3 py-2">
+              <div className="text-xs font-semibold text-accent-cyan uppercase mb-2">Pre-Owned</div>
+              {preOwnedMenu.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
